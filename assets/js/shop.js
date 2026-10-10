@@ -45,6 +45,16 @@
   updateCount();
   window.addEventListener("storage", updateCount);
 
+  /* ---------- phone & tablet menu ---------- */
+  var menuBtn = $("[data-menu]"), menu = $("#mmenu");
+  if (menuBtn && menu) {
+    var setMenu = function (open) { menu.hidden = !open; menuBtn.setAttribute("aria-expanded", open); };
+    menuBtn.addEventListener("click", function (e) { e.stopPropagation(); setMenu(menu.hidden); });
+    doc.addEventListener("click", function (e) { if (!menu.hidden && !menu.contains(e.target)) setMenu(false); });
+    doc.addEventListener("keydown", function (e) { if (e.key === "Escape" && !menu.hidden) { setMenu(false); menuBtn.focus(); } });
+    window.addEventListener("resize", function () { if (window.innerWidth > 1180) setMenu(false); });
+  }
+
   /* ---------- toast ---------- */
   var toastEl, toastT;
   function toast(html) {
