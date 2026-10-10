@@ -31,6 +31,7 @@
       <a class="hide-md" href="mailto:info@uddermilk.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5l8.5 6 8.5-6"/></svg>info@uddermilk.com</a>
     </div>
     <nav class="topstrip__acct" aria-label="Account">
+      <a href="../../order-history/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg>My orders</a>
       <a href="../../driver-login/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h11v9.5h-11zM13.5 9.5h4l3.5 3.5v3h-7.5"/><circle cx="6.5" cy="17.5" r="1.9"/><circle cx="17" cy="17.5" r="1.9"/></svg>Driver login</a>
       <a href="../../login/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>Log in</a>
       <a class="topstrip__signup" href="../../signup/index.html">Sign up</a>
@@ -39,7 +40,7 @@
 </div>
 <div class="mainbar" data-mainbar>
   <div class="mainbar__brand">
-    <a class="brand" href="../../index.html" aria-label="Udder Milk, home"><img class="brand__cow" src="../../assets/img/logo-cow.jpg" alt="" width="42" height="42"><span>Udder <em>Milk</em></span></a>
+    <a class="brand brand--logo" href="../../index.html"><img src="../../assets/img/logo-udder-milk.png" alt="Udder Milk, satisfying customers since 2005" width="315" height="213"></a>
   </div>
   <nav class="tabs" aria-label="Main">
     <ul>
@@ -55,6 +56,7 @@
       <li><a href="../../pickup-delivery/index.html">Pickup &amp; Delivery</a></li>
     </ul>
   </nav>
+  <a class="cartbtn" href="../../shop-cart/index.html" aria-label="Cart" data-cart-link><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg><span class="cartbtn__label">Cart</span><b class="cartbtn__n" data-cart-count hidden>0</b></a>
 </div><main id="main">
 <div class="shop-layout">
 <aside class="sidebar">
@@ -528,11 +530,23 @@
           <h2>Beef Marrow Bone Broth</h2>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span>          </div>
-<p class="product__desc">Grass-fed marrow bones slow-simmered with onion, leek, pepper, carrot, garlic, celery, bay leaf, cardamom, black pepper and Celtic salt. It sets like jelly when cold.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Grass-fed marrow bones slow-simmered with onion, leek, pepper, carrot, garlic, celery, bay leaf, cardamom, black pepper and Celtic salt. It sets like jelly when cold.</p>          <div class="product__long" id="beef-marrow-bone-broth-more" hidden><p>Ingredients: organic grass-fed beef marrow bones, organic green onion, organic white onion, organic green pepper, organic carrots, organic garlic, organic celery, organic leek, organic bay leaf, organic cardamom, organic black pepper and Celtic salt.</p></div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" aria-controls="beef-marrow-bone-broth-more"><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Quart</span><span class="price">$8.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="beef-marrow-bone-broth" data-name="Beef Marrow Bone Broth" data-url="category/soup-and-stews/index.html#beef-marrow-bone-broth" data-img="https://uddermilk.com/upload/beef%20marrow.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="beef-marrow-bone-broth-v">Size</label>
+              <select id="beef-marrow-bone-broth-v" name="v" class="is-one">
+<option value="Quart" data-price="8.0">Quart · $8.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -548,11 +562,22 @@
           <h2>Beef Bone Broth</h2>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Quart</span><span class="price">$8.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="beef-bone-broth" data-name="Beef Bone Broth" data-url="category/soup-and-stews/index.html#beef-bone-broth" data-img="https://uddermilk.com/upload/beef%20broth.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="beef-bone-broth-v">Size</label>
+              <select id="beef-bone-broth-v" name="v" class="is-one">
+<option value="Quart" data-price="8.0">Quart · $8.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -568,11 +593,22 @@
           <h2>Chicken Broth</h2>
           <div class="tags">
 <span class="tag tag--grass">Pastured</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Quart</span><span class="price">$7.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="chicken-broth" data-name="Chicken Broth" data-url="category/soup-and-stews/index.html#chicken-broth" data-img="https://uddermilk.com/upload/chicken%20broth.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="chicken-broth-v">Size</label>
+              <select id="chicken-broth-v" name="v" class="is-one">
+<option value="Quart" data-price="7.0">Quart · $7.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -588,11 +624,22 @@
           <h2>Duck Broth</h2>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Quart</span><span class="price">$8.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="duck-broth" data-name="Duck Broth" data-url="category/soup-and-stews/index.html#duck-broth" data-img="https://uddermilk.com/upload/IMG-20200511-WA0041.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="duck-broth-v">Size</label>
+              <select id="duck-broth-v" name="v" class="is-one">
+<option value="Quart" data-price="8.0">Quart · $8.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -608,11 +655,23 @@
           <h2>Lamb Broth</h2>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span>          </div>
+          <div class="product__long" id="lamb-broth-more" hidden><p>Ingredients: organic grass-fed lamb, organic green onion, organic white onion, organic green pepper, organic carrots, organic garlic, organic celery, organic leek, organic bay leaf, organic cardamom, organic black pepper and Celtic salt.</p></div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" aria-controls="lamb-broth-more"><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Jar</span><span class="price">$7.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="lamb-broth" data-name="Lamb Broth" data-url="category/soup-and-stews/index.html#lamb-broth" data-img="https://uddermilk.com/upload/lamb%20broth.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="lamb-broth-v">Size</label>
+              <select id="lamb-broth-v" name="v" class="is-one">
+<option value="Jar" data-price="7.0">Jar · $7.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -628,11 +687,22 @@
           <h2>Turkey Broth</h2>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Quart</span><span class="price">$6.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="turkey-broth" data-name="Turkey Broth" data-url="category/soup-and-stews/index.html#turkey-broth" data-img="https://uddermilk.com/upload/C5D5E61B-6E32-4BF2-96D0-5D0F5D82A130.jpeg" data-icon="pot-of-food">
+              <label class="sr-only" for="turkey-broth-v">Size</label>
+              <select id="turkey-broth-v" name="v" class="is-one">
+<option value="Quart" data-price="6.0">Quart · $6.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -648,11 +718,23 @@
           <h2>Cow Feet Soup</h2>
           <div class="tags">
 <span class="tag tag--heritage">Traditional</span>          </div>
-<p class="product__desc">Cow feet simmered with onion, garlic and seasoning into a rich, gelatinous broth.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Cow feet simmered with onion, garlic and seasoning into a rich, gelatinous broth.</p>          <div class="product__long" id="cow-feet-soup-more" hidden><p>Cow trotter soup (paya) is a traditional slow-cooked dish. The long cooking draws collagen and gelatin out of the trotters, giving a rich, silky broth.</p><p>Ingredients: cow trotters, onion, tomato, carrot, chili pepper, garlic, salt, cumin, coriander, nutmeg, bay leaves, cardamom.</p></div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" aria-controls="cow-feet-soup-more"><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Quart</span><span class="price">$7.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="cow-feet-soup" data-name="Cow Feet Soup" data-url="category/soup-and-stews/index.html#cow-feet-soup" data-img="https://uddermilk.com/upload/IMG_0668.jpeg" data-icon="pot-of-food">
+              <label class="sr-only" for="cow-feet-soup-v">Size</label>
+              <select id="cow-feet-soup-v" name="v" class="is-one">
+<option value="Quart" data-price="7.0">Quart · $7.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -668,11 +750,22 @@
           <h2>Mombar Soup</h2>
           <div class="tags">
 <span class="tag tag--heritage">Traditional</span>          </div>
-<p class="product__desc">A slow-cooked Egyptian broth of beef casings with onion, garlic, bay leaf and spices.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>A slow-cooked Egyptian broth of beef casings with onion, garlic, bay leaf and spices.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$5.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="mombar-soup" data-name="Mombar Soup" data-url="category/soup-and-stews/index.html#mombar-soup" data-img="https://uddermilk.com/upload/file_000000005ed472438b77f3069109554e.png" data-icon="pot-of-food">
+              <label class="sr-only" for="mombar-soup-v">Size</label>
+              <select id="mombar-soup-v" name="v" class="is-one">
+<option value="Pint" data-price="5.0">Pint · $5.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -688,11 +781,23 @@
           <h2>King Salmon Head <span class="amp">&amp;</span> Bone Soup</h2>
           <div class="tags">
           </div>
-<p class="product__desc">Salmon head and bones simmered with onion, celery, tomato, carrot and bay leaf.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Salmon head and bones simmered with onion, celery, tomato, carrot and bay leaf.</p>          <div class="product__long" id="king-salmon-head-and-bone-soup-more" hidden><p>We simmer the head and meaty bones with onion, celery, tomato, carrot, bay leaves, a little salt and whole black pepper, and sometimes our organic potatoes when we have them. The head comes out after 10 minutes; the rest simmers for an hour.</p></div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" aria-controls="king-salmon-head-and-bone-soup-more"><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$7.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="king-salmon-head-and-bone-soup" data-name="King Salmon Head &amp; Bone Soup" data-url="category/soup-and-stews/index.html#king-salmon-head-and-bone-soup" data-img="https://uddermilk.com/upload/Screenshot_20250611_011114_Google.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="king-salmon-head-and-bone-soup-v">Size</label>
+              <select id="king-salmon-head-and-bone-soup-v" name="v" class="is-one">
+<option value="Pint" data-price="7.0">Pint · $7.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -708,11 +813,22 @@
           <h2>Seafood Soup</h2>
           <div class="tags">
           </div>
-<p class="product__desc">Mixed seafood with onion, ghee, tomato and garlic.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Mixed seafood with onion, ghee, tomato and garlic.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$7.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="seafood-soup" data-name="Seafood Soup" data-url="category/soup-and-stews/index.html#seafood-soup" data-img="https://uddermilk.com/upload/20200301_213445.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="seafood-soup-v">Size</label>
+              <select id="seafood-soup-v" name="v" class="is-one">
+<option value="Pint" data-price="7.0">Pint · $7.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -728,11 +844,22 @@
           <h2>Mediterranean Red Lentil Soup</h2>
           <div class="tags">
 <span class="tag">Vegetarian</span>          </div>
-<p class="product__desc">Red lentils, tomatoes, peppers, onions, mint and spices.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Red lentils, tomatoes, peppers, onions, mint and spices.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$7.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="mediterranean-red-lentil-soup" data-name="Mediterranean Red Lentil Soup" data-url="category/soup-and-stews/index.html#mediterranean-red-lentil-soup" data-img="https://uddermilk.com/upload/214651IMG-3bf7e141a4f1e317fcf45fca13d024fd-V.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="mediterranean-red-lentil-soup-v">Size</label>
+              <select id="mediterranean-red-lentil-soup-v" name="v" class="is-one">
+<option value="Pint" data-price="7.0">Pint · $7.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -748,13 +875,24 @@
           <h2>Kitchen Soups <span class="amp">&amp;</span> Stews</h2>
           <div class="tags">
           </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Organic lentil soup · pint</span><span class="price">$7.00</span></li>
             <li><span class="v-label">Chicken &amp; veggie · pint</span><span class="price">$7.00</span></li>
             <li><span class="v-label">Beef &amp; veggie stew · pint</span><span class="price">$8.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="kitchen-soups-and-stews" data-name="Kitchen Soups &amp; Stews" data-url="category/soup-and-stews/index.html#kitchen-soups-and-stews" data-img="https://uddermilk.com/upload/20180406_155144%20%282%29%20%281%29%20%282%29%20%281%29.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="kitchen-soups-and-stews-v">Size</label>
+              <select id="kitchen-soups-and-stews-v" name="v">
+<option value="Organic lentil soup · pint" data-price="7.0">Organic lentil soup · pint · $7.00</option><option value="Chicken &amp; veggie · pint" data-price="7.0">Chicken &amp; veggie · pint · $7.00</option><option value="Beef &amp; veggie stew · pint" data-price="8.0">Beef &amp; veggie stew · pint · $8.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -770,12 +908,23 @@
           <h2>Taco Soup</h2>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span>          </div>
-<p class="product__desc">Ground beef, tomatoes, salsa, fermented beans, corn, butter and herbs.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Ground beef, tomatoes, salsa, fermented beans, corn, butter and herbs.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Quart</span><span class="price">$20.00</span></li>
             <li><span class="v-label">Pint</span><span class="price">$12.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="taco-soup" data-name="Taco Soup" data-url="category/soup-and-stews/index.html#taco-soup" data-img="https://uddermilk.com/upload/taco.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="taco-soup-v">Size</label>
+              <select id="taco-soup-v" name="v">
+<option value="Quart" data-price="20.0">Quart · $20.00</option><option value="Pint" data-price="12.0">Pint · $12.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -791,11 +940,22 @@
           <h2>Carrot Ginger Soup</h2>
           <div class="tags">
           </div>
-<p class="product__desc">Carrots, onion and butter with curry, lemon zest and fresh ginger.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Carrots, onion and butter with curry, lemon zest and fresh ginger.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">16 oz</span><span class="price">$8.50</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="carrot-ginger-soup" data-name="Carrot Ginger Soup" data-url="category/soup-and-stews/index.html#carrot-ginger-soup" data-img="https://uddermilk.com/upload/Screenshot_20210520-235017_WhatsApp.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="carrot-ginger-soup-v">Size</label>
+              <select id="carrot-ginger-soup-v" name="v" class="is-one">
+<option value="16 oz" data-price="8.5">16 oz · $8.50</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -811,11 +971,22 @@
           <h2>Garlic Soup</h2>
           <div class="tags">
           </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$8.50</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="garlic-soup" data-name="Garlic Soup" data-url="category/soup-and-stews/index.html#garlic-soup" data-img="https://uddermilk.com/upload/Screenshot_20210523-213232_WhatsApp.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="garlic-soup-v">Size</label>
+              <select id="garlic-soup-v" name="v" class="is-one">
+<option value="Pint" data-price="8.5">Pint · $8.50</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -831,11 +1002,22 @@
           <h2>French Onion Soup</h2>
           <div class="tags">
           </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$9.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="french-onion-soup" data-name="French Onion Soup" data-url="category/soup-and-stews/index.html#french-onion-soup" data-img="https://uddermilk.com/upload/Screenshot_20221027_022341.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="french-onion-soup-v">Size</label>
+              <select id="french-onion-soup-v" name="v" class="is-one">
+<option value="Pint" data-price="9.0">Pint · $9.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -851,11 +1033,22 @@
           <h2>Blue Potato <span class="amp">&amp;</span> Leek Soup</h2>
           <div class="tags">
           </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$9.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="blue-potato-and-leek-soup" data-name="Blue Potato &amp; Leek Soup" data-url="category/soup-and-stews/index.html#blue-potato-and-leek-soup" data-img="https://uddermilk.com/upload/Screenshot_20221027_022055.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="blue-potato-and-leek-soup-v">Size</label>
+              <select id="blue-potato-and-leek-soup-v" name="v" class="is-one">
+<option value="Pint" data-price="9.0">Pint · $9.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -871,11 +1064,22 @@
           <h2>White Potato Soup</h2>
           <div class="tags">
           </div>
-<p class="product__desc">Potato, carrot and celery in chicken broth, with olive oil.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Potato, carrot and celery in chicken broth, with olive oil.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Container</span><span class="price">$8.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="white-potato-soup" data-name="White Potato Soup" data-url="category/soup-and-stews/index.html#white-potato-soup" data-img="https://uddermilk.com/upload/Screenshot_20231204_174810_Google.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="white-potato-soup-v">Size</label>
+              <select id="white-potato-soup-v" name="v" class="is-one">
+<option value="Container" data-price="8.0">Container · $8.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -891,11 +1095,22 @@
           <h2>Cream of Mushroom Soup</h2>
           <div class="tags">
           </div>
-<p class="product__desc">Mushrooms, green onion and celery in milk and chicken broth.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Mushrooms, green onion and celery in milk and chicken broth.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$7.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="cream-of-mushroom-soup" data-name="Cream of Mushroom Soup" data-url="category/soup-and-stews/index.html#cream-of-mushroom-soup" data-img="https://uddermilk.com/upload/DCA07984-24D5-4386-98D6-D1372A219196.jpeg" data-icon="pot-of-food">
+              <label class="sr-only" for="cream-of-mushroom-soup-v">Size</label>
+              <select id="cream-of-mushroom-soup-v" name="v" class="is-one">
+<option value="Pint" data-price="7.0">Pint · $7.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -911,11 +1126,22 @@
           <h2>White Bean Soup</h2>
           <div class="tags">
           </div>
-<p class="product__desc">White beans with tomato, carrot, celery and onion, in beef broth.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>White beans with tomato, carrot, celery and onion, in beef broth.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$7.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="white-bean-soup" data-name="White Bean Soup" data-url="category/soup-and-stews/index.html#white-bean-soup" data-img="https://uddermilk.com/upload/C9CD8C3F-C282-49C9-8B47-77A85561277A.jpeg" data-icon="pot-of-food">
+              <label class="sr-only" for="white-bean-soup-v">Size</label>
+              <select id="white-bean-soup-v" name="v" class="is-one">
+<option value="Pint" data-price="7.0">Pint · $7.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -931,11 +1157,22 @@
           <h2>Vegetable Soup</h2>
           <div class="tags">
           </div>
-<p class="product__desc">Green beans, carrots, zucchini, potatoes, tomatoes and warm spices in meat broth.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Green beans, carrots, zucchini, potatoes, tomatoes and warm spices in meat broth.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Container</span><span class="price">$6.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="vegetable-soup" data-name="Vegetable Soup" data-url="category/soup-and-stews/index.html#vegetable-soup" data-img="https://uddermilk.com/upload/Screenshot_20240402_120506_Google.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="vegetable-soup-v">Size</label>
+              <select id="vegetable-soup-v" name="v" class="is-one">
+<option value="Container" data-price="6.0">Container · $6.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -951,11 +1188,22 @@
           <h2>Taro Root Soup</h2>
           <div class="tags">
           </div>
-<p class="product__desc">Taro root with garlic and coriander, in broth.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Taro root with garlic and coriander, in broth.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Container</span><span class="price">$6.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="taro-root-soup" data-name="Taro Root Soup" data-url="category/soup-and-stews/index.html#taro-root-soup" data-img="https://uddermilk.com/upload/002121Screenshot_20250101_020052_Google.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="taro-root-soup-v">Size</label>
+              <select id="taro-root-soup-v" name="v" class="is-one">
+<option value="Container" data-price="6.0">Container · $6.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -977,14 +1225,25 @@
           <h2>Cream Soups</h2>
           <div class="tags">
           </div>
-<p class="product__desc">Broccoli, apple, beet or mixed vegetable, simmered with butter, onion, cream and thyme.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Broccoli, apple, beet or mixed vegetable, simmered with butter, onion, cream and thyme.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Broccoli · pint</span><span class="price">$5.00</span></li>
             <li><span class="v-label">Apple · pint</span><span class="price">$5.00</span></li>
             <li><span class="v-label">Beet · pint</span><span class="price">$5.00</span></li>
             <li><span class="v-label">Mixed vegetable · pint</span><span class="price">$5.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="cream-soups" data-name="Cream Soups" data-url="category/soup-and-stews/index.html#cream-soups" data-img="https://uddermilk.com/upload/DCA07984-24D5-4386-98D6-D1372A219196.jpeg" data-icon="pot-of-food">
+              <label class="sr-only" for="cream-soups-v">Size</label>
+              <select id="cream-soups-v" name="v">
+<option value="Broccoli · pint" data-price="5.0">Broccoli · pint · $5.00</option><option value="Apple · pint" data-price="5.0">Apple · pint · $5.00</option><option value="Beet · pint" data-price="5.0">Beet · pint · $5.00</option><option value="Mixed vegetable · pint" data-price="5.0">Mixed vegetable · pint · $5.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -1000,11 +1259,22 @@
           <h2>Egg Barley Soup</h2>
           <div class="tags">
           </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Container</span><span class="price">$5.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="egg-barley-soup" data-name="Egg Barley Soup" data-url="category/soup-and-stews/index.html#egg-barley-soup" data-img="https://uddermilk.com/upload/Screenshot_20250905_024232_Google.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="egg-barley-soup-v">Size</label>
+              <select id="egg-barley-soup-v" name="v" class="is-one">
+<option value="Container" data-price="5.0">Container · $5.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -1020,11 +1290,22 @@
           <h2>Barley Soup</h2>
           <div class="tags">
           </div>
-<p class="product__desc">Zucchini, beans, celery, barley and thyme.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Zucchini, beans, celery, barley and thyme.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">8 oz</span><span class="price">$3.50</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="barley-soup" data-name="Barley Soup" data-url="category/soup-and-stews/index.html#barley-soup" data-img="https://uddermilk.com/upload/Screenshot_20231109_194436_Google.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="barley-soup-v">Size</label>
+              <select id="barley-soup-v" name="v" class="is-one">
+<option value="8 oz" data-price="3.5">8 oz · $3.50</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -1040,6 +1321,7 @@
           <h2>Sweet Potato Soup</h2>
           <div class="tags">
 <span class="tag tag--out">Sold out</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">Pint</span><span class="price">$9.00</span></li>
           </ul>
@@ -1059,6 +1341,7 @@
           <h2>Pea Soup</h2>
           <div class="tags">
 <span class="tag tag--out">Sold out</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">Pint</span><span class="price">$6.00</span></li>
           </ul>
@@ -1078,6 +1361,7 @@
           <h2>Creamy Zucchini <span class="amp">&amp;</span> Mint Soup</h2>
           <div class="tags">
 <span class="tag tag--out">Sold out</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">Pint</span><span class="price">$7.00</span></li>
           </ul>
@@ -1097,6 +1381,7 @@
           <h2>Oats <span class="amp">&amp;</span> Kidney Bean Soup</h2>
           <div class="tags">
 <span class="tag tag--out">Sold out</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">Pint</span><span class="price">$6.00</span></li>
           </ul>
@@ -1116,7 +1401,9 @@
           <h2>Rebecca&#39;s Creamed Asparagus Soup</h2>
           <div class="tags">
 <span class="tag tag--out">Sold out</span>          </div>
-<p class="product__desc">Asparagus and Yukon Gold potatoes with grass-fed butter and cream.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Asparagus and Yukon Gold potatoes with grass-fed butter and cream.</p>          <div class="product__long" id="rebeccas-creamed-asparagus-soup-more" hidden><p>Ingredients: organic asparagus and organic Yukon Gold potatoes from Rebecca&#39;s garden, Himalayan pink salt, organic grass-fed butter, grass-fed cream, organic onions, organic chicken stock, organic garlic.</p><p>It&#39;s especially good with a spoonful of crème fraîche.</p></div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" aria-controls="rebeccas-creamed-asparagus-soup-more"><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">16 oz</span><span class="price">$8.50</span></li>
           </ul>
           <div class="product__foot">
@@ -1175,7 +1462,7 @@
   <div class="container">
     <div class="footer__grid">
       <div class="footer__intro">
-        <a class="brand" href="../../index.html" aria-label="Udder Milk, home"><img class="brand__cow" src="../../assets/img/logo-cow.jpg" alt="" width="42" height="42"><span>Udder <em>Milk</em></span></a>
+        <a class="brand brand--logo brand--foot" href="../../index.html"><img src="../../assets/img/logo-udder-milk.png" alt="Udder Milk, satisfying customers since 2005" width="315" height="213" loading="lazy"></a>
         <p>A private members' creamery association, satisfying customers since 2005. We bring raw, grass-fed dairy and good farm food from small Pennsylvania farms straight to your door.</p>
         <div class="footer__contact">
           <a href="tel:+19734139585"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>973-413-9585 · call or text Moses</a>
@@ -1206,6 +1493,8 @@
       <div>
         <h4>Account</h4>
         <ul>
+          <li><a href="../../shop-cart/index.html">Cart</a></li>
+          <li><a href="../../order-history/index.html">Order history</a></li>
           <li><a href="../../login/index.html">Log in</a></li>
           <li><a href="../../signup/index.html">Sign up</a></li>
           <li><a href="../../driver-login/index.html">Driver login</a></li>
@@ -1226,5 +1515,6 @@
     </div>
   </div>
 </footer><script src="../../assets/js/site.js" defer></script>
+<script src="../../assets/js/shop.js" defer></script>
 </body>
 </html>

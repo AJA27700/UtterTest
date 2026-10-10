@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="assets/css/site.css">
 <script>document.documentElement.classList.add('js');if(location.protocol==="file:")document.write('<link rel="stylesheet" href="assets/css/fonts-local.css">')</script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"Udder Milk Creamery Association","url":"https://uddermilk.com/","telephone":"+1-973-413-9585","email":"info@uddermilk.com","description":"Raw A2/A2 dairy, 100% grass-fed meat and pastured eggs from small Pennsylvania farms, delivered 12–24 hours after milking.","address":{"@type":"PostalAddress","streetAddress":"2960 Nolo Rd","addressLocality":"Penn Run","addressRegion":"PA","addressCountry":"US"},"logo":"https://uddermilk.com/assets/img/icon-512.jpg"}
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Udder Milk Creamery Association","url":"https://uddermilk.com/","telephone":"+1-973-413-9585","email":"info@uddermilk.com","description":"Raw A2/A2 dairy, 100% grass-fed meat and pastured eggs from small Pennsylvania farms, delivered 12–24 hours after milking.","address":{"@type":"PostalAddress","streetAddress":"2960 Nolo Rd","addressLocality":"Penn Run","addressRegion":"PA","addressCountry":"US"},"logo":"https://uddermilk.com/assets/img/logo-udder-milk.png"}
 </script>
 </head>
 <body class="page-home">
@@ -34,6 +34,7 @@
       <a class="hide-md" href="mailto:info@uddermilk.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5l8.5 6 8.5-6"/></svg>info@uddermilk.com</a>
     </div>
     <nav class="topstrip__acct" aria-label="Account">
+      <a href="order-history/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg>My orders</a>
       <a href="driver-login/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h11v9.5h-11zM13.5 9.5h4l3.5 3.5v3h-7.5"/><circle cx="6.5" cy="17.5" r="1.9"/><circle cx="17" cy="17.5" r="1.9"/></svg>Driver login</a>
       <a href="login/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>Log in</a>
       <a class="topstrip__signup" href="signup/index.html">Sign up</a>
@@ -42,7 +43,7 @@
 </div>
 <div class="mainbar" data-mainbar>
   <div class="mainbar__brand">
-    <a class="brand" href="index.html" aria-label="Udder Milk, home"><img class="brand__cow" src="assets/img/logo-cow.jpg" alt="" width="42" height="42"><span>Udder <em>Milk</em></span></a>
+    <a class="brand brand--logo" href="index.html"><img src="assets/img/logo-udder-milk.png" alt="Udder Milk, satisfying customers since 2005" width="315" height="213"></a>
   </div>
   <nav class="tabs" aria-label="Main">
     <ul>
@@ -58,6 +59,7 @@
       <li><a href="pickup-delivery/index.html">Pickup &amp; Delivery</a></li>
     </ul>
   </nav>
+  <a class="cartbtn" href="shop-cart/index.html" aria-label="Cart" data-cart-link><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg><span class="cartbtn__label">Cart</span><b class="cartbtn__n" data-cart-count hidden>0</b></a>
 </div><main id="main">
 
 <section class="hero hero--photo" aria-labelledby="hero-title">
@@ -418,6 +420,27 @@
   </div>
 </section>
 
+<section class="section" aria-labelledby="family-title">
+  <div class="container family">
+    <figure class="polaroid" data-reveal="scale">
+      <span class="polaroid__tape" aria-hidden="true"></span>
+      <img class="polaroid__photo" src="assets/img/family-daughter.jpg" alt="Gina and Moaz's daughter, laughing in a red winter hat" width="788" height="1066" loading="lazy" decoding="async">
+      <figcaption>The next generation</figcaption>
+      <img class="polaroid__sticker" src="assets/icons/sunflower.webp" alt="" width="92" height="92" loading="lazy">
+    </figure>
+    <div>
+      <span class="eyebrow" data-reveal><img src="assets/icons/red-heart.webp" alt="" width="20" height="20">The family behind it</span>
+      <h2 id="family-title" data-reveal style="font-size:clamp(2.8rem,6vw,5rem);margin:18px 0 22px">A family<br><em>business.</em></h2>
+      <p class="pull" data-reveal>Udder Milk is Kathy, her daughter Gina, Gina's husband Moaz, <em>and their little one.</em></p>
+      <p class="muted" data-reveal>Kathy found the farms and started the herd. Gina and Moaz were brave enough to bring it all online, and they blazed a trail other small farmers have since followed. Every order you place supports a family, and the small family farms behind them.</p>
+      <div class="btn-row" data-reveal style="margin-top:28px">
+        <a class="btn" href="about-us/index.html">Meet the family <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn--ghost" href="shop/index.html">Shop the farm</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section" aria-labelledby="std-title">
   <div class="container">
     <div class="head head--center">
@@ -507,7 +530,7 @@
   <div class="container">
     <div class="footer__grid">
       <div class="footer__intro">
-        <a class="brand" href="index.html" aria-label="Udder Milk, home"><img class="brand__cow" src="assets/img/logo-cow.jpg" alt="" width="42" height="42"><span>Udder <em>Milk</em></span></a>
+        <a class="brand brand--logo brand--foot" href="index.html"><img src="assets/img/logo-udder-milk.png" alt="Udder Milk, satisfying customers since 2005" width="315" height="213" loading="lazy"></a>
         <p>A private members' creamery association, satisfying customers since 2005. We bring raw, grass-fed dairy and good farm food from small Pennsylvania farms straight to your door.</p>
         <div class="footer__contact">
           <a href="tel:+19734139585"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>973-413-9585 · call or text Moses</a>
@@ -538,6 +561,8 @@
       <div>
         <h4>Account</h4>
         <ul>
+          <li><a href="shop-cart/index.html">Cart</a></li>
+          <li><a href="order-history/index.html">Order history</a></li>
           <li><a href="login/index.html">Log in</a></li>
           <li><a href="signup/index.html">Sign up</a></li>
           <li><a href="driver-login/index.html">Driver login</a></li>
@@ -558,5 +583,6 @@
     </div>
   </div>
 </footer><script src="assets/js/site.js" defer></script>
+<script src="assets/js/shop.js" defer></script>
 </body>
 </html>

@@ -31,6 +31,7 @@
       <a class="hide-md" href="mailto:info@uddermilk.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5l8.5 6 8.5-6"/></svg>info@uddermilk.com</a>
     </div>
     <nav class="topstrip__acct" aria-label="Account">
+      <a href="../../order-history/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg>My orders</a>
       <a href="../../driver-login/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h11v9.5h-11zM13.5 9.5h4l3.5 3.5v3h-7.5"/><circle cx="6.5" cy="17.5" r="1.9"/><circle cx="17" cy="17.5" r="1.9"/></svg>Driver login</a>
       <a href="../../login/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>Log in</a>
       <a class="topstrip__signup" href="../../signup/index.html">Sign up</a>
@@ -39,7 +40,7 @@
 </div>
 <div class="mainbar" data-mainbar>
   <div class="mainbar__brand">
-    <a class="brand" href="../../index.html" aria-label="Udder Milk, home"><img class="brand__cow" src="../../assets/img/logo-cow.jpg" alt="" width="42" height="42"><span>Udder <em>Milk</em></span></a>
+    <a class="brand brand--logo" href="../../index.html"><img src="../../assets/img/logo-udder-milk.png" alt="Udder Milk, satisfying customers since 2005" width="315" height="213"></a>
   </div>
   <nav class="tabs" aria-label="Main">
     <ul>
@@ -55,6 +56,7 @@
       <li><a href="../../pickup-delivery/index.html">Pickup &amp; Delivery</a></li>
     </ul>
   </nav>
+  <a class="cartbtn" href="../../shop-cart/index.html" aria-label="Cart" data-cart-link><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg><span class="cartbtn__label">Cart</span><b class="cartbtn__n" data-cart-count hidden>0</b></a>
 </div><main id="main">
 <div class="shop-layout">
 <aside class="sidebar">
@@ -528,11 +530,22 @@
           <h2>Organic Freekeh</h2>
           <div class="tags">
 <span class="tag tag--organic">Organic</span>          </div>
-<p class="product__desc">Young green wheat, roasted. Smoky and nutty.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Young green wheat, roasted. Smoky and nutty.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">500 g</span><span class="price">$8.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="organic-freekeh" data-name="Organic Freekeh" data-url="category/grains-couscous-pasta-dried-beans/index.html#organic-freekeh" data-img="https://uddermilk.com/upload/16265120191209_235409.jpg" data-icon="cooked-rice">
+              <label class="sr-only" for="organic-freekeh-v">Size</label>
+              <select id="organic-freekeh-v" name="v" class="is-one">
+<option value="500 g" data-price="8.0">500 g · $8.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -548,11 +561,22 @@
           <h2>Maftoul</h2>
           <div class="tags">
           </div>
-<p class="product__desc">Hand-rolled Palestinian couscous.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Hand-rolled Palestinian couscous.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">½ lb</span><span class="price">$7.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="maftoul" data-name="Maftoul" data-url="category/grains-couscous-pasta-dried-beans/index.html#maftoul" data-img="https://uddermilk.com/upload/Screenshot_20210313-230533_Google.jpg" data-icon="cooked-rice">
+              <label class="sr-only" for="maftoul-v">Size</label>
+              <select id="maftoul-v" name="v" class="is-one">
+<option value="½ lb" data-price="7.0">½ lb · $7.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -568,11 +592,23 @@
           <h2>Egyptian Couscous</h2>
           <div class="tags">
           </div>
-<p class="product__desc">Fine couscous. Make it savory, or sweet with butter, sugar and nuts.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Fine couscous. Make it savory, or sweet with butter, sugar and nuts.</p>          <div class="product__long" id="egyptian-couscous-more" hidden><h3>Savory couscous</h3><p>Ingredients: 1 cup fine couscous, ¾ cup boiling water, 1 tbsp olive oil or butter.</p><ul class="bul"><li>Mix the couscous with the oil or butter in a bowl.</li><li>Add the boiling water a little at a time (you may not need it all), and let it rest 5 minutes.</li><li>Fluff with a fork, salt to taste and serve.</li></ul><p>Use chicken or vegetable broth instead of water for extra flavor. Serve with grilled chicken, beef or sautéed vegetables, or add chickpeas, herbs and lemon juice for something lighter.</p><h3>Sweet Egyptian couscous</h3><p>Ingredients: 1 cup fine couscous, ¾ cup hot milk (or water), 1 tbsp butter, 1 to 2 tbsp sugar or honey, raisins or nuts if you like.</p><ul class="bul"><li>Mix the couscous with the butter.</li><li>Add the hot milk a little at a time and let it rest 5 minutes.</li><li>Fluff with a fork, sweeten to taste and serve warm. Add cinnamon, vanilla or coconut for extra flavor.</li></ul></div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" aria-controls="egyptian-couscous-more"><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">1 lb</span><span class="price">$8.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="egyptian-couscous" data-name="Egyptian Couscous" data-url="category/grains-couscous-pasta-dried-beans/index.html#egyptian-couscous" data-img="https://uddermilk.com/upload/Screenshot_20251207_231707_ChatGPT.jpg" data-icon="cooked-rice">
+              <label class="sr-only" for="egyptian-couscous-v">Size</label>
+              <select id="egyptian-couscous-v" name="v" class="is-one">
+<option value="1 lb" data-price="8.0">1 lb · $8.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -588,11 +624,22 @@
           <h2>Za&#39;atar</h2>
           <div class="tags">
           </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">½ lb</span><span class="price">$13.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="zaatar" data-name="Za&#39;atar" data-url="category/grains-couscous-pasta-dried-beans/index.html#zaatar" data-img="https://uddermilk.com/upload/Screenshot_20210313-231206_Google.jpg" data-icon="herb">
+              <label class="sr-only" for="zaatar-v">Size</label>
+              <select id="zaatar-v" name="v" class="is-one">
+<option value="½ lb" data-price="13.0">½ lb · $13.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -608,11 +655,22 @@
           <h2>Fenugreek Seed</h2>
           <div class="tags">
           </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">340 g</span><span class="price">$5.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="fenugreek-seed" data-name="Fenugreek Seed" data-url="category/grains-couscous-pasta-dried-beans/index.html#fenugreek-seed" data-img="https://uddermilk.com/upload/helba.jpg" data-icon="seedling">
+              <label class="sr-only" for="fenugreek-seed-v">Size</label>
+              <select id="fenugreek-seed-v" name="v" class="is-one">
+<option value="340 g" data-price="5.0">340 g · $5.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -628,11 +686,22 @@
           <h2>Blue Mountain Organic Raw Almonds</h2>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag tag--raw">Raw</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">8 oz</span><span class="price">$10.50</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="blue-mountain-organic-raw-almonds" data-name="Blue Mountain Organic Raw Almonds" data-url="category/grains-couscous-pasta-dried-beans/index.html#blue-mountain-organic-raw-almonds" data-img="https://uddermilk.com/upload/file_00000000331071f4bec36833a63d09f3.png" data-icon="chestnut">
+              <label class="sr-only" for="blue-mountain-organic-raw-almonds-v">Size</label>
+              <select id="blue-mountain-organic-raw-almonds-v" name="v" class="is-one">
+<option value="8 oz" data-price="10.5">8 oz · $10.50</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -648,11 +717,22 @@
           <h2>Blue Mountain Organic Raw Pistachios</h2>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag tag--raw">Raw</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">8 oz</span><span class="price">$19.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="blue-mountain-organic-raw-pistachios" data-name="Blue Mountain Organic Raw Pistachios" data-url="category/grains-couscous-pasta-dried-beans/index.html#blue-mountain-organic-raw-pistachios" data-img="https://uddermilk.com/upload/file_000000009d9471f4a7a6c35491b42bd2.png" data-icon="chestnut">
+              <label class="sr-only" for="blue-mountain-organic-raw-pistachios-v">Size</label>
+              <select id="blue-mountain-organic-raw-pistachios-v" name="v" class="is-one">
+<option value="8 oz" data-price="19.0">8 oz · $19.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -668,11 +748,22 @@
           <h2>Blue Mountain Organic Raw Brazil Nuts</h2>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag tag--raw">Raw</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">10 oz</span><span class="price">$13.50</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="blue-mountain-organic-raw-brazil-nuts" data-name="Blue Mountain Organic Raw Brazil Nuts" data-url="category/grains-couscous-pasta-dried-beans/index.html#blue-mountain-organic-raw-brazil-nuts" data-img="https://uddermilk.com/upload/file_0000000078b471f48086a866a18846ee.png" data-icon="chestnut">
+              <label class="sr-only" for="blue-mountain-organic-raw-brazil-nuts-v">Size</label>
+              <select id="blue-mountain-organic-raw-brazil-nuts-v" name="v" class="is-one">
+<option value="10 oz" data-price="13.5">10 oz · $13.50</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -688,11 +779,22 @@
           <h2>Just 4 Nuts, Sprouted Nut Mix</h2>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag">Sprouted</span>          </div>
-<p class="product__desc">Sprouted almonds, cashews, pecans and walnuts.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Sprouted almonds, cashews, pecans and walnuts.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">6 oz</span><span class="price">$11.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="just-4-nuts-sprouted-nut-mix" data-name="Just 4 Nuts, Sprouted Nut Mix" data-url="category/grains-couscous-pasta-dried-beans/index.html#just-4-nuts-sprouted-nut-mix" data-img="https://uddermilk.com/upload/file_00000000bd7071f48802cc3975c10ab6.png" data-icon="chestnut">
+              <label class="sr-only" for="just-4-nuts-sprouted-nut-mix-v">Size</label>
+              <select id="just-4-nuts-sprouted-nut-mix-v" name="v" class="is-one">
+<option value="6 oz" data-price="11.0">6 oz · $11.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -708,11 +810,23 @@
           <h2>Blue Mountain Organic Almond Meal</h2>
           <div class="tags">
 <span class="tag tag--organic">Organic</span>          </div>
-<p class="product__desc">A versatile grain-free flour.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>A versatile grain-free flour.</p>          <div class="product__long" id="blue-mountain-organic-almond-meal-more" hidden><p>A versatile flour for cooking, baking and snacking. Use it one-to-one in place of wheat flour in breads, cookies, cakes, crackers and flatbreads, or as a protein-rich addition to veggie burgers and meatballs. Almonds are a top source of vitamin E.</p></div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" aria-controls="blue-mountain-organic-almond-meal-more"><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">10 oz</span><span class="price">$13.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="blue-mountain-organic-almond-meal" data-name="Blue Mountain Organic Almond Meal" data-url="category/grains-couscous-pasta-dried-beans/index.html#blue-mountain-organic-almond-meal" data-img="https://uddermilk.com/upload/file_0000000000507243b1bedec3b7e30bd2.png" data-icon="chestnut">
+              <label class="sr-only" for="blue-mountain-organic-almond-meal-v">Size</label>
+              <select id="blue-mountain-organic-almond-meal-v" name="v" class="is-one">
+<option value="10 oz" data-price="13.0">10 oz · $13.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -728,11 +842,22 @@
           <h2>Blue Mountain Organic Maca Powder</h2>
           <div class="tags">
 <span class="tag tag--organic">Organic</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">8 oz</span><span class="price">$7.50</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="blue-mountain-organic-maca-powder" data-name="Blue Mountain Organic Maca Powder" data-url="category/grains-couscous-pasta-dried-beans/index.html#blue-mountain-organic-maca-powder" data-img="https://uddermilk.com/upload/file_000000009d4471f4b7d8ba8d27e43584.png" data-icon="herb">
+              <label class="sr-only" for="blue-mountain-organic-maca-powder-v">Size</label>
+              <select id="blue-mountain-organic-maca-powder-v" name="v" class="is-one">
+<option value="8 oz" data-price="7.5">8 oz · $7.50</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -748,6 +873,7 @@
           <h2>Raw Walnuts</h2>
           <div class="tags">
 <span class="tag tag--raw">Raw</span><span class="tag tag--out">Sold out</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">About 8 oz</span><span class="price">$7.00</span></li>
           </ul>
@@ -767,6 +893,7 @@
           <h2>Blue Mountain Organic Chia Seeds</h2>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag tag--out">Sold out</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">10 oz</span><span class="price">$6.50</span></li>
           </ul>
@@ -826,7 +953,7 @@
   <div class="container">
     <div class="footer__grid">
       <div class="footer__intro">
-        <a class="brand" href="../../index.html" aria-label="Udder Milk, home"><img class="brand__cow" src="../../assets/img/logo-cow.jpg" alt="" width="42" height="42"><span>Udder <em>Milk</em></span></a>
+        <a class="brand brand--logo brand--foot" href="../../index.html"><img src="../../assets/img/logo-udder-milk.png" alt="Udder Milk, satisfying customers since 2005" width="315" height="213" loading="lazy"></a>
         <p>A private members' creamery association, satisfying customers since 2005. We bring raw, grass-fed dairy and good farm food from small Pennsylvania farms straight to your door.</p>
         <div class="footer__contact">
           <a href="tel:+19734139585"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>973-413-9585 · call or text Moses</a>
@@ -857,6 +984,8 @@
       <div>
         <h4>Account</h4>
         <ul>
+          <li><a href="../../shop-cart/index.html">Cart</a></li>
+          <li><a href="../../order-history/index.html">Order history</a></li>
           <li><a href="../../login/index.html">Log in</a></li>
           <li><a href="../../signup/index.html">Sign up</a></li>
           <li><a href="../../driver-login/index.html">Driver login</a></li>
@@ -877,5 +1006,6 @@
     </div>
   </div>
 </footer><script src="../../assets/js/site.js" defer></script>
+<script src="../../assets/js/shop.js" defer></script>
 </body>
 </html>

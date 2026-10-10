@@ -31,6 +31,7 @@
       <a class="hide-md" href="mailto:info@uddermilk.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5l8.5 6 8.5-6"/></svg>info@uddermilk.com</a>
     </div>
     <nav class="topstrip__acct" aria-label="Account">
+      <a href="../../order-history/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg>My orders</a>
       <a href="../../driver-login/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h11v9.5h-11zM13.5 9.5h4l3.5 3.5v3h-7.5"/><circle cx="6.5" cy="17.5" r="1.9"/><circle cx="17" cy="17.5" r="1.9"/></svg>Driver login</a>
       <a href="../../login/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>Log in</a>
       <a class="topstrip__signup" href="../../signup/index.html">Sign up</a>
@@ -39,7 +40,7 @@
 </div>
 <div class="mainbar" data-mainbar>
   <div class="mainbar__brand">
-    <a class="brand" href="../../index.html" aria-label="Udder Milk, home"><img class="brand__cow" src="../../assets/img/logo-cow.jpg" alt="" width="42" height="42"><span>Udder <em>Milk</em></span></a>
+    <a class="brand brand--logo" href="../../index.html"><img src="../../assets/img/logo-udder-milk.png" alt="Udder Milk, satisfying customers since 2005" width="315" height="213"></a>
   </div>
   <nav class="tabs" aria-label="Main">
     <ul>
@@ -55,6 +56,7 @@
       <li><a href="../../pickup-delivery/index.html">Pickup &amp; Delivery</a></li>
     </ul>
   </nav>
+  <a class="cartbtn" href="../../shop-cart/index.html" aria-label="Cart" data-cart-link><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg><span class="cartbtn__label">Cart</span><b class="cartbtn__n" data-cart-count hidden>0</b></a>
 </div><main id="main">
 <div class="shop-layout">
 <aside class="sidebar">
@@ -539,6 +541,7 @@
           <h2>Roots <span class="amp">&amp;</span> Tubers</h2>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag">In season</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants variants--cols" aria-label="Sizes and prices">
             <li><span class="v-label">Carrots · bunch</span><span class="price">$4.50</span></li>
             <li><span class="v-label">Red beets · bunch</span><span class="price">$5.50</span></li>
@@ -551,7 +554,17 @@
             <li><span class="v-label">Turmeric root · 4 oz</span><span class="price">$5.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="roots-and-tubers" data-name="Roots &amp; Tubers" data-url="category/2021-fresh-organic-produce/index.html#roots-and-tubers" data-img="https://uddermilk.com/upload/Screenshot_20210604-173515_Google.jpg" data-icon="carrot">
+              <label class="sr-only" for="roots-and-tubers-v">Size</label>
+              <select id="roots-and-tubers-v" name="v">
+<option value="Carrots · bunch" data-price="4.5">Carrots · bunch · $4.50</option><option value="Red beets · bunch" data-price="5.5">Red beets · bunch · $5.50</option><option value="Red radish · bunch" data-price="3.0">Red radish · bunch · $3.00</option><option value="Yukon Gold potatoes · 2 lb" data-price="5.0">Yukon Gold potatoes · 2 lb · $5.00</option><option value="Red potatoes · 2 lb" data-price="4.5">Red potatoes · 2 lb · $4.50</option><option value="Sweet potatoes · 2 lb" data-price="5.0">Sweet potatoes · 2 lb · $5.00</option><option value="Kohlrabi · head" data-price="3.0">Kohlrabi · head · $3.00</option><option value="Organic ginger root · 1 lb" data-price="5.0">Organic ginger root · 1 lb · $5.00</option><option value="Turmeric root · 4 oz" data-price="5.0">Turmeric root · 4 oz · $5.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -573,6 +586,7 @@
           <h2>Onions <span class="amp">&amp;</span> Garlic</h2>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag">In season</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Red onion · 1.5 lb</span><span class="price">$4.00</span></li>
             <li><span class="v-label">Candy onion · 1 lb</span><span class="price">$3.00</span></li>
@@ -580,7 +594,17 @@
             <li><span class="v-label">Garlic · 12 oz</span><span class="price">$9.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="onions-and-garlic" data-name="Onions &amp; Garlic" data-url="category/2021-fresh-organic-produce/index.html#onions-and-garlic" data-img="https://uddermilk.com/upload/Screenshot_20220617-224711_Google.jpg" data-icon="garlic">
+              <label class="sr-only" for="onions-and-garlic-v">Size</label>
+              <select id="onions-and-garlic-v" name="v">
+<option value="Red onion · 1.5 lb" data-price="4.0">Red onion · 1.5 lb · $4.00</option><option value="Candy onion · 1 lb" data-price="3.0">Candy onion · 1 lb · $3.00</option><option value="Scallions · 2 bunches" data-price="4.0">Scallions · 2 bunches · $4.00</option><option value="Garlic · 12 oz" data-price="9.0">Garlic · 12 oz · $9.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -601,6 +625,7 @@
           <h2>Tomatoes</h2>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag">In season</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Organic heirloom tomatoes · 1 lb</span><span class="price">$4.00</span></li>
             <li><span class="v-label">Red slicing tomatoes · 1 lb</span><span class="price">$4.00</span></li>
@@ -608,7 +633,17 @@
             <li class="is-out"><span class="v-label">Grape tomatoes · pint</span><span class="price">$3.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="tomatoes" data-name="Tomatoes" data-url="category/2021-fresh-organic-produce/index.html#tomatoes" data-img="https://uddermilk.com/upload/142636file_00000000e8c481f4a74da8211e2b5e80.png" data-icon="tomato">
+              <label class="sr-only" for="tomatoes-v">Size</label>
+              <select id="tomatoes-v" name="v">
+<option value="Organic heirloom tomatoes · 1 lb" data-price="4.0">Organic heirloom tomatoes · 1 lb · $4.00</option><option value="Red slicing tomatoes · 1 lb" data-price="4.0">Red slicing tomatoes · 1 lb · $4.00</option><option value="Cherry tomatoes · pint" data-price="4.0">Cherry tomatoes · pint · $4.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -630,6 +665,7 @@
           <h2>Peppers</h2>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag">In season</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Green bell pepper · 1 lb</span><span class="price">$3.50</span></li>
             <li><span class="v-label">Sweet pepper · 1 lb</span><span class="price">$3.50</span></li>
@@ -637,7 +673,17 @@
             <li><span class="v-label">Hungarian hot pepper · ½ lb</span><span class="price">$3.50</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="peppers" data-name="Peppers" data-url="category/2021-fresh-organic-produce/index.html#peppers" data-img="https://uddermilk.com/upload/Screenshot_20210707-153722_Google.jpg" data-icon="bell-pepper">
+              <label class="sr-only" for="peppers-v">Size</label>
+              <select id="peppers-v" name="v">
+<option value="Green bell pepper · 1 lb" data-price="3.5">Green bell pepper · 1 lb · $3.50</option><option value="Sweet pepper · 1 lb" data-price="3.5">Sweet pepper · 1 lb · $3.50</option><option value="Chili pepper · 1 lb" data-price="3.0">Chili pepper · 1 lb · $3.00</option><option value="Hungarian hot pepper · ½ lb" data-price="3.5">Hungarian hot pepper · ½ lb · $3.50</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -664,6 +710,7 @@
           <h2>Greens, Beans <span class="amp">&amp;</span> Squash</h2>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag">In season</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants variants--cols" aria-label="Sizes and prices">
             <li><span class="v-label">Broccoli · 2 heads</span><span class="price">$5.00</span></li>
             <li><span class="v-label">Cabbage · head</span><span class="price">$3.50</span></li>
@@ -678,7 +725,17 @@
             <li><span class="v-label">Spaghetti squash · each</span><span class="price">$4.50</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="greens-beans-and-squash" data-name="Greens, Beans &amp; Squash" data-url="category/2021-fresh-organic-produce/index.html#greens-beans-and-squash" data-img="https://uddermilk.com/upload/Screenshot_20220630-001036_Google.jpg" data-icon="broccoli">
+              <label class="sr-only" for="greens-beans-and-squash-v">Size</label>
+              <select id="greens-beans-and-squash-v" name="v">
+<option value="Broccoli · 2 heads" data-price="5.0">Broccoli · 2 heads · $5.00</option><option value="Cabbage · head" data-price="3.5">Cabbage · head · $3.50</option><option value="Green zucchini · 1 lb" data-price="3.0">Green zucchini · 1 lb · $3.00</option><option value="Cucumber · 1 lb" data-price="4.0">Cucumber · 1 lb · $4.00</option><option value="Green string beans · 1 lb" data-price="5.5">Green string beans · 1 lb · $5.50</option><option value="Yellow wax beans · 1 lb" data-price="5.5">Yellow wax beans · 1 lb · $5.50</option><option value="Lima beans in the pod · 1 lb" data-price="6.5">Lima beans in the pod · 1 lb · $6.50</option><option value="Shelled lima beans · 1 lb" data-price="17.5">Shelled lima beans · 1 lb · $17.50</option><option value="Butternut squash · 3 lb" data-price="5.5">Butternut squash · 3 lb · $5.50</option><option value="Delicata squash · each" data-price="5.5">Delicata squash · each · $5.50</option><option value="Spaghetti squash · each" data-price="4.5">Spaghetti squash · each · $4.50</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -700,6 +757,7 @@
           <h2>Fresh Herbs</h2>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag">In season</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Basil · 2 oz</span><span class="price">$4.00</span></li>
             <li><span class="v-label">Oregano · 2 oz</span><span class="price">$4.00</span></li>
@@ -709,7 +767,17 @@
             <li class="is-out"><span class="v-label">Herb salt · 8 oz</span><span class="price">$13.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="fresh-herbs" data-name="Fresh Herbs" data-url="category/2021-fresh-organic-produce/index.html#fresh-herbs" data-img="https://uddermilk.com/upload/Screenshot_20240711_021040_Google.jpg" data-icon="herb">
+              <label class="sr-only" for="fresh-herbs-v">Size</label>
+              <select id="fresh-herbs-v" name="v">
+<option value="Basil · 2 oz" data-price="4.0">Basil · 2 oz · $4.00</option><option value="Oregano · 2 oz" data-price="4.0">Oregano · 2 oz · $4.00</option><option value="Thyme · 2 oz" data-price="4.0">Thyme · 2 oz · $4.00</option><option value="Chives · 2 oz" data-price="4.0">Chives · 2 oz · $4.00</option><option value="Fresh-cut peppermint for tea · 1 oz" data-price="2.0">Fresh-cut peppermint for tea · 1 oz · $2.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -731,6 +799,7 @@
           <h2>Fruit <span class="amp">&amp;</span> Mushrooms</h2>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag">In season</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Organic Honeycrisp apples · 1 lb</span><span class="price">$4.00</span></li>
             <li><span class="v-label">Gala apples · 1 lb</span><span class="price">$3.00</span></li>
@@ -738,7 +807,17 @@
             <li><span class="v-label">Organic lion&#39;s mane mushrooms · 3.5 oz</span><span class="price">$7.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="fruit-and-mushrooms" data-name="Fruit &amp; Mushrooms" data-url="category/2021-fresh-organic-produce/index.html#fruit-and-mushrooms" data-img="https://uddermilk.com/upload/Screenshot_20260706_234219_Pinterest.jpg" data-icon="red-apple">
+              <label class="sr-only" for="fruit-and-mushrooms-v">Size</label>
+              <select id="fruit-and-mushrooms-v" name="v">
+<option value="Organic Honeycrisp apples · 1 lb" data-price="4.0">Organic Honeycrisp apples · 1 lb · $4.00</option><option value="Gala apples · 1 lb" data-price="3.0">Gala apples · 1 lb · $3.00</option><option value="Organic cantaloupe · each" data-price="7.0">Organic cantaloupe · each · $7.00</option><option value="Organic lion&#39;s mane mushrooms · 3.5 oz" data-price="7.0">Organic lion&#39;s mane mushrooms · 3.5 oz · $7.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -794,7 +873,7 @@
   <div class="container">
     <div class="footer__grid">
       <div class="footer__intro">
-        <a class="brand" href="../../index.html" aria-label="Udder Milk, home"><img class="brand__cow" src="../../assets/img/logo-cow.jpg" alt="" width="42" height="42"><span>Udder <em>Milk</em></span></a>
+        <a class="brand brand--logo brand--foot" href="../../index.html"><img src="../../assets/img/logo-udder-milk.png" alt="Udder Milk, satisfying customers since 2005" width="315" height="213" loading="lazy"></a>
         <p>A private members' creamery association, satisfying customers since 2005. We bring raw, grass-fed dairy and good farm food from small Pennsylvania farms straight to your door.</p>
         <div class="footer__contact">
           <a href="tel:+19734139585"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>973-413-9585 · call or text Moses</a>
@@ -825,6 +904,8 @@
       <div>
         <h4>Account</h4>
         <ul>
+          <li><a href="../../shop-cart/index.html">Cart</a></li>
+          <li><a href="../../order-history/index.html">Order history</a></li>
           <li><a href="../../login/index.html">Log in</a></li>
           <li><a href="../../signup/index.html">Sign up</a></li>
           <li><a href="../../driver-login/index.html">Driver login</a></li>
@@ -845,5 +926,6 @@
     </div>
   </div>
 </footer><script src="../../assets/js/site.js" defer></script>
+<script src="../../assets/js/shop.js" defer></script>
 </body>
 </html>

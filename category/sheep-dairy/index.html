@@ -31,6 +31,7 @@
       <a class="hide-md" href="mailto:info@uddermilk.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5l8.5 6 8.5-6"/></svg>info@uddermilk.com</a>
     </div>
     <nav class="topstrip__acct" aria-label="Account">
+      <a href="../../order-history/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg>My orders</a>
       <a href="../../driver-login/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h11v9.5h-11zM13.5 9.5h4l3.5 3.5v3h-7.5"/><circle cx="6.5" cy="17.5" r="1.9"/><circle cx="17" cy="17.5" r="1.9"/></svg>Driver login</a>
       <a href="../../login/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>Log in</a>
       <a class="topstrip__signup" href="../../signup/index.html">Sign up</a>
@@ -39,7 +40,7 @@
 </div>
 <div class="mainbar" data-mainbar>
   <div class="mainbar__brand">
-    <a class="brand" href="../../index.html" aria-label="Udder Milk, home"><img class="brand__cow" src="../../assets/img/logo-cow.jpg" alt="" width="42" height="42"><span>Udder <em>Milk</em></span></a>
+    <a class="brand brand--logo" href="../../index.html"><img src="../../assets/img/logo-udder-milk.png" alt="Udder Milk, satisfying customers since 2005" width="315" height="213"></a>
   </div>
   <nav class="tabs" aria-label="Main">
     <ul>
@@ -55,6 +56,7 @@
       <li><a href="../../pickup-delivery/index.html">Pickup &amp; Delivery</a></li>
     </ul>
   </nav>
+  <a class="cartbtn" href="../../shop-cart/index.html" aria-label="Cart" data-cart-link><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg><span class="cartbtn__label">Cart</span><b class="cartbtn__n" data-cart-count hidden>0</b></a>
 </div><main id="main">
 <div class="shop-layout">
 <aside class="sidebar">
@@ -528,7 +530,9 @@
           <h2>Raw Sheep Milk</h2>
           <div class="tags">
 <span class="tag tag--raw">Raw</span>          </div>
-<p class="product__desc">Creamy, sweet, naturally homogenized.</p>          <ul class="variants variants--cols" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Creamy, sweet, naturally homogenized.</p>          <div class="product__long" id="raw-sheep-milk-more" hidden><p>If you&#39;ve never tried sheep milk, start here. It tastes like cow&#39;s milk, only creamier and sweeter, almost like drinking light cream. It isn&#39;t &#34;goaty&#34; at all.</p><p>It&#39;s naturally homogenized, so the cream stays mixed in instead of rising to the top, and its high fat makes wonderful homemade ice cream.</p><p>We sell it fresh and frozen. Frozen is handy if you want to stock up: thaw it slowly in the fridge.</p><h3>A note from our shepherds</h3><p>Our sheep get no grain. They graze a fresh plot of grass twice a day in season, with free-choice hay and natural minerals; a small amount of alfalfa pellets just brings them into the barn for milking. In winter they eat alfalfa hay.</p><p>Sheep are seasonal. Most milk comes in spring, while most of you want it in fall, so we freeze milk in late June, within 24 hours of milking at below 0°F with forced air, so it thaws with hardly any flakes.</p><p>The lambs stay with their mothers. Milk is tested monthly by DHIA, for pathogens once a year, and our water twice a year. Questions, ideas or complaints? Tell us. If you&#39;re happy, tell others!</p></div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" aria-controls="raw-sheep-milk-more"><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants variants--cols" aria-label="Sizes and prices">
             <li><span class="v-label">Pint · fresh</span><span class="price">$8.00</span></li>
             <li><span class="v-label">Pint · frozen</span><span class="price">$7.50</span></li>
             <li><span class="v-label">Pint glass · fresh</span><span class="price">$9.00</span></li>
@@ -545,7 +549,17 @@
             <li class="is-out"><span class="v-label">Skim · half gallon</span><span class="price">$9.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="raw-sheep-milk" data-name="Raw Sheep Milk" data-url="category/sheep-dairy/index.html#raw-sheep-milk" data-img="https://uddermilk.com/upload/WhatsApp%20Image%202020-02-23%20at%203.54.11%20PM%20%281%29.jpeg" data-icon="glass-of-milk">
+              <label class="sr-only" for="raw-sheep-milk-v">Size</label>
+              <select id="raw-sheep-milk-v" name="v">
+<option value="Pint · fresh" data-price="8.0">Pint · fresh · $8.00</option><option value="Pint · frozen" data-price="7.5">Pint · frozen · $7.50</option><option value="Pint glass · fresh" data-price="9.0">Pint glass · fresh · $9.00</option><option value="Quart · fresh" data-price="13.0">Quart · fresh · $13.00</option><option value="Quart · frozen" data-price="12.0">Quart · frozen · $12.00</option><option value="Quart glass · fresh" data-price="14.0">Quart glass · fresh · $14.00</option><option value="Half gallon · fresh" data-price="22.0">Half gallon · fresh · $22.00</option><option value="Half gallon · frozen" data-price="20.0">Half gallon · frozen · $20.00</option><option value="Half gallon glass · fresh" data-price="26.0">Half gallon glass · fresh · $26.00</option><option value="Gallon · fresh" data-price="40.0">Gallon · fresh · $40.00</option><option value="Gallon glass · fresh" data-price="45.0">Gallon glass · fresh · $45.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -561,12 +575,24 @@
           <h2>Raw Sheep Yogurt</h2>
           <div class="tags">
 <span class="tag tag--raw">Raw</span>          </div>
-<p class="product__desc">So rich it sets up thick like Greek yogurt, with a natural sweetness.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>So rich it sets up thick like Greek yogurt, with a natural sweetness.</p>          <div class="product__long" id="raw-sheep-yogurt-more" hidden><p>So creamy it&#39;s almost like Greek yogurt, because sheep milk is so high in fat to begin with, even higher than Guernsey milk. Sweeter than cow&#39;s milk and not at all &#34;goaty&#34;, with a wonderfully sweet flavor.</p></div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" aria-controls="raw-sheep-yogurt-more"><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$12.50</span></li>
             <li><span class="v-label">Quart</span><span class="price">$20.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="raw-sheep-yogurt" data-name="Raw Sheep Yogurt" data-url="category/sheep-dairy/index.html#raw-sheep-yogurt" data-img="https://uddermilk.com/upload/images%20%287%29.jpg" data-icon="bowl-with-spoon">
+              <label class="sr-only" for="raw-sheep-yogurt-v">Size</label>
+              <select id="raw-sheep-yogurt-v" name="v">
+<option value="Pint" data-price="12.5">Pint · $12.50</option><option value="Quart" data-price="20.0">Quart · $20.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -582,12 +608,23 @@
           <h2>Raw Sheep Kefir</h2>
           <div class="tags">
 <span class="tag tag--raw">Raw</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Quart</span><span class="price">$20.00</span></li>
             <li class="is-out"><span class="v-label">Pint</span><span class="price">$12.50</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="raw-sheep-kefir" data-name="Raw Sheep Kefir" data-url="category/sheep-dairy/index.html#raw-sheep-kefir" data-img="https://uddermilk.com/upload/images%20%286%29.jpg" data-icon="glass-of-milk">
+              <label class="sr-only" for="raw-sheep-kefir-v">Size</label>
+              <select id="raw-sheep-kefir-v" name="v" class="is-one">
+<option value="Quart" data-price="20.0">Quart · $20.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -603,12 +640,23 @@
           <h2>Raw Sheep Butter</h2>
           <div class="tags">
 <span class="tag tag--raw">Raw</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Unsalted · 8 oz</span><span class="price">$30.00</span></li>
             <li><span class="v-label">Salted · 8 oz</span><span class="price">$30.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="raw-sheep-butter" data-name="Raw Sheep Butter" data-url="category/sheep-dairy/index.html#raw-sheep-butter" data-img="https://uddermilk.com/upload/butter.jpg" data-icon="butter">
+              <label class="sr-only" for="raw-sheep-butter-v">Size</label>
+              <select id="raw-sheep-butter-v" name="v">
+<option value="Unsalted · 8 oz" data-price="30.0">Unsalted · 8 oz · $30.00</option><option value="Salted · 8 oz" data-price="30.0">Salted · 8 oz · $30.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -624,14 +672,25 @@
           <h2>Raw Sheep Cream</h2>
           <div class="tags">
 <span class="tag tag--raw">Raw</span>          </div>
-<p class="product__desc">Naturally sweeter than cow&#39;s cream.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Naturally sweeter than cow&#39;s cream.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">8 oz · frozen</span><span class="price">$25.00</span></li>
             <li class="is-out"><span class="v-label">4 oz · frozen</span><span class="price">$14.00</span></li>
             <li class="is-out"><span class="v-label">4 oz glass · fresh</span><span class="price">$15.00</span></li>
             <li class="is-out"><span class="v-label">8 oz glass · fresh</span><span class="price">$26.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="raw-sheep-cream" data-name="Raw Sheep Cream" data-url="category/sheep-dairy/index.html#raw-sheep-cream" data-img="https://uddermilk.com/upload/cream.jpg" data-icon="pouring-liquid">
+              <label class="sr-only" for="raw-sheep-cream-v">Size</label>
+              <select id="raw-sheep-cream-v" name="v" class="is-one">
+<option value="8 oz · frozen" data-price="25.0">8 oz · frozen · $25.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -647,11 +706,22 @@
           <h2>Raw Sheep Buttermilk</h2>
           <div class="tags">
 <span class="tag tag--raw">Raw</span><span class="tag tag--frozen">Frozen</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Quart</span><span class="price">$11.50</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="raw-sheep-buttermilk" data-name="Raw Sheep Buttermilk" data-url="category/sheep-dairy/index.html#raw-sheep-buttermilk" data-img="https://uddermilk.com/upload/milk.jpg" data-icon="glass-of-milk">
+              <label class="sr-only" for="raw-sheep-buttermilk-v">Size</label>
+              <select id="raw-sheep-buttermilk-v" name="v" class="is-one">
+<option value="Quart" data-price="11.5">Quart · $11.50</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -667,6 +737,7 @@
           <h2>Raw Sheep Cheese</h2>
           <div class="tags">
 <span class="tag tag--raw">Raw</span><span class="tag">Aged</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Cheddar · ½ lb</span><span class="price">$18.00</span></li>
             <li><span class="v-label">Colby · ½ lb</span><span class="price">$18.00</span></li>
@@ -676,7 +747,17 @@
             <li class="is-out"><span class="v-label">Luscious Lamb · 1 lb</span><span class="price">$38.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="raw-sheep-cheese" data-name="Raw Sheep Cheese" data-url="category/sheep-dairy/index.html#raw-sheep-cheese" data-img="https://uddermilk.com/upload/20191005_085559.jpg" data-icon="cheese-wedge">
+              <label class="sr-only" for="raw-sheep-cheese-v">Size</label>
+              <select id="raw-sheep-cheese-v" name="v">
+<option value="Cheddar · ½ lb" data-price="18.0">Cheddar · ½ lb · $18.00</option><option value="Colby · ½ lb" data-price="18.0">Colby · ½ lb · $18.00</option><option value="Feta, salted · ½ lb" data-price="16.0">Feta, salted · ½ lb · $16.00</option><option value="Feta, unsalted · ½ lb" data-price="16.0">Feta, unsalted · ½ lb · $16.00</option><option value="Luscious Lamb · ½ lb" data-price="22.0">Luscious Lamb · ½ lb · $22.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -692,12 +773,23 @@
           <h2>Raw Sheep Cottage Cheese</h2>
           <div class="tags">
 <span class="tag tag--raw">Raw</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint · frozen</span><span class="price">$24.00</span></li>
             <li class="is-out"><span class="v-label">Pint glass</span><span class="price">$24.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="raw-sheep-cottage-cheese" data-name="Raw Sheep Cottage Cheese" data-url="category/sheep-dairy/index.html#raw-sheep-cottage-cheese" data-img="https://uddermilk.com/upload/090518download.jpg" data-icon="cheese-wedge">
+              <label class="sr-only" for="raw-sheep-cottage-cheese-v">Size</label>
+              <select id="raw-sheep-cottage-cheese-v" name="v" class="is-one">
+<option value="Pint · frozen" data-price="24.0">Pint · frozen · $24.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -713,13 +805,24 @@
           <h2>Sheep Milk Ice Cream</h2>
           <div class="tags">
 <span class="tag tag--a2">A2/A2</span><span class="tag tag--frozen">Frozen</span>          </div>
-<p class="product__desc">Sheep milk and cream, vanilla, honey, eggs and sea salt.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Sheep milk and cream, vanilla, honey, eggs and sea salt.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Maple · pint</span><span class="price">$24.00</span></li>
             <li><span class="v-label">Strawberry · pint</span><span class="price">$24.00</span></li>
             <li class="is-out"><span class="v-label">Vanilla · pint</span><span class="price">$24.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="sheep-milk-ice-cream" data-name="Sheep Milk Ice Cream" data-url="category/sheep-dairy/index.html#sheep-milk-ice-cream" data-img="https://uddermilk.com/upload/090712download%20%281%29.jpg" data-icon="soft-ice-cream">
+              <label class="sr-only" for="sheep-milk-ice-cream-v">Size</label>
+              <select id="sheep-milk-ice-cream-v" name="v">
+<option value="Maple · pint" data-price="24.0">Maple · pint · $24.00</option><option value="Strawberry · pint" data-price="24.0">Strawberry · pint · $24.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -735,6 +838,7 @@
           <h2>Raw Sheep Colostrum</h2>
           <div class="tags">
 <span class="tag tag--raw">Raw</span><span class="tag">Seasonal</span><span class="tag tag--out">Sold out</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">8 oz</span><span class="price">$25.00</span></li>
           </ul>
@@ -794,7 +898,7 @@
   <div class="container">
     <div class="footer__grid">
       <div class="footer__intro">
-        <a class="brand" href="../../index.html" aria-label="Udder Milk, home"><img class="brand__cow" src="../../assets/img/logo-cow.jpg" alt="" width="42" height="42"><span>Udder <em>Milk</em></span></a>
+        <a class="brand brand--logo brand--foot" href="../../index.html"><img src="../../assets/img/logo-udder-milk.png" alt="Udder Milk, satisfying customers since 2005" width="315" height="213" loading="lazy"></a>
         <p>A private members' creamery association, satisfying customers since 2005. We bring raw, grass-fed dairy and good farm food from small Pennsylvania farms straight to your door.</p>
         <div class="footer__contact">
           <a href="tel:+19734139585"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>973-413-9585 · call or text Moses</a>
@@ -825,6 +929,8 @@
       <div>
         <h4>Account</h4>
         <ul>
+          <li><a href="../../shop-cart/index.html">Cart</a></li>
+          <li><a href="../../order-history/index.html">Order history</a></li>
           <li><a href="../../login/index.html">Log in</a></li>
           <li><a href="../../signup/index.html">Sign up</a></li>
           <li><a href="../../driver-login/index.html">Driver login</a></li>
@@ -845,5 +951,6 @@
     </div>
   </div>
 </footer><script src="../../assets/js/site.js" defer></script>
+<script src="../../assets/js/shop.js" defer></script>
 </body>
 </html>

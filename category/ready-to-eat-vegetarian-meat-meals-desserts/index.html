@@ -31,6 +31,7 @@
       <a class="hide-md" href="mailto:info@uddermilk.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7.5l8.5 6 8.5-6"/></svg>info@uddermilk.com</a>
     </div>
     <nav class="topstrip__acct" aria-label="Account">
+      <a href="../../order-history/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg>My orders</a>
       <a href="../../driver-login/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 6.5h11v9.5h-11zM13.5 9.5h4l3.5 3.5v3h-7.5"/><circle cx="6.5" cy="17.5" r="1.9"/><circle cx="17" cy="17.5" r="1.9"/></svg>Driver login</a>
       <a href="../../login/index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>Log in</a>
       <a class="topstrip__signup" href="../../signup/index.html">Sign up</a>
@@ -39,7 +40,7 @@
 </div>
 <div class="mainbar" data-mainbar>
   <div class="mainbar__brand">
-    <a class="brand" href="../../index.html" aria-label="Udder Milk, home"><img class="brand__cow" src="../../assets/img/logo-cow.jpg" alt="" width="42" height="42"><span>Udder <em>Milk</em></span></a>
+    <a class="brand brand--logo" href="../../index.html"><img src="../../assets/img/logo-udder-milk.png" alt="Udder Milk, satisfying customers since 2005" width="315" height="213"></a>
   </div>
   <nav class="tabs" aria-label="Main">
     <ul>
@@ -55,6 +56,7 @@
       <li><a href="../../pickup-delivery/index.html">Pickup &amp; Delivery</a></li>
     </ul>
   </nav>
+  <a class="cartbtn" href="../../shop-cart/index.html" aria-label="Cart" data-cart-link><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg><span class="cartbtn__label">Cart</span><b class="cartbtn__n" data-cart-count hidden>0</b></a>
 </div><main id="main">
 <div class="shop-layout">
 <aside class="sidebar">
@@ -528,11 +530,23 @@
           <h2>Hawawshi, Egyptian Meat Pie</h2>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span><span class="tag tag--frozen">Frozen</span>          </div>
-<p class="product__desc">Egyptian street food: grass-fed beef and fresh spices baked inside Egyptian bread. Heat at 375°F for 10–15 minutes, or air-fry at 350°F for 5–7.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Egyptian street food: grass-fed beef and fresh spices baked inside Egyptian bread. Heat at 375°F for 10–15 minutes, or air-fry at 350°F for 5–7.</p>          <div class="product__long" id="hawawshi-egyptian-meat-pie-more" hidden><h3>Frozen Egyptian hawawshi</h3><p>Authentic Egyptian street food, made at home with grass-fed beef.</p><ul class="bul"><li>Grass-fed beef</li><li>Egyptian bread</li><li>Fresh organic spices</li><li>A family recipe</li><li>Ready to heat</li></ul><p>Our hawawshi is premium grass-fed beef seasoned with traditional Middle Eastern spices, baked inside fresh Egyptian bread.</p><h3>Serve it with</h3><ul class="bul"><li>Pickles</li><li>Tahini</li><li>Salad</li></ul><h3>To heat</h3><ul class="bul"><li>Oven: 375°F for 10 to 15 minutes</li><li>Air fryer: 350°F for 5 to 7 minutes</li></ul></div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" aria-controls="hawawshi-egyptian-meat-pie-more"><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">1 pie</span><span class="price">$8.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="hawawshi-egyptian-meat-pie" data-name="Hawawshi, Egyptian Meat Pie" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#hawawshi-egyptian-meat-pie" data-img="https://uddermilk.com/upload/IMG_1415.jpeg" data-icon="stuffed-flatbread">
+              <label class="sr-only" for="hawawshi-egyptian-meat-pie-v">Size</label>
+              <select id="hawawshi-egyptian-meat-pie-v" name="v" class="is-one">
+<option value="1 pie" data-price="8.0">1 pie · $8.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -548,11 +562,23 @@
           <h2>Mombar, Stuffed Beef Casings</h2>
           <div class="tags">
 <span class="tag tag--heritage">Traditional</span>          </div>
-<p class="product__desc">Beef casings stuffed with herbed rice, tomato, cumin, coriander, parsley and dill.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Beef casings stuffed with herbed rice, tomato, cumin, coriander, parsley and dill.</p>          <div class="product__long" id="mombar-stuffed-beef-casings-more" hidden><p>Slow-cooked Egyptian mombar, made with natural ingredients and no artificial additives.</p><p>Ingredients: filtered water, carefully cleaned beef casings, fresh onion, garlic, bay leaves, black pepper, cumin and sea salt.</p></div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" aria-controls="mombar-stuffed-beef-casings-more"><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">4 rolls</span><span class="price">$8.50</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="mombar-stuffed-beef-casings" data-name="Mombar, Stuffed Beef Casings" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#mombar-stuffed-beef-casings" data-img="https://uddermilk.com/upload/Screenshot_20241204_003517_Google.jpg" data-icon="hot-dog">
+              <label class="sr-only" for="mombar-stuffed-beef-casings-v">Size</label>
+              <select id="mombar-stuffed-beef-casings-v" name="v" class="is-one">
+<option value="4 rolls" data-price="8.5">4 rolls · $8.50</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -568,11 +594,23 @@
           <h2>Kobebah Shami</h2>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span>          </div>
-<p class="product__desc">Bulgur shells stuffed with ground beef, ghee, onion, green pepper and spices.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Bulgur shells stuffed with ground beef, ghee, onion, green pepper and spices.</p>          <div class="product__long" id="kobebah-shami-more" hidden><p>Ingredients: organic bulgur, organic ground beef, organic ghee, organic onions, green pepper, spices.</p><p>Fry them, or spray with a little oil or butter and bake for 10 minutes in the oven or air fryer.</p></div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" aria-controls="kobebah-shami-more"><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">10 pieces · ¾ lb</span><span class="price">$10.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="kobebah-shami" data-name="Kobebah Shami" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#kobebah-shami" data-img="https://uddermilk.com/upload/Screenshot_20221011_185202.jpg" data-icon="meat-on-bone">
+              <label class="sr-only" for="kobebah-shami-v">Size</label>
+              <select id="kobebah-shami-v" name="v" class="is-one">
+<option value="10 pieces · ¾ lb" data-price="10.0">10 pieces · ¾ lb · $10.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -588,11 +626,22 @@
           <h2>Rice Kofta</h2>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span>          </div>
-<p class="product__desc">Ground beef, rice, onion, garlic and parsley. Simmer in tomato sauce.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Ground beef, rice, onion, garlic and parsley. Simmer in tomato sauce.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$6.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="rice-kofta" data-name="Rice Kofta" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#rice-kofta" data-img="https://uddermilk.com/upload/Screenshot_20231118_172011_Google.jpg" data-icon="meat-on-bone">
+              <label class="sr-only" for="rice-kofta-v">Size</label>
+              <select id="rice-kofta-v" name="v" class="is-one">
+<option value="Pint" data-price="6.0">Pint · $6.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -608,11 +657,22 @@
           <h2>Meatballs</h2>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span>          </div>
-<p class="product__desc">Ready-to-cook grass-fed beef meatballs for pasta, rice or roasted vegetables.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Ready-to-cook grass-fed beef meatballs for pasta, rice or roasted vegetables.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">1 lb</span><span class="price">$17.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="meatballs" data-name="Meatballs" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#meatballs" data-img="https://uddermilk.com/upload/file_0000000076d8724682c15aed58045c77.png" data-icon="meat-on-bone">
+              <label class="sr-only" for="meatballs-v">Size</label>
+              <select id="meatballs-v" name="v" class="is-one">
+<option value="1 lb" data-price="17.0">1 lb · $17.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -628,11 +688,22 @@
           <h2>Potatoes with Meatballs</h2>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span>          </div>
-<p class="product__desc">In a tomato sauce with onion, garlic and parsley.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>In a tomato sauce with onion, garlic and parsley.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Half pint</span><span class="price">$5.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="potatoes-with-meatballs" data-name="Potatoes with Meatballs" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#potatoes-with-meatballs" data-img="https://uddermilk.com/upload/IMG_4364.jpeg" data-icon="meat-on-bone">
+              <label class="sr-only" for="potatoes-with-meatballs-v">Size</label>
+              <select id="potatoes-with-meatballs-v" name="v" class="is-one">
+<option value="Half pint" data-price="5.0">Half pint · $5.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -648,11 +719,22 @@
           <h2>Lubia, Black-Eyed Pea <span class="amp">&amp;</span> Beef Stew</h2>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span>          </div>
-<p class="product__desc">A rich, spiced tomato stew of black-eyed peas and grass-fed beef.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>A rich, spiced tomato stew of black-eyed peas and grass-fed beef.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Half pint</span><span class="price">$5.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="lubia-black-eyed-pea-and-beef-stew" data-name="Lubia, Black-Eyed Pea &amp; Beef Stew" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#lubia-black-eyed-pea-and-beef-stew" data-img="https://uddermilk.com/upload/0445106AD5CA65-5BA2-4AF8-999A-80DEB0867DB5.jpeg" data-icon="pot-of-food">
+              <label class="sr-only" for="lubia-black-eyed-pea-and-beef-stew-v">Size</label>
+              <select id="lubia-black-eyed-pea-and-beef-stew-v" name="v" class="is-one">
+<option value="Half pint" data-price="5.0">Half pint · $5.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -668,11 +750,22 @@
           <h2>Baked Ziti with Béchamel</h2>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span>          </div>
-<p class="product__desc">Creamy, buttery béchamel over ziti with spiced grass-fed ground beef.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Creamy, buttery béchamel over ziti with spiced grass-fed ground beef.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Personal pan</span><span class="price">$15.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="baked-ziti-with-b-chamel" data-name="Baked Ziti with Béchamel" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#baked-ziti-with-b-chamel" data-img="https://uddermilk.com/upload/IMG-9b68170db555887331804174126f8cbb-V.jpg" data-icon="spaghetti">
+              <label class="sr-only" for="baked-ziti-with-b-chamel-v">Size</label>
+              <select id="baked-ziti-with-b-chamel-v" name="v" class="is-one">
+<option value="Personal pan" data-price="15.0">Personal pan · $15.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -688,11 +781,22 @@
           <h2>Phyllo Rokak with Ground Beef</h2>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span>          </div>
-<p class="product__desc">Crisp phyllo layered with ground beef, bell pepper, onion and carrot.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Crisp phyllo layered with ground beef, bell pepper, onion and carrot.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">3 pieces</span><span class="price">$7.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="phyllo-rokak-with-ground-beef" data-name="Phyllo Rokak with Ground Beef" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#phyllo-rokak-with-ground-beef" data-img="https://uddermilk.com/upload/IMG-20241213-WA0016.jpg" data-icon="cut-of-meat">
+              <label class="sr-only" for="phyllo-rokak-with-ground-beef-v">Size</label>
+              <select id="phyllo-rokak-with-ground-beef-v" name="v" class="is-one">
+<option value="3 pieces" data-price="7.0">3 pieces · $7.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -708,11 +812,22 @@
           <h2>Stuffed Potatoes with Ground Beef</h2>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Each</span><span class="price">$8.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="stuffed-potatoes-with-ground-beef" data-name="Stuffed Potatoes with Ground Beef" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#stuffed-potatoes-with-ground-beef" data-img="https://uddermilk.com/upload/Screenshot_20220826-023059_WhatsApp.jpg" data-icon="cut-of-meat">
+              <label class="sr-only" for="stuffed-potatoes-with-ground-beef-v">Size</label>
+              <select id="stuffed-potatoes-with-ground-beef-v" name="v" class="is-one">
+<option value="Each" data-price="8.0">Each · $8.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -728,11 +843,22 @@
           <h2>Moroccan Couscous</h2>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span>          </div>
-<p class="product__desc">Traditional couscous with mixed vegetables and beef.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Traditional couscous with mixed vegetables and beef.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Plate</span><span class="price">$8.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="moroccan-couscous" data-name="Moroccan Couscous" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#moroccan-couscous" data-img="https://uddermilk.com/upload/A8E71307-C819-439A-872A-F0FA03576B5D.jpeg" data-icon="cooked-rice">
+              <label class="sr-only" for="moroccan-couscous-v">Size</label>
+              <select id="moroccan-couscous-v" name="v" class="is-one">
+<option value="Plate" data-price="8.0">Plate · $8.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -748,11 +874,22 @@
           <h2>Seafood Alfredo</h2>
           <div class="tags">
           </div>
-<p class="product__desc">A seafood mix in a sauce of milk, heavy cream, butter, mozzarella and Parmesan, over pasta.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>A seafood mix in a sauce of milk, heavy cream, butter, mozzarella and Parmesan, over pasta.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Tray</span><span class="price">$20.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="seafood-alfredo" data-name="Seafood Alfredo" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#seafood-alfredo" data-img="https://uddermilk.com/upload/Screenshot_20250618_155808_Viber.jpg" data-icon="spaghetti">
+              <label class="sr-only" for="seafood-alfredo-v">Size</label>
+              <select id="seafood-alfredo-v" name="v" class="is-one">
+<option value="Tray" data-price="20.0">Tray · $20.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -768,6 +905,7 @@
           <h2>Chicken Alfredo</h2>
           <div class="tags">
 <span class="tag tag--out">Sold out</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">Tray</span><span class="price">$15.00</span></li>
           </ul>
@@ -787,13 +925,24 @@
           <h2>Mahshi, Rice-Stuffed Vegetables</h2>
           <div class="tags">
 <span class="tag">Vegetarian</span>          </div>
-<p class="product__desc">Rice with herbs and spices, stuffed into tomatoes, peppers, eggplant, onions and potatoes.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Rice with herbs and spices, stuffed into tomatoes, peppers, eggplant, onions and potatoes.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Mixed vegetables</span><span class="price">$8.00</span></li>
             <li><span class="v-label">Eggplant</span><span class="price">$8.00</span></li>
             <li><span class="v-label">Onions</span><span class="price">$8.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="mahshi-rice-stuffed-vegetables" data-name="Mahshi, Rice-Stuffed Vegetables" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#mahshi-rice-stuffed-vegetables" data-img="https://uddermilk.com/upload/IMG-20241225-WA0130.jpg" data-icon="bell-pepper">
+              <label class="sr-only" for="mahshi-rice-stuffed-vegetables-v">Size</label>
+              <select id="mahshi-rice-stuffed-vegetables-v" name="v">
+<option value="Mixed vegetables" data-price="8.0">Mixed vegetables · $8.00</option><option value="Eggplant" data-price="8.0">Eggplant · $8.00</option><option value="Onions" data-price="8.0">Onions · $8.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -809,11 +958,22 @@
           <h2>Grape Leaves</h2>
           <div class="tags">
 <span class="tag">Vegetarian</span>          </div>
-<p class="product__desc">Rice-filled grape leaves with onion, tomato, cumin, coriander and parsley.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Rice-filled grape leaves with onion, tomato, cumin, coriander and parsley.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Tray</span><span class="price">$5.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="grape-leaves" data-name="Grape Leaves" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#grape-leaves" data-img="https://uddermilk.com/upload/20200601_135254.jpg" data-icon="leafy-green">
+              <label class="sr-only" for="grape-leaves-v">Size</label>
+              <select id="grape-leaves-v" name="v" class="is-one">
+<option value="Tray" data-price="5.0">Tray · $5.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -829,11 +989,22 @@
           <h2>Cabbage Rolls</h2>
           <div class="tags">
 <span class="tag">Vegetarian</span>          </div>
-<p class="product__desc">Cabbage leaves filled with rice, vegetables and herbs in tomato sauce.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Cabbage leaves filled with rice, vegetables and herbs in tomato sauce.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Tray</span><span class="price">$8.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="cabbage-rolls" data-name="Cabbage Rolls" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#cabbage-rolls" data-img="https://uddermilk.com/upload/08482820200430_154010.jpg" data-icon="leafy-green">
+              <label class="sr-only" for="cabbage-rolls-v">Size</label>
+              <select id="cabbage-rolls-v" name="v" class="is-one">
+<option value="Tray" data-price="8.0">Tray · $8.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -849,11 +1020,22 @@
           <h2>Stewed Eggplant, Moussaka</h2>
           <div class="tags">
 <span class="tag">Vegetarian</span>          </div>
-<p class="product__desc">Eggplant stewed with onion, garlic, tomato and green chili.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Eggplant stewed with onion, garlic, tomato and green chili.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Container</span><span class="price">$7.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="stewed-eggplant-moussaka" data-name="Stewed Eggplant, Moussaka" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#stewed-eggplant-moussaka" data-img="https://uddermilk.com/upload/Screenshot_20250101_013610_Google.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="stewed-eggplant-moussaka-v">Size</label>
+              <select id="stewed-eggplant-moussaka-v" name="v" class="is-one">
+<option value="Container" data-price="7.0">Container · $7.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -869,11 +1051,22 @@
           <h2>Baba Ghanouj</h2>
           <div class="tags">
 <span class="tag">Vegetarian</span>          </div>
-<p class="product__desc">Smoky grilled eggplant with tahini, garlic, lemon, olive oil and paprika.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Smoky grilled eggplant with tahini, garlic, lemon, olive oil and paprika.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Container</span><span class="price">$6.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="baba-ghanouj" data-name="Baba Ghanouj" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#baba-ghanouj" data-img="https://uddermilk.com/upload/Screenshot_20231206_235605_WhatsApp.jpg" data-icon="eggplant">
+              <label class="sr-only" for="baba-ghanouj-v">Size</label>
+              <select id="baba-ghanouj-v" name="v" class="is-one">
+<option value="Container" data-price="6.0">Container · $6.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -889,11 +1082,22 @@
           <h2>Bisara, Herbed Fava Dip</h2>
           <div class="tags">
 <span class="tag">Vegetarian</span>          </div>
-<p class="product__desc">A green, herby fava bean purée topped with caramelized onions.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>A green, herby fava bean purée topped with caramelized onions.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Half pint</span><span class="price">$5.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="bisara-herbed-fava-dip" data-name="Bisara, Herbed Fava Dip" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#bisara-herbed-fava-dip" data-img="https://uddermilk.com/upload/20200101_222137.jpg" data-icon="beans">
+              <label class="sr-only" for="bisara-herbed-fava-dip-v">Size</label>
+              <select id="bisara-herbed-fava-dip-v" name="v" class="is-one">
+<option value="Half pint" data-price="5.0">Half pint · $5.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -909,11 +1113,22 @@
           <h2>Ful Medames, Stewed Fava Beans</h2>
           <div class="tags">
 <span class="tag">Vegetarian</span>          </div>
-<p class="product__desc">Creamy stewed fava beans. Scoop them up with bread or make a sandwich.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Creamy stewed fava beans. Scoop them up with bread or make a sandwich.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$5.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="ful-medames-stewed-fava-beans" data-name="Ful Medames, Stewed Fava Beans" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#ful-medames-stewed-fava-beans" data-img="https://uddermilk.com/upload/20200101_225014.jpg" data-icon="pot-of-food">
+              <label class="sr-only" for="ful-medames-stewed-fava-beans-v">Size</label>
+              <select id="ful-medames-stewed-fava-beans-v" name="v" class="is-one">
+<option value="Pint" data-price="5.0">Pint · $5.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -929,11 +1144,22 @@
           <h2>Crispy Cauliflower</h2>
           <div class="tags">
 <span class="tag">Vegetarian</span>          </div>
-<p class="product__desc">Cauliflower with Himalayan salt, egg yolk, flour and black seed.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Cauliflower with Himalayan salt, egg yolk, flour and black seed.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Container</span><span class="price">$6.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="crispy-cauliflower" data-name="Crispy Cauliflower" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#crispy-cauliflower" data-img="https://uddermilk.com/upload/232258IMG_4106.jpeg" data-icon="broccoli">
+              <label class="sr-only" for="crispy-cauliflower-v">Size</label>
+              <select id="crispy-cauliflower-v" name="v" class="is-one">
+<option value="Container" data-price="6.0">Container · $6.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -949,11 +1175,22 @@
           <h2>Potato Salad</h2>
           <div class="tags">
 <span class="tag">Vegetarian</span>          </div>
-<p class="product__desc">Potatoes with garlic, tomato, cilantro, cumin and green chili.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Potatoes with garlic, tomato, cilantro, cumin and green chili.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Container</span><span class="price">$7.50</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="potato-salad" data-name="Potato Salad" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#potato-salad" data-img="https://uddermilk.com/upload/IMG-20250107-WA0038.jpg" data-icon="potato">
+              <label class="sr-only" for="potato-salad-v">Size</label>
+              <select id="potato-salad-v" name="v" class="is-one">
+<option value="Container" data-price="7.5">Container · $7.50</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -969,12 +1206,23 @@
           <h2>Lupini Beans</h2>
           <div class="tags">
 <span class="tag">Vegetarian</span>          </div>
-<p class="product__desc">Brined lupini beans with Himalayan salt, a classic snack.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Brined lupini beans with Himalayan salt, a classic snack.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Half pint</span><span class="price">$4.00</span></li>
             <li><span class="v-label">Container</span><span class="price">$6.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="lupini-beans" data-name="Lupini Beans" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#lupini-beans" data-img="https://uddermilk.com/upload/20200805_214701.jpg" data-icon="beans">
+              <label class="sr-only" for="lupini-beans-v">Size</label>
+              <select id="lupini-beans-v" name="v">
+<option value="Half pint" data-price="4.0">Half pint · $4.00</option><option value="Container" data-price="6.0">Container · $6.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -990,7 +1238,9 @@
           <h2>Savory Rice with Raw Butter</h2>
           <div class="tags">
 <span class="tag tag--out">Sold out</span>          </div>
-<p class="product__desc">Rice cooked Mediterranean-style with raw milk, raw butter and Celtic salt.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Rice cooked Mediterranean-style with raw milk, raw butter and Celtic salt.</p>          <div class="product__long" id="savory-rice-with-raw-butter-more" hidden><p>A Mediterranean rice dish. Serves 2 to 3.</p><p>Ingredients: organic rice, raw milk, Celtic salt, raw butter.</p><h3>How it&#39;s made</h3><p>Boil the milk and add it to the rice with the salt. Bake on the top oven shelf at high heat until it takes on color, then move it to the bottom shelf at low heat for half an hour.</p></div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" aria-controls="savory-rice-with-raw-butter-more"><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">About 1.5 lb</span><span class="price">$10.00</span></li>
           </ul>
           <div class="product__foot">
@@ -1009,11 +1259,23 @@
           <h2>Cooked Whole Wheat, Belila</h2>
           <div class="tags">
 <span class="tag">Vegetarian</span>          </div>
-<p class="product__desc">Soft cooked whole wheat with raw sugar and vanilla. Serve warm with milk for breakfast.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Soft cooked whole wheat with raw sugar and vanilla. Serve warm with milk for breakfast.</p>          <div class="product__long" id="cooked-whole-wheat-belila-more" hidden><p>Cooked whole wheat with raw sugar and vanilla extract, for an easy, wholesome breakfast. Just add hot milk and your choice of fruit, ground cinnamon or nuts.</p></div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" aria-controls="cooked-whole-wheat-belila-more"><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$7.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="cooked-whole-wheat-belila" data-name="Cooked Whole Wheat, Belila" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#cooked-whole-wheat-belila" data-img="https://uddermilk.com/upload/IMG_0304.jpeg" data-icon="cooked-rice">
+              <label class="sr-only" for="cooked-whole-wheat-belila-v">Size</label>
+              <select id="cooked-whole-wheat-belila-v" name="v" class="is-one">
+<option value="Pint" data-price="7.0">Pint · $7.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -1029,11 +1291,22 @@
           <h2>Marinated Sardines</h2>
           <div class="tags">
           </div>
-<p class="product__desc">Buttery, tender marinated sardines. Finish with a drizzle of olive oil.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Buttery, tender marinated sardines. Finish with a drizzle of olive oil.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">4 pieces</span><span class="price">$8.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="marinated-sardines" data-name="Marinated Sardines" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#marinated-sardines" data-img="https://uddermilk.com/upload/IMG_8490.jpeg" data-icon="fish">
+              <label class="sr-only" for="marinated-sardines-v">Size</label>
+              <select id="marinated-sardines-v" name="v" class="is-one">
+<option value="4 pieces" data-price="8.0">4 pieces · $8.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -1049,7 +1322,8 @@
           <h2>Fish Kofta in Tomato Sauce</h2>
           <div class="tags">
 <span class="tag tag--out">Sold out</span>          </div>
-<p class="product__desc">With dill, parsley and cilantro.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>With dill, parsley and cilantro.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">Half pint</span><span class="price">$6.00</span></li>
           </ul>
           <div class="product__foot">
@@ -1068,11 +1342,22 @@
           <h2>Roasted Gelatin Chicken Feet</h2>
           <div class="tags">
           </div>
-<p class="product__desc">Seasoned and roasted until sticky.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Seasoned and roasted until sticky.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">5 pieces</span><span class="price">$15.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="roasted-gelatin-chicken-feet" data-name="Roasted Gelatin Chicken Feet" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#roasted-gelatin-chicken-feet" data-img="https://uddermilk.com/upload/IMG_0178.jpeg" data-icon="poultry-leg">
+              <label class="sr-only" for="roasted-gelatin-chicken-feet-v">Size</label>
+              <select id="roasted-gelatin-chicken-feet-v" name="v" class="is-one">
+<option value="5 pieces" data-price="15.0">5 pieces · $15.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -1088,11 +1373,22 @@
           <h2>Cooked Cow Trotters</h2>
           <div class="tags">
 <span class="tag tag--heritage">Traditional</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Container</span><span class="price">$8.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="cooked-cow-trotters" data-name="Cooked Cow Trotters" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#cooked-cow-trotters" data-img="https://uddermilk.com/upload/Screenshot_20241213_151009_Pinterest.jpg" data-icon="bone">
+              <label class="sr-only" for="cooked-cow-trotters-v">Size</label>
+              <select id="cooked-cow-trotters-v" name="v" class="is-one">
+<option value="Container" data-price="8.0">Container · $8.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -1108,11 +1404,22 @@
           <h2>Qamar al-Din Apricot Pudding</h2>
           <div class="tags">
 <span class="tag">Dessert</span>          </div>
-<p class="product__desc">Silky apricot pudding with honey and vanilla.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Silky apricot pudding with honey and vanilla.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Cup</span><span class="price">$5.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="qamar-al-din-apricot-pudding" data-name="Qamar al-Din Apricot Pudding" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#qamar-al-din-apricot-pudding" data-img="https://uddermilk.com/upload/Screenshot_20250129_152014_Google.jpg" data-icon="custard">
+              <label class="sr-only" for="qamar-al-din-apricot-pudding-v">Size</label>
+              <select id="qamar-al-din-apricot-pudding-v" name="v" class="is-one">
+<option value="Cup" data-price="5.0">Cup · $5.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -1128,11 +1435,22 @@
           <h2>Creamy Egg Custard</h2>
           <div class="tags">
 <span class="tag">Dessert</span>          </div>
-<p class="product__desc">Grass-fed cream and milk, pastured eggs, raw sugar and vanilla.</p>          <ul class="variants" aria-label="Sizes and prices">
+<p class="product__desc" data-clamp>Grass-fed cream and milk, pastured eggs, raw sugar and vanilla.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+          <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$9.00</span></li>
           </ul>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to order <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <form class="addcart" data-addcart data-id="creamy-egg-custard" data-name="Creamy Egg Custard" data-url="category/ready-to-eat-vegetarian-meat-meals-desserts/index.html#creamy-egg-custard" data-img="https://uddermilk.com/upload/CREAMY%20EGG%20CUSTARD.jpg" data-icon="custard">
+              <label class="sr-only" for="creamy-egg-custard-v">Size</label>
+              <select id="creamy-egg-custard-v" name="v" class="is-one">
+<option value="Pint" data-price="9.0">Pint · $9.00</option>              </select>
+              <div class="qty" role="group" aria-label="Quantity">
+                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+              </div>
+              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+            </form>
             <span class="muted">Members only · pay on delivery</span>
           </div>
         </div>
@@ -1148,6 +1466,7 @@
           <h2>Marinated Eggplant</h2>
           <div class="tags">
 <span class="tag">Vegetarian</span><span class="tag tag--out">Sold out</span>          </div>
+          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">Half pint</span><span class="price">$5.00</span></li>
           </ul>
@@ -1207,7 +1526,7 @@
   <div class="container">
     <div class="footer__grid">
       <div class="footer__intro">
-        <a class="brand" href="../../index.html" aria-label="Udder Milk, home"><img class="brand__cow" src="../../assets/img/logo-cow.jpg" alt="" width="42" height="42"><span>Udder <em>Milk</em></span></a>
+        <a class="brand brand--logo brand--foot" href="../../index.html"><img src="../../assets/img/logo-udder-milk.png" alt="Udder Milk, satisfying customers since 2005" width="315" height="213" loading="lazy"></a>
         <p>A private members' creamery association, satisfying customers since 2005. We bring raw, grass-fed dairy and good farm food from small Pennsylvania farms straight to your door.</p>
         <div class="footer__contact">
           <a href="tel:+19734139585"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>973-413-9585 · call or text Moses</a>
@@ -1238,6 +1557,8 @@
       <div>
         <h4>Account</h4>
         <ul>
+          <li><a href="../../shop-cart/index.html">Cart</a></li>
+          <li><a href="../../order-history/index.html">Order history</a></li>
           <li><a href="../../login/index.html">Log in</a></li>
           <li><a href="../../signup/index.html">Sign up</a></li>
           <li><a href="../../driver-login/index.html">Driver login</a></li>
@@ -1258,5 +1579,6 @@
     </div>
   </div>
 </footer><script src="../../assets/js/site.js" defer></script>
+<script src="../../assets/js/shop.js" defer></script>
 </body>
 </html>
