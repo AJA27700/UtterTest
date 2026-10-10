@@ -1438,7 +1438,7 @@ a.contact-card:hover { transform: translateY(-4px); }
   .tabs { display: none; }
   .mainbar__brand { position: sticky; top: 0; z-index: 55; justify-content: space-between; gap: 12px; padding-block: 8px; background: rgba(251, 245, 230, .95); -webkit-backdrop-filter: blur(14px) saturate(1.4); backdrop-filter: blur(14px) saturate(1.4); box-shadow: 0 1px 0 var(--line); }
   .is-stuck .mainbar__brand { box-shadow: 0 1px 0 var(--line), 0 14px 30px -24px rgba(31, 46, 34, .5); }
-  .menubtn { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 6px 14px 6px 8px; border-radius: 999px; background: var(--pasture); color: var(--cream); box-shadow: 0 8px 18px -12px rgba(31, 46, 34, .6); }
+  .menubtn { display: inline-flex !important; align-items: center; gap: 10px; min-height: 48px; padding: 6px 14px 6px 8px; border-radius: 999px; background: var(--pasture); color: var(--cream); box-shadow: 0 8px 18px -12px rgba(31, 46, 34, .6); }
   .menubtn__icon { width: 34px; height: 34px; border-radius: 50%; background: rgba(255, 255, 255, .14); display: grid; place-content: center; gap: 4px; }
   .menubtn__icon i { display: block; width: 16px; height: 2px; border-radius: 2px; background: var(--butter); transition: transform .3s var(--ease), opacity .2s; }
   .menubtn[aria-expanded="true"] .menubtn__icon i:nth-child(1) { transform: translateY(6px) rotate(45deg); }
