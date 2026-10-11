@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="../../../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../../../assets/fonts/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../../assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../../assets/css/site.css?v=1f783f4a">
+<link rel="stylesheet" href="../../../assets/css/site.css?v=d24d284f">
 <script>document.documentElement.classList.add('js');if(location.protocol==="file:")document.write('<link rel="stylesheet" href="../../../assets/css/fonts-local.css?v=">')</script>
 </head>
 <body class="page-cat">
@@ -541,15 +541,17 @@
         <label class="toggle"><input type="checkbox" data-instock><span class="toggle__ui" aria-hidden="true"></span><span>In stock<span class="t-long"> only</span></span></label>
       </div>
     </div>
-    <div class="products">
+    <div class="products products--grid">
       <article class="product" id="raw-guernsey-milk" style="--tint: #DCE7F6">
         <div class="product__media">
           <figure class="ph">
             <img class="ph__icon" src="../../../assets/icons/glass-of-milk.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Raw Guernsey Milk</h2>
+          <p class="product__from">from $5.50</p>
           <div class="tags">
 <span class="tag tag--raw">Raw</span><span class="tag tag--a2">A2/A2</span><span class="tag">Guernsey</span><span class="tag tag--grass">100% grass-fed</span>          </div>
 <p class="product__desc" data-clamp>Very creamy and golden, high in protein and fat. When it sells out, Jersey milk fills in.</p>          <div class="product__long" id="raw-guernsey-milk-more" hidden><h3>A note from our Guernsey farmer</h3><p>Greetings from the Guernsey farm in eastern Pennsylvania. Our goal is to produce all-natural, beyond-organic, nutrient-dense dairy.</p><p>We milk only Golden Guernsey cows that have been tested for the A2/A2 beta-casein gene. Cows that test A1/A2 or A1/A1, we don&#39;t buy: A2/A2 milk is very important to us. The cows are tested by a third party to confirm it.</p><p>We&#39;re also 100% organic and grass-fed.</p></div>
@@ -560,20 +562,20 @@
             <li><span class="v-label">Glass half gallon</span><span class="price">$9.00</span></li>
             <li><span class="v-label">Glass quart</span><span class="price">$5.50</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="raw-guernsey-milk" data-name="Raw Guernsey Milk" data-url="products/product_lists/gurnsey-dairy/index.html#raw-guernsey-milk" data-img="" data-icon="glass-of-milk">
-              <label class="sr-only" for="raw-guernsey-milk-v">Size</label>
-              <select id="raw-guernsey-milk-v" name="v">
-<option value="Gallon" data-price="11.5">Gallon · $11.50</option><option value="Half gallon" data-price="6.5">Half gallon · $6.50</option><option value="Glass half gallon" data-price="9.0">Glass half gallon · $9.00</option><option value="Glass quart" data-price="5.5">Glass quart · $5.50</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="raw-guernsey-milk" data-name="Raw Guernsey Milk" data-url="products/product_lists/gurnsey-dairy/index.html#raw-guernsey-milk" data-img="" data-icon="glass-of-milk">
+            <label class="sr-only" for="raw-guernsey-milk-v">Size</label>
+            <select id="raw-guernsey-milk-v" name="v">
+<option value="Gallon" data-price="11.5">Gallon · $11.50</option><option value="Half gallon" data-price="6.5">Half gallon · $6.50</option><option value="Glass half gallon" data-price="9.0">Glass half gallon · $9.00</option><option value="Glass quart" data-price="5.5">Glass quart · $5.50</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="raw-guernsey-cream" style="--tint: #DCE7F6">
@@ -582,8 +584,10 @@
             <img class="ph__icon" src="../../../assets/icons/pouring-liquid.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Raw Guernsey Cream</h2>
+          <p class="product__from">from $6.00</p>
           <div class="tags">
 <span class="tag tag--raw">Raw</span><span class="tag tag--a2">A2/A2</span><span class="tag">Guernsey</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -593,20 +597,20 @@
             <li><span class="v-label">Half &amp; half · pint</span><span class="price">$12.00</span></li>
             <li><span class="v-label">Half &amp; half · half pint</span><span class="price">$6.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="raw-guernsey-cream" data-name="Raw Guernsey Cream" data-url="products/product_lists/gurnsey-dairy/index.html#raw-guernsey-cream" data-img="" data-icon="pouring-liquid">
-              <label class="sr-only" for="raw-guernsey-cream-v">Size</label>
-              <select id="raw-guernsey-cream-v" name="v">
-<option value="Heavy cream · pint, glass" data-price="12.0">Heavy cream · pint, glass · $12.00</option><option value="Heavy cream · half pint, glass" data-price="6.0">Heavy cream · half pint, glass · $6.00</option><option value="Half &amp; half · pint" data-price="12.0">Half &amp; half · pint · $12.00</option><option value="Half &amp; half · half pint" data-price="6.0">Half &amp; half · half pint · $6.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="raw-guernsey-cream" data-name="Raw Guernsey Cream" data-url="products/product_lists/gurnsey-dairy/index.html#raw-guernsey-cream" data-img="" data-icon="pouring-liquid">
+            <label class="sr-only" for="raw-guernsey-cream-v">Size</label>
+            <select id="raw-guernsey-cream-v" name="v">
+<option value="Heavy cream · pint, glass" data-price="12.0">Heavy cream · pint, glass · $12.00</option><option value="Heavy cream · half pint, glass" data-price="6.0">Heavy cream · half pint, glass · $6.00</option><option value="Half &amp; half · pint" data-price="12.0">Half &amp; half · pint · $12.00</option><option value="Half &amp; half · half pint" data-price="6.0">Half &amp; half · half pint · $6.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="raw-guernsey-butter" style="--tint: #DCE7F6">
@@ -615,8 +619,10 @@
             <img class="ph__icon" src="../../../assets/icons/butter.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Raw Guernsey Butter</h2>
+          <p class="product__from">from $12.00</p>
           <div class="tags">
 <span class="tag tag--raw">Raw</span><span class="tag tag--a2">A2/A2</span><span class="tag">Guernsey</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -628,20 +634,20 @@
             <li><span class="v-label">Roll, paper-wrapped, unsalted · 1 lb</span><span class="price">$23.00</span></li>
             <li><span class="v-label">Roll, paper-wrapped, unsalted · ½ lb</span><span class="price">$12.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="raw-guernsey-butter" data-name="Raw Guernsey Butter" data-url="products/product_lists/gurnsey-dairy/index.html#raw-guernsey-butter" data-img="" data-icon="butter">
-              <label class="sr-only" for="raw-guernsey-butter-v">Size</label>
-              <select id="raw-guernsey-butter-v" name="v">
-<option value="Unsalted · pint" data-price="22.0">Unsalted · pint · $22.00</option><option value="Salted · pint" data-price="22.0">Salted · pint · $22.00</option><option value="Unsalted · half pint" data-price="12.0">Unsalted · half pint · $12.00</option><option value="Salted · half pint" data-price="12.0">Salted · half pint · $12.00</option><option value="Roll, paper-wrapped, unsalted · 1 lb" data-price="23.0">Roll, paper-wrapped, unsalted · 1 lb · $23.00</option><option value="Roll, paper-wrapped, unsalted · ½ lb" data-price="12.0">Roll, paper-wrapped, unsalted · ½ lb · $12.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="raw-guernsey-butter" data-name="Raw Guernsey Butter" data-url="products/product_lists/gurnsey-dairy/index.html#raw-guernsey-butter" data-img="" data-icon="butter">
+            <label class="sr-only" for="raw-guernsey-butter-v">Size</label>
+            <select id="raw-guernsey-butter-v" name="v">
+<option value="Unsalted · pint" data-price="22.0">Unsalted · pint · $22.00</option><option value="Salted · pint" data-price="22.0">Salted · pint · $22.00</option><option value="Unsalted · half pint" data-price="12.0">Unsalted · half pint · $12.00</option><option value="Salted · half pint" data-price="12.0">Salted · half pint · $12.00</option><option value="Roll, paper-wrapped, unsalted · 1 lb" data-price="23.0">Roll, paper-wrapped, unsalted · 1 lb · $23.00</option><option value="Roll, paper-wrapped, unsalted · ½ lb" data-price="12.0">Roll, paper-wrapped, unsalted · ½ lb · $12.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="raw-cultured-guernsey-butter" style="--tint: #DCE7F6">
@@ -650,8 +656,10 @@
             <img class="ph__icon" src="../../../assets/icons/butter.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Raw Cultured Guernsey Butter</h2>
+          <p class="product__from">Price at login</p>
           <div class="tags">
 <span class="tag tag--raw">Raw</span><span class="tag tag--a2">A2/A2</span><span class="tag">Guernsey</span><span class="tag">Cultured</span>          </div>
 <p class="product__desc" data-clamp>Cream cultured overnight, then churned. Tangy and deeply buttery.</p>          <div class="product__long" id="raw-cultured-guernsey-butter-more" hidden><h3>How we make it</h3><ul class="bul"><li>We warm raw Guernsey heavy cream to 77°F.</li><li>We add MM 100, a live, active culture, and hold the cream at that temperature for 24 hours, in stainless steel only.</li><li>The cultured cream then sits in ice water for 12 to 24 hours, until it&#39;s cold all the way through.</li><li>Once it&#39;s thoroughly cold, we churn it into butter.</li></ul><p>The culturing gives it a deeper, slightly tangy flavor, like the butter on an old farmhouse table. Enjoy it on good bread first.</p></div>
@@ -659,10 +667,10 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Jar</span><span class="ask">Price at login</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="raw-guernsey-kefir" style="--tint: #DCE7F6">
@@ -671,8 +679,10 @@
             <img class="ph__icon" src="../../../assets/icons/glass-of-milk.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Raw Guernsey Kefir</h2>
+          <p class="product__from">from $8.00</p>
           <div class="tags">
 <span class="tag tag--raw">Raw</span><span class="tag tag--a2">A2/A2</span><span class="tag">Guernsey</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -683,20 +693,20 @@
             <li><span class="v-label">Blueberry · pint</span><span class="price">$8.00</span></li>
             <li><span class="v-label">Black raspberry · pint</span><span class="price">$8.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="raw-guernsey-kefir" data-name="Raw Guernsey Kefir" data-url="products/product_lists/gurnsey-dairy/index.html#raw-guernsey-kefir" data-img="" data-icon="glass-of-milk">
-              <label class="sr-only" for="raw-guernsey-kefir-v">Size</label>
-              <select id="raw-guernsey-kefir-v" name="v">
-<option value="Strawberry · pint" data-price="8.0">Strawberry · pint · $8.00</option><option value="Strawberry · quart" data-price="12.0">Strawberry · quart · $12.00</option><option value="Strawberry banana · pint" data-price="8.0">Strawberry banana · pint · $8.00</option><option value="Blueberry · pint" data-price="8.0">Blueberry · pint · $8.00</option><option value="Black raspberry · pint" data-price="8.0">Black raspberry · pint · $8.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="raw-guernsey-kefir" data-name="Raw Guernsey Kefir" data-url="products/product_lists/gurnsey-dairy/index.html#raw-guernsey-kefir" data-img="" data-icon="glass-of-milk">
+            <label class="sr-only" for="raw-guernsey-kefir-v">Size</label>
+            <select id="raw-guernsey-kefir-v" name="v">
+<option value="Strawberry · pint" data-price="8.0">Strawberry · pint · $8.00</option><option value="Strawberry · quart" data-price="12.0">Strawberry · quart · $12.00</option><option value="Strawberry banana · pint" data-price="8.0">Strawberry banana · pint · $8.00</option><option value="Blueberry · pint" data-price="8.0">Blueberry · pint · $8.00</option><option value="Black raspberry · pint" data-price="8.0">Black raspberry · pint · $8.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="raw-guernsey-greek-yogurt" style="--tint: #DCE7F6">
@@ -705,8 +715,10 @@
             <img class="ph__icon" src="../../../assets/icons/bowl-with-spoon.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Raw Guernsey Greek Yogurt</h2>
+          <p class="product__from">from $8.00</p>
           <div class="tags">
 <span class="tag tag--raw">Raw</span><span class="tag tag--a2">A2/A2</span><span class="tag">Guernsey</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -718,20 +730,20 @@
             <li class="is-out"><span class="v-label">Blackberry · pint</span><span class="price">$9.00</span></li>
             <li class="is-out"><span class="v-label">Banana pineapple · pint</span><span class="price">$9.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="raw-guernsey-greek-yogurt" data-name="Raw Guernsey Greek Yogurt" data-url="products/product_lists/gurnsey-dairy/index.html#raw-guernsey-greek-yogurt" data-img="" data-icon="bowl-with-spoon">
-              <label class="sr-only" for="raw-guernsey-greek-yogurt-v">Size</label>
-              <select id="raw-guernsey-greek-yogurt-v" name="v">
-<option value="Plain · pint" data-price="8.0">Plain · pint · $8.00</option><option value="Strawberry · pint" data-price="9.0">Strawberry · pint · $9.00</option><option value="Maple syrup · pint" data-price="9.0">Maple syrup · pint · $9.00</option><option value="Blueberry · pint" data-price="9.0">Blueberry · pint · $9.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="raw-guernsey-greek-yogurt" data-name="Raw Guernsey Greek Yogurt" data-url="products/product_lists/gurnsey-dairy/index.html#raw-guernsey-greek-yogurt" data-img="" data-icon="bowl-with-spoon">
+            <label class="sr-only" for="raw-guernsey-greek-yogurt-v">Size</label>
+            <select id="raw-guernsey-greek-yogurt-v" name="v">
+<option value="Plain · pint" data-price="8.0">Plain · pint · $8.00</option><option value="Strawberry · pint" data-price="9.0">Strawberry · pint · $9.00</option><option value="Maple syrup · pint" data-price="9.0">Maple syrup · pint · $9.00</option><option value="Blueberry · pint" data-price="9.0">Blueberry · pint · $9.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="raw-guernsey-cottage-cheese" style="--tint: #DCE7F6">
@@ -740,8 +752,10 @@
             <img class="ph__icon" src="../../../assets/icons/cheese-wedge.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Raw Guernsey Cottage Cheese</h2>
+          <p class="product__from">from $12.00</p>
           <div class="tags">
 <span class="tag tag--raw">Raw</span><span class="tag tag--a2">A2/A2</span><span class="tag">Guernsey</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -749,20 +763,20 @@
             <li><span class="v-label">Plain · pint</span><span class="price">$12.00</span></li>
             <li><span class="v-label">Garlic &amp; chives, frozen · pint</span><span class="ask">Price at login</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="raw-guernsey-cottage-cheese" data-name="Raw Guernsey Cottage Cheese" data-url="products/product_lists/gurnsey-dairy/index.html#raw-guernsey-cottage-cheese" data-img="" data-icon="cheese-wedge">
-              <label class="sr-only" for="raw-guernsey-cottage-cheese-v">Size</label>
-              <select id="raw-guernsey-cottage-cheese-v" name="v" class="is-one">
-<option value="Plain · pint" data-price="12.0">Plain · pint · $12.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="raw-guernsey-cottage-cheese" data-name="Raw Guernsey Cottage Cheese" data-url="products/product_lists/gurnsey-dairy/index.html#raw-guernsey-cottage-cheese" data-img="" data-icon="cheese-wedge">
+            <label class="sr-only" for="raw-guernsey-cottage-cheese-v">Size</label>
+            <select id="raw-guernsey-cottage-cheese-v" name="v" class="is-one">
+<option value="Plain · pint" data-price="12.0">Plain · pint · $12.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="guernsey-sour-cream" style="--tint: #DCE7F6">
@@ -771,18 +785,20 @@
             <img class="ph__icon" src="../../../assets/icons/pouring-liquid.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Guernsey Sour Cream</h2>
+          <p class="product__from">Price at login</p>
           <div class="tags">
 <span class="tag tag--a2">A2/A2</span><span class="tag">Guernsey</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="ask">Price at login</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="raw-guernsey-buttermilk-and-whey" style="--tint: #DCE7F6">
@@ -791,8 +807,10 @@
             <img class="ph__icon" src="../../../assets/icons/glass-of-milk.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Raw Guernsey Buttermilk <span class="amp">&amp;</span> Whey</h2>
+          <p class="product__from">from $3.00</p>
           <div class="tags">
 <span class="tag tag--raw">Raw</span><span class="tag tag--a2">A2/A2</span><span class="tag">Guernsey</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -801,20 +819,20 @@
             <li><span class="v-label">Buttermilk · quart</span><span class="price">$4.00</span></li>
             <li><span class="v-label">Whey · quart</span><span class="price">$5.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="raw-guernsey-buttermilk-and-whey" data-name="Raw Guernsey Buttermilk &amp; Whey" data-url="products/product_lists/gurnsey-dairy/index.html#raw-guernsey-buttermilk-and-whey" data-img="" data-icon="glass-of-milk">
-              <label class="sr-only" for="raw-guernsey-buttermilk-and-whey-v">Size</label>
-              <select id="raw-guernsey-buttermilk-and-whey-v" name="v">
-<option value="Buttermilk · pint" data-price="3.0">Buttermilk · pint · $3.00</option><option value="Buttermilk · quart" data-price="4.0">Buttermilk · quart · $4.00</option><option value="Whey · quart" data-price="5.0">Whey · quart · $5.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="raw-guernsey-buttermilk-and-whey" data-name="Raw Guernsey Buttermilk &amp; Whey" data-url="products/product_lists/gurnsey-dairy/index.html#raw-guernsey-buttermilk-and-whey" data-img="" data-icon="glass-of-milk">
+            <label class="sr-only" for="raw-guernsey-buttermilk-and-whey-v">Size</label>
+            <select id="raw-guernsey-buttermilk-and-whey-v" name="v">
+<option value="Buttermilk · pint" data-price="3.0">Buttermilk · pint · $3.00</option><option value="Buttermilk · quart" data-price="4.0">Buttermilk · quart · $4.00</option><option value="Whey · quart" data-price="5.0">Whey · quart · $5.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="maryams-a2-a2-raw-guernsey-cheese" style="--tint: #DCE7F6">
@@ -824,8 +842,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Maryam&#39;s A2/A2 Raw Guernsey Cheese"><img class="ph__img" src="https://uddermilk.com/upload/maryams_guernsey_enhanced.png" alt="Maryam&#39;s A2/A2 Raw Guernsey Cheese" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Maryam&#39;s A2/A2 Raw Guernsey Cheese</h2>
+          <p class="product__from">from $9.00</p>
           <div class="tags">
 <span class="tag tag--raw">Raw</span><span class="tag tag--a2">A2/A2</span><span class="tag">Guernsey</span>          </div>
 <p class="product__desc" data-clamp>Handmade from 100% grass-fed Guernsey milk. Naturally golden.</p>          <div class="product__long" id="maryams-a2-a2-raw-guernsey-cheese-more" hidden><p>Handcrafted from raw A2/A2 Guernsey milk from 100% grass-fed cows. Rich and creamy, with a natural golden color, and aged carefully for flavor.</p><ul class="checks"><li>Raw A2/A2 Guernsey milk</li><li>100% grass-fed</li><li>Non-homogenized</li><li>No hormones</li><li>No antibiotics</li><li>Naturally rich in beta-carotene</li><li>Handcrafted in small batches</li></ul></div>
@@ -840,20 +860,20 @@
             <li><span class="v-label">Parmesan · ½ lb</span><span class="price">$9.00</span></li>
             <li><span class="v-label">Blue cheese · ½ lb</span><span class="price">$15.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="maryams-a2-a2-raw-guernsey-cheese" data-name="Maryam&#39;s A2/A2 Raw Guernsey Cheese" data-url="products/product_lists/gurnsey-dairy/index.html#maryams-a2-a2-raw-guernsey-cheese" data-img="https://uddermilk.com/upload/maryams_guernsey_enhanced.png" data-icon="cheese-wedge">
-              <label class="sr-only" for="maryams-a2-a2-raw-guernsey-cheese-v">Size</label>
-              <select id="maryams-a2-a2-raw-guernsey-cheese-v" name="v">
-<option value="Cheddar · ½ lb" data-price="9.5">Cheddar · ½ lb · $9.50</option><option value="Smoked gouda · ½ lb" data-price="10.0">Smoked gouda · ½ lb · $10.00</option><option value="Tomme style · ½ lb" data-price="12.0">Tomme style · ½ lb · $12.00</option><option value="Gruyère · ½ lb" data-price="9.0">Gruyère · ½ lb · $9.00</option><option value="Havarti · ½ lb" data-price="9.0">Havarti · ½ lb · $9.00</option><option value="Mozzarella · ½ lb" data-price="9.5">Mozzarella · ½ lb · $9.50</option><option value="Parmesan · ½ lb" data-price="9.0">Parmesan · ½ lb · $9.00</option><option value="Blue cheese · ½ lb" data-price="15.0">Blue cheese · ½ lb · $15.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="maryams-a2-a2-raw-guernsey-cheese" data-name="Maryam&#39;s A2/A2 Raw Guernsey Cheese" data-url="products/product_lists/gurnsey-dairy/index.html#maryams-a2-a2-raw-guernsey-cheese" data-img="https://uddermilk.com/upload/maryams_guernsey_enhanced.png" data-icon="cheese-wedge">
+            <label class="sr-only" for="maryams-a2-a2-raw-guernsey-cheese-v">Size</label>
+            <select id="maryams-a2-a2-raw-guernsey-cheese-v" name="v">
+<option value="Cheddar · ½ lb" data-price="9.5">Cheddar · ½ lb · $9.50</option><option value="Smoked gouda · ½ lb" data-price="10.0">Smoked gouda · ½ lb · $10.00</option><option value="Tomme style · ½ lb" data-price="12.0">Tomme style · ½ lb · $12.00</option><option value="Gruyère · ½ lb" data-price="9.0">Gruyère · ½ lb · $9.00</option><option value="Havarti · ½ lb" data-price="9.0">Havarti · ½ lb · $9.00</option><option value="Mozzarella · ½ lb" data-price="9.5">Mozzarella · ½ lb · $9.50</option><option value="Parmesan · ½ lb" data-price="9.0">Parmesan · ½ lb · $9.00</option><option value="Blue cheese · ½ lb" data-price="15.0">Blue cheese · ½ lb · $15.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="raw-rice-pudding" style="--tint: #DCE7F6">
@@ -863,28 +883,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Raw Rice Pudding"><img class="ph__img" src="https://uddermilk.com/upload/IMG_0212.jpeg" alt="Raw Rice Pudding" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Raw Rice Pudding</h2>
+          <p class="product__from">$9.00</p>
           <div class="tags">
 <span class="tag tag--raw">Raw</span><span class="tag tag--a2">A2/A2</span><span class="tag">Guernsey</span>          </div>
 <p class="product__desc" data-clamp>Guernsey milk, rice, raw sugar, vanilla and cinnamon.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$9.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="raw-rice-pudding" data-name="Raw Rice Pudding" data-url="products/product_lists/gurnsey-dairy/index.html#raw-rice-pudding" data-img="https://uddermilk.com/upload/IMG_0212.jpeg" data-icon="custard">
-              <label class="sr-only" for="raw-rice-pudding-v">Size</label>
-              <select id="raw-rice-pudding-v" name="v" class="is-one">
-<option value="Pint" data-price="9.0">Pint · $9.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="raw-rice-pudding" data-name="Raw Rice Pudding" data-url="products/product_lists/gurnsey-dairy/index.html#raw-rice-pudding" data-img="https://uddermilk.com/upload/IMG_0212.jpeg" data-icon="custard">
+            <label class="sr-only" for="raw-rice-pudding-v">Size</label>
+            <select id="raw-rice-pudding-v" name="v" class="is-one">
+<option value="Pint" data-price="9.0">Pint · $9.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="a2-a2-guernsey-milk-ice-cream" style="--tint: #DCE7F6">
@@ -894,8 +916,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of A2/A2 Guernsey Milk Ice Cream"><img class="ph__img" src="https://uddermilk.com/upload/20180715_213401%20%281%29.jpg" alt="A2/A2 Guernsey Milk Ice Cream" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>A2/A2 Guernsey Milk Ice Cream</h2>
+          <p class="product__from">from $12.00</p>
           <div class="tags">
 <span class="tag tag--a2">A2/A2</span><span class="tag">Guernsey</span><span class="tag">No sugar added</span>          </div>
 <p class="product__desc" data-clamp>Sweetened only with maple syrup or honey.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -907,20 +931,20 @@
             <li><span class="v-label">Mint · pint</span><span class="price">$12.00</span></li>
             <li><span class="v-label">Butter pecan</span><span class="price">$12.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="a2-a2-guernsey-milk-ice-cream" data-name="A2/A2 Guernsey Milk Ice Cream" data-url="products/product_lists/gurnsey-dairy/index.html#a2-a2-guernsey-milk-ice-cream" data-img="https://uddermilk.com/upload/20180715_213401%20%281%29.jpg" data-icon="soft-ice-cream">
-              <label class="sr-only" for="a2-a2-guernsey-milk-ice-cream-v">Size</label>
-              <select id="a2-a2-guernsey-milk-ice-cream-v" name="v">
-<option value="Vanilla · 16 oz" data-price="12.0">Vanilla · 16 oz · $12.00</option><option value="Chocolate · 16 oz" data-price="12.0">Chocolate · 16 oz · $12.00</option><option value="Strawberry · pint" data-price="12.0">Strawberry · pint · $12.00</option><option value="Maple walnut · pint" data-price="12.0">Maple walnut · pint · $12.00</option><option value="Mint · pint" data-price="12.0">Mint · pint · $12.00</option><option value="Butter pecan" data-price="12.0">Butter pecan · $12.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="a2-a2-guernsey-milk-ice-cream" data-name="A2/A2 Guernsey Milk Ice Cream" data-url="products/product_lists/gurnsey-dairy/index.html#a2-a2-guernsey-milk-ice-cream" data-img="https://uddermilk.com/upload/20180715_213401%20%281%29.jpg" data-icon="soft-ice-cream">
+            <label class="sr-only" for="a2-a2-guernsey-milk-ice-cream-v">Size</label>
+            <select id="a2-a2-guernsey-milk-ice-cream-v" name="v">
+<option value="Vanilla · 16 oz" data-price="12.0">Vanilla · 16 oz · $12.00</option><option value="Chocolate · 16 oz" data-price="12.0">Chocolate · 16 oz · $12.00</option><option value="Strawberry · pint" data-price="12.0">Strawberry · pint · $12.00</option><option value="Maple walnut · pint" data-price="12.0">Maple walnut · pint · $12.00</option><option value="Mint · pint" data-price="12.0">Mint · pint · $12.00</option><option value="Butter pecan" data-price="12.0">Butter pecan · $12.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="raw-iced-coffee" style="--tint: #DCE7F6">
@@ -929,18 +953,20 @@
             <img class="ph__icon" src="../../../assets/icons/hot-beverage.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Raw Iced Coffee</h2>
+          <p class="product__from">Price at login</p>
           <div class="tags">
 <span class="tag tag--raw">Raw</span><span class="tag">Guernsey</span>          </div>
 <p class="product__desc" data-clamp>Cold coffee and raw Guernsey milk, ready to pour.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Bottle</span><span class="ask">Price at login</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <p class="hidden-note">Everything in this category is sold out right now. Switch off “In stock only” to see the full list.</p>
@@ -1047,6 +1073,6 @@
     </div>
   </div>
 </footer><script src="../../../assets/js/site.js?v=0da2f001" defer></script>
-<script src="../../../assets/js/shop.js?v=07b2128e" defer></script>
+<script src="../../../assets/js/shop.js?v=60b78f0e" defer></script>
 </body>
 </html>

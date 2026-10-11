@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="../../../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../../../assets/fonts/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../../assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../../assets/css/site.css?v=1f783f4a">
+<link rel="stylesheet" href="../../../assets/css/site.css?v=d24d284f">
 <script>document.documentElement.classList.add('js');if(location.protocol==="file:")document.write('<link rel="stylesheet" href="../../../assets/css/fonts-local.css?v=">')</script>
 </head>
 <body class="page-cat">
@@ -540,7 +540,7 @@
         <label class="toggle"><input type="checkbox" data-instock><span class="toggle__ui" aria-hidden="true"></span><span>In stock<span class="t-long"> only</span></span></label>
       </div>
     </div>
-    <div class="products">
+    <div class="products products--grid">
       <article class="product has-photo" id="chicken-pet-food" style="--tint: #EFE3C9">
         <div class="product__media">
           <figure class="ph">
@@ -548,28 +548,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Chicken Pet Food"><img class="ph__img" src="https://uddermilk.com/upload/20191228_231606.jpg" alt="Chicken Pet Food" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Chicken Pet Food</h2>
+          <p class="product__from">$5.50</p>
           <div class="tags">
 <span class="tag">For pets</span>          </div>
 <p class="product__desc" data-clamp>From grass-fed, pastured chickens.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pack</span><span class="price">$5.50</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="chicken-pet-food" data-name="Chicken Pet Food" data-url="products/product_lists/pet-food/index.html#chicken-pet-food" data-img="https://uddermilk.com/upload/20191228_231606.jpg" data-icon="dog-face">
-              <label class="sr-only" for="chicken-pet-food-v">Size</label>
-              <select id="chicken-pet-food-v" name="v" class="is-one">
-<option value="Pack" data-price="5.5">Pack · $5.50</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="chicken-pet-food" data-name="Chicken Pet Food" data-url="products/product_lists/pet-food/index.html#chicken-pet-food" data-img="https://uddermilk.com/upload/20191228_231606.jpg" data-icon="dog-face">
+            <label class="sr-only" for="chicken-pet-food-v">Size</label>
+            <select id="chicken-pet-food-v" name="v" class="is-one">
+<option value="Pack" data-price="5.5">Pack · $5.50</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="cooked-lamb-bones" style="--tint: #EFE3C9">
@@ -578,28 +580,30 @@
             <img class="ph__icon" src="../../../assets/icons/bone.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Cooked Lamb Bones</h2>
+          <p class="product__from">$3.00</p>
           <div class="tags">
 <span class="tag">For pets</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pack</span><span class="price">$3.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="cooked-lamb-bones" data-name="Cooked Lamb Bones" data-url="products/product_lists/pet-food/index.html#cooked-lamb-bones" data-img="" data-icon="bone">
-              <label class="sr-only" for="cooked-lamb-bones-v">Size</label>
-              <select id="cooked-lamb-bones-v" name="v" class="is-one">
-<option value="Pack" data-price="3.0">Pack · $3.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="cooked-lamb-bones" data-name="Cooked Lamb Bones" data-url="products/product_lists/pet-food/index.html#cooked-lamb-bones" data-img="" data-icon="bone">
+            <label class="sr-only" for="cooked-lamb-bones-v">Size</label>
+            <select id="cooked-lamb-bones-v" name="v" class="is-one">
+<option value="Pack" data-price="3.0">Pack · $3.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="cooked-marrow-bones" style="--tint: #EFE3C9">
@@ -608,28 +612,30 @@
             <img class="ph__icon" src="../../../assets/icons/bone.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Cooked Marrow Bones</h2>
+          <p class="product__from">$3.00</p>
           <div class="tags">
 <span class="tag">For pets</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pack</span><span class="price">$3.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="cooked-marrow-bones" data-name="Cooked Marrow Bones" data-url="products/product_lists/pet-food/index.html#cooked-marrow-bones" data-img="" data-icon="bone">
-              <label class="sr-only" for="cooked-marrow-bones-v">Size</label>
-              <select id="cooked-marrow-bones-v" name="v" class="is-one">
-<option value="Pack" data-price="3.0">Pack · $3.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="cooked-marrow-bones" data-name="Cooked Marrow Bones" data-url="products/product_lists/pet-food/index.html#cooked-marrow-bones" data-img="" data-icon="bone">
+            <label class="sr-only" for="cooked-marrow-bones-v">Size</label>
+            <select id="cooked-marrow-bones-v" name="v" class="is-one">
+<option value="Pack" data-price="3.0">Pack · $3.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product is-allout has-photo" id="lamb-pet-food" style="--tint: #EFE3C9">
@@ -639,17 +645,19 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Lamb Pet Food"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20230731_184017_Google.jpg" alt="Lamb Pet Food" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Lamb Pet Food</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag">For pets</span><span class="tag tag--out">Sold out</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">Pack</span><span class="price">$6.50</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Lamb%20Pet%20Food">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Lamb%20Pet%20Food">Ask when it's back</a>
         </div>
       </article>
       <article class="product" id="pasture-raised-beef-and-organ-blend-boneless" style="--tint: #EFE3C9">
@@ -658,8 +666,10 @@
             <img class="ph__icon" src="../../../assets/icons/bone.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Pasture-Raised Beef <span class="amp">&amp;</span> Organ Blend, Boneless</h2>
+          <p class="product__from">Price at login</p>
           <div class="tags">
 <span class="tag">For pets</span>          </div>
           <div class="product__long" id="pasture-raised-beef-and-organ-blend-boneless-more" hidden><p>A nutrient-rich blend of beef tripe, kidney, spleen, lung, throat, sweetbread, cheek meat and ground beef, packed with natural protein, vitamins and minerals for your dog&#39;s health and energy. No bones.</p></div>
@@ -667,10 +677,10 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pack</span><span class="ask">Price at login</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="mixed-beef-organs-with-soup" style="--tint: #EFE3C9">
@@ -679,18 +689,20 @@
             <img class="ph__icon" src="../../../assets/icons/dog-face.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Mixed Beef Organs with Soup</h2>
+          <p class="product__from">Price at login</p>
           <div class="tags">
 <span class="tag">For pets</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pack</span><span class="ask">Price at login</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="beef-and-egg-mix" style="--tint: #EFE3C9">
@@ -699,18 +711,20 @@
             <img class="ph__icon" src="../../../assets/icons/dog-face.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Beef <span class="amp">&amp;</span> Egg Mix</h2>
+          <p class="product__from">Price at login</p>
           <div class="tags">
 <span class="tag">For pets</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pack</span><span class="ask">Price at login</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="cooked-tongue-and-cleaned-tripe" style="--tint: #EFE3C9">
@@ -719,18 +733,20 @@
             <img class="ph__icon" src="../../../assets/icons/dog-face.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Cooked Tongue <span class="amp">&amp;</span> Cleaned Tripe</h2>
+          <p class="product__from">Price at login</p>
           <div class="tags">
 <span class="tag">For pets</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pack</span><span class="ask">Price at login</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="ground-grass-fed-beef-bones" style="--tint: #EFE3C9">
@@ -739,8 +755,10 @@
             <img class="ph__icon" src="../../../assets/icons/bone.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Ground Grass-Fed Beef Bones</h2>
+          <p class="product__from">Price at login</p>
           <div class="tags">
 <span class="tag">For pets</span>          </div>
           <div class="product__long" id="ground-grass-fed-beef-bones-more" hidden><p>Ground bone meal is a natural supplement for dogs and cats, especially those on raw or homemade diets.</p><ul class="bul"><li>Calcium and phosphorus for strong bones and teeth</li><li>Natural collagen and gelatin</li><li>Helps firm up stools in raw-fed pets</li><li>Minerals for healthy skin and a shiny coat</li><li>Helps balance the calcium-to-phosphorus ratio in homemade and raw diets</li></ul></div>
@@ -748,10 +766,10 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pack</span><span class="ask">Price at login</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="treated-grass-fed-bones" style="--tint: #EFE3C9">
@@ -760,18 +778,20 @@
             <img class="ph__icon" src="../../../assets/icons/bone.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Treated Grass-Fed Bones</h2>
+          <p class="product__from">Price at login</p>
           <div class="tags">
 <span class="tag">For pets</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pack</span><span class="ask">Price at login</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="whole-cooked-soup-chicken" style="--tint: #EFE3C9">
@@ -780,18 +800,20 @@
             <img class="ph__icon" src="../../../assets/icons/dog-face.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Whole Cooked Soup Chicken</h2>
+          <p class="product__from">Price at login</p>
           <div class="tags">
 <span class="tag">For pets</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pack</span><span class="ask">Price at login</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="soup-for-pets" style="--tint: #EFE3C9">
@@ -800,18 +822,20 @@
             <img class="ph__icon" src="../../../assets/icons/dog-face.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Soup for Pets</h2>
+          <p class="product__from">Price at login</p>
           <div class="tags">
 <span class="tag">For pets</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pack</span><span class="ask">Price at login</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="fish-pet-food" style="--tint: #EFE3C9">
@@ -820,18 +844,20 @@
             <img class="ph__icon" src="../../../assets/icons/dog-face.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Fish Pet Food</h2>
+          <p class="product__from">Price at login</p>
           <div class="tags">
 <span class="tag">For pets</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pack</span><span class="ask">Price at login</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="premium-pet-food" style="--tint: #EFE3C9">
@@ -840,8 +866,10 @@
             <img class="ph__icon" src="../../../assets/icons/dog-face.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Premium Pet Food</h2>
+          <p class="product__from">Price at login</p>
           <div class="tags">
 <span class="tag">For pets</span>          </div>
           <div class="product__long" id="premium-pet-food-more" hidden><h3>Ingredients</h3><ul class="bul"><li>80%: organic beef, chicken, turkey, salmon or beef organs</li><li>12%: organic grass-fed beef bones, marrow bones and organs</li><li>8%: organic grass-fed goat milk</li></ul></div>
@@ -849,10 +877,10 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pack</span><span class="ask">Price at login</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <a class="btn btn--sm" href="../../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <p class="hidden-note">Everything in this category is sold out right now. Switch off “In stock only” to see the full list.</p>
@@ -959,6 +987,6 @@
     </div>
   </div>
 </footer><script src="../../../assets/js/site.js?v=0da2f001" defer></script>
-<script src="../../../assets/js/shop.js?v=07b2128e" defer></script>
+<script src="../../../assets/js/shop.js?v=60b78f0e" defer></script>
 </body>
 </html>

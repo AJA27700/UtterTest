@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../../assets/fonts/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../assets/css/site.css?v=1f783f4a">
+<link rel="stylesheet" href="../../assets/css/site.css?v=d24d284f">
 <script>document.documentElement.classList.add('js');if(location.protocol==="file:")document.write('<link rel="stylesheet" href="../../assets/css/fonts-local.css?v=">')</script>
 </head>
 <body class="page-cat">
@@ -541,7 +541,7 @@
         <label class="toggle"><input type="checkbox" data-instock><span class="toggle__ui" aria-hidden="true"></span><span>In stock<span class="t-long"> only</span></span></label>
       </div>
     </div>
-    <div class="products">
+    <div class="products products--grid">
       <article class="product has-photo" id="sofiyas-unwashed-eggs" style="--tint: #DCE7F6">
         <div class="product__media">
           <figure class="ph">
@@ -549,8 +549,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Sofiya&#39;s Unwashed Eggs"><img class="ph__img" src="https://uddermilk.com/upload/20200715_195138.jpg" alt="Sofiya&#39;s Unwashed Eggs" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Sofiya&#39;s Unwashed Eggs</h2>
+          <p class="product__from">$7.50</p>
           <div class="tags">
 <span class="tag tag--grass">Pasture-raised</span><span class="tag">Soy-free</span><span class="tag">Unwashed</span>          </div>
 <p class="product__desc" data-clamp>Left unwashed so the egg keeps its natural protective bloom and stays fresh longer. The hens eat organic barley, sea protein, minerals, probiotics and carrot enzymes.</p>          <div class="product__long" id="sofiyas-unwashed-eggs-more" hidden><h3>Farm fresh · Nutrient-rich · Naturally protected</h3><p>Enjoy truly farm-fresh eggs, produced the way nature intended. Our pasture-raised eggs are left unwashed to preserve their natural protective layer, known as the bloom.</p><p>This natural coating seals the shell&#39;s pores, helping to:</p><ul class="bul"><li>Keep bacteria out</li><li>Reduce moisture loss</li><li>Keep the eggs fresh longer, naturally</li></ul><p>Conventional store-bought eggs are washed, which strips this layer away. Ours keep their original quality, taste and shelf life.</p><h3>Premium hen diet, superior eggs</h3><p>Our hens are raised on open pasture and fed a carefully balanced organic, nutrient-rich diet, including:</p><ul class="bul"><li>Organic barley</li><li>Pure-Life sea protein</li><li>Organic vitamins and minerals</li><li>Essential oils</li><li>Probiotics</li><li>Carrot enzymes</li></ul><p>The result is eggs that are:</p><ul class="checks"><li>Richer in flavor</li><li>Higher in nutrients</li><li>Naturally wholesome</li></ul><h3>Why choose Udder Milk eggs?</h3><ul class="bul"><li>Pasture-raised for the best quality</li><li>Soy-free</li><li>Unwashed, so they stay fresh longer</li><li>Produced with care and transparency</li></ul></div>
@@ -558,20 +560,20 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Dozen</span><span class="price">$7.50</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="sofiyas-unwashed-eggs" data-name="Sofiya&#39;s Unwashed Eggs" data-url="category/eggs/index.html#sofiyas-unwashed-eggs" data-img="https://uddermilk.com/upload/20200715_195138.jpg" data-icon="egg">
-              <label class="sr-only" for="sofiyas-unwashed-eggs-v">Size</label>
-              <select id="sofiyas-unwashed-eggs-v" name="v" class="is-one">
-<option value="Dozen" data-price="7.5">Dozen · $7.50</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="sofiyas-unwashed-eggs" data-name="Sofiya&#39;s Unwashed Eggs" data-url="category/eggs/index.html#sofiyas-unwashed-eggs" data-img="https://uddermilk.com/upload/20200715_195138.jpg" data-icon="egg">
+            <label class="sr-only" for="sofiyas-unwashed-eggs-v">Size</label>
+            <select id="sofiyas-unwashed-eggs-v" name="v" class="is-one">
+<option value="Dozen" data-price="7.5">Dozen · $7.50</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="pasture-eggs-higher-omega" style="--tint: #DCE7F6">
@@ -581,8 +583,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Pasture Eggs, Higher Omega"><img class="ph__img" src="https://uddermilk.com/upload/4147C082-2429-4049-990D-6CC786D70712.png" alt="Pasture Eggs, Higher Omega" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Pasture Eggs, Higher Omega</h2>
+          <p class="product__from">$7.50</p>
           <div class="tags">
 <span class="tag tag--grass">Pasture-raised</span><span class="tag">Soy-free</span><span class="tag">No antibiotics</span>          </div>
 <p class="product__desc" data-clamp>Deep orange yolks from hens on pasture and organic, soy-free feed.</p>          <div class="product__long" id="pasture-eggs-higher-omega-more" hidden><ul class="bul"><li>Pasture-raised</li><li>Soy-free</li><li>No antibiotics</li><li>Organic feed</li><li>Rich orange yolks</li></ul><p>The organic feed ingredients: barley, Pure-Life sea protein, organic vitamins and minerals, essential oils, probiotics and carrot enzymes.</p></div>
@@ -590,20 +594,20 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Dozen</span><span class="price">$7.50</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="pasture-eggs-higher-omega" data-name="Pasture Eggs, Higher Omega" data-url="category/eggs/index.html#pasture-eggs-higher-omega" data-img="https://uddermilk.com/upload/4147C082-2429-4049-990D-6CC786D70712.png" data-icon="egg">
-              <label class="sr-only" for="pasture-eggs-higher-omega-v">Size</label>
-              <select id="pasture-eggs-higher-omega-v" name="v" class="is-one">
-<option value="Dozen" data-price="7.5">Dozen · $7.50</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="pasture-eggs-higher-omega" data-name="Pasture Eggs, Higher Omega" data-url="category/eggs/index.html#pasture-eggs-higher-omega" data-img="https://uddermilk.com/upload/4147C082-2429-4049-990D-6CC786D70712.png" data-icon="egg">
+            <label class="sr-only" for="pasture-eggs-higher-omega-v">Size</label>
+            <select id="pasture-eggs-higher-omega-v" name="v" class="is-one">
+<option value="Dozen" data-price="7.5">Dozen · $7.50</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="heritage-eggs" style="--tint: #DCE7F6">
@@ -613,8 +617,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Heritage Eggs"><img class="ph__img" src="https://uddermilk.com/upload/COUNTRY%20SELECT.jpg" alt="Heritage Eggs" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Heritage Eggs</h2>
+          <p class="product__from">$9.00</p>
           <div class="tags">
 <span class="tag tag--grass">Pasture-raised</span><span class="tag">Soy-free</span><span class="tag tag--heritage">Heritage breeds</span>          </div>
 <p class="product__desc" data-clamp>Pastel shells from Araucana, Welsummer and Cuckoo Marans hens on small family farms. Rich flavor and bright yolks.</p>          <div class="product__long" id="heritage-eggs-more" hidden><h3>Pastel-shelled heritage eggs</h3><p>Our colorful heritage eggs come from pasture-raised hens that spend their days foraging on grass, insects and natural vegetation. The result is a rich, flavorful egg with naturally vibrant yolks and exceptional freshness.</p><p>Our farmers feed a carefully balanced organic ration made with non-GMO grains, sea minerals, vitamins, probiotics and essential nutrients. In winter the hens also get fresh sprouts and greens, to keep them healthy and the eggs good all year.</p><h3>Why customers love these eggs</h3><ul class="bul"><li>Pasture-raised</li><li>Heritage-breed hens: Araucana, Welsummer and Cuckoo Maran</li><li>Naturally colorful shells</li><li>Non-GMO feed</li><li>Soy-free</li><li>Rich, flavorful yolks</li><li>From small family farms</li></ul><p>These blue, green, cream and brown eggs are collected with care and delivered fresh from our family farms to your table.</p><p>The organic feed ingredients: barley, Pure-Life sea protein, organic vitamins and minerals, essential oils.</p></div>
@@ -622,20 +628,20 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Dozen</span><span class="price">$9.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="heritage-eggs" data-name="Heritage Eggs" data-url="category/eggs/index.html#heritage-eggs" data-img="https://uddermilk.com/upload/COUNTRY%20SELECT.jpg" data-icon="egg">
-              <label class="sr-only" for="heritage-eggs-v">Size</label>
-              <select id="heritage-eggs-v" name="v" class="is-one">
-<option value="Dozen" data-price="9.0">Dozen · $9.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="heritage-eggs" data-name="Heritage Eggs" data-url="category/eggs/index.html#heritage-eggs" data-img="https://uddermilk.com/upload/COUNTRY%20SELECT.jpg" data-icon="egg">
+            <label class="sr-only" for="heritage-eggs-v">Size</label>
+            <select id="heritage-eggs-v" name="v" class="is-one">
+<option value="Dozen" data-price="9.0">Dozen · $9.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="araucana-eggs" style="--tint: #DCE7F6">
@@ -645,8 +651,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Araucana Eggs"><img class="ph__img" src="https://uddermilk.com/upload/20191127_144332.jpg" alt="Araucana Eggs" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Araucana Eggs</h2>
+          <p class="product__from">$9.00</p>
           <div class="tags">
 <span class="tag tag--grass">Pasture-raised</span><span class="tag tag--heritage">Heritage breed</span>          </div>
 <p class="product__desc" data-clamp>Blue-green eggs from pastured Araucanas, fed non-GMO organic grain, sea minerals and probiotics, with sprouts and greens in winter.</p>          <div class="product__long" id="araucana-eggs-more" hidden><p>Our colorful heritage eggs come from pasture-raised hens that spend their days foraging on grass, insects and natural vegetation. The result is a rich, flavorful egg with naturally vibrant yolks and exceptional freshness.</p><p>Our farmers feed a carefully balanced organic ration made with non-GMO grains, sea minerals, vitamins, probiotics and essential nutrients. In winter the hens also get fresh sprouts and greens, to keep them healthy and the eggs good all year.</p><h3>Why customers love these eggs</h3><ul class="bul"><li>Pasture-raised</li><li>Heritage-breed hens</li><li>Naturally colorful shells</li><li>Non-GMO feed</li><li>Soy-free</li><li>Rich, flavorful yolks</li><li>From small family farms</li></ul><p>The organic feed ingredients: barley, Pure-Life sea protein, organic vitamins and minerals, essential oils.</p></div>
@@ -654,20 +662,20 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Dozen</span><span class="price">$9.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="araucana-eggs" data-name="Araucana Eggs" data-url="category/eggs/index.html#araucana-eggs" data-img="https://uddermilk.com/upload/20191127_144332.jpg" data-icon="egg">
-              <label class="sr-only" for="araucana-eggs-v">Size</label>
-              <select id="araucana-eggs-v" name="v" class="is-one">
-<option value="Dozen" data-price="9.0">Dozen · $9.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="araucana-eggs" data-name="Araucana Eggs" data-url="category/eggs/index.html#araucana-eggs" data-img="https://uddermilk.com/upload/20191127_144332.jpg" data-icon="egg">
+            <label class="sr-only" for="araucana-eggs-v">Size</label>
+            <select id="araucana-eggs-v" name="v" class="is-one">
+<option value="Dozen" data-price="9.0">Dozen · $9.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="malaks-quail-eggs" style="--tint: #DCE7F6">
@@ -677,8 +685,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Malak&#39;s Quail Eggs"><img class="ph__img" src="https://uddermilk.com/upload/resize-15722160381355201230MALAKQUALVEGG.jpg" alt="Malak&#39;s Quail Eggs" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Malak&#39;s Quail Eggs</h2>
+          <p class="product__from">$5.00</p>
           <div class="tags">
 <span class="tag tag--organic">Organic feed</span>          </div>
 <p class="product__desc" data-clamp>Tiny speckled quail eggs, packed in a tiny box.</p>          <div class="product__long" id="malaks-quail-eggs-more" hidden><p>Cute, tiny quail eggs: 18 in a tiny little box.</p><p>The organic feed ingredients: barley, Pure-Life sea protein, organic vitamins and minerals, essential oils.</p></div>
@@ -686,20 +696,20 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Box</span><span class="price">$5.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="malaks-quail-eggs" data-name="Malak&#39;s Quail Eggs" data-url="category/eggs/index.html#malaks-quail-eggs" data-img="https://uddermilk.com/upload/resize-15722160381355201230MALAKQUALVEGG.jpg" data-icon="egg">
-              <label class="sr-only" for="malaks-quail-eggs-v">Size</label>
-              <select id="malaks-quail-eggs-v" name="v" class="is-one">
-<option value="Box" data-price="5.0">Box · $5.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="malaks-quail-eggs" data-name="Malak&#39;s Quail Eggs" data-url="category/eggs/index.html#malaks-quail-eggs" data-img="https://uddermilk.com/upload/resize-15722160381355201230MALAKQUALVEGG.jpg" data-icon="egg">
+            <label class="sr-only" for="malaks-quail-eggs-v">Size</label>
+            <select id="malaks-quail-eggs-v" name="v" class="is-one">
+<option value="Box" data-price="5.0">Box · $5.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="nours-khaki-campbell-duck-eggs" style="--tint: #DCE7F6">
@@ -709,8 +719,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Nour&#39;s Khaki Campbell Duck Eggs"><img class="ph__img" src="https://uddermilk.com/upload/KHAKI%20DUCK%20EGG.jpg" alt="Nour&#39;s Khaki Campbell Duck Eggs" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Nour&#39;s Khaki Campbell Duck Eggs</h2>
+          <p class="product__from">$8.50</p>
           <div class="tags">
 <span class="tag tag--organic">Organic feed</span>          </div>
 <p class="product__desc" data-clamp>Rich duck eggs from layers on certified-organic feed. No pesticides, herbicides or GMOs.</p>          <div class="product__long" id="nours-khaki-campbell-duck-eggs-more" hidden><p>All our farmers use a certified organic layer feed, and they farm without pesticides, herbicides, insecticides, fungicides, GMOs or irradiation.</p><p>When the grass is gone in winter, our farmer grows sprouts for his ducks, and we&#39;ve asked the others to grow kale for theirs.</p><p>The organic feed ingredients: barley, Pure-Life sea protein, organic vitamins and minerals, essential oils.</p></div>
@@ -718,20 +730,20 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Dozen</span><span class="price">$8.50</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="nours-khaki-campbell-duck-eggs" data-name="Nour&#39;s Khaki Campbell Duck Eggs" data-url="category/eggs/index.html#nours-khaki-campbell-duck-eggs" data-img="https://uddermilk.com/upload/KHAKI%20DUCK%20EGG.jpg" data-icon="egg">
-              <label class="sr-only" for="nours-khaki-campbell-duck-eggs-v">Size</label>
-              <select id="nours-khaki-campbell-duck-eggs-v" name="v" class="is-one">
-<option value="Dozen" data-price="8.5">Dozen · $8.50</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="nours-khaki-campbell-duck-eggs" data-name="Nour&#39;s Khaki Campbell Duck Eggs" data-url="category/eggs/index.html#nours-khaki-campbell-duck-eggs" data-img="https://uddermilk.com/upload/KHAKI%20DUCK%20EGG.jpg" data-icon="egg">
+            <label class="sr-only" for="nours-khaki-campbell-duck-eggs-v">Size</label>
+            <select id="nours-khaki-campbell-duck-eggs-v" name="v" class="is-one">
+<option value="Dozen" data-price="8.5">Dozen · $8.50</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product is-allout has-photo" id="frozen-egg-whites-and-yolks" style="--tint: #DCE7F6">
@@ -741,8 +753,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Frozen Egg Whites &amp; Yolks"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20231008_015445_Google~2.jpg" alt="Frozen Egg Whites &amp; Yolks" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Frozen Egg Whites <span class="amp">&amp;</span> Yolks</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag tag--frozen">Frozen</span><span class="tag tag--out">Sold out</span>          </div>
 <p class="product__desc" data-clamp>Separated and frozen. Whites for meringues and shakes, yolks for custards and sauces.</p>          <div class="product__long" id="frozen-egg-whites-and-yolks-more" hidden><h3>Egg whites</h3><p>Packed with protein: ideal for fluffy meringues, protein shakes and light recipes.</p><h3>Egg yolks</h3><p>Rich and creamy: they bring flavor and texture to custards, sauces and desserts.</p></div>
@@ -751,9 +765,9 @@
             <li class="is-out"><span class="v-label">12 egg whites · pint</span><span class="price">$7.50</span></li>
             <li class="is-out"><span class="v-label">12 egg yolks · pint</span><span class="price">$7.50</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Frozen%20Egg%20Whites%20%26%20Yolks">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Frozen%20Egg%20Whites%20%26%20Yolks">Ask when it's back</a>
         </div>
       </article>
       <article class="product is-allout has-photo" id="goose-eggs" style="--tint: #DCE7F6">
@@ -763,8 +777,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Goose Eggs"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20230504_001703_Google.jpg" alt="Goose Eggs" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Goose Eggs</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag tag--organic">Organic feed</span><span class="tag tag--out">Sold out</span>          </div>
           <div class="product__long" id="goose-eggs-more" hidden><p>All our farmers use a certified organic layer feed, and they farm without pesticides, herbicides, insecticides, fungicides, GMOs or irradiation.</p><p>When the grass is gone in winter, our farmer grows sprouts for his birds, and we&#39;ve asked the others to grow kale for theirs.</p><p>The organic feed ingredients: barley, Pure-Life sea protein, organic vitamins and minerals, essential oils.</p></div>
@@ -772,9 +788,9 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">Case of 5</span><span class="price">$20.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Goose%20Eggs">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Goose%20Eggs">Ask when it's back</a>
         </div>
       </article>
       <p class="hidden-note">Everything in this category is sold out right now. Switch off “In stock only” to see the full list.</p>
@@ -881,6 +897,6 @@
     </div>
   </div>
 </footer><script src="../../assets/js/site.js?v=0da2f001" defer></script>
-<script src="../../assets/js/shop.js?v=07b2128e" defer></script>
+<script src="../../assets/js/shop.js?v=60b78f0e" defer></script>
 </body>
 </html>

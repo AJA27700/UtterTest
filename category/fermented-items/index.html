@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../../assets/fonts/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../assets/css/site.css?v=1f783f4a">
+<link rel="stylesheet" href="../../assets/css/site.css?v=d24d284f">
 <script>document.documentElement.classList.add('js');if(location.protocol==="file:")document.write('<link rel="stylesheet" href="../../assets/css/fonts-local.css?v=">')</script>
 </head>
 <body class="page-cat">
@@ -541,7 +541,7 @@
         <label class="toggle"><input type="checkbox" data-instock><span class="toggle__ui" aria-hidden="true"></span><span>In stock<span class="t-long"> only</span></span></label>
       </div>
     </div>
-    <div class="products">
+    <div class="products products--grid">
       <article class="product has-photo" id="fermented-string-beans" style="--tint: #E1ECD2">
         <div class="product__media">
           <figure class="ph">
@@ -549,28 +549,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Fermented String Beans"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20240503_161904_Google.jpg" alt="Fermented String Beans" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Fermented String Beans</h2>
+          <p class="product__from">$8.00</p>
           <div class="tags">
 <span class="tag">Lacto-fermented</span>          </div>
 <p class="product__desc" data-clamp>String beans, salt and whey.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$8.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="fermented-string-beans" data-name="Fermented String Beans" data-url="category/fermented-items/index.html#fermented-string-beans" data-img="https://uddermilk.com/upload/Screenshot_20240503_161904_Google.jpg" data-icon="pea-pod">
-              <label class="sr-only" for="fermented-string-beans-v">Size</label>
-              <select id="fermented-string-beans-v" name="v" class="is-one">
-<option value="Pint" data-price="8.0">Pint · $8.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="fermented-string-beans" data-name="Fermented String Beans" data-url="category/fermented-items/index.html#fermented-string-beans" data-img="https://uddermilk.com/upload/Screenshot_20240503_161904_Google.jpg" data-icon="pea-pod">
+            <label class="sr-only" for="fermented-string-beans-v">Size</label>
+            <select id="fermented-string-beans-v" name="v" class="is-one">
+<option value="Pint" data-price="8.0">Pint · $8.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="mediterranean-pickled-cabbage" style="--tint: #E1ECD2">
@@ -580,28 +582,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Mediterranean Pickled Cabbage"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20241226_204024_Google.jpg" alt="Mediterranean Pickled Cabbage" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Mediterranean Pickled Cabbage</h2>
+          <p class="product__from">$6.00</p>
           <div class="tags">
           </div>
 <p class="product__desc" data-clamp>Cabbage, salt, chili, beetroot and vinegar.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$6.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="mediterranean-pickled-cabbage" data-name="Mediterranean Pickled Cabbage" data-url="category/fermented-items/index.html#mediterranean-pickled-cabbage" data-img="https://uddermilk.com/upload/Screenshot_20241226_204024_Google.jpg" data-icon="cucumber">
-              <label class="sr-only" for="mediterranean-pickled-cabbage-v">Size</label>
-              <select id="mediterranean-pickled-cabbage-v" name="v" class="is-one">
-<option value="Pint" data-price="6.0">Pint · $6.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="mediterranean-pickled-cabbage" data-name="Mediterranean Pickled Cabbage" data-url="category/fermented-items/index.html#mediterranean-pickled-cabbage" data-img="https://uddermilk.com/upload/Screenshot_20241226_204024_Google.jpg" data-icon="cucumber">
+            <label class="sr-only" for="mediterranean-pickled-cabbage-v">Size</label>
+            <select id="mediterranean-pickled-cabbage-v" name="v" class="is-one">
+<option value="Pint" data-price="6.0">Pint · $6.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="mediterranean-pickled-carrot" style="--tint: #E1ECD2">
@@ -611,28 +615,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Mediterranean Pickled Carrot"><img class="ph__img" src="https://uddermilk.com/upload/184732Screenshot_20241226_204421_Google.jpg" alt="Mediterranean Pickled Carrot" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Mediterranean Pickled Carrot</h2>
+          <p class="product__from">$6.00</p>
           <div class="tags">
           </div>
 <p class="product__desc" data-clamp>Carrot, salt, chili and vinegar.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$6.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="mediterranean-pickled-carrot" data-name="Mediterranean Pickled Carrot" data-url="category/fermented-items/index.html#mediterranean-pickled-carrot" data-img="https://uddermilk.com/upload/184732Screenshot_20241226_204421_Google.jpg" data-icon="cucumber">
-              <label class="sr-only" for="mediterranean-pickled-carrot-v">Size</label>
-              <select id="mediterranean-pickled-carrot-v" name="v" class="is-one">
-<option value="Pint" data-price="6.0">Pint · $6.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="mediterranean-pickled-carrot" data-name="Mediterranean Pickled Carrot" data-url="category/fermented-items/index.html#mediterranean-pickled-carrot" data-img="https://uddermilk.com/upload/184732Screenshot_20241226_204421_Google.jpg" data-icon="cucumber">
+            <label class="sr-only" for="mediterranean-pickled-carrot-v">Size</label>
+            <select id="mediterranean-pickled-carrot-v" name="v" class="is-one">
+<option value="Pint" data-price="6.0">Pint · $6.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="fermented-asparagus" style="--tint: #E1ECD2">
@@ -642,28 +648,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Fermented Asparagus"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20260401_220923_Pinterest.jpg" alt="Fermented Asparagus" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Fermented Asparagus</h2>
+          <p class="product__from">$10.50</p>
           <div class="tags">
 <span class="tag">Lacto-fermented</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$10.50</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="fermented-asparagus" data-name="Fermented Asparagus" data-url="category/fermented-items/index.html#fermented-asparagus" data-img="https://uddermilk.com/upload/Screenshot_20260401_220923_Pinterest.jpg" data-icon="pea-pod">
-              <label class="sr-only" for="fermented-asparagus-v">Size</label>
-              <select id="fermented-asparagus-v" name="v" class="is-one">
-<option value="Pint" data-price="10.5">Pint · $10.50</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="fermented-asparagus" data-name="Fermented Asparagus" data-url="category/fermented-items/index.html#fermented-asparagus" data-img="https://uddermilk.com/upload/Screenshot_20260401_220923_Pinterest.jpg" data-icon="pea-pod">
+            <label class="sr-only" for="fermented-asparagus-v">Size</label>
+            <select id="fermented-asparagus-v" name="v" class="is-one">
+<option value="Pint" data-price="10.5">Pint · $10.50</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="sauerkraut" style="--tint: #E1ECD2">
@@ -673,8 +681,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Sauerkraut"><img class="ph__img" src="https://uddermilk.com/upload/sauerkkraut.jpg" alt="Sauerkraut" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Sauerkraut</h2>
+          <p class="product__from">from $8.00</p>
           <div class="tags">
 <span class="tag">Lacto-fermented</span>          </div>
 <p class="product__desc" data-clamp>Shredded cabbage fermented with salt and whey. Keep it somewhere cool.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -682,20 +692,20 @@
             <li><span class="v-label">Himalayan salt · pint</span><span class="price">$8.00</span></li>
             <li><span class="v-label">Celtic sea salt · pint</span><span class="price">$8.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="sauerkraut" data-name="Sauerkraut" data-url="category/fermented-items/index.html#sauerkraut" data-img="https://uddermilk.com/upload/sauerkkraut.jpg" data-icon="leafy-green">
-              <label class="sr-only" for="sauerkraut-v">Size</label>
-              <select id="sauerkraut-v" name="v">
-<option value="Himalayan salt · pint" data-price="8.0">Himalayan salt · pint · $8.00</option><option value="Celtic sea salt · pint" data-price="8.0">Celtic sea salt · pint · $8.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="sauerkraut" data-name="Sauerkraut" data-url="category/fermented-items/index.html#sauerkraut" data-img="https://uddermilk.com/upload/sauerkkraut.jpg" data-icon="leafy-green">
+            <label class="sr-only" for="sauerkraut-v">Size</label>
+            <select id="sauerkraut-v" name="v">
+<option value="Himalayan salt · pint" data-price="8.0">Himalayan salt · pint · $8.00</option><option value="Celtic sea salt · pint" data-price="8.0">Celtic sea salt · pint · $8.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="beetskraut" style="--tint: #E1ECD2">
@@ -705,28 +715,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Beetskraut"><img class="ph__img" src="https://uddermilk.com/upload/15370220190812_200139.jpg" alt="Beetskraut" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Beetskraut</h2>
+          <p class="product__from">$9.00</p>
           <div class="tags">
 <span class="tag">Lacto-fermented</span>          </div>
 <p class="product__desc" data-clamp>Organic cabbage, beets and Celtic salt.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$9.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="beetskraut" data-name="Beetskraut" data-url="category/fermented-items/index.html#beetskraut" data-img="https://uddermilk.com/upload/15370220190812_200139.jpg" data-icon="leafy-green">
-              <label class="sr-only" for="beetskraut-v">Size</label>
-              <select id="beetskraut-v" name="v" class="is-one">
-<option value="Pint" data-price="9.0">Pint · $9.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="beetskraut" data-name="Beetskraut" data-url="category/fermented-items/index.html#beetskraut" data-img="https://uddermilk.com/upload/15370220190812_200139.jpg" data-icon="leafy-green">
+            <label class="sr-only" for="beetskraut-v">Size</label>
+            <select id="beetskraut-v" name="v" class="is-one">
+<option value="Pint" data-price="9.0">Pint · $9.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="kimchi" style="--tint: #E1ECD2">
@@ -736,28 +748,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Kimchi"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20200723-195622_Samsung%20Internet.jpg" alt="Kimchi" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Kimchi</h2>
+          <p class="product__from">$9.00</p>
           <div class="tags">
 <span class="tag">Lacto-fermented</span>          </div>
 <p class="product__desc" data-clamp>Napa cabbage, onion, carrot, daikon, garlic, ginger, red pepper flakes, Celtic sea salt and whey.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$9.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="kimchi" data-name="Kimchi" data-url="category/fermented-items/index.html#kimchi" data-img="https://uddermilk.com/upload/Screenshot_20200723-195622_Samsung%20Internet.jpg" data-icon="leafy-green">
-              <label class="sr-only" for="kimchi-v">Size</label>
-              <select id="kimchi-v" name="v" class="is-one">
-<option value="Pint" data-price="9.0">Pint · $9.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="kimchi" data-name="Kimchi" data-url="category/fermented-items/index.html#kimchi" data-img="https://uddermilk.com/upload/Screenshot_20200723-195622_Samsung%20Internet.jpg" data-icon="leafy-green">
+            <label class="sr-only" for="kimchi-v">Size</label>
+            <select id="kimchi-v" name="v" class="is-one">
+<option value="Pint" data-price="9.0">Pint · $9.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="heirloom-fermented-beets" style="--tint: #E1ECD2">
@@ -767,28 +781,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Heirloom Fermented Beets"><img class="ph__img" src="https://uddermilk.com/upload/HEIRLOOM%20FERMENTED%20BEETS.jpg" alt="Heirloom Fermented Beets" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Heirloom Fermented Beets</h2>
+          <p class="product__from">$8.00</p>
           <div class="tags">
 <span class="tag">Lacto-fermented</span>          </div>
 <p class="product__desc" data-clamp>Heirloom beets, raw local honey, whey, water and Celtic sea salt.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$8.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="heirloom-fermented-beets" data-name="Heirloom Fermented Beets" data-url="category/fermented-items/index.html#heirloom-fermented-beets" data-img="https://uddermilk.com/upload/HEIRLOOM%20FERMENTED%20BEETS.jpg" data-icon="jar">
-              <label class="sr-only" for="heirloom-fermented-beets-v">Size</label>
-              <select id="heirloom-fermented-beets-v" name="v" class="is-one">
-<option value="Pint" data-price="8.0">Pint · $8.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="heirloom-fermented-beets" data-name="Heirloom Fermented Beets" data-url="category/fermented-items/index.html#heirloom-fermented-beets" data-img="https://uddermilk.com/upload/HEIRLOOM%20FERMENTED%20BEETS.jpg" data-icon="jar">
+            <label class="sr-only" for="heirloom-fermented-beets-v">Size</label>
+            <select id="heirloom-fermented-beets-v" name="v" class="is-one">
+<option value="Pint" data-price="8.0">Pint · $8.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="beet-kvass" style="--tint: #E1ECD2">
@@ -798,28 +814,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Beet Kvass"><img class="ph__img" src="https://uddermilk.com/upload/20200519_153454.jpg" alt="Beet Kvass" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Beet Kvass</h2>
+          <p class="product__from">$10.00</p>
           <div class="tags">
 <span class="tag">Lacto-fermented</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Quart</span><span class="price">$10.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="beet-kvass" data-name="Beet Kvass" data-url="category/fermented-items/index.html#beet-kvass" data-img="https://uddermilk.com/upload/20200519_153454.jpg" data-icon="jar">
-              <label class="sr-only" for="beet-kvass-v">Size</label>
-              <select id="beet-kvass-v" name="v" class="is-one">
-<option value="Quart" data-price="10.0">Quart · $10.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="beet-kvass" data-name="Beet Kvass" data-url="category/fermented-items/index.html#beet-kvass" data-img="https://uddermilk.com/upload/20200519_153454.jpg" data-icon="jar">
+            <label class="sr-only" for="beet-kvass-v">Size</label>
+            <select id="beet-kvass-v" name="v" class="is-one">
+<option value="Quart" data-price="10.0">Quart · $10.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="fermented-pickles-with-garlic" style="--tint: #E1ECD2">
@@ -829,28 +847,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Fermented Pickles with Garlic"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20201208-014836_WhatsApp.jpg" alt="Fermented Pickles with Garlic" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Fermented Pickles with Garlic</h2>
+          <p class="product__from">$8.00</p>
           <div class="tags">
 <span class="tag">Lacto-fermented</span>          </div>
 <p class="product__desc" data-clamp>Cucumbers, garlic, whey, apple cider vinegar, fresh dill and honey.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$8.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="fermented-pickles-with-garlic" data-name="Fermented Pickles with Garlic" data-url="category/fermented-items/index.html#fermented-pickles-with-garlic" data-img="https://uddermilk.com/upload/Screenshot_20201208-014836_WhatsApp.jpg" data-icon="cucumber">
-              <label class="sr-only" for="fermented-pickles-with-garlic-v">Size</label>
-              <select id="fermented-pickles-with-garlic-v" name="v" class="is-one">
-<option value="Pint" data-price="8.0">Pint · $8.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="fermented-pickles-with-garlic" data-name="Fermented Pickles with Garlic" data-url="category/fermented-items/index.html#fermented-pickles-with-garlic" data-img="https://uddermilk.com/upload/Screenshot_20201208-014836_WhatsApp.jpg" data-icon="cucumber">
+            <label class="sr-only" for="fermented-pickles-with-garlic-v">Size</label>
+            <select id="fermented-pickles-with-garlic-v" name="v" class="is-one">
+<option value="Pint" data-price="8.0">Pint · $8.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="fermented-hot-pickles-with-garlic" style="--tint: #E1ECD2">
@@ -860,28 +880,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Fermented Hot Pickles with Garlic"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20201208-014855_WhatsApp.jpg" alt="Fermented Hot Pickles with Garlic" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Fermented Hot Pickles with Garlic</h2>
+          <p class="product__from">$8.00</p>
           <div class="tags">
 <span class="tag">Lacto-fermented</span><span class="tag">Spicy</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$8.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="fermented-hot-pickles-with-garlic" data-name="Fermented Hot Pickles with Garlic" data-url="category/fermented-items/index.html#fermented-hot-pickles-with-garlic" data-img="https://uddermilk.com/upload/Screenshot_20201208-014855_WhatsApp.jpg" data-icon="cucumber">
-              <label class="sr-only" for="fermented-hot-pickles-with-garlic-v">Size</label>
-              <select id="fermented-hot-pickles-with-garlic-v" name="v" class="is-one">
-<option value="Pint" data-price="8.0">Pint · $8.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="fermented-hot-pickles-with-garlic" data-name="Fermented Hot Pickles with Garlic" data-url="category/fermented-items/index.html#fermented-hot-pickles-with-garlic" data-img="https://uddermilk.com/upload/Screenshot_20201208-014855_WhatsApp.jpg" data-icon="cucumber">
+            <label class="sr-only" for="fermented-hot-pickles-with-garlic-v">Size</label>
+            <select id="fermented-hot-pickles-with-garlic-v" name="v" class="is-one">
+<option value="Pint" data-price="8.0">Pint · $8.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="pickle-relish" style="--tint: #E1ECD2">
@@ -891,28 +913,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Pickle Relish"><img class="ph__img" src="https://uddermilk.com/upload/PICKLE%20RELISH.jpg" alt="Pickle Relish" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Pickle Relish</h2>
+          <p class="product__from">$9.00</p>
           <div class="tags">
           </div>
 <p class="product__desc" data-clamp>Organic cucumbers, onion, carrot, garlic, turmeric, dill seed, Celtic salt and whey.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$9.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="pickle-relish" data-name="Pickle Relish" data-url="category/fermented-items/index.html#pickle-relish" data-img="https://uddermilk.com/upload/PICKLE%20RELISH.jpg" data-icon="cucumber">
-              <label class="sr-only" for="pickle-relish-v">Size</label>
-              <select id="pickle-relish-v" name="v" class="is-one">
-<option value="Pint" data-price="9.0">Pint · $9.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="pickle-relish" data-name="Pickle Relish" data-url="category/fermented-items/index.html#pickle-relish" data-img="https://uddermilk.com/upload/PICKLE%20RELISH.jpg" data-icon="cucumber">
+            <label class="sr-only" for="pickle-relish-v">Size</label>
+            <select id="pickle-relish-v" name="v" class="is-one">
+<option value="Pint" data-price="9.0">Pint · $9.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="fermented-salsa" style="--tint: #E1ECD2">
@@ -922,28 +946,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Fermented Salsa"><img class="ph__img" src="https://uddermilk.com/upload/FERMENTED%20SALSA.jpg" alt="Fermented Salsa" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Fermented Salsa</h2>
+          <p class="product__from">$9.00</p>
           <div class="tags">
 <span class="tag">Lacto-fermented</span>          </div>
 <p class="product__desc" data-clamp>Made with organic tomatoes.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Half pint</span><span class="price">$9.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="fermented-salsa" data-name="Fermented Salsa" data-url="category/fermented-items/index.html#fermented-salsa" data-img="https://uddermilk.com/upload/FERMENTED%20SALSA.jpg" data-icon="tomato">
-              <label class="sr-only" for="fermented-salsa-v">Size</label>
-              <select id="fermented-salsa-v" name="v" class="is-one">
-<option value="Half pint" data-price="9.0">Half pint · $9.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="fermented-salsa" data-name="Fermented Salsa" data-url="category/fermented-items/index.html#fermented-salsa" data-img="https://uddermilk.com/upload/FERMENTED%20SALSA.jpg" data-icon="tomato">
+            <label class="sr-only" for="fermented-salsa-v">Size</label>
+            <select id="fermented-salsa-v" name="v" class="is-one">
+<option value="Half pint" data-price="9.0">Half pint · $9.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="cauliflower-mix" style="--tint: #E1ECD2">
@@ -953,28 +979,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Cauliflower Mix"><img class="ph__img" src="https://uddermilk.com/upload/IMG_8197.jpeg" alt="Cauliflower Mix" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Cauliflower Mix</h2>
+          <p class="product__from">$9.00</p>
           <div class="tags">
 <span class="tag">Lacto-fermented</span>          </div>
 <p class="product__desc" data-clamp>Organic cauliflower, carrot, garlic, onion, jalapeño, oregano, Celtic salt and whey.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$9.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="cauliflower-mix" data-name="Cauliflower Mix" data-url="category/fermented-items/index.html#cauliflower-mix" data-img="https://uddermilk.com/upload/IMG_8197.jpeg" data-icon="jar">
-              <label class="sr-only" for="cauliflower-mix-v">Size</label>
-              <select id="cauliflower-mix-v" name="v" class="is-one">
-<option value="Pint" data-price="9.0">Pint · $9.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="cauliflower-mix" data-name="Cauliflower Mix" data-url="category/fermented-items/index.html#cauliflower-mix" data-img="https://uddermilk.com/upload/IMG_8197.jpeg" data-icon="jar">
+            <label class="sr-only" for="cauliflower-mix-v">Size</label>
+            <select id="cauliflower-mix-v" name="v" class="is-one">
+<option value="Pint" data-price="9.0">Pint · $9.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="chow-chow-harvest-mixed-vegetables" style="--tint: #E1ECD2">
@@ -984,28 +1012,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Chow Chow, Harvest Mixed Vegetables"><img class="ph__img" src="https://uddermilk.com/upload/HARVEST%20MIXED%20PICKLED%20VEGATABLE.jpg" alt="Chow Chow, Harvest Mixed Vegetables" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Chow Chow, Harvest Mixed Vegetables</h2>
+          <p class="product__from">$8.00</p>
           <div class="tags">
           </div>
 <p class="product__desc" data-clamp>Watermelon rind, carrots, green beans, celery, cauliflower and zucchini with honey, vinegar, mustard seed and fennel seed.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$8.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="chow-chow-harvest-mixed-vegetables" data-name="Chow Chow, Harvest Mixed Vegetables" data-url="category/fermented-items/index.html#chow-chow-harvest-mixed-vegetables" data-img="https://uddermilk.com/upload/HARVEST%20MIXED%20PICKLED%20VEGATABLE.jpg" data-icon="cucumber">
-              <label class="sr-only" for="chow-chow-harvest-mixed-vegetables-v">Size</label>
-              <select id="chow-chow-harvest-mixed-vegetables-v" name="v" class="is-one">
-<option value="Pint" data-price="8.0">Pint · $8.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="chow-chow-harvest-mixed-vegetables" data-name="Chow Chow, Harvest Mixed Vegetables" data-url="category/fermented-items/index.html#chow-chow-harvest-mixed-vegetables" data-img="https://uddermilk.com/upload/HARVEST%20MIXED%20PICKLED%20VEGATABLE.jpg" data-icon="cucumber">
+            <label class="sr-only" for="chow-chow-harvest-mixed-vegetables-v">Size</label>
+            <select id="chow-chow-harvest-mixed-vegetables-v" name="v" class="is-one">
+<option value="Pint" data-price="8.0">Pint · $8.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="harvest-mixed-pickled-peppers" style="--tint: #E1ECD2">
@@ -1015,28 +1045,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Harvest Mixed Pickled Peppers"><img class="ph__img" src="https://uddermilk.com/upload/WhatsApp%20Image%202020-12-08%20at%202.03.23%20AM%20%281%29.jpeg" alt="Harvest Mixed Pickled Peppers" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Harvest Mixed Pickled Peppers</h2>
+          <p class="product__from">$9.00</p>
           <div class="tags">
           </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$9.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="harvest-mixed-pickled-peppers" data-name="Harvest Mixed Pickled Peppers" data-url="category/fermented-items/index.html#harvest-mixed-pickled-peppers" data-img="https://uddermilk.com/upload/WhatsApp%20Image%202020-12-08%20at%202.03.23%20AM%20%281%29.jpeg" data-icon="cucumber">
-              <label class="sr-only" for="harvest-mixed-pickled-peppers-v">Size</label>
-              <select id="harvest-mixed-pickled-peppers-v" name="v" class="is-one">
-<option value="Pint" data-price="9.0">Pint · $9.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="harvest-mixed-pickled-peppers" data-name="Harvest Mixed Pickled Peppers" data-url="category/fermented-items/index.html#harvest-mixed-pickled-peppers" data-img="https://uddermilk.com/upload/WhatsApp%20Image%202020-12-08%20at%202.03.23%20AM%20%281%29.jpeg" data-icon="cucumber">
+            <label class="sr-only" for="harvest-mixed-pickled-peppers-v">Size</label>
+            <select id="harvest-mixed-pickled-peppers-v" name="v" class="is-one">
+<option value="Pint" data-price="9.0">Pint · $9.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="local-heirloom-banana-peppers" style="--tint: #E1ECD2">
@@ -1046,28 +1078,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Local Heirloom Banana Peppers"><img class="ph__img" src="https://uddermilk.com/upload/20200103_011423.jpg" alt="Local Heirloom Banana Peppers" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Local Heirloom Banana Peppers</h2>
+          <p class="product__from">$5.00</p>
           <div class="tags">
           </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">8 oz</span><span class="price">$5.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="local-heirloom-banana-peppers" data-name="Local Heirloom Banana Peppers" data-url="category/fermented-items/index.html#local-heirloom-banana-peppers" data-img="https://uddermilk.com/upload/20200103_011423.jpg" data-icon="hot-pepper">
-              <label class="sr-only" for="local-heirloom-banana-peppers-v">Size</label>
-              <select id="local-heirloom-banana-peppers-v" name="v" class="is-one">
-<option value="8 oz" data-price="5.0">8 oz · $5.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="local-heirloom-banana-peppers" data-name="Local Heirloom Banana Peppers" data-url="category/fermented-items/index.html#local-heirloom-banana-peppers" data-img="https://uddermilk.com/upload/20200103_011423.jpg" data-icon="hot-pepper">
+            <label class="sr-only" for="local-heirloom-banana-peppers-v">Size</label>
+            <select id="local-heirloom-banana-peppers-v" name="v" class="is-one">
+<option value="8 oz" data-price="5.0">8 oz · $5.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product is-allout has-photo" id="fermented-green-tomatoes" style="--tint: #E1ECD2">
@@ -1077,17 +1111,19 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Fermented Green Tomatoes"><img class="ph__img" src="https://uddermilk.com/upload/20200521_000239.jpg" alt="Fermented Green Tomatoes" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Fermented Green Tomatoes</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag">Lacto-fermented</span><span class="tag tag--out">Sold out</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">Pint</span><span class="price">$8.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Fermented%20Green%20Tomatoes">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Fermented%20Green%20Tomatoes">Ask when it's back</a>
         </div>
       </article>
       <article class="product is-allout has-photo" id="fermented-daikon-radishes" style="--tint: #E1ECD2">
@@ -1097,17 +1133,19 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Fermented Daikon Radishes"><img class="ph__img" src="https://uddermilk.com/upload/20201031_155734.jpg" alt="Fermented Daikon Radishes" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Fermented Daikon Radishes</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag">Lacto-fermented</span><span class="tag tag--out">Sold out</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">Pint</span><span class="price">$9.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Fermented%20Daikon%20Radishes">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Fermented%20Daikon%20Radishes">Ask when it's back</a>
         </div>
       </article>
       <article class="product has-photo" id="horseradish" style="--tint: #E1ECD2">
@@ -1117,28 +1155,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Horseradish"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20220929_172452.jpg" alt="Horseradish" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Horseradish</h2>
+          <p class="product__from">$6.00</p>
           <div class="tags">
           </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">8 oz</span><span class="price">$6.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="horseradish" data-name="Horseradish" data-url="category/fermented-items/index.html#horseradish" data-img="https://uddermilk.com/upload/Screenshot_20220929_172452.jpg" data-icon="jar">
-              <label class="sr-only" for="horseradish-v">Size</label>
-              <select id="horseradish-v" name="v" class="is-one">
-<option value="8 oz" data-price="6.0">8 oz · $6.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="horseradish" data-name="Horseradish" data-url="category/fermented-items/index.html#horseradish" data-img="https://uddermilk.com/upload/Screenshot_20220929_172452.jpg" data-icon="jar">
+            <label class="sr-only" for="horseradish-v">Size</label>
+            <select id="horseradish-v" name="v" class="is-one">
+<option value="8 oz" data-price="6.0">8 oz · $6.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="cracked-green-olives" style="--tint: #E1ECD2">
@@ -1148,28 +1188,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Cracked Green Olives"><img class="ph__img" src="https://uddermilk.com/upload/20200503_083929.jpg" alt="Cracked Green Olives" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Cracked Green Olives</h2>
+          <p class="product__from">$5.00</p>
           <div class="tags">
           </div>
 <p class="product__desc" data-clamp>Cracked green olives, cured with lemon and salt.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Half pint</span><span class="price">$5.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="cracked-green-olives" data-name="Cracked Green Olives" data-url="category/fermented-items/index.html#cracked-green-olives" data-img="https://uddermilk.com/upload/20200503_083929.jpg" data-icon="olive">
-              <label class="sr-only" for="cracked-green-olives-v">Size</label>
-              <select id="cracked-green-olives-v" name="v" class="is-one">
-<option value="Half pint" data-price="5.0">Half pint · $5.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="cracked-green-olives" data-name="Cracked Green Olives" data-url="category/fermented-items/index.html#cracked-green-olives" data-img="https://uddermilk.com/upload/20200503_083929.jpg" data-icon="olive">
+            <label class="sr-only" for="cracked-green-olives-v">Size</label>
+            <select id="cracked-green-olives-v" name="v" class="is-one">
+<option value="Half pint" data-price="5.0">Half pint · $5.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="black-olives-in-water-and-oil" style="--tint: #E1ECD2">
@@ -1179,28 +1221,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Black Olives in Water &amp; Oil"><img class="ph__img" src="https://uddermilk.com/upload/20200719_135819.jpg" alt="Black Olives in Water &amp; Oil" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Black Olives in Water <span class="amp">&amp;</span> Oil</h2>
+          <p class="product__from">$5.00</p>
           <div class="tags">
           </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Half pint</span><span class="price">$5.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="black-olives-in-water-and-oil" data-name="Black Olives in Water &amp; Oil" data-url="category/fermented-items/index.html#black-olives-in-water-and-oil" data-img="https://uddermilk.com/upload/20200719_135819.jpg" data-icon="olive">
-              <label class="sr-only" for="black-olives-in-water-and-oil-v">Size</label>
-              <select id="black-olives-in-water-and-oil-v" name="v" class="is-one">
-<option value="Half pint" data-price="5.0">Half pint · $5.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="black-olives-in-water-and-oil" data-name="Black Olives in Water &amp; Oil" data-url="category/fermented-items/index.html#black-olives-in-water-and-oil" data-img="https://uddermilk.com/upload/20200719_135819.jpg" data-icon="olive">
+            <label class="sr-only" for="black-olives-in-water-and-oil-v">Size</label>
+            <select id="black-olives-in-water-and-oil-v" name="v" class="is-one">
+<option value="Half pint" data-price="5.0">Half pint · $5.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="marinated-artichoke-hearts" style="--tint: #E1ECD2">
@@ -1210,28 +1254,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Marinated Artichoke Hearts"><img class="ph__img" src="https://uddermilk.com/upload/20200719_135848.jpg" alt="Marinated Artichoke Hearts" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Marinated Artichoke Hearts</h2>
+          <p class="product__from">$6.00</p>
           <div class="tags">
           </div>
 <p class="product__desc" data-clamp>With red pepper, onion, garlic, spices and vinegar.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Half pint</span><span class="price">$6.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="marinated-artichoke-hearts" data-name="Marinated Artichoke Hearts" data-url="category/fermented-items/index.html#marinated-artichoke-hearts" data-img="https://uddermilk.com/upload/20200719_135848.jpg" data-icon="jar">
-              <label class="sr-only" for="marinated-artichoke-hearts-v">Size</label>
-              <select id="marinated-artichoke-hearts-v" name="v" class="is-one">
-<option value="Half pint" data-price="6.0">Half pint · $6.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="marinated-artichoke-hearts" data-name="Marinated Artichoke Hearts" data-url="category/fermented-items/index.html#marinated-artichoke-hearts" data-img="https://uddermilk.com/upload/20200719_135848.jpg" data-icon="jar">
+            <label class="sr-only" for="marinated-artichoke-hearts-v">Size</label>
+            <select id="marinated-artichoke-hearts-v" name="v" class="is-one">
+<option value="Half pint" data-price="6.0">Half pint · $6.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="marinated-mushrooms" style="--tint: #E1ECD2">
@@ -1241,28 +1287,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Marinated Mushrooms"><img class="ph__img" src="https://uddermilk.com/upload/20200719_135919.jpg" alt="Marinated Mushrooms" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Marinated Mushrooms</h2>
+          <p class="product__from">$5.00</p>
           <div class="tags">
           </div>
 <p class="product__desc" data-clamp>With red pepper, onion, garlic and spices.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Half pint</span><span class="price">$5.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="marinated-mushrooms" data-name="Marinated Mushrooms" data-url="category/fermented-items/index.html#marinated-mushrooms" data-img="https://uddermilk.com/upload/20200719_135919.jpg" data-icon="brown-mushroom">
-              <label class="sr-only" for="marinated-mushrooms-v">Size</label>
-              <select id="marinated-mushrooms-v" name="v" class="is-one">
-<option value="Half pint" data-price="5.0">Half pint · $5.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="marinated-mushrooms" data-name="Marinated Mushrooms" data-url="category/fermented-items/index.html#marinated-mushrooms" data-img="https://uddermilk.com/upload/20200719_135919.jpg" data-icon="brown-mushroom">
+            <label class="sr-only" for="marinated-mushrooms-v">Size</label>
+            <select id="marinated-mushrooms-v" name="v" class="is-one">
+<option value="Half pint" data-price="5.0">Half pint · $5.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="eggplant-makdous" style="--tint: #E1ECD2">
@@ -1272,28 +1320,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Eggplant Makdous"><img class="ph__img" src="https://uddermilk.com/upload/20201015_182251.jpg" alt="Eggplant Makdous" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Eggplant Makdous</h2>
+          <p class="product__from">$7.00</p>
           <div class="tags">
           </div>
 <p class="product__desc" data-clamp>Little oil-cured eggplants stuffed with walnuts, red pepper and garlic, packed in olive oil.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Half pint</span><span class="price">$7.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="eggplant-makdous" data-name="Eggplant Makdous" data-url="category/fermented-items/index.html#eggplant-makdous" data-img="https://uddermilk.com/upload/20201015_182251.jpg" data-icon="eggplant">
-              <label class="sr-only" for="eggplant-makdous-v">Size</label>
-              <select id="eggplant-makdous-v" name="v" class="is-one">
-<option value="Half pint" data-price="7.0">Half pint · $7.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="eggplant-makdous" data-name="Eggplant Makdous" data-url="category/fermented-items/index.html#eggplant-makdous" data-img="https://uddermilk.com/upload/20201015_182251.jpg" data-icon="eggplant">
+            <label class="sr-only" for="eggplant-makdous-v">Size</label>
+            <select id="eggplant-makdous-v" name="v" class="is-one">
+<option value="Half pint" data-price="7.0">Half pint · $7.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="pickled-eggplant" style="--tint: #E1ECD2">
@@ -1303,28 +1353,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Pickled Eggplant"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20231212_200519_WhatsApp.jpg" alt="Pickled Eggplant" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Pickled Eggplant</h2>
+          <p class="product__from">$6.00</p>
           <div class="tags">
           </div>
 <p class="product__desc" data-clamp>Garlic, Himalayan salt, sweet and hot peppers, vinegar.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$6.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="pickled-eggplant" data-name="Pickled Eggplant" data-url="category/fermented-items/index.html#pickled-eggplant" data-img="https://uddermilk.com/upload/Screenshot_20231212_200519_WhatsApp.jpg" data-icon="cucumber">
-              <label class="sr-only" for="pickled-eggplant-v">Size</label>
-              <select id="pickled-eggplant-v" name="v" class="is-one">
-<option value="Pint" data-price="6.0">Pint · $6.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="pickled-eggplant" data-name="Pickled Eggplant" data-url="category/fermented-items/index.html#pickled-eggplant" data-img="https://uddermilk.com/upload/Screenshot_20231212_200519_WhatsApp.jpg" data-icon="cucumber">
+            <label class="sr-only" for="pickled-eggplant-v">Size</label>
+            <select id="pickled-eggplant-v" name="v" class="is-one">
+<option value="Pint" data-price="6.0">Pint · $6.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="pickled-lemon-with-safflower" style="--tint: #E1ECD2">
@@ -1334,28 +1386,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Pickled Lemon with Safflower"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20210411-222418_WhatsApp.jpg" alt="Pickled Lemon with Safflower" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Pickled Lemon with Safflower</h2>
+          <p class="product__from">$8.00</p>
           <div class="tags">
           </div>
 <p class="product__desc" data-clamp>Organic lemons, Celtic salt, safflower and black seed.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$8.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="pickled-lemon-with-safflower" data-name="Pickled Lemon with Safflower" data-url="category/fermented-items/index.html#pickled-lemon-with-safflower" data-img="https://uddermilk.com/upload/Screenshot_20210411-222418_WhatsApp.jpg" data-icon="cucumber">
-              <label class="sr-only" for="pickled-lemon-with-safflower-v">Size</label>
-              <select id="pickled-lemon-with-safflower-v" name="v" class="is-one">
-<option value="Pint" data-price="8.0">Pint · $8.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="pickled-lemon-with-safflower" data-name="Pickled Lemon with Safflower" data-url="category/fermented-items/index.html#pickled-lemon-with-safflower" data-img="https://uddermilk.com/upload/Screenshot_20210411-222418_WhatsApp.jpg" data-icon="cucumber">
+            <label class="sr-only" for="pickled-lemon-with-safflower-v">Size</label>
+            <select id="pickled-lemon-with-safflower-v" name="v" class="is-one">
+<option value="Pint" data-price="8.0">Pint · $8.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="mediterranean-pickled-lemon" style="--tint: #E1ECD2">
@@ -1365,28 +1419,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Mediterranean Pickled Lemon"><img class="ph__img" src="https://uddermilk.com/upload/IMG-20211126-WA0029.jpg" alt="Mediterranean Pickled Lemon" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Mediterranean Pickled Lemon</h2>
+          <p class="product__from">$8.00</p>
           <div class="tags">
           </div>
 <p class="product__desc" data-clamp>Organic lemons, garlic, sea salt and chili.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$8.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="mediterranean-pickled-lemon" data-name="Mediterranean Pickled Lemon" data-url="category/fermented-items/index.html#mediterranean-pickled-lemon" data-img="https://uddermilk.com/upload/IMG-20211126-WA0029.jpg" data-icon="cucumber">
-              <label class="sr-only" for="mediterranean-pickled-lemon-v">Size</label>
-              <select id="mediterranean-pickled-lemon-v" name="v" class="is-one">
-<option value="Pint" data-price="8.0">Pint · $8.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="mediterranean-pickled-lemon" data-name="Mediterranean Pickled Lemon" data-url="category/fermented-items/index.html#mediterranean-pickled-lemon" data-img="https://uddermilk.com/upload/IMG-20211126-WA0029.jpg" data-icon="cucumber">
+            <label class="sr-only" for="mediterranean-pickled-lemon-v">Size</label>
+            <select id="mediterranean-pickled-lemon-v" name="v" class="is-one">
+<option value="Pint" data-price="8.0">Pint · $8.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="mediterranean-pickled-turnip" style="--tint: #E1ECD2">
@@ -1396,28 +1452,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Mediterranean Pickled Turnip"><img class="ph__img" src="https://uddermilk.com/upload/14AC6B87-E3DF-4E94-A99A-E156EC468965.jpeg" alt="Mediterranean Pickled Turnip" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Mediterranean Pickled Turnip</h2>
+          <p class="product__from">$8.00</p>
           <div class="tags">
           </div>
 <p class="product__desc" data-clamp>Pink turnips with grated carrot, green chili and beetroot.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint, glass jar</span><span class="price">$8.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="mediterranean-pickled-turnip" data-name="Mediterranean Pickled Turnip" data-url="category/fermented-items/index.html#mediterranean-pickled-turnip" data-img="https://uddermilk.com/upload/14AC6B87-E3DF-4E94-A99A-E156EC468965.jpeg" data-icon="cucumber">
-              <label class="sr-only" for="mediterranean-pickled-turnip-v">Size</label>
-              <select id="mediterranean-pickled-turnip-v" name="v" class="is-one">
-<option value="Pint, glass jar" data-price="8.0">Pint, glass jar · $8.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="mediterranean-pickled-turnip" data-name="Mediterranean Pickled Turnip" data-url="category/fermented-items/index.html#mediterranean-pickled-turnip" data-img="https://uddermilk.com/upload/14AC6B87-E3DF-4E94-A99A-E156EC468965.jpeg" data-icon="cucumber">
+            <label class="sr-only" for="mediterranean-pickled-turnip-v">Size</label>
+            <select id="mediterranean-pickled-turnip-v" name="v" class="is-one">
+<option value="Pint, glass jar" data-price="8.0">Pint, glass jar · $8.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="mediterranean-pickled-onions" style="--tint: #E1ECD2">
@@ -1427,28 +1485,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Mediterranean Pickled Onions"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20231129_190533_Google.jpg" alt="Mediterranean Pickled Onions" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Mediterranean Pickled Onions</h2>
+          <p class="product__from">$6.00</p>
           <div class="tags">
           </div>
 <p class="product__desc" data-clamp>Onion, salt, vinegar and chili paste.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$6.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="mediterranean-pickled-onions" data-name="Mediterranean Pickled Onions" data-url="category/fermented-items/index.html#mediterranean-pickled-onions" data-img="https://uddermilk.com/upload/Screenshot_20231129_190533_Google.jpg" data-icon="cucumber">
-              <label class="sr-only" for="mediterranean-pickled-onions-v">Size</label>
-              <select id="mediterranean-pickled-onions-v" name="v" class="is-one">
-<option value="Pint" data-price="6.0">Pint · $6.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="mediterranean-pickled-onions" data-name="Mediterranean Pickled Onions" data-url="category/fermented-items/index.html#mediterranean-pickled-onions" data-img="https://uddermilk.com/upload/Screenshot_20231129_190533_Google.jpg" data-icon="cucumber">
+            <label class="sr-only" for="mediterranean-pickled-onions-v">Size</label>
+            <select id="mediterranean-pickled-onions-v" name="v" class="is-one">
+<option value="Pint" data-price="6.0">Pint · $6.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <p class="hidden-note">Everything in this category is sold out right now. Switch off “In stock only” to see the full list.</p>
@@ -1555,6 +1615,6 @@
     </div>
   </div>
 </footer><script src="../../assets/js/site.js?v=0da2f001" defer></script>
-<script src="../../assets/js/shop.js?v=07b2128e" defer></script>
+<script src="../../assets/js/shop.js?v=60b78f0e" defer></script>
 </body>
 </html>

@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../../assets/fonts/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../assets/css/site.css?v=1f783f4a">
+<link rel="stylesheet" href="../../assets/css/site.css?v=d24d284f">
 <script>document.documentElement.classList.add('js');if(location.protocol==="file:")document.write('<link rel="stylesheet" href="../../assets/css/fonts-local.css?v=">')</script>
 </head>
 <body class="page-cat">
@@ -541,7 +541,7 @@
         <label class="toggle"><input type="checkbox" data-instock><span class="toggle__ui" aria-hidden="true"></span><span>In stock<span class="t-long"> only</span></span></label>
       </div>
     </div>
-    <div class="products">
+    <div class="products products--grid">
       <article class="product has-photo" id="blue-ice-royal-blend" style="--tint: #E8E0F4">
         <div class="product__media">
           <figure class="ph">
@@ -549,28 +549,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Blue Ice Royal Blend"><img class="ph__img" src="https://uddermilk.com/upload/20210122_205622.jpg" alt="Blue Ice Royal Blend" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Blue Ice Royal Blend</h2>
+          <p class="product__from">$44.00</p>
           <div class="tags">
 <span class="tag">MSC certified</span>          </div>
 <p class="product__desc" data-clamp>Fermented cod liver oil with concentrated butter oil.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">120 capsules, unflavored</span><span class="price">$44.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="blue-ice-royal-blend" data-name="Blue Ice Royal Blend" data-url="category/green-pasture-products/index.html#blue-ice-royal-blend" data-img="https://uddermilk.com/upload/20210122_205622.jpg" data-icon="fish">
-              <label class="sr-only" for="blue-ice-royal-blend-v">Size</label>
-              <select id="blue-ice-royal-blend-v" name="v" class="is-one">
-<option value="120 capsules, unflavored" data-price="44.0">120 capsules, unflavored · $44.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="blue-ice-royal-blend" data-name="Blue Ice Royal Blend" data-url="category/green-pasture-products/index.html#blue-ice-royal-blend" data-img="https://uddermilk.com/upload/20210122_205622.jpg" data-icon="fish">
+            <label class="sr-only" for="blue-ice-royal-blend-v">Size</label>
+            <select id="blue-ice-royal-blend-v" name="v" class="is-one">
+<option value="120 capsules, unflavored" data-price="44.0">120 capsules, unflavored · $44.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product is-allout has-photo" id="blue-ice-fermented-cod-liver-oil" style="--tint: #E8E0F4">
@@ -580,8 +582,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Blue Ice Fermented Cod Liver Oil"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20210122-205541_Google.jpg" alt="Blue Ice Fermented Cod Liver Oil" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Blue Ice Fermented Cod Liver Oil</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag">MSC certified</span><span class="tag tag--out">Sold out</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -589,9 +593,9 @@
             <li class="is-out"><span class="v-label">120 capsules, unflavored</span><span class="price">$41.00</span></li>
             <li class="is-out"><span class="v-label">60 capsules, unflavored</span><span class="price">$22.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Blue%20Ice%20Fermented%20Cod%20Liver%20Oil">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Blue%20Ice%20Fermented%20Cod%20Liver%20Oil">Ask when it's back</a>
         </div>
       </article>
       <article class="product is-allout has-photo" id="blue-ice-fermented-skate-liver-oil" style="--tint: #E8E0F4">
@@ -601,8 +605,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Blue Ice Fermented Skate Liver Oil"><img class="ph__img" src="https://uddermilk.com/upload/20200507_121218.jpg" alt="Blue Ice Fermented Skate Liver Oil" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Blue Ice Fermented Skate Liver Oil</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag tag--out">Sold out</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -610,9 +616,9 @@
             <li class="is-out"><span class="v-label">60 capsules, unflavored</span><span class="price">$22.00</span></li>
             <li class="is-out"><span class="v-label">120 capsules, unflavored</span><span class="price">$49.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Blue%20Ice%20Fermented%20Skate%20Liver%20Oil">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Blue%20Ice%20Fermented%20Skate%20Liver%20Oil">Ask when it's back</a>
         </div>
       </article>
       <article class="product has-photo" id="coconut-ghee" style="--tint: #E8E0F4">
@@ -622,28 +628,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Coconut Ghee"><img class="ph__img" src="https://uddermilk.com/upload/11806721-AD53-48E0-B734-4028A9EE8B47.jpeg" alt="Coconut Ghee" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Coconut Ghee</h2>
+          <p class="product__from">$34.00</p>
           <div class="tags">
 <span class="tag tag--organic">Certified organic</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">27 oz</span><span class="price">$34.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="coconut-ghee" data-name="Coconut Ghee" data-url="category/green-pasture-products/index.html#coconut-ghee" data-img="https://uddermilk.com/upload/11806721-AD53-48E0-B734-4028A9EE8B47.jpeg" data-icon="coconut">
-              <label class="sr-only" for="coconut-ghee-v">Size</label>
-              <select id="coconut-ghee-v" name="v" class="is-one">
-<option value="27 oz" data-price="34.0">27 oz · $34.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="coconut-ghee" data-name="Coconut Ghee" data-url="category/green-pasture-products/index.html#coconut-ghee" data-img="https://uddermilk.com/upload/11806721-AD53-48E0-B734-4028A9EE8B47.jpeg" data-icon="coconut">
+            <label class="sr-only" for="coconut-ghee-v">Size</label>
+            <select id="coconut-ghee-v" name="v" class="is-one">
+<option value="27 oz" data-price="34.0">27 oz · $34.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="virgin-cold-pressed-coconut-oil" style="--tint: #E8E0F4">
@@ -653,28 +661,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Virgin Cold-Pressed Coconut Oil"><img class="ph__img" src="https://uddermilk.com/upload/virgin.jpg" alt="Virgin Cold-Pressed Coconut Oil" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Virgin Cold-Pressed Coconut Oil</h2>
+          <p class="product__from">$28.00</p>
           <div class="tags">
 <span class="tag">Cold-pressed</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">27 oz</span><span class="price">$28.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="virgin-cold-pressed-coconut-oil" data-name="Virgin Cold-Pressed Coconut Oil" data-url="category/green-pasture-products/index.html#virgin-cold-pressed-coconut-oil" data-img="https://uddermilk.com/upload/virgin.jpg" data-icon="coconut">
-              <label class="sr-only" for="virgin-cold-pressed-coconut-oil-v">Size</label>
-              <select id="virgin-cold-pressed-coconut-oil-v" name="v" class="is-one">
-<option value="27 oz" data-price="28.0">27 oz · $28.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="virgin-cold-pressed-coconut-oil" data-name="Virgin Cold-Pressed Coconut Oil" data-url="category/green-pasture-products/index.html#virgin-cold-pressed-coconut-oil" data-img="https://uddermilk.com/upload/virgin.jpg" data-icon="coconut">
+            <label class="sr-only" for="virgin-cold-pressed-coconut-oil-v">Size</label>
+            <select id="virgin-cold-pressed-coconut-oil-v" name="v" class="is-one">
+<option value="27 oz" data-price="28.0">27 oz · $28.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="green-pasture-beauty-bar" style="--tint: #E8E0F4">
@@ -684,8 +694,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Green Pasture Beauty Bar"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20230819_200159_Chrome.jpg" alt="Green Pasture Beauty Bar" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Green Pasture Beauty Bar</h2>
+          <p class="product__from">$20.00</p>
           <div class="tags">
           </div>
 <p class="product__desc" data-clamp>Handmade with nourishing oils for hair and skin. No parabens, phthalates, SLS, palm oil or synthetic dyes.</p>          <div class="product__long" id="green-pasture-beauty-bar-more" hidden><p>Handcrafted with Green Pasture&#39;s nutrient-rich oils for hair and skin: a shampoo and body bar in one.</p><ul class="bul"><li>Replenishes your hair&#39;s natural oils</li><li>Revitalizes skin</li><li>Free of parabens, phthalates and sodium lauryl sulfate</li><li>No palm oil, petroleum products or synthetic dyes</li></ul></div>
@@ -693,20 +705,20 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">3 oz</span><span class="price">$20.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="green-pasture-beauty-bar" data-name="Green Pasture Beauty Bar" data-url="category/green-pasture-products/index.html#green-pasture-beauty-bar" data-img="https://uddermilk.com/upload/Screenshot_20230819_200159_Chrome.jpg" data-icon="lotion-bottle">
-              <label class="sr-only" for="green-pasture-beauty-bar-v">Size</label>
-              <select id="green-pasture-beauty-bar-v" name="v" class="is-one">
-<option value="3 oz" data-price="20.0">3 oz · $20.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="green-pasture-beauty-bar" data-name="Green Pasture Beauty Bar" data-url="category/green-pasture-products/index.html#green-pasture-beauty-bar" data-img="https://uddermilk.com/upload/Screenshot_20230819_200159_Chrome.jpg" data-icon="lotion-bottle">
+            <label class="sr-only" for="green-pasture-beauty-bar-v">Size</label>
+            <select id="green-pasture-beauty-bar-v" name="v" class="is-one">
+<option value="3 oz" data-price="20.0">3 oz · $20.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product is-allout has-photo" id="minerals-plus" style="--tint: #E8E0F4">
@@ -716,17 +728,19 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Minerals Plus"><img class="ph__img" src="https://uddermilk.com/upload/3B97AEE3-3F4F-4A5F-BCD8-02F26047D73C.jpeg" alt="Minerals Plus" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Minerals Plus</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag tag--out">Sold out</span>          </div>
 <p class="product__desc" data-clamp>Organic kelp powder and unfortified brewer&#39;s yeast.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">15.8 oz</span><span class="price">$30.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Minerals%20Plus">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Minerals%20Plus">Ask when it's back</a>
         </div>
       </article>
       <article class="product is-allout has-photo" id="epic-glow-tallow-balm" style="--tint: #E8E0F4">
@@ -736,17 +750,19 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Epic Glow Tallow Balm"><img class="ph__img" src="https://uddermilk.com/upload/20200507_121242.jpg" alt="Epic Glow Tallow Balm" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Epic Glow Tallow Balm</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag tag--out">Sold out</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">59 ml</span><span class="price">$37.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Epic%20Glow%20Tallow%20Balm">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Epic%20Glow%20Tallow%20Balm">Ask when it's back</a>
         </div>
       </article>
       <p class="hidden-note">Everything in this category is sold out right now. Switch off “In stock only” to see the full list.</p>
@@ -853,6 +869,6 @@
     </div>
   </div>
 </footer><script src="../../assets/js/site.js?v=0da2f001" defer></script>
-<script src="../../assets/js/shop.js?v=07b2128e" defer></script>
+<script src="../../assets/js/shop.js?v=60b78f0e" defer></script>
 </body>
 </html>

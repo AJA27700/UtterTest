@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../../assets/fonts/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../assets/css/site.css?v=1f783f4a">
+<link rel="stylesheet" href="../../assets/css/site.css?v=d24d284f">
 <script>document.documentElement.classList.add('js');if(location.protocol==="file:")document.write('<link rel="stylesheet" href="../../assets/css/fonts-local.css?v=">')</script>
 </head>
 <body class="page-cat">
@@ -541,7 +541,7 @@
         <label class="toggle"><input type="checkbox" data-instock><span class="toggle__ui" aria-hidden="true"></span><span>In stock<span class="t-long"> only</span></span></label>
       </div>
     </div>
-    <div class="products">
+    <div class="products products--grid">
       <article class="product has-photo" id="raw-local-honey-pourable" style="--tint: #E1ECD2">
         <div class="product__media">
           <figure class="ph">
@@ -549,8 +549,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Raw Local Honey, Pourable"><img class="ph__img" src="https://uddermilk.com/upload/20191229_233629.jpg" alt="Raw Local Honey, Pourable" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Raw Local Honey, Pourable</h2>
+          <p class="product__from">from $10.00</p>
           <div class="tags">
 <span class="tag tag--raw">Raw</span><span class="tag">Local</span>          </div>
 <p class="product__desc" data-clamp>Wildflower honey from the Pennsylvania mountains, never heated past 115°F. It hasn&#39;t crystallized yet, so it still pours.</p>          <div class="product__long" id="raw-local-honey-pourable-more" hidden><p>Wildflower honey from the mountains of Pennsylvania: raw, local and regional. It&#39;s still liquid and hasn&#39;t crystallized yet, so it pours easily, and it&#39;s never heated above 115°F. Lovely in hot tea.</p></div>
@@ -561,20 +563,20 @@
             <li><span class="v-label">Michigan wildflower (warmed to 135°F), glass · pint</span><span class="price">$10.00</span></li>
             <li><span class="v-label">South Dakota clover, glass · pint</span><span class="price">$10.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="raw-local-honey-pourable" data-name="Raw Local Honey, Pourable" data-url="category/honey-maple-syrup-and-sweeteners/index.html#raw-local-honey-pourable" data-img="https://uddermilk.com/upload/20191229_233629.jpg" data-icon="honey-pot">
-              <label class="sr-only" for="raw-local-honey-pourable-v">Size</label>
-              <select id="raw-local-honey-pourable-v" name="v">
-<option value="Raw local wildflower · pint" data-price="10.0">Raw local wildflower · pint · $10.00</option><option value="Spring blossom wildflower · pint" data-price="10.0">Spring blossom wildflower · pint · $10.00</option><option value="Michigan wildflower (warmed to 135°F), glass · pint" data-price="10.0">Michigan wildflower (warmed to 135°F), glass · pint · $10.00</option><option value="South Dakota clover, glass · pint" data-price="10.0">South Dakota clover, glass · pint · $10.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="raw-local-honey-pourable" data-name="Raw Local Honey, Pourable" data-url="category/honey-maple-syrup-and-sweeteners/index.html#raw-local-honey-pourable" data-img="https://uddermilk.com/upload/20191229_233629.jpg" data-icon="honey-pot">
+            <label class="sr-only" for="raw-local-honey-pourable-v">Size</label>
+            <select id="raw-local-honey-pourable-v" name="v">
+<option value="Raw local wildflower · pint" data-price="10.0">Raw local wildflower · pint · $10.00</option><option value="Spring blossom wildflower · pint" data-price="10.0">Spring blossom wildflower · pint · $10.00</option><option value="Michigan wildflower (warmed to 135°F), glass · pint" data-price="10.0">Michigan wildflower (warmed to 135°F), glass · pint · $10.00</option><option value="South Dakota clover, glass · pint" data-price="10.0">South Dakota clover, glass · pint · $10.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="creamy-crystallized-raw-honey" style="--tint: #E1ECD2">
@@ -584,8 +586,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Creamy Crystallized Raw Honey"><img class="ph__img" src="https://uddermilk.com/upload/20191229_235428.jpg" alt="Creamy Crystallized Raw Honey" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Creamy Crystallized Raw Honey</h2>
+          <p class="product__from">from $10.00</p>
           <div class="tags">
 <span class="tag tag--raw">Raw</span>          </div>
 <p class="product__desc" data-clamp>Off-white and naturally crystallized. That&#39;s how you can tell raw honey is really raw.</p>          <div class="product__long" id="creamy-crystallized-raw-honey-more" hidden><p>Raw, local wildflower honey from apiaries in Pennsylvania. It&#39;s off-white and spreads easily on toast. Try mixing a tablespoon of it with a tablespoon of raw butter and spreading it on warm toast.</p><p>This honey isn&#39;t &#34;seeded&#34; to make it crystallize. It crystallizes naturally because the bees feed on so many wildflowers, and honey that crystallizes is usually a sign it&#39;s truly raw. Honey that stays liquid forever has usually been heated.</p></div>
@@ -595,20 +599,20 @@
             <li><span class="v-label">Orange blossom · pint</span><span class="price">$10.00</span></li>
             <li><span class="v-label">Raw alfalfa · pint</span><span class="price">$10.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="creamy-crystallized-raw-honey" data-name="Creamy Crystallized Raw Honey" data-url="category/honey-maple-syrup-and-sweeteners/index.html#creamy-crystallized-raw-honey" data-img="https://uddermilk.com/upload/20191229_235428.jpg" data-icon="honey-pot">
-              <label class="sr-only" for="creamy-crystallized-raw-honey-v">Size</label>
-              <select id="creamy-crystallized-raw-honey-v" name="v">
-<option value="Raw &amp; creamy · pint" data-price="11.0">Raw &amp; creamy · pint · $11.00</option><option value="Orange blossom · pint" data-price="10.0">Orange blossom · pint · $10.00</option><option value="Raw alfalfa · pint" data-price="10.0">Raw alfalfa · pint · $10.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="creamy-crystallized-raw-honey" data-name="Creamy Crystallized Raw Honey" data-url="category/honey-maple-syrup-and-sweeteners/index.html#creamy-crystallized-raw-honey" data-img="https://uddermilk.com/upload/20191229_235428.jpg" data-icon="honey-pot">
+            <label class="sr-only" for="creamy-crystallized-raw-honey-v">Size</label>
+            <select id="creamy-crystallized-raw-honey-v" name="v">
+<option value="Raw &amp; creamy · pint" data-price="11.0">Raw &amp; creamy · pint · $11.00</option><option value="Orange blossom · pint" data-price="10.0">Orange blossom · pint · $10.00</option><option value="Raw alfalfa · pint" data-price="10.0">Raw alfalfa · pint · $10.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="buckwheat-honey" style="--tint: #E1ECD2">
@@ -618,8 +622,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Buckwheat Honey"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20220809-003814_WhatsApp.jpg" alt="Buckwheat Honey" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Buckwheat Honey</h2>
+          <p class="product__from">$10.00</p>
           <div class="tags">
 <span class="tag">Local</span>          </div>
 <p class="product__desc" data-clamp>Very dark, malty Pennsylvania honey. Pourable and not raw. Wonderful for baking.</p>          <div class="product__long" id="buckwheat-honey-more" hidden><p>Pourable and very dark, from Pennsylvania. This honey is not raw, which makes it a great one to bake with, especially in dark baked goods like date nut bread, brownies and molasses cookies. It gives them wonderful flavor.</p></div>
@@ -627,20 +633,20 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Jar</span><span class="price">$10.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="buckwheat-honey" data-name="Buckwheat Honey" data-url="category/honey-maple-syrup-and-sweeteners/index.html#buckwheat-honey" data-img="https://uddermilk.com/upload/Screenshot_20220809-003814_WhatsApp.jpg" data-icon="honey-pot">
-              <label class="sr-only" for="buckwheat-honey-v">Size</label>
-              <select id="buckwheat-honey-v" name="v" class="is-one">
-<option value="Jar" data-price="10.0">Jar · $10.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="buckwheat-honey" data-name="Buckwheat Honey" data-url="category/honey-maple-syrup-and-sweeteners/index.html#buckwheat-honey" data-img="https://uddermilk.com/upload/Screenshot_20220809-003814_WhatsApp.jpg" data-icon="honey-pot">
+            <label class="sr-only" for="buckwheat-honey-v">Size</label>
+            <select id="buckwheat-honey-v" name="v" class="is-one">
+<option value="Jar" data-price="10.0">Jar · $10.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product is-allout has-photo" id="raw-tupelo-honey" style="--tint: #E1ECD2">
@@ -650,8 +656,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Raw Tupelo Honey"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20250111_003241_Google.jpg" alt="Raw Tupelo Honey" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Raw Tupelo Honey</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag tag--raw">Raw</span><span class="tag">Rare</span><span class="tag tag--out">Sold out</span>          </div>
 <p class="product__desc" data-clamp>Rare Florida tupelo: buttery, floral, with notes of cinnamon and fruit. Slow to crystallize.</p>          <div class="product__long" id="raw-tupelo-honey-more" hidden><p>Tupelo honey is a rare, flavorful honey from the blossoms of the tupelo tree in Florida.</p><h3>Flavor</h3><p>Buttery, with notes of flowers, cinnamon and fruit. It&#39;s light golden amber with a greenish cast.</p><h3>How it&#39;s made</h3><p>Beekeepers place their hives on platforms along the river&#39;s edge so the bees can gather nectar from the tupelo blossoms. The trees bloom for only about 10 days a year.</p><h3>Why it&#39;s rare</h3><p>The trees grow in a small area, and it takes a lot of effort to produce.</p><h3>Slow to crystallize</h3><p>Tupelo honey has a high ratio of fructose to glucose, so it stays liquid much longer than most honey.</p></div>
@@ -659,9 +667,9 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">Pint</span><span class="price">$20.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Raw%20Tupelo%20Honey">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Raw%20Tupelo%20Honey">Ask when it's back</a>
         </div>
       </article>
       <article class="product is-allout has-photo" id="honeycomb" style="--tint: #E1ECD2">
@@ -671,17 +679,19 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Honeycomb"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20220411-140738_Google.jpg" alt="Honeycomb" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Honeycomb</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag tag--raw">Raw</span><span class="tag tag--out">Sold out</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">1 lb</span><span class="price">$22.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Honeycomb">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Honeycomb">Ask when it's back</a>
         </div>
       </article>
       <article class="product has-photo" id="imperial-blend-honey" style="--tint: #E1ECD2">
@@ -691,8 +701,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Imperial Blend Honey"><img class="ph__img" src="https://uddermilk.com/upload/file_00000000e7a471fbb2bb735338a58a24.png" alt="Imperial Blend Honey" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Imperial Blend Honey</h2>
+          <p class="product__from">$21.00</p>
           <div class="tags">
           </div>
 <p class="product__desc" data-clamp>Pure honey with dates, figs, walnuts, almonds, pistachios, hazelnuts, cashews and pine nuts, plus maca, red ginseng, royal jelly and warm spices, including saffron.</p>          <div class="product__long" id="imperial-blend-honey-more" hidden><p>Ingredients: pure honey, date and fig jam, walnuts, almonds, pistachios, hazelnuts, cashews, pine nuts, maca, Korean red ginseng, royal jelly, ginger, cocoa powder, damiana powder, black seed, sesame, cinnamon, cardamom, cloves, saffron, vanilla.</p></div>
@@ -700,20 +712,20 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">4 oz</span><span class="price">$21.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="imperial-blend-honey" data-name="Imperial Blend Honey" data-url="category/honey-maple-syrup-and-sweeteners/index.html#imperial-blend-honey" data-img="https://uddermilk.com/upload/file_00000000e7a471fbb2bb735338a58a24.png" data-icon="honey-pot">
-              <label class="sr-only" for="imperial-blend-honey-v">Size</label>
-              <select id="imperial-blend-honey-v" name="v" class="is-one">
-<option value="4 oz" data-price="21.0">4 oz · $21.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="imperial-blend-honey" data-name="Imperial Blend Honey" data-url="category/honey-maple-syrup-and-sweeteners/index.html#imperial-blend-honey" data-img="https://uddermilk.com/upload/file_00000000e7a471fbb2bb735338a58a24.png" data-icon="honey-pot">
+            <label class="sr-only" for="imperial-blend-honey-v">Size</label>
+            <select id="imperial-blend-honey-v" name="v" class="is-one">
+<option value="4 oz" data-price="21.0">4 oz · $21.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="royal-jelly-local-and-frozen" style="--tint: #E1ECD2">
@@ -723,8 +735,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Royal Jelly, Local &amp; Frozen"><img class="ph__img" src="https://uddermilk.com/upload/20191230_171443.jpg" alt="Royal Jelly, Local &amp; Frozen" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Royal Jelly, Local <span class="amp">&amp;</span> Frozen</h2>
+          <p class="product__from">from $16.00</p>
           <div class="tags">
 <span class="tag">Local</span><span class="tag tag--frozen">Frozen</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -732,20 +746,20 @@
             <li><span class="v-label">1.5 oz</span><span class="price">$16.00</span></li>
             <li><span class="v-label">1 kg</span><span class="price">$180.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="royal-jelly-local-and-frozen" data-name="Royal Jelly, Local &amp; Frozen" data-url="category/honey-maple-syrup-and-sweeteners/index.html#royal-jelly-local-and-frozen" data-img="https://uddermilk.com/upload/20191230_171443.jpg" data-icon="honeybee">
-              <label class="sr-only" for="royal-jelly-local-and-frozen-v">Size</label>
-              <select id="royal-jelly-local-and-frozen-v" name="v">
-<option value="1.5 oz" data-price="16.0">1.5 oz · $16.00</option><option value="1 kg" data-price="180.0">1 kg · $180.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="royal-jelly-local-and-frozen" data-name="Royal Jelly, Local &amp; Frozen" data-url="category/honey-maple-syrup-and-sweeteners/index.html#royal-jelly-local-and-frozen" data-img="https://uddermilk.com/upload/20191230_171443.jpg" data-icon="honeybee">
+            <label class="sr-only" for="royal-jelly-local-and-frozen-v">Size</label>
+            <select id="royal-jelly-local-and-frozen-v" name="v">
+<option value="1.5 oz" data-price="16.0">1.5 oz · $16.00</option><option value="1 kg" data-price="180.0">1 kg · $180.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="royal-jelly-powder" style="--tint: #E1ECD2">
@@ -755,28 +769,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Royal Jelly Powder"><img class="ph__img" src="https://uddermilk.com/upload/%D9%85%D9%84%D9%83%D8%A7%D8%AA.jpg" alt="Royal Jelly Powder" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Royal Jelly Powder</h2>
+          <p class="product__from">$13.00</p>
           <div class="tags">
           </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">25 g</span><span class="price">$13.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="royal-jelly-powder" data-name="Royal Jelly Powder" data-url="category/honey-maple-syrup-and-sweeteners/index.html#royal-jelly-powder" data-img="https://uddermilk.com/upload/%D9%85%D9%84%D9%83%D8%A7%D8%AA.jpg" data-icon="honeybee">
-              <label class="sr-only" for="royal-jelly-powder-v">Size</label>
-              <select id="royal-jelly-powder-v" name="v" class="is-one">
-<option value="25 g" data-price="13.0">25 g · $13.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="royal-jelly-powder" data-name="Royal Jelly Powder" data-url="category/honey-maple-syrup-and-sweeteners/index.html#royal-jelly-powder" data-img="https://uddermilk.com/upload/%D9%85%D9%84%D9%83%D8%A7%D8%AA.jpg" data-icon="honeybee">
+            <label class="sr-only" for="royal-jelly-powder-v">Size</label>
+            <select id="royal-jelly-powder-v" name="v" class="is-one">
+<option value="25 g" data-price="13.0">25 g · $13.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="royal-jelly-with-honey" style="--tint: #E1ECD2">
@@ -785,18 +801,20 @@
             <img class="ph__icon" src="../../assets/icons/honey-pot.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Royal Jelly with Honey</h2>
+          <p class="product__from">Price at login</p>
           <div class="tags">
           </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Jar</span><span class="ask">Price at login</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--sm" href="../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <a class="btn btn--sm" href="../../login/index.html">Log in to see prices <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="dried-bee-pollen" style="--tint: #E1ECD2">
@@ -806,8 +824,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Dried Bee Pollen"><img class="ph__img" src="https://uddermilk.com/upload/20191230_005415.jpg" alt="Dried Bee Pollen" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Dried Bee Pollen</h2>
+          <p class="product__from">$13.00</p>
           <div class="tags">
 <span class="tag">Local</span>          </div>
           <div class="product__long" id="dried-bee-pollen-more" hidden><p class="health-note">These statements reflect our farmers&#39; and members&#39; experience and have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure or prevent any disease. Please talk with your doctor (or your child&#39;s pediatrician) before making changes to your diet or medication.</p><p>Dried, not fresh.</p><h3>Bee pollen for allergies</h3><p>Midwives and beekeepers have long used bee pollen to soften springtime allergies. The idea is to start about two weeks before the first blooms (usually from mid-March until early April, before the crocuses, then forsythia, tulips and tree greens):</p><ul class="bul"><li>Put a dime-size pinch under your tongue every day</li><li>Gradually take a little more</li><li>Many people say their allergies are much softer once the blooms arrive</li></ul></div>
@@ -815,20 +835,20 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">8 oz glass jar</span><span class="price">$13.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="dried-bee-pollen" data-name="Dried Bee Pollen" data-url="category/honey-maple-syrup-and-sweeteners/index.html#dried-bee-pollen" data-img="https://uddermilk.com/upload/20191230_005415.jpg" data-icon="honeybee">
-              <label class="sr-only" for="dried-bee-pollen-v">Size</label>
-              <select id="dried-bee-pollen-v" name="v" class="is-one">
-<option value="8 oz glass jar" data-price="13.0">8 oz glass jar · $13.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="dried-bee-pollen" data-name="Dried Bee Pollen" data-url="category/honey-maple-syrup-and-sweeteners/index.html#dried-bee-pollen" data-img="https://uddermilk.com/upload/20191230_005415.jpg" data-icon="honeybee">
+            <label class="sr-only" for="dried-bee-pollen-v">Size</label>
+            <select id="dried-bee-pollen-v" name="v" class="is-one">
+<option value="8 oz glass jar" data-price="13.0">8 oz glass jar · $13.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="annies-kitchen-maple-syrup" style="--tint: #E1ECD2">
@@ -838,8 +858,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Annie&#39;s Kitchen Maple Syrup"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20221218_082319.jpg" alt="Annie&#39;s Kitchen Maple Syrup" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Annie&#39;s Kitchen Maple Syrup</h2>
+          <p class="product__from">from $13.00</p>
           <div class="tags">
 <span class="tag">Local</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -847,20 +869,20 @@
             <li><span class="v-label">Medium · 16 oz</span><span class="price">$13.00</span></li>
             <li><span class="v-label">Dark · 16 oz</span><span class="price">$13.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="annies-kitchen-maple-syrup" data-name="Annie&#39;s Kitchen Maple Syrup" data-url="category/honey-maple-syrup-and-sweeteners/index.html#annies-kitchen-maple-syrup" data-img="https://uddermilk.com/upload/Screenshot_20221218_082319.jpg" data-icon="jar">
-              <label class="sr-only" for="annies-kitchen-maple-syrup-v">Size</label>
-              <select id="annies-kitchen-maple-syrup-v" name="v">
-<option value="Medium · 16 oz" data-price="13.0">Medium · 16 oz · $13.00</option><option value="Dark · 16 oz" data-price="13.0">Dark · 16 oz · $13.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="annies-kitchen-maple-syrup" data-name="Annie&#39;s Kitchen Maple Syrup" data-url="category/honey-maple-syrup-and-sweeteners/index.html#annies-kitchen-maple-syrup" data-img="https://uddermilk.com/upload/Screenshot_20221218_082319.jpg" data-icon="jar">
+            <label class="sr-only" for="annies-kitchen-maple-syrup-v">Size</label>
+            <select id="annies-kitchen-maple-syrup-v" name="v">
+<option value="Medium · 16 oz" data-price="13.0">Medium · 16 oz · $13.00</option><option value="Dark · 16 oz" data-price="13.0">Dark · 16 oz · $13.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="organic-date-syrup" style="--tint: #E1ECD2">
@@ -870,28 +892,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Organic Date Syrup"><img class="ph__img" src="https://uddermilk.com/upload/date%20syrup%20%282%29.jpg" alt="Organic Date Syrup" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Organic Date Syrup</h2>
+          <p class="product__from">$8.50</p>
           <div class="tags">
 <span class="tag tag--organic">Certified organic</span><span class="tag">Kosher</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">12 oz</span><span class="price">$8.50</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="organic-date-syrup" data-name="Organic Date Syrup" data-url="category/honey-maple-syrup-and-sweeteners/index.html#organic-date-syrup" data-img="https://uddermilk.com/upload/date%20syrup%20%282%29.jpg" data-icon="jar">
-              <label class="sr-only" for="organic-date-syrup-v">Size</label>
-              <select id="organic-date-syrup-v" name="v" class="is-one">
-<option value="12 oz" data-price="8.5">12 oz · $8.50</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="organic-date-syrup" data-name="Organic Date Syrup" data-url="category/honey-maple-syrup-and-sweeteners/index.html#organic-date-syrup" data-img="https://uddermilk.com/upload/date%20syrup%20%282%29.jpg" data-icon="jar">
+            <label class="sr-only" for="organic-date-syrup-v">Size</label>
+            <select id="organic-date-syrup-v" name="v" class="is-one">
+<option value="12 oz" data-price="8.5">12 oz · $8.50</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="horseradish" style="--tint: #E1ECD2">
@@ -901,28 +925,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Horseradish"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20220929_172452.jpg" alt="Horseradish" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Horseradish</h2>
+          <p class="product__from">$6.00</p>
           <div class="tags">
           </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">8 oz</span><span class="price">$6.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="horseradish" data-name="Horseradish" data-url="category/honey-maple-syrup-and-sweeteners/index.html#horseradish" data-img="https://uddermilk.com/upload/Screenshot_20220929_172452.jpg" data-icon="jar">
-              <label class="sr-only" for="horseradish-v">Size</label>
-              <select id="horseradish-v" name="v" class="is-one">
-<option value="8 oz" data-price="6.0">8 oz · $6.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="horseradish" data-name="Horseradish" data-url="category/honey-maple-syrup-and-sweeteners/index.html#horseradish" data-img="https://uddermilk.com/upload/Screenshot_20220929_172452.jpg" data-icon="jar">
+            <label class="sr-only" for="horseradish-v">Size</label>
+            <select id="horseradish-v" name="v" class="is-one">
+<option value="8 oz" data-price="6.0">8 oz · $6.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <p class="hidden-note">Everything in this category is sold out right now. Switch off “In stock only” to see the full list.</p>
@@ -1029,6 +1055,6 @@
     </div>
   </div>
 </footer><script src="../../assets/js/site.js?v=0da2f001" defer></script>
-<script src="../../assets/js/shop.js?v=07b2128e" defer></script>
+<script src="../../assets/js/shop.js?v=60b78f0e" defer></script>
 </body>
 </html>

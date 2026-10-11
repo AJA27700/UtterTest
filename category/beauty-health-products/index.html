@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../../assets/fonts/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../assets/css/site.css?v=1f783f4a">
+<link rel="stylesheet" href="../../assets/css/site.css?v=d24d284f">
 <script>document.documentElement.classList.add('js');if(location.protocol==="file:")document.write('<link rel="stylesheet" href="../../assets/css/fonts-local.css?v=">')</script>
 </head>
 <body class="page-cat">
@@ -541,7 +541,7 @@
         <label class="toggle"><input type="checkbox" data-instock><span class="toggle__ui" aria-hidden="true"></span><span>In stock<span class="t-long"> only</span></span></label>
       </div>
     </div>
-    <div class="products">
+    <div class="products products--grid">
       <article class="product has-photo" id="tallow-soap-bars" style="--tint: #E8E0F4">
         <div class="product__media">
           <figure class="ph">
@@ -557,8 +557,10 @@
             <button class="thumb" type="button" data-src="https://uddermilk.com/upload/IMG-20250108-WA0060.jpg" data-alt="Tallow Soap Bars: Sweet almond" aria-pressed="false" title="Sweet almond"><img src="https://uddermilk.com/upload/IMG-20250108-WA0060.jpg" alt="Sweet almond" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></button>
           </div>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Tallow Soap Bars</h2>
+          <p class="product__from">from $11.00</p>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed tallow</span><span class="tag tag--heritage">Handmade</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -570,20 +572,20 @@
             <li><span class="v-label">Sweet almond · 4.5 oz</span><span class="price">$11.00</span></li>
             <li><span class="v-label">Unscented · 4.5 oz</span><span class="price">$11.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="tallow-soap-bars" data-name="Tallow Soap Bars" data-url="category/beauty-health-products/index.html#tallow-soap-bars" data-img="https://uddermilk.com/upload/IMG-20250108-WA0058.jpg" data-icon="soap">
-              <label class="sr-only" for="tallow-soap-bars-v">Size</label>
-              <select id="tallow-soap-bars-v" name="v">
-<option value="Lavender · 4.5 oz" data-price="11.0">Lavender · 4.5 oz · $11.00</option><option value="Basil &amp; lemongrass slab · 4.5 oz" data-price="11.0">Basil &amp; lemongrass slab · 4.5 oz · $11.00</option><option value="Geranium rose · 4.5 oz" data-price="11.0">Geranium rose · 4.5 oz · $11.00</option><option value="Sandalwood" data-price="11.0">Sandalwood · $11.00</option><option value="Sweet almond · 4.5 oz" data-price="11.0">Sweet almond · 4.5 oz · $11.00</option><option value="Unscented · 4.5 oz" data-price="11.0">Unscented · 4.5 oz · $11.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="tallow-soap-bars" data-name="Tallow Soap Bars" data-url="category/beauty-health-products/index.html#tallow-soap-bars" data-img="https://uddermilk.com/upload/IMG-20250108-WA0058.jpg" data-icon="soap">
+            <label class="sr-only" for="tallow-soap-bars-v">Size</label>
+            <select id="tallow-soap-bars-v" name="v">
+<option value="Lavender · 4.5 oz" data-price="11.0">Lavender · 4.5 oz · $11.00</option><option value="Basil &amp; lemongrass slab · 4.5 oz" data-price="11.0">Basil &amp; lemongrass slab · 4.5 oz · $11.00</option><option value="Geranium rose · 4.5 oz" data-price="11.0">Geranium rose · 4.5 oz · $11.00</option><option value="Sandalwood" data-price="11.0">Sandalwood · $11.00</option><option value="Sweet almond · 4.5 oz" data-price="11.0">Sweet almond · 4.5 oz · $11.00</option><option value="Unscented · 4.5 oz" data-price="11.0">Unscented · 4.5 oz · $11.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="tallow-body-butter" style="--tint: #E8E0F4">
@@ -597,8 +599,10 @@
             <button class="thumb" type="button" data-src="https://uddermilk.com/upload/IMG-20250108-WA0053.jpg" data-alt="Tallow Body Butter: Sweet almond" aria-pressed="false" title="Sweet almond"><img src="https://uddermilk.com/upload/IMG-20250108-WA0053.jpg" alt="Sweet almond" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></button>
           </div>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Tallow Body Butter</h2>
+          <p class="product__from">from $30.00</p>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed tallow</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -606,20 +610,20 @@
             <li><span class="v-label">Sweet almond · 4 oz</span><span class="price">$30.00</span></li>
             <li><span class="v-label">Sandalwood · 4 oz</span><span class="price">$30.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="tallow-body-butter" data-name="Tallow Body Butter" data-url="category/beauty-health-products/index.html#tallow-body-butter" data-img="https://uddermilk.com/upload/IMG-20250108-WA0054.jpg" data-icon="lotion-bottle">
-              <label class="sr-only" for="tallow-body-butter-v">Size</label>
-              <select id="tallow-body-butter-v" name="v">
-<option value="Sweet almond · 4 oz" data-price="30.0">Sweet almond · 4 oz · $30.00</option><option value="Sandalwood · 4 oz" data-price="30.0">Sandalwood · 4 oz · $30.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="tallow-body-butter" data-name="Tallow Body Butter" data-url="category/beauty-health-products/index.html#tallow-body-butter" data-img="https://uddermilk.com/upload/IMG-20250108-WA0054.jpg" data-icon="lotion-bottle">
+            <label class="sr-only" for="tallow-body-butter-v">Size</label>
+            <select id="tallow-body-butter-v" name="v">
+<option value="Sweet almond · 4 oz" data-price="30.0">Sweet almond · 4 oz · $30.00</option><option value="Sandalwood · 4 oz" data-price="30.0">Sandalwood · 4 oz · $30.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="tallow-lip-balms" style="--tint: #E8E0F4">
@@ -634,8 +638,10 @@
             <button class="thumb" type="button" data-src="https://uddermilk.com/upload/Screenshot_20240422_225443_Samsung%20Internet.jpg" data-alt="Tallow Lip Balms: Sun lip balm" aria-pressed="false" title="Sun lip balm"><img src="https://uddermilk.com/upload/Screenshot_20240422_225443_Samsung%20Internet.jpg" alt="Sun lip balm" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></button>
           </div>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Tallow Lip Balms</h2>
+          <p class="product__from">from $8.25</p>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed tallow</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -645,20 +651,20 @@
             <li><span class="v-label">Grapefruit lemon · 0.3 oz</span><span class="price">$8.25</span></li>
             <li><span class="v-label">Sun lip balm · 0.3 oz</span><span class="price">$10.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="tallow-lip-balms" data-name="Tallow Lip Balms" data-url="category/beauty-health-products/index.html#tallow-lip-balms" data-img="https://uddermilk.com/upload/IMG-20250108-WA0051.jpg" data-icon="lotion-bottle">
-              <label class="sr-only" for="tallow-lip-balms-v">Size</label>
-              <select id="tallow-lip-balms-v" name="v">
-<option value="Sweet almond" data-price="8.25">Sweet almond · $8.25</option><option value="Coconut vanilla" data-price="8.25">Coconut vanilla · $8.25</option><option value="Grapefruit lemon · 0.3 oz" data-price="8.25">Grapefruit lemon · 0.3 oz · $8.25</option><option value="Sun lip balm · 0.3 oz" data-price="10.0">Sun lip balm · 0.3 oz · $10.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="tallow-lip-balms" data-name="Tallow Lip Balms" data-url="category/beauty-health-products/index.html#tallow-lip-balms" data-img="https://uddermilk.com/upload/IMG-20250108-WA0051.jpg" data-icon="lotion-bottle">
+            <label class="sr-only" for="tallow-lip-balms-v">Size</label>
+            <select id="tallow-lip-balms-v" name="v">
+<option value="Sweet almond" data-price="8.25">Sweet almond · $8.25</option><option value="Coconut vanilla" data-price="8.25">Coconut vanilla · $8.25</option><option value="Grapefruit lemon · 0.3 oz" data-price="8.25">Grapefruit lemon · 0.3 oz · $8.25</option><option value="Sun lip balm · 0.3 oz" data-price="10.0">Sun lip balm · 0.3 oz · $10.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="sun-armor-tallow-and-zinc" style="--tint: #E8E0F4">
@@ -672,8 +678,10 @@
             <button class="thumb" type="button" data-src="https://uddermilk.com/upload/Screenshot_20240422_224409_Samsung%20Internet.jpg" data-alt="Sun Armor, Tallow &amp; Zinc: Stick" aria-pressed="false" title="Stick"><img src="https://uddermilk.com/upload/Screenshot_20240422_224409_Samsung%20Internet.jpg" alt="Stick" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></button>
           </div>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Sun Armor, Tallow <span class="amp">&amp;</span> Zinc</h2>
+          <p class="product__from">from $34.00</p>
           <div class="tags">
 <span class="tag">Non-nano zinc</span>          </div>
 <p class="product__desc" data-clamp>Tallow-based mineral sun care with non-nano zinc oxide, tinted with raw cacao.</p>          <div class="product__long" id="sun-armor-tallow-and-zinc-more" hidden><p>A tallow-based mineral sunscreen made with non-nano zinc oxide, for face and body, with SPF-equivalent coverage of about 30. Raw cacao gives it a natural tint, so it doesn&#39;t leave the usual white cast of zinc.</p><h3>Ingredients</h3><p>Grass-fed beef tallow, coconut oil, non-nano zinc oxide (30% SPF), beeswax, and sweet almond oil infused with raw cacao and vanilla bean.</p><h3>Sun lip balm</h3><p>Grass-fed beef tallow, beeswax, non-nano zinc oxide, cocoa butter, vitamin E oil, Nilotica shea butter, castor oil, coconut oil, vanilla-infused sweet almond oil and coconut essential oil. Protection equivalent to SPF 30. Apply before going out in the sun and reapply every 30 minutes or as needed.</p><p>Keep in a cool, dry spot out of direct sunlight; warm temperatures soften it. Shelf life is about a year.</p></div>
@@ -682,20 +690,20 @@
             <li><span class="v-label">Stick · 2.5 oz</span><span class="price">$34.00</span></li>
             <li><span class="v-label">Lotion · 4 oz</span><span class="price">$44.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="sun-armor-tallow-and-zinc" data-name="Sun Armor, Tallow &amp; Zinc" data-url="category/beauty-health-products/index.html#sun-armor-tallow-and-zinc" data-img="https://uddermilk.com/upload/Screenshot_20240422_224137_WhatsApp.jpg" data-icon="lotion-bottle">
-              <label class="sr-only" for="sun-armor-tallow-and-zinc-v">Size</label>
-              <select id="sun-armor-tallow-and-zinc-v" name="v">
-<option value="Stick · 2.5 oz" data-price="34.0">Stick · 2.5 oz · $34.00</option><option value="Lotion · 4 oz" data-price="44.0">Lotion · 4 oz · $44.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="sun-armor-tallow-and-zinc" data-name="Sun Armor, Tallow &amp; Zinc" data-url="category/beauty-health-products/index.html#sun-armor-tallow-and-zinc" data-img="https://uddermilk.com/upload/Screenshot_20240422_224137_WhatsApp.jpg" data-icon="lotion-bottle">
+            <label class="sr-only" for="sun-armor-tallow-and-zinc-v">Size</label>
+            <select id="sun-armor-tallow-and-zinc-v" name="v">
+<option value="Stick · 2.5 oz" data-price="34.0">Stick · 2.5 oz · $34.00</option><option value="Lotion · 4 oz" data-price="44.0">Lotion · 4 oz · $44.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="breathe-free-balm" style="--tint: #E8E0F4">
@@ -705,28 +713,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Breathe Free Balm"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20260401_222312_WhatsApp.jpg" alt="Breathe Free Balm" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Breathe Free Balm</h2>
+          <p class="product__from">$17.00</p>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed tallow</span>          </div>
 <p class="product__desc" data-clamp>Grass-fed tallow, beeswax and essential oils, made in small batches.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Tin</span><span class="price">$17.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="breathe-free-balm" data-name="Breathe Free Balm" data-url="category/beauty-health-products/index.html#breathe-free-balm" data-img="https://uddermilk.com/upload/Screenshot_20260401_222312_WhatsApp.jpg" data-icon="lotion-bottle">
-              <label class="sr-only" for="breathe-free-balm-v">Size</label>
-              <select id="breathe-free-balm-v" name="v" class="is-one">
-<option value="Tin" data-price="17.0">Tin · $17.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="breathe-free-balm" data-name="Breathe Free Balm" data-url="category/beauty-health-products/index.html#breathe-free-balm" data-img="https://uddermilk.com/upload/Screenshot_20260401_222312_WhatsApp.jpg" data-icon="lotion-bottle">
+            <label class="sr-only" for="breathe-free-balm-v">Size</label>
+            <select id="breathe-free-balm-v" name="v" class="is-one">
+<option value="Tin" data-price="17.0">Tin · $17.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="gerri-daviss-lip-balm" style="--tint: #E8E0F4">
@@ -736,8 +746,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Gerri Davis&#39;s Lip Balm"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20210619-215828_Google.jpg" alt="Gerri Davis&#39;s Lip Balm" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Gerri Davis&#39;s Lip Balm</h2>
+          <p class="product__from">from $5.00</p>
           <div class="tags">
 <span class="tag">Beeswax</span>          </div>
 <p class="product__desc" data-clamp>Unfiltered beeswax, coconut oil, cacao butter, vitamin E and a touch of cinnamon oil.</p>          <div class="product__long" id="gerri-daviss-lip-balm-more" hidden><p>Made by Gerri with unfiltered beeswax from her mom and dad&#39;s hives in North Carolina, plus coconut oil, cocoa butter, vitamin E oil and organic cinnamon essential oil.</p><p>It comes in a paper tube, not plastic, and it&#39;s wider than a typical lip balm, so you get a bit more. Because of all that unfiltered beeswax it&#39;s brownish-green and a little sticky going on, and it stays on much longer than most balms.</p></div>
@@ -749,20 +761,20 @@
             <li><span class="v-label">Sweet orange</span><span class="price">$5.00</span></li>
             <li><span class="v-label">Fresh peach</span><span class="price">$5.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="gerri-daviss-lip-balm" data-name="Gerri Davis&#39;s Lip Balm" data-url="category/beauty-health-products/index.html#gerri-daviss-lip-balm" data-img="https://uddermilk.com/upload/Screenshot_20210619-215828_Google.jpg" data-icon="lotion-bottle">
-              <label class="sr-only" for="gerri-daviss-lip-balm-v">Size</label>
-              <select id="gerri-daviss-lip-balm-v" name="v">
-<option value="Watermelon" data-price="5.0">Watermelon · $5.00</option><option value="Cherry" data-price="5.0">Cherry · $5.00</option><option value="Berry" data-price="5.0">Berry · $5.00</option><option value="Sweet orange" data-price="5.0">Sweet orange · $5.00</option><option value="Fresh peach" data-price="5.0">Fresh peach · $5.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="gerri-daviss-lip-balm" data-name="Gerri Davis&#39;s Lip Balm" data-url="category/beauty-health-products/index.html#gerri-daviss-lip-balm" data-img="https://uddermilk.com/upload/Screenshot_20210619-215828_Google.jpg" data-icon="lotion-bottle">
+            <label class="sr-only" for="gerri-daviss-lip-balm-v">Size</label>
+            <select id="gerri-daviss-lip-balm-v" name="v">
+<option value="Watermelon" data-price="5.0">Watermelon · $5.00</option><option value="Cherry" data-price="5.0">Cherry · $5.00</option><option value="Berry" data-price="5.0">Berry · $5.00</option><option value="Sweet orange" data-price="5.0">Sweet orange · $5.00</option><option value="Fresh peach" data-price="5.0">Fresh peach · $5.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="frontier-soap-made-with-love-by-grace" style="--tint: #E8E0F4">
@@ -772,8 +784,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Frontier Soap, Made with Love by Grace"><img class="ph__img" src="https://uddermilk.com/upload/IMG-20210306-WA0053.jpg" alt="Frontier Soap, Made with Love by Grace" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Frontier Soap, Made with Love by Grace</h2>
+          <p class="product__from">from $10.00</p>
           <div class="tags">
 <span class="tag tag--heritage">Handmade</span>          </div>
 <p class="product__desc" data-clamp>Handmade with coconut, castor, avocado and olive oils, lard, essential oils and silk fibers.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -788,20 +802,20 @@
             <li class="is-out"><span class="v-label">Patchouli, bergamot &amp; cedarwood</span><span class="price">$10.00</span></li>
             <li class="is-out"><span class="v-label">Vanilla patchouli</span><span class="price">$10.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="frontier-soap-made-with-love-by-grace" data-name="Frontier Soap, Made with Love by Grace" data-url="category/beauty-health-products/index.html#frontier-soap-made-with-love-by-grace" data-img="https://uddermilk.com/upload/IMG-20210306-WA0053.jpg" data-icon="soap">
-              <label class="sr-only" for="frontier-soap-made-with-love-by-grace-v">Size</label>
-              <select id="frontier-soap-made-with-love-by-grace-v" name="v">
-<option value="Orange vanilla" data-price="10.0">Orange vanilla · $10.00</option><option value="Lavender lemongrass" data-price="10.0">Lavender lemongrass · $10.00</option><option value="Citrus blend" data-price="10.0">Citrus blend · $10.00</option><option value="Rosemary clove" data-price="10.0">Rosemary clove · $10.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="frontier-soap-made-with-love-by-grace" data-name="Frontier Soap, Made with Love by Grace" data-url="category/beauty-health-products/index.html#frontier-soap-made-with-love-by-grace" data-img="https://uddermilk.com/upload/IMG-20210306-WA0053.jpg" data-icon="soap">
+            <label class="sr-only" for="frontier-soap-made-with-love-by-grace-v">Size</label>
+            <select id="frontier-soap-made-with-love-by-grace-v" name="v">
+<option value="Orange vanilla" data-price="10.0">Orange vanilla · $10.00</option><option value="Lavender lemongrass" data-price="10.0">Lavender lemongrass · $10.00</option><option value="Citrus blend" data-price="10.0">Citrus blend · $10.00</option><option value="Rosemary clove" data-price="10.0">Rosemary clove · $10.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="goat-milk-soap" style="--tint: #E8E0F4">
@@ -810,8 +824,10 @@
             <img class="ph__icon" src="../../assets/icons/soap.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Goat Milk Soap</h2>
+          <p class="product__from">from $4.00</p>
           <div class="tags">
 <span class="tag tag--heritage">Handmade</span>          </div>
 <p class="product__desc" data-clamp>Goat milk and essential oils with saponified shea butter, jojoba and olive oil.</p>          <div class="product__long" id="goat-milk-soap-more" hidden><p>A 2.5 oz bar made with 1½ oz of goat milk, essential oils, and saponified shea butter, jojoba oil and olive oil.</p><h3>Scents</h3><ul class="bul"><li>Restful Relaxation: ylang-ylang and lavender</li><li>Rosy Dream: rose</li><li>Milk &#39;n&#39; Honey: unscented</li><li>Lavender</li></ul></div>
@@ -825,20 +841,20 @@
             <li><span class="v-label">Wild Honeysuckle liquid · 8 oz</span><span class="price">$8.00</span></li>
             <li class="is-out"><span class="v-label">Rosy Dream · ¼ lb bar</span><span class="price">$4.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="goat-milk-soap" data-name="Goat Milk Soap" data-url="category/beauty-health-products/index.html#goat-milk-soap" data-img="" data-icon="soap">
-              <label class="sr-only" for="goat-milk-soap-v">Size</label>
-              <select id="goat-milk-soap-v" name="v">
-<option value="Restful Relaxation · ¼ lb bar" data-price="4.0">Restful Relaxation · ¼ lb bar · $4.00</option><option value="Mint to Refresh · 3 oz bar" data-price="4.0">Mint to Refresh · 3 oz bar · $4.00</option><option value="Luscious Lavender · ¼ lb bar" data-price="4.0">Luscious Lavender · ¼ lb bar · $4.00</option><option value="Delightful Citrus · bar" data-price="4.0">Delightful Citrus · bar · $4.00</option><option value="Cedarwood mist liquid · 4 oz" data-price="4.0">Cedarwood mist liquid · 4 oz · $4.00</option><option value="Wild Honeysuckle liquid · 8 oz" data-price="8.0">Wild Honeysuckle liquid · 8 oz · $8.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="goat-milk-soap" data-name="Goat Milk Soap" data-url="category/beauty-health-products/index.html#goat-milk-soap" data-img="" data-icon="soap">
+            <label class="sr-only" for="goat-milk-soap-v">Size</label>
+            <select id="goat-milk-soap-v" name="v">
+<option value="Restful Relaxation · ¼ lb bar" data-price="4.0">Restful Relaxation · ¼ lb bar · $4.00</option><option value="Mint to Refresh · 3 oz bar" data-price="4.0">Mint to Refresh · 3 oz bar · $4.00</option><option value="Luscious Lavender · ¼ lb bar" data-price="4.0">Luscious Lavender · ¼ lb bar · $4.00</option><option value="Delightful Citrus · bar" data-price="4.0">Delightful Citrus · bar · $4.00</option><option value="Cedarwood mist liquid · 4 oz" data-price="4.0">Cedarwood mist liquid · 4 oz · $4.00</option><option value="Wild Honeysuckle liquid · 8 oz" data-price="8.0">Wild Honeysuckle liquid · 8 oz · $8.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="clay-face-masks" style="--tint: #E8E0F4">
@@ -855,8 +871,10 @@
             <button class="thumb" type="button" data-src="https://uddermilk.com/upload/cofee.jpg" data-alt="Clay Face Masks: Coffee" aria-pressed="false" title="Coffee"><img src="https://uddermilk.com/upload/cofee.jpg" alt="Coffee" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></button>
           </div>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Clay Face Masks</h2>
+          <p class="product__from">from $9.00</p>
           <div class="tags">
           </div>
           <div class="product__long" id="clay-face-masks-more" hidden><h3>Plain clay</h3><p>Nourishes the skin with the minerals in the clay, helps clean pores, and gives a fresh complexion with regular use. Suitable for all skin types.</p><h3>Coffee</h3><p>Coffee extract gives a gentle peeling effect to help remove dead skin cells.</p><h3>Collagen</h3><p>Made for skin that&#39;s losing its firmness.</p><h3>Pomegranate</h3><p>Pomegranate extract for bright, supple, smooth skin.</p><h3>Aloe vera</h3><p>Soothing for sensitive skin.</p><h3>Safety</h3><p>For external use only. Avoid the eyes; if it gets in them, rinse with water for 5 minutes. Keep out of sunlight. Not for children under 3. Shake well before use.</p></div>
@@ -868,20 +886,20 @@
             <li class="is-out"><span class="v-label">Plain Claderm · 50 ml</span><span class="price">$9.00</span></li>
             <li class="is-out"><span class="v-label">Coffee · 50 ml</span><span class="price">$9.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="clay-face-masks" data-name="Clay Face Masks" data-url="category/beauty-health-products/index.html#clay-face-masks" data-img="https://uddermilk.com/upload/pure.jpg" data-icon="rock">
-              <label class="sr-only" for="clay-face-masks-v">Size</label>
-              <select id="clay-face-masks-v" name="v">
-<option value="Collagen · 50 ml" data-price="9.0">Collagen · 50 ml · $9.00</option><option value="Pomegranate · 50 ml" data-price="9.0">Pomegranate · 50 ml · $9.00</option><option value="Aloe vera · 50 ml" data-price="9.0">Aloe vera · 50 ml · $9.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="clay-face-masks" data-name="Clay Face Masks" data-url="category/beauty-health-products/index.html#clay-face-masks" data-img="https://uddermilk.com/upload/pure.jpg" data-icon="rock">
+            <label class="sr-only" for="clay-face-masks-v">Size</label>
+            <select id="clay-face-masks-v" name="v">
+<option value="Collagen · 50 ml" data-price="9.0">Collagen · 50 ml · $9.00</option><option value="Pomegranate · 50 ml" data-price="9.0">Pomegranate · 50 ml · $9.00</option><option value="Aloe vera · 50 ml" data-price="9.0">Aloe vera · 50 ml · $9.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="imtenan-facial-cleansers" style="--tint: #E8E0F4">
@@ -896,8 +914,10 @@
             <button class="thumb" type="button" data-src="https://uddermilk.com/upload/%D8%BA%D8%B3%D9%88%D9%84%20%D8%B4%D9%88%D9%81%D8%A7%D9%86.jpg" data-alt="Imtenan Facial Cleansers: Oat extract &amp; honey" aria-pressed="false" title="Oat extract &amp; honey"><img src="https://uddermilk.com/upload/%D8%BA%D8%B3%D9%88%D9%84%20%D8%B4%D9%88%D9%81%D8%A7%D9%86.jpg" alt="Oat extract &amp; honey" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></button>
           </div>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Imtenan Facial Cleansers</h2>
+          <p class="product__from">from $9.00</p>
           <div class="tags">
           </div>
           <div class="product__long" id="imtenan-facial-cleansers-more" hidden><h3>Tea tree and green tea</h3><p>A gentle cleanser with tea tree and green tea extracts. It removes impurities, excess oil and makeup while keeping your skin&#39;s natural moisture balance, for a fresh, clear complexion every day.</p></div>
@@ -907,20 +927,20 @@
             <li><span class="v-label">Honey &amp; bee propolis · 300 ml</span><span class="price">$9.00</span></li>
             <li><span class="v-label">Oat extract &amp; honey · 300 ml</span><span class="price">$9.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="imtenan-facial-cleansers" data-name="Imtenan Facial Cleansers" data-url="category/beauty-health-products/index.html#imtenan-facial-cleansers" data-img="https://uddermilk.com/upload/%D8%BA%D8%B3%D9%88%D9%84%20%D8%B5%D9%85%D8%BA.jpg" data-icon="bubbles">
-              <label class="sr-only" for="imtenan-facial-cleansers-v">Size</label>
-              <select id="imtenan-facial-cleansers-v" name="v">
-<option value="Tea tree &amp; green tea · 300 ml" data-price="9.0">Tea tree &amp; green tea · 300 ml · $9.00</option><option value="Honey &amp; bee propolis · 300 ml" data-price="9.0">Honey &amp; bee propolis · 300 ml · $9.00</option><option value="Oat extract &amp; honey · 300 ml" data-price="9.0">Oat extract &amp; honey · 300 ml · $9.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="imtenan-facial-cleansers" data-name="Imtenan Facial Cleansers" data-url="category/beauty-health-products/index.html#imtenan-facial-cleansers" data-img="https://uddermilk.com/upload/%D8%BA%D8%B3%D9%88%D9%84%20%D8%B5%D9%85%D8%BA.jpg" data-icon="bubbles">
+            <label class="sr-only" for="imtenan-facial-cleansers-v">Size</label>
+            <select id="imtenan-facial-cleansers-v" name="v">
+<option value="Tea tree &amp; green tea · 300 ml" data-price="9.0">Tea tree &amp; green tea · 300 ml · $9.00</option><option value="Honey &amp; bee propolis · 300 ml" data-price="9.0">Honey &amp; bee propolis · 300 ml · $9.00</option><option value="Oat extract &amp; honey · 300 ml" data-price="9.0">Oat extract &amp; honey · 300 ml · $9.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="dead-sea-mud-imtenan" style="--tint: #E8E0F4">
@@ -934,8 +954,10 @@
             <button class="thumb" type="button" data-src="https://uddermilk.com/upload/Screenshot_20260119_002112_Google.jpg" data-alt="Dead Sea Mud, Imtenan: Mud soap" aria-pressed="false" title="Mud soap"><img src="https://uddermilk.com/upload/Screenshot_20260119_002112_Google.jpg" alt="Mud soap" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></button>
           </div>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Dead Sea Mud, Imtenan</h2>
+          <p class="product__from">from $10.00</p>
           <div class="tags">
 <span class="tag">100% natural</span>          </div>
           <div class="product__long" id="dead-sea-mud-imtenan-more" hidden><p>100% natural, rich in minerals like magnesium, potassium, iron and zinc. It cleanses deeply, tightens pores and removes built-up impurities, for clearer, brighter skin.</p><h3>Dead Sea mud soap</h3><p>Handmade, for oily and combination skin. Lather all over, rinse well, then apply your favorite lotion.</p><p>Ingredients: Dead Sea mud, Dead Sea salt, olive oil, jojoba oil, palm oil, glycerin, honey, beeswax.</p></div>
@@ -944,20 +966,20 @@
             <li><span class="v-label">Mud · 300 g</span><span class="price">$20.00</span></li>
             <li><span class="v-label">Mud soap · 100 g</span><span class="price">$10.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="dead-sea-mud-imtenan" data-name="Dead Sea Mud, Imtenan" data-url="category/beauty-health-products/index.html#dead-sea-mud-imtenan" data-img="https://uddermilk.com/upload/Screenshot_20260120_000825_Chrome.jpg" data-icon="rock">
-              <label class="sr-only" for="dead-sea-mud-imtenan-v">Size</label>
-              <select id="dead-sea-mud-imtenan-v" name="v">
-<option value="Mud · 300 g" data-price="20.0">Mud · 300 g · $20.00</option><option value="Mud soap · 100 g" data-price="10.0">Mud soap · 100 g · $10.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="dead-sea-mud-imtenan" data-name="Dead Sea Mud, Imtenan" data-url="category/beauty-health-products/index.html#dead-sea-mud-imtenan" data-img="https://uddermilk.com/upload/Screenshot_20260120_000825_Chrome.jpg" data-icon="rock">
+            <label class="sr-only" for="dead-sea-mud-imtenan-v">Size</label>
+            <select id="dead-sea-mud-imtenan-v" name="v">
+<option value="Mud · 300 g" data-price="20.0">Mud · 300 g · $20.00</option><option value="Mud soap · 100 g" data-price="10.0">Mud soap · 100 g · $10.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="imtenan-bath-salts" style="--tint: #E8E0F4">
@@ -971,8 +993,10 @@
             <button class="thumb" type="button" data-src="https://uddermilk.com/upload/Screenshot_20260120_002114_Chrome.jpg" data-alt="Imtenan Bath Salts: Lavender" aria-pressed="false" title="Lavender"><img src="https://uddermilk.com/upload/Screenshot_20260120_002114_Chrome.jpg" alt="Lavender" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></button>
           </div>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Imtenan Bath Salts</h2>
+          <p class="product__from">from $12.00</p>
           <div class="tags">
           </div>
           <div class="product__long" id="imtenan-bath-salts-more" hidden><h3>Rose</h3><p>A luxurious, relaxing bath that leaves your skin soft and lightly scented with rose.</p><h3>Lavender</h3><p>Soothing lavender to help you unwind, with a lovely floral aroma.</p><h3>How to use</h3><p>Fill the tub with warm to hot water, add 4 to 6 tablespoons of bath salts and stir by hand until dissolved. Soak for at least 20 minutes.</p></div>
@@ -981,20 +1005,20 @@
             <li><span class="v-label">Rose · 230 g</span><span class="price">$12.00</span></li>
             <li><span class="v-label">Lavender · 230 g</span><span class="price">$12.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="imtenan-bath-salts" data-name="Imtenan Bath Salts" data-url="category/beauty-health-products/index.html#imtenan-bath-salts" data-img="https://uddermilk.com/upload/Screenshot_20260120_001430_Chrome.jpg" data-icon="bathtub">
-              <label class="sr-only" for="imtenan-bath-salts-v">Size</label>
-              <select id="imtenan-bath-salts-v" name="v">
-<option value="Rose · 230 g" data-price="12.0">Rose · 230 g · $12.00</option><option value="Lavender · 230 g" data-price="12.0">Lavender · 230 g · $12.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="imtenan-bath-salts" data-name="Imtenan Bath Salts" data-url="category/beauty-health-products/index.html#imtenan-bath-salts" data-img="https://uddermilk.com/upload/Screenshot_20260120_001430_Chrome.jpg" data-icon="bathtub">
+            <label class="sr-only" for="imtenan-bath-salts-v">Size</label>
+            <select id="imtenan-bath-salts-v" name="v">
+<option value="Rose · 230 g" data-price="12.0">Rose · 230 g · $12.00</option><option value="Lavender · 230 g" data-price="12.0">Lavender · 230 g · $12.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product" id="shea-butters" style="--tint: #E8E0F4">
@@ -1003,8 +1027,10 @@
             <img class="ph__icon" src="../../assets/icons/lotion-bottle.webp" alt="" width="160" height="160" loading="lazy">
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Shea Butters</h2>
+          <p class="product__from">from $8.00</p>
           <div class="tags">
           </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -1013,20 +1039,20 @@
             <li><span class="v-label">Aromashea butter · 8 oz</span><span class="price">$24.00</span></li>
             <li class="is-out"><span class="v-label">Shea, magnesium, lavender &amp; arnica · 6 oz</span><span class="price">$16.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="shea-butters" data-name="Shea Butters" data-url="category/beauty-health-products/index.html#shea-butters" data-img="" data-icon="lotion-bottle">
-              <label class="sr-only" for="shea-butters-v">Size</label>
-              <select id="shea-butters-v" name="v">
-<option value="Native unrefined shea · 8 oz" data-price="8.0">Native unrefined shea · 8 oz · $8.00</option><option value="Aromashea butter · 8 oz" data-price="24.0">Aromashea butter · 8 oz · $24.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="shea-butters" data-name="Shea Butters" data-url="category/beauty-health-products/index.html#shea-butters" data-img="" data-icon="lotion-bottle">
+            <label class="sr-only" for="shea-butters-v">Size</label>
+            <select id="shea-butters-v" name="v">
+<option value="Native unrefined shea · 8 oz" data-price="8.0">Native unrefined shea · 8 oz · $8.00</option><option value="Aromashea butter · 8 oz" data-price="24.0">Aromashea butter · 8 oz · $24.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="native-black-soap" style="--tint: #E8E0F4">
@@ -1036,28 +1062,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Native Black Soap"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20220809-012555_Google.jpg" alt="Native Black Soap" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Native Black Soap</h2>
+          <p class="product__from">$6.00</p>
           <div class="tags">
           </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">5 oz</span><span class="price">$6.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="native-black-soap" data-name="Native Black Soap" data-url="category/beauty-health-products/index.html#native-black-soap" data-img="https://uddermilk.com/upload/Screenshot_20220809-012555_Google.jpg" data-icon="soap">
-              <label class="sr-only" for="native-black-soap-v">Size</label>
-              <select id="native-black-soap-v" name="v" class="is-one">
-<option value="5 oz" data-price="6.0">5 oz · $6.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="native-black-soap" data-name="Native Black Soap" data-url="category/beauty-health-products/index.html#native-black-soap" data-img="https://uddermilk.com/upload/Screenshot_20220809-012555_Google.jpg" data-icon="soap">
+            <label class="sr-only" for="native-black-soap-v">Size</label>
+            <select id="native-black-soap-v" name="v" class="is-one">
+<option value="5 oz" data-price="6.0">5 oz · $6.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="honey-bee-shoppe-beeswax-hand-cream" style="--tint: #E8E0F4">
@@ -1067,8 +1095,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Honey Bee Shoppe Beeswax Hand Cream"><img class="ph__img" src="https://uddermilk.com/upload/4629C9AC-D7FD-4E07-BE71-D4B805A3BDAE.jpeg" alt="Honey Bee Shoppe Beeswax Hand Cream" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Honey Bee Shoppe Beeswax Hand Cream</h2>
+          <p class="product__from">from $8.00</p>
           <div class="tags">
 <span class="tag">Beeswax</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -1081,20 +1111,20 @@
             <li class="is-out"><span class="v-label">Cucumber melon · 4 oz</span><span class="price">$8.00</span></li>
             <li class="is-out"><span class="v-label">Lilac · 4 oz</span><span class="price">$8.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="honey-bee-shoppe-beeswax-hand-cream" data-name="Honey Bee Shoppe Beeswax Hand Cream" data-url="category/beauty-health-products/index.html#honey-bee-shoppe-beeswax-hand-cream" data-img="https://uddermilk.com/upload/4629C9AC-D7FD-4E07-BE71-D4B805A3BDAE.jpeg" data-icon="lotion-bottle">
-              <label class="sr-only" for="honey-bee-shoppe-beeswax-hand-cream-v">Size</label>
-              <select id="honey-bee-shoppe-beeswax-hand-cream-v" name="v">
-<option value="Honeysuckle · 4 oz" data-price="8.0">Honeysuckle · 4 oz · $8.00</option><option value="Natural" data-price="8.0">Natural · $8.00</option><option value="Lavender" data-price="8.0">Lavender · $8.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="honey-bee-shoppe-beeswax-hand-cream" data-name="Honey Bee Shoppe Beeswax Hand Cream" data-url="category/beauty-health-products/index.html#honey-bee-shoppe-beeswax-hand-cream" data-img="https://uddermilk.com/upload/4629C9AC-D7FD-4E07-BE71-D4B805A3BDAE.jpeg" data-icon="lotion-bottle">
+            <label class="sr-only" for="honey-bee-shoppe-beeswax-hand-cream-v">Size</label>
+            <select id="honey-bee-shoppe-beeswax-hand-cream-v" name="v">
+<option value="Honeysuckle · 4 oz" data-price="8.0">Honeysuckle · 4 oz · $8.00</option><option value="Natural" data-price="8.0">Natural · $8.00</option><option value="Lavender" data-price="8.0">Lavender · $8.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="moroccan-bath-loofah" style="--tint: #E8E0F4">
@@ -1104,8 +1134,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Moroccan Bath Loofah"><img class="ph__img" src="https://uddermilk.com/upload/IMG-20260622-WA0259.jpg" alt="Moroccan Bath Loofah" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Moroccan Bath Loofah</h2>
+          <p class="product__from">$3.00</p>
           <div class="tags">
           </div>
 <p class="product__desc" data-clamp>A traditional Moroccan exfoliating mitt.</p>          <div class="product__long" id="moroccan-bath-loofah-more" hidden><p>Works best with Imtenan&#39;s Moroccan soap. It gently exfoliates for smoother, glowing skin and gets the circulation going. A traditional Moroccan design.</p></div>
@@ -1113,20 +1145,20 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">1 piece</span><span class="price">$3.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="moroccan-bath-loofah" data-name="Moroccan Bath Loofah" data-url="category/beauty-health-products/index.html#moroccan-bath-loofah" data-img="https://uddermilk.com/upload/IMG-20260622-WA0259.jpg" data-icon="sponge">
-              <label class="sr-only" for="moroccan-bath-loofah-v">Size</label>
-              <select id="moroccan-bath-loofah-v" name="v" class="is-one">
-<option value="1 piece" data-price="3.0">1 piece · $3.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="moroccan-bath-loofah" data-name="Moroccan Bath Loofah" data-url="category/beauty-health-products/index.html#moroccan-bath-loofah" data-img="https://uddermilk.com/upload/IMG-20260622-WA0259.jpg" data-icon="sponge">
+            <label class="sr-only" for="moroccan-bath-loofah-v">Size</label>
+            <select id="moroccan-bath-loofah-v" name="v" class="is-one">
+<option value="1 piece" data-price="3.0">1 piece · $3.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="bridal-bath-set" style="--tint: #E8E0F4">
@@ -1136,8 +1168,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Bridal Bath Set"><img class="ph__img" src="https://uddermilk.com/upload/_storage_emulated_0_Photo%20Collage_1755517937610.jpg" alt="Bridal Bath Set" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Bridal Bath Set</h2>
+          <p class="product__from">$89.00</p>
           <div class="tags">
           </div>
 <p class="product__desc" data-clamp>A gift set: Moroccan soap, loofah, clay, henna, massage oil, indigo soap and tabrima, plus a little bonus.</p>          <div class="product__long" id="bridal-bath-set-more" hidden><p>For a bride getting ready for the big day, or anyone who wants to be pampered. This box has it all:</p><ul class="bul"><li>Original Moroccan soap, 200 g</li><li>First-class Moroccan loofah</li><li>Original Moroccan clay, 200 g</li><li>White henna</li><li>Sudanese massage oil, ¼ kilo</li><li>Moroccan soap with blue indigo, 200 g</li><li>Moroccan tabrima, 50 g</li></ul><p>Plus a gift: a lip balm or tint, or a tola of perfume oil.</p></div>
@@ -1145,20 +1179,20 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Set</span><span class="price">$89.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="bridal-bath-set" data-name="Bridal Bath Set" data-url="category/beauty-health-products/index.html#bridal-bath-set" data-img="https://uddermilk.com/upload/_storage_emulated_0_Photo%20Collage_1755517937610.jpg" data-icon="bathtub">
-              <label class="sr-only" for="bridal-bath-set-v">Size</label>
-              <select id="bridal-bath-set-v" name="v" class="is-one">
-<option value="Set" data-price="89.0">Set · $89.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="bridal-bath-set" data-name="Bridal Bath Set" data-url="category/beauty-health-products/index.html#bridal-bath-set" data-img="https://uddermilk.com/upload/_storage_emulated_0_Photo%20Collage_1755517937610.jpg" data-icon="bathtub">
+            <label class="sr-only" for="bridal-bath-set-v">Size</label>
+            <select id="bridal-bath-set-v" name="v" class="is-one">
+<option value="Set" data-price="89.0">Set · $89.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product is-allout has-photo" id="natural-donkey-milk-soap" style="--tint: #E8E0F4">
@@ -1168,8 +1202,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Natural Donkey Milk Soap"><img class="ph__img" src="https://uddermilk.com/upload/sabon.jpg" alt="Natural Donkey Milk Soap" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Natural Donkey Milk Soap</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag tag--out">Sold out</span>          </div>
           <div class="product__long" id="natural-donkey-milk-soap-more" hidden><p>A gentle, natural soap made with donkey milk, for everyday washing. It moisturizes deeply and leaves skin soft and fresh.</p></div>
@@ -1177,9 +1213,9 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">100 g</span><span class="price">$10.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Natural%20Donkey%20Milk%20Soap">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Natural%20Donkey%20Milk%20Soap">Ask when it's back</a>
         </div>
       </article>
       <article class="product is-allout has-photo" id="olive-branch-handmade-soap" style="--tint: #E8E0F4">
@@ -1189,8 +1225,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Olive Branch Handmade Soap"><img class="ph__img" src="https://uddermilk.com/upload/1615846055165.jpg" alt="Olive Branch Handmade Soap" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Olive Branch Handmade Soap</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag tag--heritage">Handmade</span><span class="tag tag--out">Sold out</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -1202,9 +1240,9 @@
             <li class="is-out"><span class="v-label">Orange</span><span class="price">$4.00</span></li>
             <li class="is-out"><span class="v-label">Natural</span><span class="price">$4.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Olive%20Branch%20Handmade%20Soap">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Olive%20Branch%20Handmade%20Soap">Ask when it's back</a>
         </div>
       </article>
       <article class="product is-allout has-photo" id="soliman-black-soap" style="--tint: #E8E0F4">
@@ -1214,17 +1252,19 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Soliman Black Soap"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20220809-012555_Google.jpg" alt="Soliman Black Soap" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Soliman Black Soap</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag tag--out">Sold out</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">4 oz</span><span class="price">$5.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Soliman%20Black%20Soap">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Soliman%20Black%20Soap">Ask when it's back</a>
         </div>
       </article>
       <article class="product is-allout has-photo" id="jojoba-butter" style="--tint: #E8E0F4">
@@ -1234,17 +1274,19 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Jojoba Butter"><img class="ph__img" src="https://uddermilk.com/upload/20200108_005704.jpg" alt="Jojoba Butter" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Jojoba Butter</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag tag--out">Sold out</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">Lavender · 2 oz</span><span class="price">$8.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Jojoba%20Butter">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Jojoba%20Butter">Ask when it's back</a>
         </div>
       </article>
       <article class="product is-allout has-photo" id="imtenan-jojoba-oil" style="--tint: #E8E0F4">
@@ -1254,17 +1296,19 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Imtenan Jojoba Oil"><img class="ph__img" src="https://uddermilk.com/upload/%D8%B2%D9%8A%D8%AA%20%D8%AC%D9%88%D8%AC%D9%88%D8%A8%D8%A7.jpg" alt="Imtenan Jojoba Oil" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Imtenan Jojoba Oil</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag">Cold-pressed</span><span class="tag tag--out">Sold out</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">125 ml</span><span class="price">$9.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Imtenan%20Jojoba%20Oil">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Imtenan%20Jojoba%20Oil">Ask when it's back</a>
         </div>
       </article>
       <p class="hidden-note">Everything in this category is sold out right now. Switch off “In stock only” to see the full list.</p>
@@ -1371,6 +1415,6 @@
     </div>
   </div>
 </footer><script src="../../assets/js/site.js?v=0da2f001" defer></script>
-<script src="../../assets/js/shop.js?v=07b2128e" defer></script>
+<script src="../../assets/js/shop.js?v=60b78f0e" defer></script>
 </body>
 </html>

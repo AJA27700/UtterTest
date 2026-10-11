@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../../assets/fonts/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../assets/css/site.css?v=1f783f4a">
+<link rel="stylesheet" href="../../assets/css/site.css?v=d24d284f">
 <script>document.documentElement.classList.add('js');if(location.protocol==="file:")document.write('<link rel="stylesheet" href="../../assets/css/fonts-local.css?v=">')</script>
 </head>
 <body class="page-cat">
@@ -541,7 +541,7 @@
         <label class="toggle"><input type="checkbox" data-instock><span class="toggle__ui" aria-hidden="true"></span><span>In stock<span class="t-long"> only</span></span></label>
       </div>
     </div>
-    <div class="products">
+    <div class="products products--grid">
       <article class="product has-photo" id="ground-beef-and-everyday-cuts" style="--tint: #FBE1DC">
         <div class="product__media">
           <figure class="ph">
@@ -549,8 +549,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Ground Beef &amp; Everyday Cuts"><img class="ph__img" src="https://uddermilk.com/upload/6A2A6EF4-C413-4141-8A38-AFF9D5A5AD87.png" alt="Ground Beef &amp; Everyday Cuts" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Ground Beef <span class="amp">&amp;</span> Everyday Cuts</h2>
+          <p class="product__from">from $10.00</p>
           <div class="tags">
 <span class="tag tag--grass">100% grass-fed</span><span class="tag tag--frozen">Frozen fresh</span>          </div>
 <p class="product__desc" data-clamp>Rich, naturally tender ground beef for burgers, meatballs, tacos and weeknight pasta.</p>          <div class="product__long" id="ground-beef-and-everyday-cuts-more" hidden><p>Our grass-fed ground beef is made from pasture-raised cattle from small family farms. It&#39;s rich in flavor and naturally tender: perfect for burgers, meatballs, tacos, pasta, casseroles and everyday meals.</p><ul class="bul"><li>100% grass-fed beef</li><li>Hand slaughtered</li><li>Halal processed</li><li>Raised on small family farms</li><li>Frozen immediately after processing</li></ul></div>
@@ -567,20 +569,20 @@
             <li><span class="v-label">Beef kofta · 1 lb</span><span class="price">$17.00</span></li>
             <li><span class="v-label">Grass-fed beef bacon</span><span class="price">$15.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="ground-beef-and-everyday-cuts" data-name="Ground Beef &amp; Everyday Cuts" data-url="category/beef/index.html#ground-beef-and-everyday-cuts" data-img="https://uddermilk.com/upload/6A2A6EF4-C413-4141-8A38-AFF9D5A5AD87.png" data-icon="cut-of-meat">
-              <label class="sr-only" for="ground-beef-and-everyday-cuts-v">Size</label>
-              <select id="ground-beef-and-everyday-cuts-v" name="v">
-<option value="Ground beef · 1 lb" data-price="10.5">Ground beef · 1 lb · $10.50</option><option value="Ground beef 88/12 · 1 lb" data-price="10.0">Ground beef 88/12 · 1 lb · $10.00</option><option value="Ground beef with organs · 1 lb" data-price="11.0">Ground beef with organs · 1 lb · $11.00</option><option value="Hamburger patties · about 1 lb" data-price="11.0">Hamburger patties · about 1 lb · $11.00</option><option value="Hamburger patties with grass-fed cheese · 1 lb" data-price="11.0">Hamburger patties with grass-fed cheese · 1 lb · $11.00</option><option value="Stew meat · 1 lb" data-price="13.0">Stew meat · 1 lb · $13.00</option><option value="Stir-fry meat · 1 lb" data-price="14.0">Stir-fry meat · 1 lb · $14.00</option><option value="Philly cheesesteak meat · 1 lb" data-price="12.0">Philly cheesesteak meat · 1 lb · $12.00</option><option value="Beef kofta · 1 lb" data-price="17.0">Beef kofta · 1 lb · $17.00</option><option value="Grass-fed beef bacon" data-price="15.0">Grass-fed beef bacon · $15.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="ground-beef-and-everyday-cuts" data-name="Ground Beef &amp; Everyday Cuts" data-url="category/beef/index.html#ground-beef-and-everyday-cuts" data-img="https://uddermilk.com/upload/6A2A6EF4-C413-4141-8A38-AFF9D5A5AD87.png" data-icon="cut-of-meat">
+            <label class="sr-only" for="ground-beef-and-everyday-cuts-v">Size</label>
+            <select id="ground-beef-and-everyday-cuts-v" name="v">
+<option value="Ground beef · 1 lb" data-price="10.5">Ground beef · 1 lb · $10.50</option><option value="Ground beef 88/12 · 1 lb" data-price="10.0">Ground beef 88/12 · 1 lb · $10.00</option><option value="Ground beef with organs · 1 lb" data-price="11.0">Ground beef with organs · 1 lb · $11.00</option><option value="Hamburger patties · about 1 lb" data-price="11.0">Hamburger patties · about 1 lb · $11.00</option><option value="Hamburger patties with grass-fed cheese · 1 lb" data-price="11.0">Hamburger patties with grass-fed cheese · 1 lb · $11.00</option><option value="Stew meat · 1 lb" data-price="13.0">Stew meat · 1 lb · $13.00</option><option value="Stir-fry meat · 1 lb" data-price="14.0">Stir-fry meat · 1 lb · $14.00</option><option value="Philly cheesesteak meat · 1 lb" data-price="12.0">Philly cheesesteak meat · 1 lb · $12.00</option><option value="Beef kofta · 1 lb" data-price="17.0">Beef kofta · 1 lb · $17.00</option><option value="Grass-fed beef bacon" data-price="15.0">Grass-fed beef bacon · $15.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="beef-roasts" style="--tint: #FBE1DC">
@@ -590,8 +592,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Beef Roasts"><img class="ph__img" src="https://uddermilk.com/upload/8D098F0B-115D-43B6-A799-C487C8CABFB4.png" alt="Beef Roasts" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Beef Roasts</h2>
+          <p class="product__from">from $25.00</p>
           <div class="tags">
 <span class="tag tag--grass">100% grass-fed</span><span class="tag tag--frozen">Frozen fresh</span>          </div>
 <p class="product__desc" data-clamp>Vacuum-sealed and frozen. Good for slow cooking, roasting and smoking.</p>          <div class="product__long" id="beef-roasts-more" hidden><h3>100% grass-fed beef roasts, hand slaughtered</h3><p>Our roasts come from cattle raised on pasture with no grain finishing. Each roast is vacuum sealed and frozen for freshness. Perfect for slow cooking, roasting, smoking or meal prep.</p><h3>Why customers love our beef</h3><ul class="bul"><li>100% grass-fed and grass-finished</li><li>Hand slaughtered</li><li>No added hormones</li><li>Vacuum sealed for freshness</li><li>Rich beef flavor</li><li>From local family farms</li></ul><p>For best results, thaw completely and cook low and slow.</p></div>
@@ -616,20 +620,20 @@
             <li><span class="v-label">Beef shank · 2.5 lb</span><span class="price">$25.00</span></li>
             <li><span class="v-label">Smoked beef shank · 2.5 lb</span><span class="price">$25.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="beef-roasts" data-name="Beef Roasts" data-url="category/beef/index.html#beef-roasts" data-img="https://uddermilk.com/upload/8D098F0B-115D-43B6-A799-C487C8CABFB4.png" data-icon="cut-of-meat">
-              <label class="sr-only" for="beef-roasts-v">Size</label>
-              <select id="beef-roasts-v" name="v">
-<option value="Chuck roast · 2.5 lb" data-price="32.5">Chuck roast · 2.5 lb · $32.50</option><option value="Brisket · 2.5 lb" data-price="32.5">Brisket · 2.5 lb · $32.50</option><option value="Bolar roast · 2.5 lb" data-price="32.5">Bolar roast · 2.5 lb · $32.50</option><option value="Arm roast · 2.5 lb" data-price="32.5">Arm roast · 2.5 lb · $32.50</option><option value="Shoulder roast · 2.5 lb" data-price="32.5">Shoulder roast · 2.5 lb · $32.50</option><option value="London broil · 2.5 lb" data-price="32.5">London broil · 2.5 lb · $32.50</option><option value="Rump roast · 2.5 lb" data-price="32.5">Rump roast · 2.5 lb · $32.50</option><option value="Top round roast · 2.5 lb" data-price="32.5">Top round roast · 2.5 lb · $32.50</option><option value="Bottom round roast · 2.5 lb" data-price="32.5">Bottom round roast · 2.5 lb · $32.50</option><option value="Eye round roast · 2.5 lb" data-price="32.5">Eye round roast · 2.5 lb · $32.50</option><option value="Sirloin tip roast · 2.5 lb" data-price="35.0">Sirloin tip roast · 2.5 lb · $35.00</option><option value="Tri-tip roast · 2.5 lb" data-price="35.0">Tri-tip roast · 2.5 lb · $35.00</option><option value="Mock tender · 2.5 lb" data-price="35.0">Mock tender · 2.5 lb · $35.00</option><option value="Short ribs · 2.5 lb" data-price="25.0">Short ribs · 2.5 lb · $25.00</option><option value="Korean-style short ribs · 2.5 lb" data-price="30.0">Korean-style short ribs · 2.5 lb · $30.00</option><option value="Beef shank · 2.5 lb" data-price="25.0">Beef shank · 2.5 lb · $25.00</option><option value="Smoked beef shank · 2.5 lb" data-price="25.0">Smoked beef shank · 2.5 lb · $25.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="beef-roasts" data-name="Beef Roasts" data-url="category/beef/index.html#beef-roasts" data-img="https://uddermilk.com/upload/8D098F0B-115D-43B6-A799-C487C8CABFB4.png" data-icon="cut-of-meat">
+            <label class="sr-only" for="beef-roasts-v">Size</label>
+            <select id="beef-roasts-v" name="v">
+<option value="Chuck roast · 2.5 lb" data-price="32.5">Chuck roast · 2.5 lb · $32.50</option><option value="Brisket · 2.5 lb" data-price="32.5">Brisket · 2.5 lb · $32.50</option><option value="Bolar roast · 2.5 lb" data-price="32.5">Bolar roast · 2.5 lb · $32.50</option><option value="Arm roast · 2.5 lb" data-price="32.5">Arm roast · 2.5 lb · $32.50</option><option value="Shoulder roast · 2.5 lb" data-price="32.5">Shoulder roast · 2.5 lb · $32.50</option><option value="London broil · 2.5 lb" data-price="32.5">London broil · 2.5 lb · $32.50</option><option value="Rump roast · 2.5 lb" data-price="32.5">Rump roast · 2.5 lb · $32.50</option><option value="Top round roast · 2.5 lb" data-price="32.5">Top round roast · 2.5 lb · $32.50</option><option value="Bottom round roast · 2.5 lb" data-price="32.5">Bottom round roast · 2.5 lb · $32.50</option><option value="Eye round roast · 2.5 lb" data-price="32.5">Eye round roast · 2.5 lb · $32.50</option><option value="Sirloin tip roast · 2.5 lb" data-price="35.0">Sirloin tip roast · 2.5 lb · $35.00</option><option value="Tri-tip roast · 2.5 lb" data-price="35.0">Tri-tip roast · 2.5 lb · $35.00</option><option value="Mock tender · 2.5 lb" data-price="35.0">Mock tender · 2.5 lb · $35.00</option><option value="Short ribs · 2.5 lb" data-price="25.0">Short ribs · 2.5 lb · $25.00</option><option value="Korean-style short ribs · 2.5 lb" data-price="30.0">Korean-style short ribs · 2.5 lb · $30.00</option><option value="Beef shank · 2.5 lb" data-price="25.0">Beef shank · 2.5 lb · $25.00</option><option value="Smoked beef shank · 2.5 lb" data-price="25.0">Smoked beef shank · 2.5 lb · $25.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="beef-steaks" style="--tint: #FBE1DC">
@@ -639,8 +643,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Beef Steaks"><img class="ph__img" src="https://uddermilk.com/upload/20180406_155144%20%282%29.jpg" alt="Beef Steaks" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Beef Steaks</h2>
+          <p class="product__from">from $28.00</p>
           <div class="tags">
 <span class="tag tag--grass">100% grass-fed</span><span class="tag tag--frozen">Frozen fresh</span>          </div>
 <p class="product__desc" data-clamp>Steaks are sold in packs of about 2 lb (2 lb minimum). Grass-fed beef is lean, so marinate a day or two ahead and don&#39;t rush the cooking.</p>          <div class="product__long" id="beef-steaks-more" hidden><p>100% grass-fed steaks for any occasion. Most steaks weigh about 1½ to 3 lb.</p><p>The minimum order is a 2 lb package. A package may weigh slightly more than 2 lb, and any extra weight is added to the price.</p><p>Because the beef is freshly slaughtered and frozen right away, it&#39;s still very tender once thawed and cooked. Grass-fed beef is lean, so we recommend marinating it for a day or two and cooking it low and slow, the way stores rotisserie a chicken.</p></div>
@@ -674,20 +680,20 @@
             <li><span class="v-label">Top round · 2 lb</span><span class="price">$28.00</span></li>
             <li><span class="v-label">Round · 2 lb</span><span class="price">$28.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="beef-steaks" data-name="Beef Steaks" data-url="category/beef/index.html#beef-steaks" data-img="https://uddermilk.com/upload/20180406_155144%20%282%29.jpg" data-icon="cut-of-meat">
-              <label class="sr-only" for="beef-steaks-v">Size</label>
-              <select id="beef-steaks-v" name="v">
-<option value="Filet mignon · 2 lb" data-price="60.0">Filet mignon · 2 lb · $60.00</option><option value="Rib eye · 2 lb" data-price="44.0">Rib eye · 2 lb · $44.00</option><option value="New York strip · 2 lb" data-price="44.0">New York strip · 2 lb · $44.00</option><option value="T-bone · 2 lb" data-price="44.0">T-bone · 2 lb · $44.00</option><option value="Porterhouse · 2 lb" data-price="44.0">Porterhouse · 2 lb · $44.00</option><option value="Delmonico · 2 lb" data-price="44.0">Delmonico · 2 lb · $44.00</option><option value="Flank · 2 lb" data-price="40.0">Flank · 2 lb · $40.00</option><option value="Skirt · 2 lb" data-price="40.0">Skirt · 2 lb · $40.00</option><option value="Hanger · 2 lb" data-price="40.0">Hanger · 2 lb · $40.00</option><option value="Petite tender · 2 lb" data-price="40.0">Petite tender · 2 lb · $40.00</option><option value="Sirloin · 2 lb" data-price="36.0">Sirloin · 2 lb · $36.00</option><option value="Denver · 2 lb" data-price="36.0">Denver · 2 lb · $36.00</option><option value="Chuck · 2 lb" data-price="32.0">Chuck · 2 lb · $32.00</option><option value="Chuck eye · 2 lb" data-price="32.0">Chuck eye · 2 lb · $32.00</option><option value="Tri-tip · 2 lb" data-price="32.0">Tri-tip · 2 lb · $32.00</option><option value="Ranch · 2 lb" data-price="32.0">Ranch · 2 lb · $32.00</option><option value="Flat iron · 2 lb" data-price="32.0">Flat iron · 2 lb · $32.00</option><option value="Sirloin tip · 2 lb" data-price="32.0">Sirloin tip · 2 lb · $32.00</option><option value="Stir-fry steak · 2 lb" data-price="32.0">Stir-fry steak · 2 lb · $32.00</option><option value="Picanha · 2 lb" data-price="32.0">Picanha · 2 lb · $32.00</option><option value="Tomahawk · 2 lb" data-price="32.0">Tomahawk · 2 lb · $32.00</option><option value="Baby back ribs · 2 lb" data-price="30.0">Baby back ribs · 2 lb · $30.00</option><option value="Bottom round · 2 lb" data-price="30.0">Bottom round · 2 lb · $30.00</option><option value="Eye round · 2 lb" data-price="30.0">Eye round · 2 lb · $30.00</option><option value="Shoulder · 2 lb" data-price="28.0">Shoulder · 2 lb · $28.00</option><option value="Top round · 2 lb" data-price="28.0">Top round · 2 lb · $28.00</option><option value="Round · 2 lb" data-price="28.0">Round · 2 lb · $28.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="beef-steaks" data-name="Beef Steaks" data-url="category/beef/index.html#beef-steaks" data-img="https://uddermilk.com/upload/20180406_155144%20%282%29.jpg" data-icon="cut-of-meat">
+            <label class="sr-only" for="beef-steaks-v">Size</label>
+            <select id="beef-steaks-v" name="v">
+<option value="Filet mignon · 2 lb" data-price="60.0">Filet mignon · 2 lb · $60.00</option><option value="Rib eye · 2 lb" data-price="44.0">Rib eye · 2 lb · $44.00</option><option value="New York strip · 2 lb" data-price="44.0">New York strip · 2 lb · $44.00</option><option value="T-bone · 2 lb" data-price="44.0">T-bone · 2 lb · $44.00</option><option value="Porterhouse · 2 lb" data-price="44.0">Porterhouse · 2 lb · $44.00</option><option value="Delmonico · 2 lb" data-price="44.0">Delmonico · 2 lb · $44.00</option><option value="Flank · 2 lb" data-price="40.0">Flank · 2 lb · $40.00</option><option value="Skirt · 2 lb" data-price="40.0">Skirt · 2 lb · $40.00</option><option value="Hanger · 2 lb" data-price="40.0">Hanger · 2 lb · $40.00</option><option value="Petite tender · 2 lb" data-price="40.0">Petite tender · 2 lb · $40.00</option><option value="Sirloin · 2 lb" data-price="36.0">Sirloin · 2 lb · $36.00</option><option value="Denver · 2 lb" data-price="36.0">Denver · 2 lb · $36.00</option><option value="Chuck · 2 lb" data-price="32.0">Chuck · 2 lb · $32.00</option><option value="Chuck eye · 2 lb" data-price="32.0">Chuck eye · 2 lb · $32.00</option><option value="Tri-tip · 2 lb" data-price="32.0">Tri-tip · 2 lb · $32.00</option><option value="Ranch · 2 lb" data-price="32.0">Ranch · 2 lb · $32.00</option><option value="Flat iron · 2 lb" data-price="32.0">Flat iron · 2 lb · $32.00</option><option value="Sirloin tip · 2 lb" data-price="32.0">Sirloin tip · 2 lb · $32.00</option><option value="Stir-fry steak · 2 lb" data-price="32.0">Stir-fry steak · 2 lb · $32.00</option><option value="Picanha · 2 lb" data-price="32.0">Picanha · 2 lb · $32.00</option><option value="Tomahawk · 2 lb" data-price="32.0">Tomahawk · 2 lb · $32.00</option><option value="Baby back ribs · 2 lb" data-price="30.0">Baby back ribs · 2 lb · $30.00</option><option value="Bottom round · 2 lb" data-price="30.0">Bottom round · 2 lb · $30.00</option><option value="Eye round · 2 lb" data-price="30.0">Eye round · 2 lb · $30.00</option><option value="Shoulder · 2 lb" data-price="28.0">Shoulder · 2 lb · $28.00</option><option value="Top round · 2 lb" data-price="28.0">Top round · 2 lb · $28.00</option><option value="Round · 2 lb" data-price="28.0">Round · 2 lb · $28.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="beef-organs" style="--tint: #FBE1DC">
@@ -697,8 +703,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Beef Organs"><img class="ph__img" src="https://uddermilk.com/upload/20180406_155144%20%282%29%20%281%29.jpg" alt="Beef Organs" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Beef Organs</h2>
+          <p class="product__from">from $4.00</p>
           <div class="tags">
 <span class="tag tag--grass">100% grass-fed</span><span class="tag tag--frozen">Frozen fresh</span>          </div>
 <p class="product__desc" data-clamp>Weights are approximate.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -725,20 +733,20 @@
             <li class="is-out"><span class="v-label">Thyroid · 1.5 lb</span><span class="price">$9.00</span></li>
             <li class="is-out"><span class="v-label">Casing · 1 lb</span><span class="price">$4.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="beef-organs" data-name="Beef Organs" data-url="category/beef/index.html#beef-organs" data-img="https://uddermilk.com/upload/20180406_155144%20%282%29%20%281%29.jpg" data-icon="cut-of-meat">
-              <label class="sr-only" for="beef-organs-v">Size</label>
-              <select id="beef-organs-v" name="v">
-<option value="Liver · 1 lb" data-price="12.0">Liver · 1 lb · $12.00</option><option value="Kidney · about 2 lb" data-price="12.0">Kidney · about 2 lb · $12.00</option><option value="Oxtail · 3 lb" data-price="36.0">Oxtail · 3 lb · $36.00</option><option value="Tripe · 2 lb" data-price="4.0">Tripe · 2 lb · $4.00</option><option value="Cleaned tripe · 1.5 lb" data-price="16.5">Cleaned tripe · 1.5 lb · $16.50</option><option value="Spleen · 2 lb" data-price="12.0">Spleen · 2 lb · $12.00</option><option value="Pancreas · about 2 lb" data-price="16.0">Pancreas · about 2 lb · $16.00</option><option value="Sweetbreads (thymus) · 2 lb" data-price="12.0">Sweetbreads (thymus) · 2 lb · $12.00</option><option value="Throat · about 2 lb" data-price="14.0">Throat · about 2 lb · $14.00</option><option value="Testicles · 1.5 lb" data-price="19.5">Testicles · 1.5 lb · $19.50</option><option value="Beef fat · 2 lb" data-price="6.0">Beef fat · 2 lb · $6.00</option><option value="Bully stick · about 1.5 lb" data-price="24.0">Bully stick · about 1.5 lb · $24.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="beef-organs" data-name="Beef Organs" data-url="category/beef/index.html#beef-organs" data-img="https://uddermilk.com/upload/20180406_155144%20%282%29%20%281%29.jpg" data-icon="cut-of-meat">
+            <label class="sr-only" for="beef-organs-v">Size</label>
+            <select id="beef-organs-v" name="v">
+<option value="Liver · 1 lb" data-price="12.0">Liver · 1 lb · $12.00</option><option value="Kidney · about 2 lb" data-price="12.0">Kidney · about 2 lb · $12.00</option><option value="Oxtail · 3 lb" data-price="36.0">Oxtail · 3 lb · $36.00</option><option value="Tripe · 2 lb" data-price="4.0">Tripe · 2 lb · $4.00</option><option value="Cleaned tripe · 1.5 lb" data-price="16.5">Cleaned tripe · 1.5 lb · $16.50</option><option value="Spleen · 2 lb" data-price="12.0">Spleen · 2 lb · $12.00</option><option value="Pancreas · about 2 lb" data-price="16.0">Pancreas · about 2 lb · $16.00</option><option value="Sweetbreads (thymus) · 2 lb" data-price="12.0">Sweetbreads (thymus) · 2 lb · $12.00</option><option value="Throat · about 2 lb" data-price="14.0">Throat · about 2 lb · $14.00</option><option value="Testicles · 1.5 lb" data-price="19.5">Testicles · 1.5 lb · $19.50</option><option value="Beef fat · 2 lb" data-price="6.0">Beef fat · 2 lb · $6.00</option><option value="Bully stick · about 1.5 lb" data-price="24.0">Bully stick · about 1.5 lb · $24.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="beef-bones-and-broth" style="--tint: #FBE1DC">
@@ -748,8 +756,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Beef Bones &amp; Broth"><img class="ph__img" src="https://uddermilk.com/upload/18370320180406_155144%20%282%29%20%281%29.jpg" alt="Beef Bones &amp; Broth" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Beef Bones <span class="amp">&amp;</span> Broth</h2>
+          <p class="product__from">from $2.50</p>
           <div class="tags">
 <span class="tag tag--grass">100% grass-fed</span>          </div>
 <p class="product__desc" data-clamp>From older grass-fed cattle with deep yellow fat, which makes a rich, golden broth.</p>          <div class="product__long" id="beef-bones-and-broth-more" hidden><p>From 100% grass-fed beef. Some of our bone broth has come from older cows that grazed on grass for about ten years, with deep yellow fat. The marrow bone broth is from a two-year-old Black Angus cow.</p></div>
@@ -768,20 +778,20 @@
             <li class="is-out"><span class="v-label">Neck bones · 2 lb</span><span class="price">$10.00</span></li>
             <li class="is-out"><span class="v-label">Boneless beef gelatin · about 1 lb</span><span class="price">$5.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="beef-bones-and-broth" data-name="Beef Bones &amp; Broth" data-url="category/beef/index.html#beef-bones-and-broth" data-img="https://uddermilk.com/upload/18370320180406_155144%20%282%29%20%281%29.jpg" data-icon="pot-of-food">
-              <label class="sr-only" for="beef-bones-and-broth-v">Size</label>
-              <select id="beef-bones-and-broth-v" name="v">
-<option value="Beef bone broth" data-price="8.0">Beef bone broth · $8.00</option><option value="Marrow bone broth · quart" data-price="8.0">Marrow bone broth · quart · $8.00</option><option value="Beef stock · 1 lb" data-price="10.0">Beef stock · 1 lb · $10.00</option><option value="Marrow soup bones · about 2.5 lb" data-price="17.5">Marrow soup bones · about 2.5 lb · $17.50</option><option value="Knuckle bones · 2 lb" data-price="8.0">Knuckle bones · 2 lb · $8.00</option><option value="Meaty bones · 2–3 lb" data-price="6.0">Meaty bones · 2–3 lb · $6.00</option><option value="Raw gelatin feet bones · 2 lb" data-price="12.0">Raw gelatin feet bones · 2 lb · $12.00</option><option value="Cooked gelatin bones · about 2 lb" data-price="2.5">Cooked gelatin bones · about 2 lb · $2.50</option><option value="Cooked gelatin marrow bones · about 2 lb" data-price="3.0">Cooked gelatin marrow bones · about 2 lb · $3.00</option><option value="Cooked marrow bones" data-price="3.0">Cooked marrow bones · $3.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="beef-bones-and-broth" data-name="Beef Bones &amp; Broth" data-url="category/beef/index.html#beef-bones-and-broth" data-img="https://uddermilk.com/upload/18370320180406_155144%20%282%29%20%281%29.jpg" data-icon="pot-of-food">
+            <label class="sr-only" for="beef-bones-and-broth-v">Size</label>
+            <select id="beef-bones-and-broth-v" name="v">
+<option value="Beef bone broth" data-price="8.0">Beef bone broth · $8.00</option><option value="Marrow bone broth · quart" data-price="8.0">Marrow bone broth · quart · $8.00</option><option value="Beef stock · 1 lb" data-price="10.0">Beef stock · 1 lb · $10.00</option><option value="Marrow soup bones · about 2.5 lb" data-price="17.5">Marrow soup bones · about 2.5 lb · $17.50</option><option value="Knuckle bones · 2 lb" data-price="8.0">Knuckle bones · 2 lb · $8.00</option><option value="Meaty bones · 2–3 lb" data-price="6.0">Meaty bones · 2–3 lb · $6.00</option><option value="Raw gelatin feet bones · 2 lb" data-price="12.0">Raw gelatin feet bones · 2 lb · $12.00</option><option value="Cooked gelatin bones · about 2 lb" data-price="2.5">Cooked gelatin bones · about 2 lb · $2.50</option><option value="Cooked gelatin marrow bones · about 2 lb" data-price="3.0">Cooked gelatin marrow bones · about 2 lb · $3.00</option><option value="Cooked marrow bones" data-price="3.0">Cooked marrow bones · $3.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="sausages-sticks-and-jerky" style="--tint: #FBE1DC">
@@ -791,8 +801,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Sausages, Sticks &amp; Jerky"><img class="ph__img" src="https://uddermilk.com/upload/20180406_155144%20%282%29%20%281%29%20%282%29%20%281%29%20%281%29.jpg" alt="Sausages, Sticks &amp; Jerky" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Sausages, Sticks <span class="amp">&amp;</span> Jerky</h2>
+          <p class="product__from">from $8.00</p>
           <div class="tags">
 <span class="tag tag--grass">100% grass-fed</span>          </div>
 <p class="product__desc" data-clamp>Made in small batches from long-grazed, grass-fed beef.</p>          <div class="product__long" id="sausages-sticks-and-jerky-more" hidden><p>All made from grass-fed beef.</p><h3>Ingredients</h3><ul class="bul"><li>Hot dogs: black pepper, cloves, garlic powder, onion powder, paprika, Celtic salt, celery juice powder, pea fiber, white pepper, water</li><li>Jerky: garlic powder, onion powder, paprika, Celtic salt, celery juice powder, pea fiber, white pepper, water, black pepper, apple cider, cinnamon</li><li>Grillers: apple, Celtic salt, onion, black pepper, mustard, sage, ginger, red pepper, water</li><li>Breakfast links: apple, Celtic salt, black pepper, mustard, sage, ginger, red pepper, water</li><li>Sausages: apple, Celtic salt, black pepper, mustard, red pepper, water</li></ul></div>
@@ -832,20 +844,20 @@
             <li class="is-out"><span class="v-label">Ring bologna · 1 lb</span><span class="price">$10.00</span></li>
             <li class="is-out"><span class="v-label">Beef pepperoni</span><span class="price">$8.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="sausages-sticks-and-jerky" data-name="Sausages, Sticks &amp; Jerky" data-url="category/beef/index.html#sausages-sticks-and-jerky" data-img="https://uddermilk.com/upload/20180406_155144%20%282%29%20%281%29%20%282%29%20%281%29%20%281%29.jpg" data-icon="hot-dog">
-              <label class="sr-only" for="sausages-sticks-and-jerky-v">Size</label>
-              <select id="sausages-sticks-and-jerky-v" name="v">
-<option value="Beef jerky · ½ lb" data-price="20.0">Beef jerky · ½ lb · $20.00</option><option value="Breakfast links with maple · 1 lb" data-price="20.0">Breakfast links with maple · 1 lb · $20.00</option><option value="Sweet Italian finger links · about 1.3 lb" data-price="18.0">Sweet Italian finger links · about 1.3 lb · $18.00</option><option value="Sweet Italian finger links with cheese · about 1.3 lb" data-price="18.0">Sweet Italian finger links with cheese · about 1.3 lb · $18.00</option><option value="Beef griller links · about 1.3 lb" data-price="18.0">Beef griller links · about 1.3 lb · $18.00</option><option value="Beef griller links with cheese · about 1.3 lb" data-price="18.0">Beef griller links with cheese · about 1.3 lb · $18.00</option><option value="Smoked griller links · 1.2 lb" data-price="12.0">Smoked griller links · 1.2 lb · $12.00</option><option value="Smoked maple griller links · 1.2 lb" data-price="12.0">Smoked maple griller links · 1.2 lb · $12.00</option><option value="Jalapeño cheddar grillers · 1.15 lb" data-price="13.0">Jalapeño cheddar grillers · 1.15 lb · $13.00</option><option value="Smoked beef rib patties · 1 lb" data-price="14.0">Smoked beef rib patties · 1 lb · $14.00</option><option value="Smoked beef rib patties with cheese · 1 lb" data-price="14.0">Smoked beef rib patties with cheese · 1 lb · $14.00</option><option value="Smoked kielbasa · 1 lb" data-price="12.0">Smoked kielbasa · 1 lb · $12.00</option><option value="Smoked kielbasa with cheese · 1 lb" data-price="12.0">Smoked kielbasa with cheese · 1 lb · $12.00</option><option value="Kielbasa links · 1 lb" data-price="8.0">Kielbasa links · 1 lb · $8.00</option><option value="Kielbasa griller links · 1.2 lb" data-price="10.0">Kielbasa griller links · 1.2 lb · $10.00</option><option value="Beef Italian sausage · 1.5 lb" data-price="12.0">Beef Italian sausage · 1.5 lb · $12.00</option><option value="Hot Italian finger links · 1.25 lb" data-price="10.0">Hot Italian finger links · 1.25 lb · $10.00</option><option value="Beef finger link sausage · 1 lb" data-price="8.0">Beef finger link sausage · 1 lb · $8.00</option><option value="Maple finger links · 1 lb" data-price="8.0">Maple finger links · 1 lb · $8.00</option><option value="Smoked loose sausage, plain · 1 lb" data-price="10.0">Smoked loose sausage, plain · 1 lb · $10.00</option><option value="Smoked loose sausage with pepper &amp; onion" data-price="10.0">Smoked loose sausage with pepper &amp; onion · $10.00</option><option value="Raw rounded sausage · 1 lb" data-price="10.0">Raw rounded sausage · 1 lb · $10.00</option><option value="Beef hot sticks · 1 lb" data-price="12.0">Beef hot sticks · 1 lb · $12.00</option><option value="Beef hot sticks with cheese · 1 lb" data-price="12.0">Beef hot sticks with cheese · 1 lb · $12.00</option><option value="BBQ beef sticks · 1 lb" data-price="10.0">BBQ beef sticks · 1 lb · $10.00</option><option value="Sweet sticks · 1 lb" data-price="10.0">Sweet sticks · 1 lb · $10.00</option><option value="Beef scrapple · 2.5 lb" data-price="20.0">Beef scrapple · 2.5 lb · $20.00</option><option value="Summer bologna · 1 lb" data-price="9.0">Summer bologna · 1 lb · $9.00</option><option value="Bologna · about 1 lb" data-price="9.0">Bologna · about 1 lb · $9.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="sausages-sticks-and-jerky" data-name="Sausages, Sticks &amp; Jerky" data-url="category/beef/index.html#sausages-sticks-and-jerky" data-img="https://uddermilk.com/upload/20180406_155144%20%282%29%20%281%29%20%282%29%20%281%29%20%281%29.jpg" data-icon="hot-dog">
+            <label class="sr-only" for="sausages-sticks-and-jerky-v">Size</label>
+            <select id="sausages-sticks-and-jerky-v" name="v">
+<option value="Beef jerky · ½ lb" data-price="20.0">Beef jerky · ½ lb · $20.00</option><option value="Breakfast links with maple · 1 lb" data-price="20.0">Breakfast links with maple · 1 lb · $20.00</option><option value="Sweet Italian finger links · about 1.3 lb" data-price="18.0">Sweet Italian finger links · about 1.3 lb · $18.00</option><option value="Sweet Italian finger links with cheese · about 1.3 lb" data-price="18.0">Sweet Italian finger links with cheese · about 1.3 lb · $18.00</option><option value="Beef griller links · about 1.3 lb" data-price="18.0">Beef griller links · about 1.3 lb · $18.00</option><option value="Beef griller links with cheese · about 1.3 lb" data-price="18.0">Beef griller links with cheese · about 1.3 lb · $18.00</option><option value="Smoked griller links · 1.2 lb" data-price="12.0">Smoked griller links · 1.2 lb · $12.00</option><option value="Smoked maple griller links · 1.2 lb" data-price="12.0">Smoked maple griller links · 1.2 lb · $12.00</option><option value="Jalapeño cheddar grillers · 1.15 lb" data-price="13.0">Jalapeño cheddar grillers · 1.15 lb · $13.00</option><option value="Smoked beef rib patties · 1 lb" data-price="14.0">Smoked beef rib patties · 1 lb · $14.00</option><option value="Smoked beef rib patties with cheese · 1 lb" data-price="14.0">Smoked beef rib patties with cheese · 1 lb · $14.00</option><option value="Smoked kielbasa · 1 lb" data-price="12.0">Smoked kielbasa · 1 lb · $12.00</option><option value="Smoked kielbasa with cheese · 1 lb" data-price="12.0">Smoked kielbasa with cheese · 1 lb · $12.00</option><option value="Kielbasa links · 1 lb" data-price="8.0">Kielbasa links · 1 lb · $8.00</option><option value="Kielbasa griller links · 1.2 lb" data-price="10.0">Kielbasa griller links · 1.2 lb · $10.00</option><option value="Beef Italian sausage · 1.5 lb" data-price="12.0">Beef Italian sausage · 1.5 lb · $12.00</option><option value="Hot Italian finger links · 1.25 lb" data-price="10.0">Hot Italian finger links · 1.25 lb · $10.00</option><option value="Beef finger link sausage · 1 lb" data-price="8.0">Beef finger link sausage · 1 lb · $8.00</option><option value="Maple finger links · 1 lb" data-price="8.0">Maple finger links · 1 lb · $8.00</option><option value="Smoked loose sausage, plain · 1 lb" data-price="10.0">Smoked loose sausage, plain · 1 lb · $10.00</option><option value="Smoked loose sausage with pepper &amp; onion" data-price="10.0">Smoked loose sausage with pepper &amp; onion · $10.00</option><option value="Raw rounded sausage · 1 lb" data-price="10.0">Raw rounded sausage · 1 lb · $10.00</option><option value="Beef hot sticks · 1 lb" data-price="12.0">Beef hot sticks · 1 lb · $12.00</option><option value="Beef hot sticks with cheese · 1 lb" data-price="12.0">Beef hot sticks with cheese · 1 lb · $12.00</option><option value="BBQ beef sticks · 1 lb" data-price="10.0">BBQ beef sticks · 1 lb · $10.00</option><option value="Sweet sticks · 1 lb" data-price="10.0">Sweet sticks · 1 lb · $10.00</option><option value="Beef scrapple · 2.5 lb" data-price="20.0">Beef scrapple · 2.5 lb · $20.00</option><option value="Summer bologna · 1 lb" data-price="9.0">Summer bologna · 1 lb · $9.00</option><option value="Bologna · about 1 lb" data-price="9.0">Bologna · about 1 lb · $9.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="uncured-hot-dogs-and-bacon" style="--tint: #FBE1DC">
@@ -855,8 +867,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Uncured Hot Dogs &amp; Bacon"><img class="ph__img" src="https://uddermilk.com/upload/20180406_155144%20%282%29%20%281%29%20%282%29%20%281%29%20%281%29%20%281%29.jpg" alt="Uncured Hot Dogs &amp; Bacon" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Uncured Hot Dogs <span class="amp">&amp;</span> Bacon</h2>
+          <p class="product__from">from $10.00</p>
           <div class="tags">
 <span class="tag tag--grass">100% grass-fed</span><span class="tag">No nitrates added</span>          </div>
 <p class="product__desc" data-clamp>Uncured grass-fed beef franks with no added nitrates or nitrites, seasoned with sea salt, mustard seed, paprika and plum powder.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -865,20 +879,20 @@
             <li><span class="v-label">Uncured hot dogs with cheese · 1 lb</span><span class="price">$10.00</span></li>
             <li><span class="v-label">Grass-fed beef bacon</span><span class="price">$15.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="uncured-hot-dogs-and-bacon" data-name="Uncured Hot Dogs &amp; Bacon" data-url="category/beef/index.html#uncured-hot-dogs-and-bacon" data-img="https://uddermilk.com/upload/20180406_155144%20%282%29%20%281%29%20%282%29%20%281%29%20%281%29%20%281%29.jpg" data-icon="bacon">
-              <label class="sr-only" for="uncured-hot-dogs-and-bacon-v">Size</label>
-              <select id="uncured-hot-dogs-and-bacon-v" name="v">
-<option value="Uncured hot dogs · 1 lb" data-price="10.0">Uncured hot dogs · 1 lb · $10.00</option><option value="Uncured hot dogs with cheese · 1 lb" data-price="10.0">Uncured hot dogs with cheese · 1 lb · $10.00</option><option value="Grass-fed beef bacon" data-price="15.0">Grass-fed beef bacon · $15.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="uncured-hot-dogs-and-bacon" data-name="Uncured Hot Dogs &amp; Bacon" data-url="category/beef/index.html#uncured-hot-dogs-and-bacon" data-img="https://uddermilk.com/upload/20180406_155144%20%282%29%20%281%29%20%282%29%20%281%29%20%281%29%20%281%29.jpg" data-icon="bacon">
+            <label class="sr-only" for="uncured-hot-dogs-and-bacon-v">Size</label>
+            <select id="uncured-hot-dogs-and-bacon-v" name="v">
+<option value="Uncured hot dogs · 1 lb" data-price="10.0">Uncured hot dogs · 1 lb · $10.00</option><option value="Uncured hot dogs with cheese · 1 lb" data-price="10.0">Uncured hot dogs with cheese · 1 lb · $10.00</option><option value="Grass-fed beef bacon" data-price="15.0">Grass-fed beef bacon · $15.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="tallow-and-gelatin" style="--tint: #FBE1DC">
@@ -888,8 +902,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Tallow &amp; Gelatin"><img class="ph__img" src="https://uddermilk.com/upload/20191201_190109.jpg" alt="Tallow &amp; Gelatin" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Tallow <span class="amp">&amp;</span> Gelatin</h2>
+          <p class="product__from">from $10.00</p>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -900,20 +916,20 @@
             <li><span class="v-label">Lamb tallow</span><span class="price">$10.00</span></li>
             <li class="is-out"><span class="v-label">Concentrated beef gelatin · half pint</span><span class="price">$6.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="tallow-and-gelatin" data-name="Tallow &amp; Gelatin" data-url="category/beef/index.html#tallow-and-gelatin" data-img="https://uddermilk.com/upload/20191201_190109.jpg" data-icon="jar">
-              <label class="sr-only" for="tallow-and-gelatin-v">Size</label>
-              <select id="tallow-and-gelatin-v" name="v">
-<option value="Beef tallow · quart" data-price="10.0">Beef tallow · quart · $10.00</option><option value="Beef tallow with 5% grass-fed milk · quart" data-price="10.0">Beef tallow with 5% grass-fed milk · quart · $10.00</option><option value="Smoked beef tallow · quart" data-price="13.0">Smoked beef tallow · quart · $13.00</option><option value="Lamb tallow" data-price="10.0">Lamb tallow · $10.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="tallow-and-gelatin" data-name="Tallow &amp; Gelatin" data-url="category/beef/index.html#tallow-and-gelatin" data-img="https://uddermilk.com/upload/20191201_190109.jpg" data-icon="jar">
+            <label class="sr-only" for="tallow-and-gelatin-v">Size</label>
+            <select id="tallow-and-gelatin-v" name="v">
+<option value="Beef tallow · quart" data-price="10.0">Beef tallow · quart · $10.00</option><option value="Beef tallow with 5% grass-fed milk · quart" data-price="10.0">Beef tallow with 5% grass-fed milk · quart · $10.00</option><option value="Smoked beef tallow · quart" data-price="13.0">Smoked beef tallow · quart · $13.00</option><option value="Lamb tallow" data-price="10.0">Lamb tallow · $10.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="beef-shawarma" style="--tint: #FBE1DC">
@@ -923,28 +939,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Beef Shawarma"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20201130-202302_Google.jpg" alt="Beef Shawarma" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Beef Shawarma</h2>
+          <p class="product__from">$21.00</p>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span>          </div>
 <p class="product__desc" data-clamp>Grass-fed beef seasoned with black pepper, cardamom, cinnamon, clove, ginger, garlic and lemon. Wrap it in warm pita.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">1 lb</span><span class="price">$21.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="beef-shawarma" data-name="Beef Shawarma" data-url="category/beef/index.html#beef-shawarma" data-img="https://uddermilk.com/upload/Screenshot_20201130-202302_Google.jpg" data-icon="meat-on-bone">
-              <label class="sr-only" for="beef-shawarma-v">Size</label>
-              <select id="beef-shawarma-v" name="v" class="is-one">
-<option value="1 lb" data-price="21.0">1 lb · $21.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="beef-shawarma" data-name="Beef Shawarma" data-url="category/beef/index.html#beef-shawarma" data-img="https://uddermilk.com/upload/Screenshot_20201130-202302_Google.jpg" data-icon="meat-on-bone">
+            <label class="sr-only" for="beef-shawarma-v">Size</label>
+            <select id="beef-shawarma-v" name="v" class="is-one">
+<option value="1 lb" data-price="21.0">1 lb · $21.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="beef-chili" style="--tint: #FBE1DC">
@@ -954,8 +972,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Beef Chili"><img class="ph__img" src="https://uddermilk.com/upload/20180406_155144%20%282%29%20%281%29%20%282%29%20%281%29%20%281%29%20%281%29%20%282%29.jpg" alt="Beef Chili" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Beef Chili</h2>
+          <p class="product__from">$8.00</p>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span>          </div>
 <p class="product__desc" data-clamp>Ground grass-fed beef with tomatoes, onions and spices.</p>          <div class="product__long" id="beef-chili-more" hidden><h3>Grass-fed beef chili</h3><p>Ingredients: grass-fed ground beef, tomatoes, onions, spices.</p><h3>Grass-fed Sloppy Joe mix</h3><p>Ingredients: grass-fed ground beef, tomatoes, tomato paste, onions, garlic, Celtic sea salt, raw organic sugar, spices.</p></div>
@@ -963,20 +983,20 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Pint</span><span class="price">$8.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="beef-chili" data-name="Beef Chili" data-url="category/beef/index.html#beef-chili" data-img="https://uddermilk.com/upload/20180406_155144%20%282%29%20%281%29%20%282%29%20%281%29%20%281%29%20%281%29%20%282%29.jpg" data-icon="pot-of-food">
-              <label class="sr-only" for="beef-chili-v">Size</label>
-              <select id="beef-chili-v" name="v" class="is-one">
-<option value="Pint" data-price="8.0">Pint · $8.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="beef-chili" data-name="Beef Chili" data-url="category/beef/index.html#beef-chili" data-img="https://uddermilk.com/upload/20180406_155144%20%282%29%20%281%29%20%282%29%20%281%29%20%281%29%20%281%29%20%282%29.jpg" data-icon="pot-of-food">
+            <label class="sr-only" for="beef-chili-v">Size</label>
+            <select id="beef-chili-v" name="v" class="is-one">
+<option value="Pint" data-price="8.0">Pint · $8.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="hawawshi-egyptian-meat-pie" style="--tint: #FBE1DC">
@@ -986,8 +1006,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Hawawshi, Egyptian Meat Pie"><img class="ph__img" src="https://uddermilk.com/upload/IMG_1415.jpeg" alt="Hawawshi, Egyptian Meat Pie" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Hawawshi, Egyptian Meat Pie</h2>
+          <p class="product__from">$8.00</p>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span><span class="tag tag--frozen">Frozen</span>          </div>
 <p class="product__desc" data-clamp>Egyptian street food: grass-fed beef and fresh spices baked inside Egyptian bread. Heat at 375°F for 10–15 minutes, or air-fry at 350°F for 5–7.</p>          <div class="product__long" id="hawawshi-egyptian-meat-pie-more" hidden><h3>Frozen Egyptian hawawshi</h3><p>Authentic Egyptian street food, made at home with grass-fed beef.</p><ul class="bul"><li>Grass-fed beef</li><li>Egyptian bread</li><li>Fresh organic spices</li><li>A family recipe</li><li>Ready to heat</li></ul><p>Our hawawshi is premium grass-fed beef seasoned with traditional Middle Eastern spices, baked inside fresh Egyptian bread.</p><h3>Serve it with</h3><ul class="bul"><li>Pickles</li><li>Tahini</li><li>Salad</li></ul><h3>To heat</h3><ul class="bul"><li>Oven: 375°F for 10 to 15 minutes</li><li>Air fryer: 350°F for 5 to 7 minutes</li></ul></div>
@@ -995,20 +1017,20 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">1 pie</span><span class="price">$8.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="hawawshi-egyptian-meat-pie" data-name="Hawawshi, Egyptian Meat Pie" data-url="category/beef/index.html#hawawshi-egyptian-meat-pie" data-img="https://uddermilk.com/upload/IMG_1415.jpeg" data-icon="stuffed-flatbread">
-              <label class="sr-only" for="hawawshi-egyptian-meat-pie-v">Size</label>
-              <select id="hawawshi-egyptian-meat-pie-v" name="v" class="is-one">
-<option value="1 pie" data-price="8.0">1 pie · $8.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="hawawshi-egyptian-meat-pie" data-name="Hawawshi, Egyptian Meat Pie" data-url="category/beef/index.html#hawawshi-egyptian-meat-pie" data-img="https://uddermilk.com/upload/IMG_1415.jpeg" data-icon="stuffed-flatbread">
+            <label class="sr-only" for="hawawshi-egyptian-meat-pie-v">Size</label>
+            <select id="hawawshi-egyptian-meat-pie-v" name="v" class="is-one">
+<option value="1 pie" data-price="8.0">1 pie · $8.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product is-allout has-photo" id="beef-bulgogi" style="--tint: #FBE1DC">
@@ -1018,8 +1040,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Beef Bulgogi"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20240519_210736_Google.jpg" alt="Beef Bulgogi" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Beef Bulgogi</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag tag--grass">Grass-fed</span><span class="tag tag--out">Sold out</span>          </div>
 <p class="product__desc" data-clamp>Thin slices of beef in a sweet-savory Korean marinade. It cooks in minutes.</p>          <div class="product__long" id="beef-bulgogi-more" hidden><p>Bulgogi means &#34;fire meat&#34;: thin slices of beef soaked in a sweet, savory marinade, then seared fast over high heat until the edges catch and caramelize. Our version starts with 100% grass-fed ribeye, which is lean and full of flavor, so it soaks up the marinade beautifully.</p><h3>Why it works</h3><ul class="bul"><li>Slice it thin: the beef cooks in seconds and stays tender</li><li>The grated pear tenderizes the meat and adds natural sweetness</li><li>A very hot pan gives you those smoky, charred edges</li></ul><h3>The recipe (serves 4 to 6, all organic)</h3><ul class="bul"><li>1½ lb grass-fed boneless ribeye</li><li>½ small pear, peeled and grated (an apple works too)</li><li>¼ cup soy sauce, or coconut aminos</li><li>2 tbsp brown sugar, or raw honey</li><li>2 tbsp toasted sesame oil</li><li>3 cloves garlic, minced</li><li>1 tbsp fresh ginger, grated</li><li>1 tbsp gochujang (Korean red chili paste), to taste</li><li>2 green onions, thinly sliced</li><li>1 tsp toasted sesame seeds</li><li>2 tbsp grass-fed ghee or tallow, for the pan</li></ul><h3>How to make it</h3><ul class="bul"><li>Firm up the steak in the freezer for 20 to 30 minutes, then slice it as thin as you can, across the grain.</li><li>Whisk the pear, soy sauce, sugar, sesame oil, garlic, ginger and gochujang. Toss the beef in it, cover and refrigerate for 2 hours or overnight.</li><li>Heat a cast-iron skillet or grill pan until it&#39;s smoking hot and add a little ghee.</li><li>Cook the beef in small batches, 1 to 2 minutes a side, so it sears instead of steaming.</li><li>Finish with green onions and sesame seeds.</li></ul><h3>Serve it with</h3><ul class="bul"><li>Steamed rice</li><li>Kimchi from our fermented shelf</li><li>Lettuce or perilla leaves for wrapping</li><li>Sliced cucumbers</li></ul></div>
@@ -1027,9 +1051,9 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">Pint</span><span class="price">$8.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Beef%20Bulgogi">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Beef%20Bulgogi">Ask when it's back</a>
         </div>
       </article>
       <p class="hidden-note">Everything in this category is sold out right now. Switch off “In stock only” to see the full list.</p>
@@ -1136,6 +1160,6 @@
     </div>
   </div>
 </footer><script src="../../assets/js/site.js?v=0da2f001" defer></script>
-<script src="../../assets/js/shop.js?v=07b2128e" defer></script>
+<script src="../../assets/js/shop.js?v=60b78f0e" defer></script>
 </body>
 </html>

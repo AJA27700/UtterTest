@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../../assets/fonts/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../assets/css/site.css?v=1f783f4a">
+<link rel="stylesheet" href="../../assets/css/site.css?v=d24d284f">
 <script>document.documentElement.classList.add('js');if(location.protocol==="file:")document.write('<link rel="stylesheet" href="../../assets/css/fonts-local.css?v=">')</script>
 </head>
 <body class="page-cat">
@@ -541,7 +541,7 @@
         <label class="toggle"><input type="checkbox" data-instock><span class="toggle__ui" aria-hidden="true"></span><span>In stock<span class="t-long"> only</span></span></label>
       </div>
     </div>
-    <div class="products">
+    <div class="products products--grid">
       <article class="product has-photo" id="celtic-sea-salt" style="--tint: #E1ECD2">
         <div class="product__media">
           <figure class="ph">
@@ -549,28 +549,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Celtic Sea Salt"><img class="ph__img" src="https://uddermilk.com/upload/file_000000008e0c72438282361aa8fe0783.png" alt="Celtic Sea Salt" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Celtic Sea Salt</h2>
+          <p class="product__from">$10.00</p>
           <div class="tags">
           </div>
 <p class="product__desc" data-clamp>Moist, grey Celtic sea salt.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Fine · 1 lb</span><span class="price">$10.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="celtic-sea-salt" data-name="Celtic Sea Salt" data-url="category/salts-spices/index.html#celtic-sea-salt" data-img="https://uddermilk.com/upload/file_000000008e0c72438282361aa8fe0783.png" data-icon="salt">
-              <label class="sr-only" for="celtic-sea-salt-v">Size</label>
-              <select id="celtic-sea-salt-v" name="v" class="is-one">
-<option value="Fine · 1 lb" data-price="10.0">Fine · 1 lb · $10.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="celtic-sea-salt" data-name="Celtic Sea Salt" data-url="category/salts-spices/index.html#celtic-sea-salt" data-img="https://uddermilk.com/upload/file_000000008e0c72438282361aa8fe0783.png" data-icon="salt">
+            <label class="sr-only" for="celtic-sea-salt-v">Size</label>
+            <select id="celtic-sea-salt-v" name="v" class="is-one">
+<option value="Fine · 1 lb" data-price="10.0">Fine · 1 lb · $10.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="himalayan-pink-salt" style="--tint: #E1ECD2">
@@ -584,8 +586,10 @@
             <button class="thumb" type="button" data-src="https://uddermilk.com/upload/Screenshot_20250312_233930_Gallery.jpg" data-alt="Himalayan Pink Salt: Small rocks" aria-pressed="false" title="Small rocks"><img src="https://uddermilk.com/upload/Screenshot_20250312_233930_Gallery.jpg" alt="Small rocks" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></button>
           </div>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Himalayan Pink Salt</h2>
+          <p class="product__from">from $7.00</p>
           <div class="tags">
 <span class="tag">Kosher</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -593,20 +597,20 @@
             <li><span class="v-label">Fine · 16 oz bag</span><span class="price">$8.00</span></li>
             <li><span class="v-label">Small rocks · 1 lb</span><span class="price">$7.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="himalayan-pink-salt" data-name="Himalayan Pink Salt" data-url="category/salts-spices/index.html#himalayan-pink-salt" data-img="https://uddermilk.com/upload/100924pink%20salt.jpg" data-icon="salt">
-              <label class="sr-only" for="himalayan-pink-salt-v">Size</label>
-              <select id="himalayan-pink-salt-v" name="v">
-<option value="Fine · 16 oz bag" data-price="8.0">Fine · 16 oz bag · $8.00</option><option value="Small rocks · 1 lb" data-price="7.0">Small rocks · 1 lb · $7.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="himalayan-pink-salt" data-name="Himalayan Pink Salt" data-url="category/salts-spices/index.html#himalayan-pink-salt" data-img="https://uddermilk.com/upload/100924pink%20salt.jpg" data-icon="salt">
+            <label class="sr-only" for="himalayan-pink-salt-v">Size</label>
+            <select id="himalayan-pink-salt-v" name="v">
+<option value="Fine · 16 oz bag" data-price="8.0">Fine · 16 oz bag · $8.00</option><option value="Small rocks · 1 lb" data-price="7.0">Small rocks · 1 lb · $7.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="black-sea-salt" style="--tint: #E1ECD2">
@@ -616,28 +620,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Black Sea Salt"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20260120_225044_Google.jpg" alt="Black Sea Salt" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Black Sea Salt</h2>
+          <p class="product__from">$10.00</p>
           <div class="tags">
           </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Fine</span><span class="price">$10.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="black-sea-salt" data-name="Black Sea Salt" data-url="category/salts-spices/index.html#black-sea-salt" data-img="https://uddermilk.com/upload/Screenshot_20260120_225044_Google.jpg" data-icon="salt">
-              <label class="sr-only" for="black-sea-salt-v">Size</label>
-              <select id="black-sea-salt-v" name="v" class="is-one">
-<option value="Fine" data-price="10.0">Fine · $10.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="black-sea-salt" data-name="Black Sea Salt" data-url="category/salts-spices/index.html#black-sea-salt" data-img="https://uddermilk.com/upload/Screenshot_20260120_225044_Google.jpg" data-icon="salt">
+            <label class="sr-only" for="black-sea-salt-v">Size</label>
+            <select id="black-sea-salt-v" name="v" class="is-one">
+<option value="Fine" data-price="10.0">Fine · $10.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product is-allout has-photo" id="cyprus-black-salt-flakes" style="--tint: #E1ECD2">
@@ -647,17 +653,19 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Cyprus Black Salt Flakes"><img class="ph__img" src="https://uddermilk.com/upload/161121D6AAD491-50BA-4A07-A419-3E45B9E6A902.jpeg" alt="Cyprus Black Salt Flakes" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Cyprus Black Salt Flakes</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag">Kosher</span><span class="tag tag--out">Sold out</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">Pint</span><span class="price">$10.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Cyprus%20Black%20Salt%20Flakes">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Cyprus%20Black%20Salt%20Flakes">Ask when it's back</a>
         </div>
       </article>
       <article class="product has-photo" id="imtenan-raw-sea-salt" style="--tint: #E1ECD2">
@@ -667,28 +675,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Imtenan Raw Sea Salt"><img class="ph__img" src="https://uddermilk.com/upload/666.jpg" alt="Imtenan Raw Sea Salt" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Imtenan Raw Sea Salt</h2>
+          <p class="product__from">$11.00</p>
           <div class="tags">
 <span class="tag">Unrefined</span>          </div>
 <p class="product__desc" data-clamp>Unrefined sea salt that keeps its natural minerals.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">650 g</span><span class="price">$11.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="imtenan-raw-sea-salt" data-name="Imtenan Raw Sea Salt" data-url="category/salts-spices/index.html#imtenan-raw-sea-salt" data-img="https://uddermilk.com/upload/666.jpg" data-icon="salt">
-              <label class="sr-only" for="imtenan-raw-sea-salt-v">Size</label>
-              <select id="imtenan-raw-sea-salt-v" name="v" class="is-one">
-<option value="650 g" data-price="11.0">650 g · $11.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="imtenan-raw-sea-salt" data-name="Imtenan Raw Sea Salt" data-url="category/salts-spices/index.html#imtenan-raw-sea-salt" data-img="https://uddermilk.com/upload/666.jpg" data-icon="salt">
+            <label class="sr-only" for="imtenan-raw-sea-salt-v">Size</label>
+            <select id="imtenan-raw-sea-salt-v" name="v" class="is-one">
+<option value="650 g" data-price="11.0">650 g · $11.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="organic-turmeric-powder" style="--tint: #E1ECD2">
@@ -698,28 +708,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Organic Turmeric Powder"><img class="ph__img" src="https://uddermilk.com/upload/15135720191207_215301.jpg" alt="Organic Turmeric Powder" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Organic Turmeric Powder</h2>
+          <p class="product__from">$7.00</p>
           <div class="tags">
 <span class="tag tag--organic">Organic</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">75 g</span><span class="price">$7.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="organic-turmeric-powder" data-name="Organic Turmeric Powder" data-url="category/salts-spices/index.html#organic-turmeric-powder" data-img="https://uddermilk.com/upload/15135720191207_215301.jpg" data-icon="ginger-root">
-              <label class="sr-only" for="organic-turmeric-powder-v">Size</label>
-              <select id="organic-turmeric-powder-v" name="v" class="is-one">
-<option value="75 g" data-price="7.0">75 g · $7.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="organic-turmeric-powder" data-name="Organic Turmeric Powder" data-url="category/salts-spices/index.html#organic-turmeric-powder" data-img="https://uddermilk.com/upload/15135720191207_215301.jpg" data-icon="ginger-root">
+            <label class="sr-only" for="organic-turmeric-powder-v">Size</label>
+            <select id="organic-turmeric-powder-v" name="v" class="is-one">
+<option value="75 g" data-price="7.0">75 g · $7.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="sekem-organic-spices" style="--tint: #E1ECD2">
@@ -729,8 +741,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of SEKEM Organic Spices"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20220513-142456_Google.jpg" alt="SEKEM Organic Spices" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>SEKEM Organic Spices</h2>
+          <p class="product__from">from $5.00</p>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag tag--organic">SEKEM</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -741,20 +755,20 @@
             <li><span class="v-label">Sweet basil · 4 oz</span><span class="price">$5.00</span></li>
             <li><span class="v-label">Allspice · 4 oz</span><span class="price">$5.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="sekem-organic-spices" data-name="SEKEM Organic Spices" data-url="category/salts-spices/index.html#sekem-organic-spices" data-img="https://uddermilk.com/upload/Screenshot_20220513-142456_Google.jpg" data-icon="herb">
-              <label class="sr-only" for="sekem-organic-spices-v">Size</label>
-              <select id="sekem-organic-spices-v" name="v">
-<option value="Curry · 4 oz" data-price="5.0">Curry · 4 oz · $5.00</option><option value="Thyme · 4 oz" data-price="5.0">Thyme · 4 oz · $5.00</option><option value="Basil · 4 oz" data-price="5.0">Basil · 4 oz · $5.00</option><option value="Sweet basil · 4 oz" data-price="5.0">Sweet basil · 4 oz · $5.00</option><option value="Allspice · 4 oz" data-price="5.0">Allspice · 4 oz · $5.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="sekem-organic-spices" data-name="SEKEM Organic Spices" data-url="category/salts-spices/index.html#sekem-organic-spices" data-img="https://uddermilk.com/upload/Screenshot_20220513-142456_Google.jpg" data-icon="herb">
+            <label class="sr-only" for="sekem-organic-spices-v">Size</label>
+            <select id="sekem-organic-spices-v" name="v">
+<option value="Curry · 4 oz" data-price="5.0">Curry · 4 oz · $5.00</option><option value="Thyme · 4 oz" data-price="5.0">Thyme · 4 oz · $5.00</option><option value="Basil · 4 oz" data-price="5.0">Basil · 4 oz · $5.00</option><option value="Sweet basil · 4 oz" data-price="5.0">Sweet basil · 4 oz · $5.00</option><option value="Allspice · 4 oz" data-price="5.0">Allspice · 4 oz · $5.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <p class="hidden-note">Everything in this category is sold out right now. Switch off “In stock only” to see the full list.</p>
@@ -861,6 +875,6 @@
     </div>
   </div>
 </footer><script src="../../assets/js/site.js?v=0da2f001" defer></script>
-<script src="../../assets/js/shop.js?v=07b2128e" defer></script>
+<script src="../../assets/js/shop.js?v=60b78f0e" defer></script>
 </body>
 </html>

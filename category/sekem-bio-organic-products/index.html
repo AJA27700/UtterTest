@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../../assets/fonts/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../assets/css/site.css?v=1f783f4a">
+<link rel="stylesheet" href="../../assets/css/site.css?v=d24d284f">
 <script>document.documentElement.classList.add('js');if(location.protocol==="file:")document.write('<link rel="stylesheet" href="../../assets/css/fonts-local.css?v=">')</script>
 </head>
 <body class="page-cat">
@@ -541,7 +541,7 @@
         <label class="toggle"><input type="checkbox" data-instock><span class="toggle__ui" aria-hidden="true"></span><span>In stock<span class="t-long"> only</span></span></label>
       </div>
     </div>
-    <div class="products">
+    <div class="products products--grid">
       <article class="product has-photo" id="imtenan-spices-and-herbs" style="--tint: #E1ECD2">
         <div class="product__media">
           <figure class="ph">
@@ -560,8 +560,10 @@
             <button class="thumb" type="button" data-src="https://uddermilk.com/upload/Screenshot_20240207_162759_WhatsApp.jpg" data-alt="Imtenan Spices &amp; Herbs: Cinnamon brown sugar" aria-pressed="false" title="Cinnamon brown sugar"><img src="https://uddermilk.com/upload/Screenshot_20240207_162759_WhatsApp.jpg" alt="Cinnamon brown sugar" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></button>
           </div>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Imtenan Spices <span class="amp">&amp;</span> Herbs</h2>
+          <p class="product__from">from $3.50</p>
           <div class="tags">
 <span class="tag">Natural</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -577,20 +579,20 @@
             <li><span class="v-label">Raw sea salt · 650 g</span><span class="price">$11.00</span></li>
             <li><span class="v-label">Cinnamon brown sugar · 160 g</span><span class="price">$3.50</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="imtenan-spices-and-herbs" data-name="Imtenan Spices &amp; Herbs" data-url="category/sekem-bio-organic-products/index.html#imtenan-spices-and-herbs" data-img="https://uddermilk.com/upload/F040136.jpeg" data-icon="herb">
-              <label class="sr-only" for="imtenan-spices-and-herbs-v">Size</label>
-              <select id="imtenan-spices-and-herbs-v" name="v">
-<option value="Black pepper · 120 g" data-price="8.0">Black pepper · 120 g · $8.00</option><option value="Organic garlic · 125 g" data-price="5.0">Organic garlic · 125 g · $5.00</option><option value="Organic ginger · 65 g" data-price="4.0">Organic ginger · 65 g · $4.00</option><option value="Turmeric · 75 g" data-price="4.0">Turmeric · 75 g · $4.00</option><option value="Meat spices · 65 g" data-price="3.5">Meat spices · 65 g · $3.50</option><option value="Fish spices · 65 g" data-price="3.5">Fish spices · 65 g · $3.50</option><option value="Fish spices · 100 g" data-price="4.0">Fish spices · 100 g · $4.00</option><option value="Himalayan salt · 200 g" data-price="6.0">Himalayan salt · 200 g · $6.00</option><option value="Raw sea salt · 650 g" data-price="11.0">Raw sea salt · 650 g · $11.00</option><option value="Cinnamon brown sugar · 160 g" data-price="3.5">Cinnamon brown sugar · 160 g · $3.50</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="imtenan-spices-and-herbs" data-name="Imtenan Spices &amp; Herbs" data-url="category/sekem-bio-organic-products/index.html#imtenan-spices-and-herbs" data-img="https://uddermilk.com/upload/F040136.jpeg" data-icon="herb">
+            <label class="sr-only" for="imtenan-spices-and-herbs-v">Size</label>
+            <select id="imtenan-spices-and-herbs-v" name="v">
+<option value="Black pepper · 120 g" data-price="8.0">Black pepper · 120 g · $8.00</option><option value="Organic garlic · 125 g" data-price="5.0">Organic garlic · 125 g · $5.00</option><option value="Organic ginger · 65 g" data-price="4.0">Organic ginger · 65 g · $4.00</option><option value="Turmeric · 75 g" data-price="4.0">Turmeric · 75 g · $4.00</option><option value="Meat spices · 65 g" data-price="3.5">Meat spices · 65 g · $3.50</option><option value="Fish spices · 65 g" data-price="3.5">Fish spices · 65 g · $3.50</option><option value="Fish spices · 100 g" data-price="4.0">Fish spices · 100 g · $4.00</option><option value="Himalayan salt · 200 g" data-price="6.0">Himalayan salt · 200 g · $6.00</option><option value="Raw sea salt · 650 g" data-price="11.0">Raw sea salt · 650 g · $11.00</option><option value="Cinnamon brown sugar · 160 g" data-price="3.5">Cinnamon brown sugar · 160 g · $3.50</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="sekem-organic-spices" style="--tint: #E1ECD2">
@@ -600,8 +602,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of SEKEM Organic Spices"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20220513-142456_Google.jpg" alt="SEKEM Organic Spices" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>SEKEM Organic Spices</h2>
+          <p class="product__from">from $5.00</p>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag tag--organic">SEKEM</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -612,20 +616,20 @@
             <li><span class="v-label">Sweet basil · 4 oz</span><span class="price">$5.00</span></li>
             <li><span class="v-label">Allspice · 4 oz</span><span class="price">$5.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="sekem-organic-spices" data-name="SEKEM Organic Spices" data-url="category/sekem-bio-organic-products/index.html#sekem-organic-spices" data-img="https://uddermilk.com/upload/Screenshot_20220513-142456_Google.jpg" data-icon="herb">
-              <label class="sr-only" for="sekem-organic-spices-v">Size</label>
-              <select id="sekem-organic-spices-v" name="v">
-<option value="Curry · 4 oz" data-price="5.0">Curry · 4 oz · $5.00</option><option value="Thyme · 4 oz" data-price="5.0">Thyme · 4 oz · $5.00</option><option value="Basil · 4 oz" data-price="5.0">Basil · 4 oz · $5.00</option><option value="Sweet basil · 4 oz" data-price="5.0">Sweet basil · 4 oz · $5.00</option><option value="Allspice · 4 oz" data-price="5.0">Allspice · 4 oz · $5.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="sekem-organic-spices" data-name="SEKEM Organic Spices" data-url="category/sekem-bio-organic-products/index.html#sekem-organic-spices" data-img="https://uddermilk.com/upload/Screenshot_20220513-142456_Google.jpg" data-icon="herb">
+            <label class="sr-only" for="sekem-organic-spices-v">Size</label>
+            <select id="sekem-organic-spices-v" name="v">
+<option value="Curry · 4 oz" data-price="5.0">Curry · 4 oz · $5.00</option><option value="Thyme · 4 oz" data-price="5.0">Thyme · 4 oz · $5.00</option><option value="Basil · 4 oz" data-price="5.0">Basil · 4 oz · $5.00</option><option value="Sweet basil · 4 oz" data-price="5.0">Sweet basil · 4 oz · $5.00</option><option value="Allspice · 4 oz" data-price="5.0">Allspice · 4 oz · $5.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="imtenan-turkish-coffee" style="--tint: #E1ECD2">
@@ -640,8 +644,10 @@
             <button class="thumb" type="button" data-src="https://uddermilk.com/upload/F070937.jpg" data-alt="Imtenan Turkish Coffee: Premium dark with cardamom" aria-pressed="false" title="Premium dark with cardamom"><img src="https://uddermilk.com/upload/F070937.jpg" alt="Premium dark with cardamom" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></button>
           </div>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Imtenan Turkish Coffee</h2>
+          <p class="product__from">from $8.00</p>
           <div class="tags">
           </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -652,20 +658,20 @@
             <li><span class="v-label">Medium, plain · 200 g</span><span class="price">$8.00</span></li>
             <li><span class="v-label">Premium dark with cardamom · 200 g</span><span class="price">$8.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="imtenan-turkish-coffee" data-name="Imtenan Turkish Coffee" data-url="category/sekem-bio-organic-products/index.html#imtenan-turkish-coffee" data-img="https://uddermilk.com/upload/Screenshot_20240908_171228_Chrome.jpg" data-icon="hot-beverage">
-              <label class="sr-only" for="imtenan-turkish-coffee-v">Size</label>
-              <select id="imtenan-turkish-coffee-v" name="v">
-<option value="Light, blended · 200 g" data-price="8.0">Light, blended · 200 g · $8.00</option><option value="Light, plain · 200 g" data-price="8.0">Light, plain · 200 g · $8.00</option><option value="Medium, blended · 200 g" data-price="8.0">Medium, blended · 200 g · $8.00</option><option value="Medium, plain · 200 g" data-price="8.0">Medium, plain · 200 g · $8.00</option><option value="Premium dark with cardamom · 200 g" data-price="8.0">Premium dark with cardamom · 200 g · $8.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="imtenan-turkish-coffee" data-name="Imtenan Turkish Coffee" data-url="category/sekem-bio-organic-products/index.html#imtenan-turkish-coffee" data-img="https://uddermilk.com/upload/Screenshot_20240908_171228_Chrome.jpg" data-icon="hot-beverage">
+            <label class="sr-only" for="imtenan-turkish-coffee-v">Size</label>
+            <select id="imtenan-turkish-coffee-v" name="v">
+<option value="Light, blended · 200 g" data-price="8.0">Light, blended · 200 g · $8.00</option><option value="Light, plain · 200 g" data-price="8.0">Light, plain · 200 g · $8.00</option><option value="Medium, blended · 200 g" data-price="8.0">Medium, blended · 200 g · $8.00</option><option value="Medium, plain · 200 g" data-price="8.0">Medium, plain · 200 g · $8.00</option><option value="Premium dark with cardamom · 200 g" data-price="8.0">Premium dark with cardamom · 200 g · $8.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="sekem-organic-oils" style="--tint: #E1ECD2">
@@ -679,8 +685,10 @@
             <button class="thumb" type="button" data-src="https://uddermilk.com/upload/Screenshot_20220513-141735_Google.jpg" data-alt="SEKEM Organic Oils: Peanut oil" aria-pressed="false" title="Peanut oil"><img src="https://uddermilk.com/upload/Screenshot_20220513-141735_Google.jpg" alt="Peanut oil" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></button>
           </div>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>SEKEM Organic Oils</h2>
+          <p class="product__from">from $8.00</p>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag tag--organic">SEKEM</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -689,20 +697,20 @@
             <li class="is-out"><span class="v-label">Flaxseed oil · 250 ml</span><span class="price">$7.00</span></li>
             <li class="is-out"><span class="v-label">Sesame oil · 250 ml</span><span class="price">$9.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="sekem-organic-oils" data-name="SEKEM Organic Oils" data-url="category/sekem-bio-organic-products/index.html#sekem-organic-oils" data-img="https://uddermilk.com/upload/Screenshot_20220512-153148_Google.jpg" data-icon="sun">
-              <label class="sr-only" for="sekem-organic-oils-v">Size</label>
-              <select id="sekem-organic-oils-v" name="v" class="is-one">
-<option value="Peanut oil · 250 ml" data-price="8.0">Peanut oil · 250 ml · $8.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="sekem-organic-oils" data-name="SEKEM Organic Oils" data-url="category/sekem-bio-organic-products/index.html#sekem-organic-oils" data-img="https://uddermilk.com/upload/Screenshot_20220512-153148_Google.jpg" data-icon="sun">
+            <label class="sr-only" for="sekem-organic-oils-v">Size</label>
+            <select id="sekem-organic-oils-v" name="v" class="is-one">
+<option value="Peanut oil · 250 ml" data-price="8.0">Peanut oil · 250 ml · $8.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="imtenan-pantry" style="--tint: #E1ECD2">
@@ -720,8 +728,10 @@
             <button class="thumb" type="button" data-src="https://uddermilk.com/upload/%D9%85%D9%84%D9%83%D8%A7%D8%AA.jpg" data-alt="Imtenan Pantry: Royal jelly powder" aria-pressed="false" title="Royal jelly powder"><img src="https://uddermilk.com/upload/%D9%85%D9%84%D9%83%D8%A7%D8%AA.jpg" alt="Royal jelly powder" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></button>
           </div>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Imtenan Pantry</h2>
+          <p class="product__from">from $4.00</p>
           <div class="tags">
           </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -736,20 +746,20 @@
             <li><span class="v-label">Royal jelly powder · 25 g</span><span class="price">$13.00</span></li>
             <li><span class="v-label">Ginger Aid tea · 18 bags</span><span class="price">$4.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="imtenan-pantry" data-name="Imtenan Pantry" data-url="category/sekem-bio-organic-products/index.html#imtenan-pantry" data-img="https://uddermilk.com/upload/Virgin-Coconut-Oil_250ml_Front.jpeg" data-icon="sun">
-              <label class="sr-only" for="imtenan-pantry-v">Size</label>
-              <select id="imtenan-pantry-v" name="v">
-<option value="Organic virgin coconut oil · 250 g" data-price="12.0">Organic virgin coconut oil · 250 g · $12.00</option><option value="Organic apple cider vinegar · 100 ml" data-price="5.0">Organic apple cider vinegar · 100 ml · $5.00</option><option value="Black quinoa · 400 g" data-price="9.0">Black quinoa · 400 g · $9.00</option><option value="Psyllium husk · 200 g" data-price="18.0">Psyllium husk · 200 g · $18.00</option><option value="Moringa powder · 100 g" data-price="8.0">Moringa powder · 100 g · $8.00</option><option value="Ashwagandha · 100 g" data-price="8.0">Ashwagandha · 100 g · $8.00</option><option value="Korean red ginseng · 40 g" data-price="29.0">Korean red ginseng · 40 g · $29.00</option><option value="Royal jelly powder · 25 g" data-price="13.0">Royal jelly powder · 25 g · $13.00</option><option value="Ginger Aid tea · 18 bags" data-price="4.0">Ginger Aid tea · 18 bags · $4.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="imtenan-pantry" data-name="Imtenan Pantry" data-url="category/sekem-bio-organic-products/index.html#imtenan-pantry" data-img="https://uddermilk.com/upload/Virgin-Coconut-Oil_250ml_Front.jpeg" data-icon="sun">
+            <label class="sr-only" for="imtenan-pantry-v">Size</label>
+            <select id="imtenan-pantry-v" name="v">
+<option value="Organic virgin coconut oil · 250 g" data-price="12.0">Organic virgin coconut oil · 250 g · $12.00</option><option value="Organic apple cider vinegar · 100 ml" data-price="5.0">Organic apple cider vinegar · 100 ml · $5.00</option><option value="Black quinoa · 400 g" data-price="9.0">Black quinoa · 400 g · $9.00</option><option value="Psyllium husk · 200 g" data-price="18.0">Psyllium husk · 200 g · $18.00</option><option value="Moringa powder · 100 g" data-price="8.0">Moringa powder · 100 g · $8.00</option><option value="Ashwagandha · 100 g" data-price="8.0">Ashwagandha · 100 g · $8.00</option><option value="Korean red ginseng · 40 g" data-price="29.0">Korean red ginseng · 40 g · $29.00</option><option value="Royal jelly powder · 25 g" data-price="13.0">Royal jelly powder · 25 g · $13.00</option><option value="Ginger Aid tea · 18 bags" data-price="4.0">Ginger Aid tea · 18 bags · $4.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="sekem-wellness" style="--tint: #E1ECD2">
@@ -759,8 +769,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of SEKEM Wellness"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20220504-171050_Chrome.jpg" alt="SEKEM Wellness" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>SEKEM Wellness</h2>
+          <p class="product__from">from $12.00</p>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag tag--organic">SEKEM</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -769,20 +781,20 @@
             <li><span class="v-label">Tomex · 80 tablets</span><span class="price">$12.00</span></li>
             <li class="is-out"><span class="v-label">Organic barley coffee · 90 g</span><span class="price">$5.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="sekem-wellness" data-name="SEKEM Wellness" data-url="category/sekem-bio-organic-products/index.html#sekem-wellness" data-img="https://uddermilk.com/upload/Screenshot_20220504-171050_Chrome.jpg" data-icon="sun">
-              <label class="sr-only" for="sekem-wellness-v">Size</label>
-              <select id="sekem-wellness-v" name="v">
-<option value="Stevia · 40 sachets" data-price="12.0">Stevia · 40 sachets · $12.00</option><option value="Tomex · 80 tablets" data-price="12.0">Tomex · 80 tablets · $12.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="sekem-wellness" data-name="SEKEM Wellness" data-url="category/sekem-bio-organic-products/index.html#sekem-wellness" data-img="https://uddermilk.com/upload/Screenshot_20220504-171050_Chrome.jpg" data-icon="sun">
+            <label class="sr-only" for="sekem-wellness-v">Size</label>
+            <select id="sekem-wellness-v" name="v">
+<option value="Stevia · 40 sachets" data-price="12.0">Stevia · 40 sachets · $12.00</option><option value="Tomex · 80 tablets" data-price="12.0">Tomex · 80 tablets · $12.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="imtenan-snacks" style="--tint: #E1ECD2">
@@ -801,8 +813,10 @@
             <button class="thumb" type="button" data-src="https://uddermilk.com/upload/233450%D8%A8%D8%A7%D8%B1%20%D8%AC%D9%88%D8%B2%2070.jpg" data-alt="Imtenan Snacks: Protein bar, coconut" aria-pressed="false" title="Protein bar, coconut"><img src="https://uddermilk.com/upload/233450%D8%A8%D8%A7%D8%B1%20%D8%AC%D9%88%D8%B2%2070.jpg" alt="Protein bar, coconut" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></button>
           </div>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Imtenan Snacks</h2>
+          <p class="product__from">from $2.50</p>
           <div class="tags">
           </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -816,20 +830,20 @@
             <li><span class="v-label">Protein bar, coconut · 70 g</span><span class="price">$2.50</span></li>
             <li class="is-out"><span class="v-label">Granola bars, assorted · 40 g</span><span class="price">$2.50</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="imtenan-snacks" data-name="Imtenan Snacks" data-url="category/sekem-bio-organic-products/index.html#imtenan-snacks" data-img="https://uddermilk.com/upload/%D8%B2%D8%A8%D8%AF%D8%A9%20%D9%81%D9%88%D9%84%20300.jpg" data-icon="sun">
-              <label class="sr-only" for="imtenan-snacks-v">Size</label>
-              <select id="imtenan-snacks-v" name="v">
-<option value="Peanut butter, smooth · 300 g" data-price="9.0">Peanut butter, smooth · 300 g · $9.00</option><option value="Peanut butter, crunchy · 300 g" data-price="9.0">Peanut butter, crunchy · 300 g · $9.00</option><option value="Peanut butter with creamy honey · 300 g" data-price="9.0">Peanut butter with creamy honey · 300 g · $9.00</option><option value="Protein bar, mocha · 70 g" data-price="2.5">Protein bar, mocha · 70 g · $2.50</option><option value="Protein bar, peanut · 70 g" data-price="2.5">Protein bar, peanut · 70 g · $2.50</option><option value="Protein bar, cocoa · 70 g" data-price="2.5">Protein bar, cocoa · 70 g · $2.50</option><option value="Protein bar, coconut · 70 g" data-price="2.5">Protein bar, coconut · 70 g · $2.50</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="imtenan-snacks" data-name="Imtenan Snacks" data-url="category/sekem-bio-organic-products/index.html#imtenan-snacks" data-img="https://uddermilk.com/upload/%D8%B2%D8%A8%D8%AF%D8%A9%20%D9%81%D9%88%D9%84%20300.jpg" data-icon="sun">
+            <label class="sr-only" for="imtenan-snacks-v">Size</label>
+            <select id="imtenan-snacks-v" name="v">
+<option value="Peanut butter, smooth · 300 g" data-price="9.0">Peanut butter, smooth · 300 g · $9.00</option><option value="Peanut butter, crunchy · 300 g" data-price="9.0">Peanut butter, crunchy · 300 g · $9.00</option><option value="Peanut butter with creamy honey · 300 g" data-price="9.0">Peanut butter with creamy honey · 300 g · $9.00</option><option value="Protein bar, mocha · 70 g" data-price="2.5">Protein bar, mocha · 70 g · $2.50</option><option value="Protein bar, peanut · 70 g" data-price="2.5">Protein bar, peanut · 70 g · $2.50</option><option value="Protein bar, cocoa · 70 g" data-price="2.5">Protein bar, cocoa · 70 g · $2.50</option><option value="Protein bar, coconut · 70 g" data-price="2.5">Protein bar, coconut · 70 g · $2.50</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="imtenan-body-care" style="--tint: #E1ECD2">
@@ -849,8 +863,10 @@
             <button class="thumb" type="button" data-src="https://uddermilk.com/upload/Screenshot_20240623_173935_Chrome.jpg" data-alt="Imtenan Body Care: Black seed oil" aria-pressed="false" title="Black seed oil"><img src="https://uddermilk.com/upload/Screenshot_20240623_173935_Chrome.jpg" alt="Black seed oil" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></button>
           </div>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Imtenan Body Care</h2>
+          <p class="product__from">from $3.00</p>
           <div class="tags">
           </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -867,20 +883,20 @@
             <li class="is-out"><span class="v-label">Jojoba oil · 125 ml</span><span class="price">$9.00</span></li>
             <li class="is-out"><span class="v-label">Black seed oil · 30 ml</span><span class="price">$4.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="imtenan-body-care" data-name="Imtenan Body Care" data-url="category/sekem-bio-organic-products/index.html#imtenan-body-care" data-img="https://uddermilk.com/upload/%D8%B2%D8%A8%D8%AF%D8%A9%20%D8%B4%D9%8A%D8%A7.jpg" data-icon="sun">
-              <label class="sr-only" for="imtenan-body-care-v">Size</label>
-              <select id="imtenan-body-care-v" name="v">
-<option value="Shea butter · 75 g" data-price="7.0">Shea butter · 75 g · $7.00</option><option value="Dead Sea mud · 300 g" data-price="20.0">Dead Sea mud · 300 g · $20.00</option><option value="Dead Sea mud soap · 100 g" data-price="10.0">Dead Sea mud soap · 100 g · $10.00</option><option value="Rose bath salt · 230 g" data-price="12.0">Rose bath salt · 230 g · $12.00</option><option value="Lavender bath salt · 230 g" data-price="12.0">Lavender bath salt · 230 g · $12.00</option><option value="Tea tree &amp; green tea cleanser · 300 ml" data-price="9.0">Tea tree &amp; green tea cleanser · 300 ml · $9.00</option><option value="Honey &amp; propolis cleanser · 300 ml" data-price="9.0">Honey &amp; propolis cleanser · 300 ml · $9.00</option><option value="Oat &amp; honey cleanser · 300 ml" data-price="9.0">Oat &amp; honey cleanser · 300 ml · $9.00</option><option value="Moroccan bath loofah" data-price="3.0">Moroccan bath loofah · $3.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="imtenan-body-care" data-name="Imtenan Body Care" data-url="category/sekem-bio-organic-products/index.html#imtenan-body-care" data-img="https://uddermilk.com/upload/%D8%B2%D8%A8%D8%AF%D8%A9%20%D8%B4%D9%8A%D8%A7.jpg" data-icon="sun">
+            <label class="sr-only" for="imtenan-body-care-v">Size</label>
+            <select id="imtenan-body-care-v" name="v">
+<option value="Shea butter · 75 g" data-price="7.0">Shea butter · 75 g · $7.00</option><option value="Dead Sea mud · 300 g" data-price="20.0">Dead Sea mud · 300 g · $20.00</option><option value="Dead Sea mud soap · 100 g" data-price="10.0">Dead Sea mud soap · 100 g · $10.00</option><option value="Rose bath salt · 230 g" data-price="12.0">Rose bath salt · 230 g · $12.00</option><option value="Lavender bath salt · 230 g" data-price="12.0">Lavender bath salt · 230 g · $12.00</option><option value="Tea tree &amp; green tea cleanser · 300 ml" data-price="9.0">Tea tree &amp; green tea cleanser · 300 ml · $9.00</option><option value="Honey &amp; propolis cleanser · 300 ml" data-price="9.0">Honey &amp; propolis cleanser · 300 ml · $9.00</option><option value="Oat &amp; honey cleanser · 300 ml" data-price="9.0">Oat &amp; honey cleanser · 300 ml · $9.00</option><option value="Moroccan bath loofah" data-price="3.0">Moroccan bath loofah · $3.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <p class="hidden-note">Everything in this category is sold out right now. Switch off “In stock only” to see the full list.</p>
@@ -987,6 +1003,6 @@
     </div>
   </div>
 </footer><script src="../../assets/js/site.js?v=0da2f001" defer></script>
-<script src="../../assets/js/shop.js?v=07b2128e" defer></script>
+<script src="../../assets/js/shop.js?v=60b78f0e" defer></script>
 </body>
 </html>

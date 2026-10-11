@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../../assets/fonts/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../assets/css/site.css?v=1f783f4a">
+<link rel="stylesheet" href="../../assets/css/site.css?v=d24d284f">
 <script>document.documentElement.classList.add('js');if(location.protocol==="file:")document.write('<link rel="stylesheet" href="../../assets/css/fonts-local.css?v=">')</script>
 </head>
 <body class="page-cat">
@@ -541,7 +541,7 @@
         <label class="toggle"><input type="checkbox" data-instock><span class="toggle__ui" aria-hidden="true"></span><span>In stock<span class="t-long"> only</span></span></label>
       </div>
     </div>
-    <div class="products">
+    <div class="products products--grid">
       <article class="product is-allout has-photo" id="organic-fire-cider" style="--tint: #E8E0F4">
         <div class="product__media">
           <figure class="ph">
@@ -549,8 +549,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Organic Fire Cider"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20221205_182336.jpg" alt="Organic Fire Cider" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Organic Fire Cider</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag">Oshala Farm</span><span class="tag tag--out">Sold out</span>          </div>
 <p class="product__desc" data-clamp>Oshala Farm&#39;s fire cider, a spicy, tangy vinegar tonic.</p>          <div class="product__long" id="organic-fire-cider-more" hidden><p>A traditional folk tonic from Oshala Farm, made for the fall and winter months. Take it by the spoonful or diluted with water.</p><p>Ingredients: apple cider vinegar, onion, garlic, burdock, horseradish, mixed chilis, thyme, oregano, rosemary, sage. Certified organic.</p></div>
@@ -559,9 +561,9 @@
             <li class="is-out"><span class="v-label">8 oz</span><span class="price">$20.00</span></li>
             <li class="is-out"><span class="v-label">16 oz</span><span class="price">$35.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Organic%20Fire%20Cider">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Organic%20Fire%20Cider">Ask when it's back</a>
         </div>
       </article>
       <article class="product has-photo" id="be-well-tea" style="--tint: #E8E0F4">
@@ -571,8 +573,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Be Well Tea"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20230802_161008_Chrome.jpg" alt="Be Well Tea" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Be Well Tea</h2>
+          <p class="product__from">$50.00</p>
           <div class="tags">
 <span class="tag tag--organic">Organic</span>          </div>
 <p class="product__desc" data-clamp>A bold herbal blend of elderberry, elderflower, echinacea, nettle, burdock, red clover and rose hips.</p>          <div class="product__long" id="be-well-tea-more" hidden><p>A bright, hand-blended organic tea for cold season. For best results, simmer 10 to 15 minutes in a covered pot.</p><p>Ingredients: elderberry, elderflower, echinacea, nettle, burdock, red clover, rose hips.</p></div>
@@ -580,20 +584,20 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">8 oz</span><span class="price">$50.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="be-well-tea" data-name="Be Well Tea" data-url="category/fire-cider/index.html#be-well-tea" data-img="https://uddermilk.com/upload/Screenshot_20230802_161008_Chrome.jpg" data-icon="teacup-without-handle">
-              <label class="sr-only" for="be-well-tea-v">Size</label>
-              <select id="be-well-tea-v" name="v" class="is-one">
-<option value="8 oz" data-price="50.0">8 oz · $50.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="be-well-tea" data-name="Be Well Tea" data-url="category/fire-cider/index.html#be-well-tea" data-img="https://uddermilk.com/upload/Screenshot_20230802_161008_Chrome.jpg" data-icon="teacup-without-handle">
+            <label class="sr-only" for="be-well-tea-v">Size</label>
+            <select id="be-well-tea-v" name="v" class="is-one">
+<option value="8 oz" data-price="50.0">8 oz · $50.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="digest-well-tea" style="--tint: #E8E0F4">
@@ -603,8 +607,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Digest Well Tea"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20250306_212057_Google.jpg" alt="Digest Well Tea" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Digest Well Tea</h2>
+          <p class="product__from">$48.00</p>
           <div class="tags">
 <span class="tag tag--organic">Organic</span>          </div>
 <p class="product__desc" data-clamp>A sweet, mellow blend of marshmallow root, chamomile, calendula, nettle and peppermint.</p>          <div class="product__long" id="digest-well-tea-more" hidden><p>A sweet, mellow, hand-blended organic tea. For best results, simmer 10 to 15 minutes in a covered pot.</p><p>Ingredients: marshmallow root, chamomile, calendula, nettle, peppermint. Certified organic.</p></div>
@@ -612,20 +618,20 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">8 oz</span><span class="price">$48.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="digest-well-tea" data-name="Digest Well Tea" data-url="category/fire-cider/index.html#digest-well-tea" data-img="https://uddermilk.com/upload/Screenshot_20250306_212057_Google.jpg" data-icon="teacup-without-handle">
-              <label class="sr-only" for="digest-well-tea-v">Size</label>
-              <select id="digest-well-tea-v" name="v" class="is-one">
-<option value="8 oz" data-price="48.0">8 oz · $48.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="digest-well-tea" data-name="Digest Well Tea" data-url="category/fire-cider/index.html#digest-well-tea" data-img="https://uddermilk.com/upload/Screenshot_20250306_212057_Google.jpg" data-icon="teacup-without-handle">
+            <label class="sr-only" for="digest-well-tea-v">Size</label>
+            <select id="digest-well-tea-v" name="v" class="is-one">
+<option value="8 oz" data-price="48.0">8 oz · $48.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="breath-well-tea" style="--tint: #E8E0F4">
@@ -635,28 +641,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Breath Well Tea"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20250306_213304_Chrome.jpg" alt="Breath Well Tea" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Breath Well Tea</h2>
+          <p class="product__from">$32.00</p>
           <div class="tags">
 <span class="tag tag--organic">Organic</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">8 oz</span><span class="price">$32.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="breath-well-tea" data-name="Breath Well Tea" data-url="category/fire-cider/index.html#breath-well-tea" data-img="https://uddermilk.com/upload/Screenshot_20250306_213304_Chrome.jpg" data-icon="teacup-without-handle">
-              <label class="sr-only" for="breath-well-tea-v">Size</label>
-              <select id="breath-well-tea-v" name="v" class="is-one">
-<option value="8 oz" data-price="32.0">8 oz · $32.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="breath-well-tea" data-name="Breath Well Tea" data-url="category/fire-cider/index.html#breath-well-tea" data-img="https://uddermilk.com/upload/Screenshot_20250306_213304_Chrome.jpg" data-icon="teacup-without-handle">
+            <label class="sr-only" for="breath-well-tea-v">Size</label>
+            <select id="breath-well-tea-v" name="v" class="is-one">
+<option value="8 oz" data-price="32.0">8 oz · $32.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product is-allout has-photo" id="tulsi-tea" style="--tint: #E8E0F4">
@@ -666,17 +674,19 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Tulsi Tea"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20231107_164458_Chrome.jpg" alt="Tulsi Tea" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Tulsi Tea</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag tag--out">Sold out</span>          </div>
 <p class="product__desc" data-clamp>Hand-blended holy basil tea.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">1.75 oz</span><span class="price">$1.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Tulsi%20Tea">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Tulsi%20Tea">Ask when it's back</a>
         </div>
       </article>
       <article class="product has-photo" id="elderberry-elixir" style="--tint: #E8E0F4">
@@ -686,8 +696,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Elderberry Elixir"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20221206_134216.jpg" alt="Elderberry Elixir" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Elderberry Elixir</h2>
+          <p class="product__from">$36.00</p>
           <div class="tags">
 <span class="tag tag--organic">Organic</span>          </div>
 <p class="product__desc" data-clamp>Elderberry, echinacea, tulsi and thyme in honey, with an alcohol base.</p>          <div class="product__long" id="elderberry-elixir-more" hidden><p>An herbal tonic for the fall and winter months. Take it by the spoonful, or diluted in tea or water.</p><p>Ingredients: elderberry, echinacea root and herb, tulsi, thyme, honey, echinacea-infused grape alcohol, lemon juice, water. Organic.</p></div>
@@ -695,20 +707,20 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">8 oz</span><span class="price">$36.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="elderberry-elixir" data-name="Elderberry Elixir" data-url="category/fire-cider/index.html#elderberry-elixir" data-img="https://uddermilk.com/upload/Screenshot_20221206_134216.jpg" data-icon="jar">
-              <label class="sr-only" for="elderberry-elixir-v">Size</label>
-              <select id="elderberry-elixir-v" name="v" class="is-one">
-<option value="8 oz" data-price="36.0">8 oz · $36.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="elderberry-elixir" data-name="Elderberry Elixir" data-url="category/fire-cider/index.html#elderberry-elixir" data-img="https://uddermilk.com/upload/Screenshot_20221206_134216.jpg" data-icon="jar">
+            <label class="sr-only" for="elderberry-elixir-v">Size</label>
+            <select id="elderberry-elixir-v" name="v" class="is-one">
+<option value="8 oz" data-price="36.0">8 oz · $36.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product is-allout has-photo" id="herbal-iron-syrup" style="--tint: #E8E0F4">
@@ -718,17 +730,19 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Herbal Iron Syrup"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20231107_170322_Chrome.jpg" alt="Herbal Iron Syrup" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Herbal Iron Syrup</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag tag--out">Sold out</span>          </div>
 <p class="product__desc" data-clamp>A plant-based herbal syrup, gentle on the stomach.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">8 oz</span><span class="price">$25.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Herbal%20Iron%20Syrup">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Herbal%20Iron%20Syrup">Ask when it's back</a>
         </div>
       </article>
       <article class="product is-allout has-photo" id="organic-nettle-vinegar" style="--tint: #E8E0F4">
@@ -738,17 +752,19 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Organic Nettle Vinegar"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20221206_132442.jpg" alt="Organic Nettle Vinegar" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Organic Nettle Vinegar</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag tag--out">Sold out</span>          </div>
 <p class="product__desc" data-clamp>Fresh nettle steeped in organic apple cider vinegar.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">8.5 oz</span><span class="price">$16.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Organic%20Nettle%20Vinegar">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Organic%20Nettle%20Vinegar">Ask when it's back</a>
         </div>
       </article>
       <article class="product is-allout has-photo" id="herbal-fusion-vinegar" style="--tint: #E8E0F4">
@@ -758,17 +774,19 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Herbal Fusion Vinegar"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20221206_132812.jpg" alt="Herbal Fusion Vinegar" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Herbal Fusion Vinegar</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag tag--out">Sold out</span>          </div>
 <p class="product__desc" data-clamp>Raw apple cider vinegar with oregano, thyme, nettle and sage.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">8.5 oz</span><span class="price">$16.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Herbal%20Fusion%20Vinegar">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Herbal%20Fusion%20Vinegar">Ask when it's back</a>
         </div>
       </article>
       <article class="product has-photo" id="organic-nettle-herbal-oil" style="--tint: #E8E0F4">
@@ -778,28 +796,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Organic Nettle Herbal Oil"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20221206_133022.jpg" alt="Organic Nettle Herbal Oil" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Organic Nettle Herbal Oil</h2>
+          <p class="product__from">$36.00</p>
           <div class="tags">
 <span class="tag tag--organic">Organic</span>          </div>
 <p class="product__desc" data-clamp>Nettle infused in organic extra-virgin olive oil.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">8 oz</span><span class="price">$36.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="organic-nettle-herbal-oil" data-name="Organic Nettle Herbal Oil" data-url="category/fire-cider/index.html#organic-nettle-herbal-oil" data-img="https://uddermilk.com/upload/Screenshot_20221206_133022.jpg" data-icon="herb">
-              <label class="sr-only" for="organic-nettle-herbal-oil-v">Size</label>
-              <select id="organic-nettle-herbal-oil-v" name="v" class="is-one">
-<option value="8 oz" data-price="36.0">8 oz · $36.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="organic-nettle-herbal-oil" data-name="Organic Nettle Herbal Oil" data-url="category/fire-cider/index.html#organic-nettle-herbal-oil" data-img="https://uddermilk.com/upload/Screenshot_20221206_133022.jpg" data-icon="herb">
+            <label class="sr-only" for="organic-nettle-herbal-oil-v">Size</label>
+            <select id="organic-nettle-herbal-oil-v" name="v" class="is-one">
+<option value="8 oz" data-price="36.0">8 oz · $36.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="calendula-herbal-oil" style="--tint: #E8E0F4">
@@ -809,8 +829,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Calendula Herbal Oil"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20221206_133905.jpg" alt="Calendula Herbal Oil" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Calendula Herbal Oil</h2>
+          <p class="product__from">$38.00</p>
           <div class="tags">
 <span class="tag tag--organic">Organic</span><span class="tag">External use</span>          </div>
 <p class="product__desc" data-clamp>Calendula flowers infused in oil, for skin care.</p>          <div class="product__long" id="calendula-herbal-oil-more" hidden><p>Calendula oil is a traditional skin oil, used on scrapes, rashes and sunburn and widely loved in skin-care products. For external use only.</p></div>
@@ -818,20 +840,20 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">8 oz</span><span class="price">$38.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="calendula-herbal-oil" data-name="Calendula Herbal Oil" data-url="category/fire-cider/index.html#calendula-herbal-oil" data-img="https://uddermilk.com/upload/Screenshot_20221206_133905.jpg" data-icon="herb">
-              <label class="sr-only" for="calendula-herbal-oil-v">Size</label>
-              <select id="calendula-herbal-oil-v" name="v" class="is-one">
-<option value="8 oz" data-price="38.0">8 oz · $38.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="calendula-herbal-oil" data-name="Calendula Herbal Oil" data-url="category/fire-cider/index.html#calendula-herbal-oil" data-img="https://uddermilk.com/upload/Screenshot_20221206_133905.jpg" data-icon="herb">
+            <label class="sr-only" for="calendula-herbal-oil-v">Size</label>
+            <select id="calendula-herbal-oil-v" name="v" class="is-one">
+<option value="8 oz" data-price="38.0">8 oz · $38.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="comfrey-oil" style="--tint: #E8E0F4">
@@ -841,8 +863,10 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Comfrey Oil"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20230802_154255_Chrome.jpg" alt="Comfrey Oil" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Comfrey Oil</h2>
+          <p class="product__from">$48.00</p>
           <div class="tags">
 <span class="tag">External use</span>          </div>
 <p class="product__desc" data-clamp>A traditional comfrey-infused oil. For external use only.</p>          <div class="product__long" id="comfrey-oil-more" hidden><p>8 oz. Comfrey oil has long been used on the skin for bumps and bruises, and it&#39;s popular in skin-care products. For external use only, and not for deep or puncture wounds.</p></div>
@@ -850,20 +874,20 @@
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">8 oz</span><span class="price">$48.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="comfrey-oil" data-name="Comfrey Oil" data-url="category/fire-cider/index.html#comfrey-oil" data-img="https://uddermilk.com/upload/Screenshot_20230802_154255_Chrome.jpg" data-icon="fire">
-              <label class="sr-only" for="comfrey-oil-v">Size</label>
-              <select id="comfrey-oil-v" name="v" class="is-one">
-<option value="8 oz" data-price="48.0">8 oz · $48.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="comfrey-oil" data-name="Comfrey Oil" data-url="category/fire-cider/index.html#comfrey-oil" data-img="https://uddermilk.com/upload/Screenshot_20230802_154255_Chrome.jpg" data-icon="fire">
+            <label class="sr-only" for="comfrey-oil-v">Size</label>
+            <select id="comfrey-oil-v" name="v" class="is-one">
+<option value="8 oz" data-price="48.0">8 oz · $48.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="peppermint-hydrosol" style="--tint: #E8E0F4">
@@ -873,28 +897,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Peppermint Hydrosol"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20240202_023250_Google.jpg" alt="Peppermint Hydrosol" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Peppermint Hydrosol</h2>
+          <p class="product__from">$30.00</p>
           <div class="tags">
 <span class="tag tag--organic">Organic</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Bottle</span><span class="price">$30.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="peppermint-hydrosol" data-name="Peppermint Hydrosol" data-url="category/fire-cider/index.html#peppermint-hydrosol" data-img="https://uddermilk.com/upload/Screenshot_20240202_023250_Google.jpg" data-icon="droplet">
-              <label class="sr-only" for="peppermint-hydrosol-v">Size</label>
-              <select id="peppermint-hydrosol-v" name="v" class="is-one">
-<option value="Bottle" data-price="30.0">Bottle · $30.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="peppermint-hydrosol" data-name="Peppermint Hydrosol" data-url="category/fire-cider/index.html#peppermint-hydrosol" data-img="https://uddermilk.com/upload/Screenshot_20240202_023250_Google.jpg" data-icon="droplet">
+            <label class="sr-only" for="peppermint-hydrosol-v">Size</label>
+            <select id="peppermint-hydrosol-v" name="v" class="is-one">
+<option value="Bottle" data-price="30.0">Bottle · $30.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="tulsi-hydrosol" style="--tint: #E8E0F4">
@@ -904,28 +930,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Tulsi Hydrosol"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20240202_023601_Google.jpg" alt="Tulsi Hydrosol" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Tulsi Hydrosol</h2>
+          <p class="product__from">$30.00</p>
           <div class="tags">
 <span class="tag tag--organic">Organic</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Bottle</span><span class="price">$30.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="tulsi-hydrosol" data-name="Tulsi Hydrosol" data-url="category/fire-cider/index.html#tulsi-hydrosol" data-img="https://uddermilk.com/upload/Screenshot_20240202_023601_Google.jpg" data-icon="droplet">
-              <label class="sr-only" for="tulsi-hydrosol-v">Size</label>
-              <select id="tulsi-hydrosol-v" name="v" class="is-one">
-<option value="Bottle" data-price="30.0">Bottle · $30.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="tulsi-hydrosol" data-name="Tulsi Hydrosol" data-url="category/fire-cider/index.html#tulsi-hydrosol" data-img="https://uddermilk.com/upload/Screenshot_20240202_023601_Google.jpg" data-icon="droplet">
+            <label class="sr-only" for="tulsi-hydrosol-v">Size</label>
+            <select id="tulsi-hydrosol-v" name="v" class="is-one">
+<option value="Bottle" data-price="30.0">Bottle · $30.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="blissful-bath-salts" style="--tint: #E8E0F4">
@@ -935,28 +963,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Blissful Bath Salts"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20231107_165247_Chrome.jpg" alt="Blissful Bath Salts" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Blissful Bath Salts</h2>
+          <p class="product__from">$30.00</p>
           <div class="tags">
 <span class="tag tag--organic">Certified organic</span>          </div>
 <p class="product__desc" data-clamp>Fine sea salt and Epsom salt with rose petals, calendula, lavender, calendula-infused olive oil and lavender essential oil.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">16 oz jar</span><span class="price">$30.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="blissful-bath-salts" data-name="Blissful Bath Salts" data-url="category/fire-cider/index.html#blissful-bath-salts" data-img="https://uddermilk.com/upload/Screenshot_20231107_165247_Chrome.jpg" data-icon="bathtub">
-              <label class="sr-only" for="blissful-bath-salts-v">Size</label>
-              <select id="blissful-bath-salts-v" name="v" class="is-one">
-<option value="16 oz jar" data-price="30.0">16 oz jar · $30.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="blissful-bath-salts" data-name="Blissful Bath Salts" data-url="category/fire-cider/index.html#blissful-bath-salts" data-img="https://uddermilk.com/upload/Screenshot_20231107_165247_Chrome.jpg" data-icon="bathtub">
+            <label class="sr-only" for="blissful-bath-salts-v">Size</label>
+            <select id="blissful-bath-salts-v" name="v" class="is-one">
+<option value="16 oz jar" data-price="30.0">16 oz jar · $30.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <p class="hidden-note">Everything in this category is sold out right now. Switch off “In stock only” to see the full list.</p>
@@ -1063,6 +1093,6 @@
     </div>
   </div>
 </footer><script src="../../assets/js/site.js?v=0da2f001" defer></script>
-<script src="../../assets/js/shop.js?v=07b2128e" defer></script>
+<script src="../../assets/js/shop.js?v=60b78f0e" defer></script>
 </body>
 </html>

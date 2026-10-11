@@ -108,6 +108,32 @@
     });
   });
 
+  /* ---------- phones: product tiles open a bottom sheet ---------- */
+  var phone = window.matchMedia("(max-width: 640px)");
+  var veil = null, openTile = null;
+  function closeSheet() {
+    if (!openTile) return;
+    openTile.classList.remove("is-open"); doc.body.classList.remove("sheet-open");
+    if (veil) veil.hidden = true;
+    var t = openTile; openTile = null; t.focus && t.focus({ preventScroll: true });
+  }
+  function openSheet(tile) {
+    if (!veil) { veil = doc.createElement("div"); veil.className = "sheet-veil"; veil.addEventListener("click", closeSheet); doc.body.appendChild(veil); }
+    closeSheet();
+    openTile = tile; tile.classList.add("is-open"); doc.body.classList.add("sheet-open"); veil.hidden = false;
+    tile.scrollTop = 0;
+    var x = $("[data-sheet-close]", tile); if (x) x.focus({ preventScroll: true });
+  }
+  $$(".products--grid .product").forEach(function (p) { p.setAttribute("tabindex", "-1"); });
+  doc.addEventListener("click", function (e) {
+    if (e.target.closest("[data-sheet-close]")) { e.preventDefault(); closeSheet(); return; }
+    if (!phone.matches) return;
+    var tile = e.target.closest(".products--grid .product");
+    if (tile && !tile.classList.contains("is-open")) { e.preventDefault(); e.stopPropagation(); openSheet(tile); }
+  }, true);
+  doc.addEventListener("keydown", function (e) { if (e.key === "Escape") closeSheet(); });
+  phone.addEventListener && phone.addEventListener("change", function () { if (!phone.matches) closeSheet(); });
+
   /* ---------- order pages ---------- */
   var om = $("[data-om]");
   if (!om) return;

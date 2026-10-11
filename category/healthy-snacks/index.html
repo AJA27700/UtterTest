@@ -19,7 +19,7 @@
 <link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
 <link rel="preload" href="../../assets/fonts/fraunces-latin-full-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="../../assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../../assets/css/site.css?v=1f783f4a">
+<link rel="stylesheet" href="../../assets/css/site.css?v=d24d284f">
 <script>document.documentElement.classList.add('js');if(location.protocol==="file:")document.write('<link rel="stylesheet" href="../../assets/css/fonts-local.css?v=">')</script>
 </head>
 <body class="page-cat">
@@ -541,7 +541,7 @@
         <label class="toggle"><input type="checkbox" data-instock><span class="toggle__ui" aria-hidden="true"></span><span>In stock<span class="t-long"> only</span></span></label>
       </div>
     </div>
-    <div class="products">
+    <div class="products products--grid">
       <article class="product has-photo" id="triple-seed-brittle" style="--tint: #E1ECD2">
         <div class="product__media">
           <figure class="ph">
@@ -549,28 +549,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Triple Seed Brittle"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20221206_151151.jpg" alt="Triple Seed Brittle" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Triple Seed Brittle</h2>
+          <p class="product__from">$9.50</p>
           <div class="tags">
           </div>
 <p class="product__desc" data-clamp>Pumpkin, sunflower and sesame seeds with maple syrup, vanilla, cinnamon and sea salt.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">Bar</span><span class="price">$9.50</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="triple-seed-brittle" data-name="Triple Seed Brittle" data-url="category/healthy-snacks/index.html#triple-seed-brittle" data-img="https://uddermilk.com/upload/Screenshot_20221206_151151.jpg" data-icon="chocolate-bar">
-              <label class="sr-only" for="triple-seed-brittle-v">Size</label>
-              <select id="triple-seed-brittle-v" name="v" class="is-one">
-<option value="Bar" data-price="9.5">Bar · $9.50</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="triple-seed-brittle" data-name="Triple Seed Brittle" data-url="category/healthy-snacks/index.html#triple-seed-brittle" data-img="https://uddermilk.com/upload/Screenshot_20221206_151151.jpg" data-icon="chocolate-bar">
+            <label class="sr-only" for="triple-seed-brittle-v">Size</label>
+            <select id="triple-seed-brittle-v" name="v" class="is-one">
+<option value="Bar" data-price="9.5">Bar · $9.50</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="organic-roasted-chestnuts" style="--tint: #E1ECD2">
@@ -580,28 +582,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Organic Roasted Chestnuts"><img class="ph__img" src="https://uddermilk.com/upload/IMG_0914.jpeg" alt="Organic Roasted Chestnuts" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Organic Roasted Chestnuts</h2>
+          <p class="product__from">$5.00</p>
           <div class="tags">
 <span class="tag tag--organic">Organic</span>          </div>
 <p class="product__desc" data-clamp>Shelled and ready to eat.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">3.5 oz</span><span class="price">$5.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="organic-roasted-chestnuts" data-name="Organic Roasted Chestnuts" data-url="category/healthy-snacks/index.html#organic-roasted-chestnuts" data-img="https://uddermilk.com/upload/IMG_0914.jpeg" data-icon="chestnut">
-              <label class="sr-only" for="organic-roasted-chestnuts-v">Size</label>
-              <select id="organic-roasted-chestnuts-v" name="v" class="is-one">
-<option value="3.5 oz" data-price="5.0">3.5 oz · $5.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="organic-roasted-chestnuts" data-name="Organic Roasted Chestnuts" data-url="category/healthy-snacks/index.html#organic-roasted-chestnuts" data-img="https://uddermilk.com/upload/IMG_0914.jpeg" data-icon="chestnut">
+            <label class="sr-only" for="organic-roasted-chestnuts-v">Size</label>
+            <select id="organic-roasted-chestnuts-v" name="v" class="is-one">
+<option value="3.5 oz" data-price="5.0">3.5 oz · $5.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="raw-curry-wraps" style="--tint: #E1ECD2">
@@ -611,28 +615,30 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Raw Curry Wraps"><img class="ph__img" src="https://uddermilk.com/upload/Screenshot_20210421-180931_WhatsApp.jpg" alt="Raw Curry Wraps" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Raw Curry Wraps</h2>
+          <p class="product__from">$9.50</p>
           <div class="tags">
 <span class="tag tag--organic">Certified organic</span><span class="tag tag--raw">Raw</span>          </div>
 <p class="product__desc" data-clamp>Raw wraps made from apple, flax, coconut and sesame, seasoned with curry, onion, garlic, lemon and turmeric.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li><span class="v-label">4 wraps · 5.5 oz</span><span class="price">$9.50</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="raw-curry-wraps" data-name="Raw Curry Wraps" data-url="category/healthy-snacks/index.html#raw-curry-wraps" data-img="https://uddermilk.com/upload/Screenshot_20210421-180931_WhatsApp.jpg" data-icon="flatbread">
-              <label class="sr-only" for="raw-curry-wraps-v">Size</label>
-              <select id="raw-curry-wraps-v" name="v" class="is-one">
-<option value="4 wraps · 5.5 oz" data-price="9.5">4 wraps · 5.5 oz · $9.50</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="raw-curry-wraps" data-name="Raw Curry Wraps" data-url="category/healthy-snacks/index.html#raw-curry-wraps" data-img="https://uddermilk.com/upload/Screenshot_20210421-180931_WhatsApp.jpg" data-icon="flatbread">
+            <label class="sr-only" for="raw-curry-wraps-v">Size</label>
+            <select id="raw-curry-wraps-v" name="v" class="is-one">
+<option value="4 wraps · 5.5 oz" data-price="9.5">4 wraps · 5.5 oz · $9.50</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="protein-bars" style="--tint: #E1ECD2">
@@ -648,8 +654,10 @@
             <button class="thumb" type="button" data-src="https://uddermilk.com/upload/233450%D8%A8%D8%A7%D8%B1%20%D8%AC%D9%88%D8%B2%2070.jpg" data-alt="Protein Bars: Coconut" aria-pressed="false" title="Coconut"><img src="https://uddermilk.com/upload/233450%D8%A8%D8%A7%D8%B1%20%D8%AC%D9%88%D8%B2%2070.jpg" alt="Coconut" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></button>
           </div>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Protein Bars</h2>
+          <p class="product__from">from $2.50</p>
           <div class="tags">
           </div>
 <p class="product__desc" data-clamp>20 g of protein per bar.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -659,20 +667,20 @@
             <li><span class="v-label">Cocoa · 70 g</span><span class="price">$2.50</span></li>
             <li><span class="v-label">Coconut · 70 g</span><span class="price">$2.50</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="protein-bars" data-name="Protein Bars" data-url="category/healthy-snacks/index.html#protein-bars" data-img="https://uddermilk.com/upload/%D8%A8%D8%A7%D8%B1%20%D9%85%D9%88%D9%83%D8%A7%2070.jpg" data-icon="chocolate-bar">
-              <label class="sr-only" for="protein-bars-v">Size</label>
-              <select id="protein-bars-v" name="v">
-<option value="Mocha · 70 g" data-price="2.5">Mocha · 70 g · $2.50</option><option value="Peanut · 70 g" data-price="2.5">Peanut · 70 g · $2.50</option><option value="Cocoa · 70 g" data-price="2.5">Cocoa · 70 g · $2.50</option><option value="Coconut · 70 g" data-price="2.5">Coconut · 70 g · $2.50</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="protein-bars" data-name="Protein Bars" data-url="category/healthy-snacks/index.html#protein-bars" data-img="https://uddermilk.com/upload/%D8%A8%D8%A7%D8%B1%20%D9%85%D9%88%D9%83%D8%A7%2070.jpg" data-icon="chocolate-bar">
+            <label class="sr-only" for="protein-bars-v">Size</label>
+            <select id="protein-bars-v" name="v">
+<option value="Mocha · 70 g" data-price="2.5">Mocha · 70 g · $2.50</option><option value="Peanut · 70 g" data-price="2.5">Peanut · 70 g · $2.50</option><option value="Cocoa · 70 g" data-price="2.5">Cocoa · 70 g · $2.50</option><option value="Coconut · 70 g" data-price="2.5">Coconut · 70 g · $2.50</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product has-photo" id="imtenan-peanut-butter" style="--tint: #E1ECD2">
@@ -687,8 +695,10 @@
             <button class="thumb" type="button" data-src="https://uddermilk.com/upload/%D8%B2%D8%A8%D8%AF%D9%87%20%D8%A8%D8%A7%D9%84%D8%B9%D8%B3%D9%84%20300.jpg" data-alt="Imtenan Peanut Butter: With creamy honey" aria-pressed="false" title="With creamy honey"><img src="https://uddermilk.com/upload/%D8%B2%D8%A8%D8%AF%D9%87%20%D8%A8%D8%A7%D9%84%D8%B9%D8%B3%D9%84%20300.jpg" alt="With creamy honey" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></button>
           </div>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Imtenan Peanut Butter</h2>
+          <p class="product__from">from $9.00</p>
           <div class="tags">
 <span class="tag">100% natural</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -697,20 +707,20 @@
             <li><span class="v-label">Crunchy · 300 g</span><span class="price">$9.00</span></li>
             <li><span class="v-label">With creamy honey · 300 g</span><span class="price">$9.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <form class="addcart" data-addcart data-id="imtenan-peanut-butter" data-name="Imtenan Peanut Butter" data-url="category/healthy-snacks/index.html#imtenan-peanut-butter" data-img="https://uddermilk.com/upload/%D8%B2%D8%A8%D8%AF%D8%A9%20%D9%81%D9%88%D9%84%20300.jpg" data-icon="peanuts">
-              <label class="sr-only" for="imtenan-peanut-butter-v">Size</label>
-              <select id="imtenan-peanut-butter-v" name="v">
-<option value="Smooth · 300 g" data-price="9.0">Smooth · 300 g · $9.00</option><option value="Crunchy · 300 g" data-price="9.0">Crunchy · 300 g · $9.00</option><option value="With creamy honey · 300 g" data-price="9.0">With creamy honey · 300 g · $9.00</option>              </select>
-              <div class="qty" role="group" aria-label="Quantity">
-                <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
-                <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
-                <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
-              </div>
-              <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
-            </form>
-            <span class="muted">Members only · pay on delivery</span>
-          </div>
+          <form class="addcart" data-addcart data-id="imtenan-peanut-butter" data-name="Imtenan Peanut Butter" data-url="category/healthy-snacks/index.html#imtenan-peanut-butter" data-img="https://uddermilk.com/upload/%D8%B2%D8%A8%D8%AF%D8%A9%20%D9%81%D9%88%D9%84%20300.jpg" data-icon="peanuts">
+            <label class="sr-only" for="imtenan-peanut-butter-v">Size</label>
+            <select id="imtenan-peanut-butter-v" name="v">
+<option value="Smooth · 300 g" data-price="9.0">Smooth · 300 g · $9.00</option><option value="Crunchy · 300 g" data-price="9.0">Crunchy · 300 g · $9.00</option><option value="With creamy honey · 300 g" data-price="9.0">With creamy honey · 300 g · $9.00</option>            </select>
+            <div class="qty" role="group" aria-label="Quantity">
+              <button type="button" data-step="-1" aria-label="One fewer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+              <input type="number" name="q" value="1" min="1" max="99" inputmode="numeric" aria-label="Quantity">
+              <button type="button" data-step="1" aria-label="One more"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button>
+            </div>
+            <button class="btn btn--sm" type="submit"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg> Add to cart</button>
+          </form>
+          <span class="muted">Members only · pay on delivery</span>
         </div>
       </article>
       <article class="product is-allout has-photo" id="imtenan-granola-bars" style="--tint: #E1ECD2">
@@ -725,8 +735,10 @@
             <button class="thumb" type="button" data-src="https://uddermilk.com/upload/%D8%A8%D8%A7%D8%B1%20%D8%AC%D9%88%D8%B2%20%D9%88%D8%B4%D9%88%D9%81%D8%A7%D9%86%2040.jpg" data-alt="Imtenan Granola Bars: Coconut &amp; oat" aria-pressed="false" title="Coconut &amp; oat"><img src="https://uddermilk.com/upload/%D8%A8%D8%A7%D8%B1%20%D8%AC%D9%88%D8%B2%20%D9%88%D8%B4%D9%88%D9%81%D8%A7%D9%86%2040.jpg" alt="Coconut &amp; oat" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentElement.remove()"></button>
           </div>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Imtenan Granola Bars</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag tag--out">Sold out</span>          </div>
           <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -735,9 +747,9 @@
             <li class="is-out"><span class="v-label">Dried fruit &amp; nut · 40 g</span><span class="price">$2.50</span></li>
             <li class="is-out"><span class="v-label">Coconut &amp; oat · 40 g</span><span class="price">$2.50</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Imtenan%20Granola%20Bars">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Imtenan%20Granola%20Bars">Ask when it's back</a>
         </div>
       </article>
       <article class="product is-allout has-photo" id="chocolate-date-spread" style="--tint: #E1ECD2">
@@ -747,17 +759,19 @@
             <button class="ph__zoom" type="button" data-zoom aria-label="Enlarge the photo of Chocolate Date Spread"><img class="ph__img" src="https://uddermilk.com/upload/115625SPREAD.jpg" alt="Chocolate Date Spread" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var b=this.parentElement;b.parentElement.classList.add('ph--x');b.remove()"></button>
           </figure>
         </div>
+        <button class="sheet-x" type="button" data-sheet-close aria-label="Close">×</button>
         <div class="product__body">
           <h2>Chocolate Date Spread</h2>
+          <p class="product__from">Sold out</p>
           <div class="tags">
 <span class="tag tag--organic">Certified organic</span><span class="tag tag--out">Sold out</span>          </div>
 <p class="product__desc" data-clamp>Deeply chocolatey, with the caramel sweetness of dates.</p>          <button class="more-btn" type="button" data-more aria-expanded="false" hidden><span data-more-label>Read more</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
           <ul class="variants" aria-label="Sizes and prices">
             <li class="is-out"><span class="v-label">10.2 oz jar</span><span class="price">$9.00</span></li>
           </ul>
+        </div>
           <div class="product__foot">
-            <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Chocolate%20Date%20Spread">Ask when it's back</a>
-          </div>
+          <a class="btn btn--ghost btn--sm" href="mailto:info@uddermilk.com?subject=Back%20in%20stock%3A%20Chocolate%20Date%20Spread">Ask when it's back</a>
         </div>
       </article>
       <p class="hidden-note">Everything in this category is sold out right now. Switch off “In stock only” to see the full list.</p>
@@ -864,6 +878,6 @@
     </div>
   </div>
 </footer><script src="../../assets/js/site.js?v=0da2f001" defer></script>
-<script src="../../assets/js/shop.js?v=07b2128e" defer></script>
+<script src="../../assets/js/shop.js?v=60b78f0e" defer></script>
 </body>
 </html>
