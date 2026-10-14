@@ -1466,6 +1466,7 @@ a.contact-card:hover { transform: translateY(-4px); }
 @media (max-width: 380px) { .mmenu ul { grid-template-columns: 1fr; } }
 @media (max-width: 440px) { .menubtn__txt b { display: none; } .menubtn__txt small { font-size: 13px; letter-spacing: .1em; color: var(--cream); } }
 @media (max-width: 1180px) { :root { --bar-h: 68px; } .mainbar__brand { min-height: var(--bar-h); } }
+<<<<<<< HEAD:app/globals.css
 /* shop sidebar: the category list scrolls inside its panel, and the panel never runs past the page */
 @media (min-width: 1181px) {
   .sidebar { display: flex; flex-direction: column; }
@@ -1874,3 +1875,5 @@ p.about-quote--green { display: block; margin: 4px 0 12px; border-left: 0; text-
   .about-toc ul { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 480px) { .about-toc ul { grid-template-columns: 1fr; } }
+=======
+>>>>>>> parent of 128d69f (phone edits + shop layout):assets/css/site.css
