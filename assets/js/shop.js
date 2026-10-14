@@ -1,8 +1,8 @@
 /* Udder Milk: cart, checkout and orders (preview).
-   Everything is kept in this browser (localStorage) until the site is connected to the member system:
+   everything is kept in this browser (localStorage) until the site is connected to the member system:
    um_cart     [{key, name, variant, price, qty, url, img, icon}]
-   um_orders   [{id, status, placed, method, items, note, contact}]  newest first
-   um_editing  id of an open order the shopper is adding items to */
+   um_editing  id of an open order the shopper is adding items to
+   orders + members live in members.js (window.UM). checkout/orders need a log in, like the new site */
 (function () {
   var doc = document;
   var $ = function (s, c) { return (c || doc).querySelector(s); };
@@ -90,8 +90,11 @@
     if (!over && !$(".product__long", d.parentElement)) d.classList.remove("is-clamped");
     if (btn && over) btn.hidden = false;
   });
-  $$("[data-addcart]").forEach(function (f) {
-    f.addEventListener("submit", function (e) {
+  // one listener for every add-to-cart form, so cards drawn later (search results) work too
+  doc.addEventListener("submit", function (e) {
+    var f = e.target.closest && e.target.closest("[data-addcart]");
+    if (!f) return;
+    (function () {
       e.preventDefault();
       var opt = f.v.options[f.v.selectedIndex];
       var q = Math.max(1, Math.min(99, parseInt(f.q.value, 10) || 1));
@@ -105,40 +108,84 @@
       setTimeout(function () { btn.classList.remove("is-added"); }, 1200);
       if (cartLink) { cartLink.classList.remove("is-bump"); void cartLink.offsetWidth; cartLink.classList.add("is-bump"); }
       toast('<span class="toast__ok">' + svg.check + '</span><span><b>' + esc(it.name) + '</b> ' + esc(it.variant) + ' × ' + q + ' added</span><a href="' + link("shop-cart") + '">View cart</a>');
-    });
+    })();
   });
 
-  /* ---------- order pages ---------- */
-  var om = $("[data-om]");
-  if (!om) return;
-  var MODE = om.getAttribute("data-om");
-  var samples = [];
-  try { samples = JSON.parse($("#sample-orders").textContent); } catch (e) {}
-  var getOrders = function () { return LS.get("um_orders", []); };
-  var allOrders = function () { return getOrders().concat(samples); };
-  var findOrder = function (id) { return allOrders().filter(function (o) { return o.id === id; })[0]; };
-  function saveOrder(o) {
-    var list = getOrders(), i = list.map(function (x) { return x.id; }).indexOf(o.id);
-    if (i > -1) list[i] = o; else list.unshift(o);
-    LS.set("um_orders", list);
+  /* ---------- phones: product tiles open a bottom sheet ---------- */
+  var phone = window.matchMedia("(max-width: 640px)");
+  var veil = null, openTile = null;
+  function closeSheet() {
+    if (!openTile) return;
+    openTile.classList.remove("is-open"); doc.body.classList.remove("sheet-open");
+    if (veil) veil.hidden = true;
+    var t = openTile; openTile = null; t.focus && t.focus({ preventScroll: true });
   }
-  var qs = function (k) { var m = new RegExp("[?&]" + k + "=([^&]+)").exec(location.search); return m ? decodeURIComponent(m[1]) : null; };
+  function openSheet(tile) {
+    if (!veil) { veil = doc.createElement("div"); veil.className = "sheet-veil"; veil.addEventListener("click", closeSheet); doc.body.appendChild(veil); }
+    closeSheet();
+    openTile = tile; tile.classList.add("is-open"); doc.body.classList.add("sheet-open"); veil.hidden = false;
+    tile.scrollTop = 0;
+    var x = $("[data-sheet-close]", tile); if (x) x.focus({ preventScroll: true });
+  }
+  $$(".products--grid .product").forEach(function (p) { p.setAttribute("tabindex", "-1"); });
+  doc.addEventListener("click", function (e) {
+    if (e.target.closest("[data-sheet-close]")) { e.preventDefault(); closeSheet(); return; }
+    if (!phone.matches) return;
+    var tile = e.target.closest(".products--grid .product");
+    if (tile && !tile.classList.contains("is-open")) { e.preventDefault(); e.stopPropagation(); openSheet(tile); }
+  }, true);
+  doc.addEventListener("keydown", function (e) { if (e.key === "Escape") closeSheet(); });
+  phone.addEventListener && phone.addEventListener("change", function () { if (!phone.matches) closeSheet(); });
+
+
+  /* ---------- shared bits for the account + order pages (members.js uses these too) ---------- */
+  var UM = window.UM;
+  window.UM_CART = { get: getCart, set: setCart, add: function (items) { setCart(addItems(getCart(), items)); } };
   var STATUS = {
-    open: ["Open", "You can still change it"], closed: ["Closed", "Locked in for your delivery day"],
-    confirmed: ["Confirmed", "On the truck for your day"], delivered: ["Delivered", ""], canceled: ["Canceled", ""]
+    open: ["Open", "You can still change it"], closed: ["Closed", "Locked in for your delivery day"], confirmed: ["Confirmed", "Packed for your delivery day"],
+    out: ["Out for delivery", "On the truck today"], delivered: ["Delivered", ""], canceled: ["Canceled", ""]
   };
   var chip = function (s) { return '<span class="ostat ostat--' + s + '">' + (STATUS[s] || [s])[0] + "</span>"; };
-  var fmtDate = function (iso) {
-    if (!iso) return "";
-    var d = new Date(iso + "T12:00:00");
-    return d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric", year: d.getFullYear() !== new Date().getFullYear() ? "numeric" : undefined });
-  };
-  var today = function () { var d = new Date(); return d.getFullYear() + "-" + ("0" + (d.getMonth() + 1)).slice(-2) + "-" + ("0" + d.getDate()).slice(-2); };
+  var typeChip = function (rec) { return '<span class="otype' + (rec ? " otype--rec" : "") + '">' + (rec ? "Recurring" : "Non-recurring") + "</span>"; };
+  var fmtDate = function (iso) { if (!iso) return ""; var d = new Date(iso + "T12:00:00"); return d.toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" }); };
+  var orderTotal = function (o) { return sum(o.items) + (o.deliveryFee || 0); };
   var imgFor = function (it) {
     var ic = ICONS + (it.icon || "basket") + ".webp";
     return it.img ? '<img src="' + esc(it.img) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src=\'' + ic + '\';this.className=\'is-icon\'">'
                   : '<img class="is-icon" src="' + ic + '" alt="" loading="lazy">';
   };
+  function empty(title, text, btns) {
+    return '<div class="om__empty"><img src="' + ICONS + 'basket.webp" alt="" width="120" height="120"><h2>' + title + "</h2><p class=\"muted\">" + text + '</p><div class="btn-row">' + btns + "</div></div>";
+  }
+  var shopBtn = '<a class="btn" href="' + link("shop") + '">Go to the shop ' + svg.arrow + "</a>";
+  var preview = UM ? UM.preview : "";
+  var qs = function (k) { var m = new RegExp("[?&]" + k + "=([^&]+)").exec(location.search); return m ? decodeURIComponent(m[1]) : null; };
+  function steps(at) {
+    return '<ol class="om__steps" aria-label="Ordering steps">' + ["Cart", "Check out", "Order placed"].map(function (s, i) {
+      return '<li class="' + (i === at ? "is-on" : i < at ? "is-done" : "") + '"><span>' + (i + 1) + "</span>" + s + "</li>";
+    }).join("") + "</ol>";
+  }
+  function table(orders) {
+    return '<table class="otable"><thead><tr><th scope="col">Order no.</th><th scope="col">Date</th><th scope="col">Status</th><th scope="col" class="num">Total</th><th scope="col">Order type</th><th scope="col"><span class="sr-only">Actions</span></th></tr></thead><tbody>' +
+      orders.map(function (o) {
+        var view = link("order") + "?id=" + encodeURIComponent(o.id), n = nItems(o.items);
+        return '<tr><td data-label="Order no."><a class="otable__id" href="' + view + '">#' + esc(o.id) + "</a>" + (o.sample ? '<span class="ocard__sample">sample</span>' : "") + "</td>" +
+          '<td data-label="Date">' + fmtDate(o.placed) + '</td><td data-label="Status">' + chip(o.status) + "</td>" +
+          '<td data-label="Total" class="num"><b>' + money(orderTotal(o)) + "</b><small>" + n + " item" + (n === 1 ? "" : "s") + "</small></td>" +
+          '<td data-label="Order type">' + typeChip(o.recurring) + "</td>" +
+          '<td class="otable__act"><a class="btn btn--sm btn--ghost" href="' + view + '">View</a>' +
+          (o.editable ? '<a class="btn btn--sm" href="' + link("edit-order") + "?id=" + encodeURIComponent(o.id) + '">Edit</a>' : o.items.length ? '<button class="btn btn--sm" type="button" data-again="' + esc(o.id) + '">Order again</button>' : "") + "</td></tr>";
+      }).join("") + "</tbody></table>";
+  }
+  function pager(d) {
+    var per = 10, from = (d.page - 1) * per + 1, to = Math.min(d.total, d.page * per);
+    var nums = [1, d.page - 1, d.page, d.page + 1, d.pages].filter(function (n, i, a) { return n >= 1 && n <= d.pages && a.indexOf(n) === i; }).sort(function (a, b) { return a - b; });
+    return '<nav class="pager" aria-label="Pages"><span class="pager__info">Showing ' + from + " to " + to + " of " + d.total + " order" + (d.total === 1 ? "" : "s") + "</span>" +
+      (d.pages > 1 ? '<span class="pager__btns"><button type="button" data-page="' + (d.page - 1) + '"' + (d.page <= 1 ? " disabled" : "") + ">Previous</button>" +
+        nums.map(function (n, i) { return (i > 0 && n - nums[i - 1] > 1 ? '<span class="pager__gap">…</span>' : "") + '<button type="button" data-page="' + n + '"' + (n === d.page ? ' aria-current="page"' : "") + ">" + n + "</button>"; }).join("") +
+        '<button type="button" data-page="' + (d.page + 1) + '"' + (d.page >= d.pages ? " disabled" : "") + ">Next</button></span>" : "") + "</nav>";
+  }
+  window.UM_ORDERS = { table: table, pager: pager, empty: empty, chip: chip };
 
   function lines(items, editable) {
     return '<ul class="lines">' + items.map(function (it, i) {
@@ -154,237 +201,226 @@
         '<b class="line__tot">' + money(it.price * it.qty) + "</b></li>";
     }).join("") + "</ul>";
   }
-  function bindLines(box, items, onChange) {
+  function bindLines(box, getItems, onChange) {
     box.addEventListener("click", function (e) {
-      var row = e.target.closest("[data-i]"); if (!row) return;
-      var i = +row.getAttribute("data-i");
-      if (e.target.closest("[data-q]")) { items[i].qty = Math.max(1, Math.min(99, items[i].qty + +e.target.closest("[data-q]").getAttribute("data-q"))); onChange(); }
-      if (e.target.closest("[data-rm]")) { items.splice(i, 1); onChange(); }
+      var row = e.target.closest("[data-i]"); if (!row || !box.contains(row)) return;
+      var items = getItems(), i = +row.getAttribute("data-i");
+      if (e.target.closest("[data-q]")) { items[i].qty = Math.max(1, Math.min(99, items[i].qty + +e.target.closest("[data-q]").getAttribute("data-q"))); onChange(items); }
+      if (e.target.closest("[data-rm]")) { items.splice(i, 1); onChange(items); }
     });
     box.addEventListener("change", function (e) {
       if (!e.target.matches("[data-qin]")) return;
-      var i = +e.target.closest("[data-i]").getAttribute("data-i");
-      items[i].qty = Math.max(1, Math.min(99, parseInt(e.target.value, 10) || 1)); onChange();
+      var items = getItems(), i = +e.target.closest("[data-i]").getAttribute("data-i");
+      items[i].qty = Math.max(1, Math.min(99, parseInt(e.target.value, 10) || 1)); onChange(items);
     });
   }
-  function summary(items, extra) {
-    var t = sum(items);
-    return '<div class="sum"><h2>Order <em>summary</em></h2>' +
-      '<dl><div><dt>Items (' + nItems(items) + ")</dt><dd>" + money(t) + "</dd></div>" +
+  function summary(items, fee, extra) {
+    return '<div class="sum"><h2>Order <em>summary</em></h2><dl><div><dt>Items (' + nItems(items) + ")</dt><dd>" + money(sum(items)) + "</dd></div>" +
+      (fee != null ? "<div><dt>Delivery fee</dt><dd>" + (fee ? money(fee) : "Free") + "</dd></div>" : "") +
       "<div><dt>Payment</dt><dd>Cash on delivery</dd></div></dl>" +
-      '<div class="sum__total"><span>Cash due at your door</span><b>' + money(t) + "</b></div>" + (extra || "") + "</div>";
+      '<div class="sum__total"><span>Cash due at your door</span><b>' + money(sum(items) + (fee || 0)) + "</b></div>" + (extra || "") + "</div>";
   }
-  function empty(title, text, btns) {
-    return '<div class="om__empty"><img src="' + ICONS + 'basket.webp" alt="" width="120" height="120"><h2>' + title + "</h2><p class=\"muted\">" + text + '</p><div class="btn-row">' + btns + "</div></div>";
+  function details(o) {
+    return '<dl class="odet"><div><dt>Placed</dt><dd>' + fmtDate(o.placed) + "</dd></div>" +
+      (o.method === "pickup" ? "<div><dt>Pickup</dt><dd>" + esc(o.pickupLocation ? o.pickupLocation.title : "At your pickup location") + "</dd></div>"
+                             : "<div><dt>Delivery</dt><dd>" + (o.deliveryDay ? esc(o.deliveryDay) + ", 11am to midnight" : "Your zone's delivery day") + "</dd></div>") +
+      "<div><dt>Order type</dt><dd>" + (o.recurring ? "Recurring" : "One time") + "</dd></div>" +
+      (o.note ? "<div><dt>Instructions</dt><dd>" + esc(o.note) + "</dd></div>" : "") +
+      "<div><dt>Payment</dt><dd>Cash on delivery</dd></div></dl>";
   }
-  var shopBtn = '<a class="btn" href="' + link("shop") + '">Go to the shop ' + svg.arrow + "</a>";
-
-  /* cart */
-  if (MODE === "cart") {
-    var listBox = $("[data-cart-list]"), sumBox = $("[data-summary]"), edBox = $("[data-editing]");
-    var renderCart = function () {
-      var c = getCart();
-      var editing = LS.get("um_editing", null), eo = editing && findOrder(editing);
-      if (eo && eo.status === "open" && c.length) {
-        edBox.hidden = false;
-        edBox.innerHTML = '<span><b>Adding to order ' + esc(eo.id) + ".</b> Put these items into that order, or check them out as a new one.</span>" +
-          '<div class="btn-row"><button class="btn btn--sm btn--blue" type="button" data-merge>Add to order ' + esc(eo.id) + '</button><button class="btn btn--sm btn--ghost" type="button" data-unedit>New order instead</button></div>';
-      } else edBox.hidden = true;
-      if (!c.length) {
-        listBox.innerHTML = empty("Your cart is empty.", "Find something good in the shop: raw milk, butter, eggs, grass-fed meat and more.", shopBtn);
-        sumBox.innerHTML = summary([], '<a class="btn btn--wide is-disabled" aria-disabled="true">Check out</a>');
-        return;
-      }
-      listBox.innerHTML = '<div class="om__cardhead"><h2>' + nItems(c) + " item" + (nItems(c) === 1 ? "" : "s") + '</h2><button class="linkbtn" type="button" data-clear>Empty cart</button></div>' + lines(c, true);
-      sumBox.innerHTML = summary(c, '<a class="btn btn--wide" href="' + link("checkout") + '">Check out ' + svg.arrow + '</a><a class="om__keep" href="' + link("shop") + '">Keep shopping</a>');
-    };
-    listBox.addEventListener("click", function (e) {
-      if (e.target.closest("[data-clear]")) { setCart([]); renderCart(); }
-    });
-    listBox.addEventListener("click", function (e) {
-      var row = e.target.closest("[data-i]"); if (!row) return;
-      var c = getCart(), i = +row.getAttribute("data-i");
-      if (e.target.closest("[data-q]")) c[i].qty = Math.max(1, Math.min(99, c[i].qty + +e.target.closest("[data-q]").getAttribute("data-q")));
-      else if (e.target.closest("[data-rm]")) c.splice(i, 1);
-      else return;
-      setCart(c); renderCart();
-    });
-    listBox.addEventListener("change", function (e) {
-      if (!e.target.matches("[data-qin]")) return;
-      var c = getCart(), i = +e.target.closest("[data-i]").getAttribute("data-i");
-      c[i].qty = Math.max(1, Math.min(99, parseInt(e.target.value, 10) || 1)); setCart(c); renderCart();
-    });
-    edBox.addEventListener("click", function (e) {
-      var id = LS.get("um_editing", null), o = id && findOrder(id);
-      if (e.target.closest("[data-merge]") && o) {
-        o.items = addItems(o.items, getCart()); saveOrder(o); setCart([]); LS.del("um_editing");
-        location.href = link("edit-order") + "?id=" + encodeURIComponent(o.id) + "&added=1";
-      }
-      if (e.target.closest("[data-unedit]")) { LS.del("um_editing"); renderCart(); }
-    });
-    renderCart();
-  }
-
-  /* checkout */
-  if (MODE === "checkout") {
-    var form = $("[data-checkout]"), sb = $("[data-summary]"), c0 = getCart();
-    if (!c0.length) {
-      form.outerHTML = '<div class="om__card">' + empty("Nothing to check out yet.", "Your cart is empty. Add a few things from the shop first.", shopBtn) + "</div>";
-    } else {
-      sb.innerHTML = summary(c0, '<div class="sum__mini">' + c0.map(function (it) {
-        return '<div><span class="sum__img">' + imgFor(it) + "</span><span>" + esc(it.name) + "<small>" + esc(it.variant) + " × " + it.qty + "</small></span><b>" + money(it.price * it.qty) + "</b></div>";
-      }).join("") + '</div><a class="om__keep" href="' + link("shop-cart") + '">Edit cart</a>');
-      $("[data-cash-amt]").textContent = money(sum(c0));
-      var last = LS.get("um_contact", null);
-      if (last) ["name", "phone", "address", "apt", "access"].forEach(function (k) { if (last[k] && form[k]) form[k].value = last[k]; });
-      var syncMethod = function () {
-        var pick = form.method.value === "pickup";
-        $$("[data-addr]", form).forEach(function (el) { el.hidden = pick; });
-        $("[data-pickup-note]").hidden = !pick;
-        form.address.required = !pick;
-      };
-      $$("input[name=method]", form).forEach(function (r) { r.addEventListener("change", syncMethod); });
-      syncMethod();
-      form.addEventListener("input", function () { $("[data-co-note]").hidden = true; });
-      form.addEventListener("change", function () { $("[data-co-note]").hidden = true; });
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        var miss = [];
-        if (!form.name.value.trim()) miss.push("your name");
-        if (!form.phone.value.trim()) miss.push("a phone number");
-        if (form.method.value === "delivery" && !form.address.value.trim()) miss.push("your delivery address");
-        if (!form.agree.checked) miss.push("the missed-delivery checkbox");
-        var note = $("[data-co-note]");
-        if (miss.length) { note.hidden = false; note.textContent = "Almost: please add " + miss.join(", ") + "."; return; }
-        var contact = { name: form.name.value.trim(), phone: form.phone.value.trim(), address: form.address.value.trim(), apt: form.apt.value.trim(), access: form.access.value.trim() };
-        LS.set("um_contact", contact);
-        var ids = allOrders().map(function (o) { return o.id; }), id;
-        do { id = "UM-" + (20500 + Math.floor(Math.random() * 9000)); } while (ids.indexOf(id) > -1);
-        var o = { id: id, status: "open", placed: today(), method: form.method.value, items: getCart(), note: form.note.value.trim(), contact: contact };
-        saveOrder(o); setCart([]); LS.del("um_editing");
-        location.href = link("order") + "?id=" + encodeURIComponent(id) + "&new=1";
-      });
-    }
-  }
-
   function tracker(s) {
-    var steps = ["open", "closed", "confirmed", "delivered"];
+    var st = ["open", "closed", "confirmed", "out", "delivered"];
     if (s === "canceled") return '<div class="track track--x">' + chip("canceled") + "<span>This order was canceled.</span></div>";
-    var at = steps.indexOf(s);
-    return '<ol class="track">' + steps.map(function (k, i) {
+    var at = st.indexOf(s);
+    return '<ol class="track">' + st.map(function (k, i) {
       return '<li class="' + (i < at ? "is-done" : i === at ? "is-on" : "") + '"><i>' + (i < at ? svg.check : i + 1) + "</i><b>" + STATUS[k][0] + "</b>" + (i === at && STATUS[k][1] ? "<small>" + STATUS[k][1] + "</small>" : "") + "</li>";
     }).join("") + "</ol>";
   }
-  function details(o) {
-    var c = o.contact || {};
-    return '<dl class="odet">' +
-      "<div><dt>Placed</dt><dd>" + fmtDate(o.placed) + "</dd></div>" +
-      "<div><dt>" + (o.method === "pickup" ? "Pickup" : "Delivery") + "</dt><dd>" + (o.day ? fmtDate(o.day) : o.method === "pickup" ? "At your pickup spot" : "Your zone's next delivery day, 11am to midnight") + "</dd></div>" +
-      (o.method !== "pickup" && c.address ? "<div><dt>Address</dt><dd>" + esc(c.address) + (c.apt ? ", " + esc(c.apt) : "") + (c.access ? "<small>" + esc(c.access) + "</small>" : "") + "</dd></div>" : "") +
-      (o.note ? "<div><dt>Driver notes</dt><dd>" + esc(o.note) + "</dd></div>" : "") +
-      "<div><dt>Payment</dt><dd>Cash on delivery</dd></div></dl>";
+  // "Order Preferences" like the new site: zone, recurring, delivery or pickup, day, location, notes
+  function prefsBox(c, p, errs) {
+    var z = c && c.zone, sel = function (a, b) { return a === b ? " selected" : ""; };
+    return '<div class="prefs">' +
+      (z ? '<dl class="prefs__zone"><div><dt>My zone</dt><dd>' + esc(z.name) + "</dd></div><div><dt>Cut-off day</dt><dd>" + esc(z.cutOffDay) + "</dd></div><div><dt>Delivery day</dt><dd>" + esc(z.deliveryDays.join(", ")) + "</dd></div></dl>" : "") +
+      '<label class="check prefs__rec"><input type="checkbox" data-p="recurring"' + (p.recurring ? " checked" : "") + "><span><b>Make it a recurring order</b><small>The same order every delivery day, until you change or cancel it.</small></span></label>" +
+      '<div class="field"><label for="pf-method">Delivery settings</label><select id="pf-method" data-p="method"><option value="delivery"' + sel(p.method, "delivery") + ">Delivery" + (c && c.deliveryFee ? " (" + money(c.deliveryFee) + " fee)" : "") + '</option><option value="pickup"' + sel(p.method, "pickup") + ">Pick up location</option></select></div>" +
+      (p.method === "delivery"
+        ? '<div class="field"><label for="pf-day">Select delivery day</label><select id="pf-day" data-p="deliveryDay"' + (errs.deliveryDay ? ' aria-invalid="true"' : "") + '><option value="">Select day</option>' +
+          (z ? z.deliveryDays.map(function (d) { return '<option value="' + d + '"' + sel(p.deliveryDay, d) + ">" + d + "</option>"; }).join("") : "") + "</select>" +
+          (errs.deliveryDay ? '<span class="field__err" role="alert">' + errs.deliveryDay + "</span>" : "") + "<span class=\"field__hint\">We deliver 11am to midnight. Leave a cooler with ice if you won't be home.</span></div>"
+        : '<div class="field"><label for="pf-loc">Pick up location</label><select id="pf-loc" data-p="pickupLocationId"' + (errs.pickupLocationId ? ' aria-invalid="true"' : "") + '><option value="">Select location</option>' +
+          (c ? c.pickupLocations.map(function (l) { return '<option value="' + l.id + '"' + sel(p.pickupLocationId, l.id) + ">" + esc(l.title) + "</option>"; }).join("") : "") + "</select>" +
+          (errs.pickupLocationId ? '<span class="field__err" role="alert">' + errs.pickupLocationId + "</span>" : "") + "</div>") +
+      '<div class="field"><label for="pf-note">Additional instructions <span class="opt">optional</span></label><textarea id="pf-note" rows="3" data-p="note" placeholder="Where\'s your cooler? Door code? Anything we should know?">' + esc(p.note) + "</textarea></div></div>";
+  }
+  function checkPrefs(p) {
+    var e = {};
+    if (p.method === "delivery" && !p.deliveryDay) e.deliveryDay = "Please select a delivery day";
+    if (p.method === "pickup" && !p.pickupLocationId) e.pickupLocationId = "Please select a pick up location";
+    return e;
+  }
+  function bindPrefs(box, p, onChange) {
+    var upd = function (e) {
+      var k = e.target.getAttribute && e.target.getAttribute("data-p"); if (!k) return;
+      p[k] = e.target.type === "checkbox" ? e.target.checked : e.target.value;
+      onChange(k, e.type);
+    };
+    box.addEventListener("change", upd);
+    box.addEventListener("input", function (e) { if (e.target.getAttribute && e.target.getAttribute("data-p") === "note") p.note = e.target.value; });
   }
 
-  /* order placed / order details */
+  /* ---------- the order pages ---------- */
+  var om = $("[data-om]");
+  if (!om) return;
+  var MODE = om.getAttribute("data-om");
+  var me = UM && UM.member();
+
+  /* cart (open to everyone) */
+  if (MODE === "cart") {
+    var renderCart = function () {
+      var c = getCart(), editing = LS.get("um_editing", null), eo = editing && me && UM.orders.get(editing);
+      om.innerHTML = '<div class="om">' + preview + steps(0) +
+        '<header class="om__head"><span class="eyebrow"><img src="' + ICONS + 'shopping-cart.webp" alt="" width="20" height="20">My cart</span><h1>Your <em>cart.</em></h1><p class="muted">Order before your cut-off and it comes on your next delivery day. Pay cash at your door.</p></header>' +
+        (eo && eo.editable && c.length ? '<div class="om__editing"><span><b>Adding to order ' + esc(eo.id) + ".</b> Put these items into that order, or check them out as a new one.</span>" +
+          '<div class="btn-row"><button class="btn btn--sm btn--blue" type="button" data-merge>Add to order ' + esc(eo.id) + '</button><button class="btn btn--sm btn--ghost" type="button" data-unedit>New order instead</button></div></div>' : "") +
+        '<div class="om__grid"><section class="om__card" aria-label="Items in your cart">' +
+        (c.length ? '<div class="om__cardhead"><h2>' + nItems(c) + " item" + (nItems(c) === 1 ? "" : "s") + '</h2><button class="linkbtn" type="button" data-clear>Empty cart</button></div>' + lines(c, true)
+                  : empty("Your cart is empty.", "Find something good in the shop: raw milk, butter, eggs, grass-fed meat and more.", shopBtn)) +
+        '</section><aside class="om__sum">' + summary(c, null, (c.length ? '<a class="btn btn--wide" href="' + link("checkout") + '">Check out ' + svg.arrow + "</a>" : '<span class="btn btn--wide is-disabled" aria-disabled="true">Check out</span>') +
+          '<a class="om__keep" href="' + link("shop") + '">Keep shopping</a>') + "</aside></div></div>";
+    };
+    bindLines(om, getCart, function (items) { setCart(items); renderCart(); });
+    om.addEventListener("click", function (e) {
+      if (e.target.closest("[data-clear]")) { setCart([]); renderCart(); }
+      if (e.target.closest("[data-unedit]")) { LS.del("um_editing"); renderCart(); }
+      if (e.target.closest("[data-merge]")) {
+        var id = LS.get("um_editing", null), o = id && UM.orders.get(id);
+        if (!o) { LS.del("um_editing"); renderCart(); return; }
+        var r = UM.orders.update(o.id, { items: addItems(o.items, getCart()) });
+        if (r.error) { toast(esc(r.error)); return; }
+        setCart([]); LS.del("um_editing");
+        location.href = link("edit-order") + "?id=" + encodeURIComponent(o.id) + "&added=1";
+      }
+    });
+    renderCart();
+    return;
+  }
+
+  // everything below is members only
+  var WHAT = { checkout: "check out", order: "see your orders", edit: "see your orders" };
+  if (!me) { UM.gate(om, WHAT[MODE] || "see your orders"); return; }
+
+  /* checkout, laid out like the new site: your items on the left, order preferences on the right */
+  if (MODE === "checkout") {
+    var c = UM.conditions(), items = getCart(), errs = {}, msg = "";
+    var p = { recurring: false, method: "delivery", deliveryDay: me.deliveryDay || (c.zone && c.zone.deliveryDays.length === 1 ? c.zone.deliveryDays[0] : ""), pickupLocationId: "", note: "" };
+    if (!c.zone) p.method = "pickup";
+    var renderCo = function () {
+      if (!items.length) { om.innerHTML = '<div class="om">' + preview + steps(1) + '<div class="om__card" style="margin-top:26px">' + empty("Nothing to check out yet.", "Your cart is empty. Add a few things from the shop first.", shopBtn) + "</div></div>"; return; }
+      var subtotal = sum(items), fee = p.method === "pickup" ? 0 : c.deliveryFee, min = c.zone ? c.zone.minimumTotal : 0, short = Math.max(0, min - subtotal), a = me.address;
+      om.innerHTML = '<div class="om">' + preview + steps(1) +
+        '<header class="om__head"><span class="eyebrow"><img src="' + ICONS + 'delivery-truck.webp" alt="" width="20" height="20">Check out</span><h1>Almost <em>there.</em></h1><p class="muted">Carefully check your items and preferences before placing your order. Payment is cash on delivery.</p></header>' +
+        '<div class="om__grid co"><section class="om__card co__items" aria-labelledby="co-items"><div class="om__cardhead"><h2 id="co-items">Your items</h2><a class="btn btn--sm btn--ghost" href="' + link("shop-cart") + '">Go to cart</a></div>' +
+        '<table class="cotable"><thead><tr><th scope="col"><span class="sr-only">Photo</span></th><th scope="col">Product</th><th scope="col" class="num">Price × Qty</th><th scope="col" class="num">Subtotal</th></tr></thead><tbody>' +
+        items.map(function (it) {
+          return '<tr><td class="cotable__img">' + imgFor(it) + '</td><td><a href="' + ROOT + esc(it.url) + '" class="cotable__name">' + esc(it.name) + "</a><small>" + esc(it.variant) + "</small></td>" +
+            '<td class="num" data-label="Price × Qty">' + money(it.price) + " × " + it.qty + '</td><td class="num" data-label="Subtotal"><b>' + money(it.price * it.qty) + "</b></td></tr>";
+        }).join("") + "</tbody><tfoot>" +
+        '<tr><th scope="row" colspan="3">Items (' + nItems(items) + ')</th><td class="num">' + money(subtotal) + "</td></tr>" +
+        '<tr><th scope="row" colspan="3">Delivery fee</th><td class="num">' + (p.method === "pickup" ? "Pickup" : fee ? money(fee) : "Free") + "</td></tr>" +
+        '<tr class="cotable__total"><th scope="row" colspan="3">Total, cash on delivery</th><td class="num">' + money(subtotal + fee) + "</td></tr></tfoot></table>" +
+        (min > 0 ? '<div class="comin' + (short > 0 ? "" : " is-met") + '" role="status"><div class="comin__bar"><span style="width:' + Math.min(100, subtotal / min * 100) + '%"></span></div><p>' +
+          (short > 0 ? "Your zone has a <b>" + money(min) + "</b> minimum. Add <b>" + money(short) + '</b> more to check out. <a href="' + link("shop") + '">Keep shopping</a>' : "You've reached your zone's " + money(min) + " minimum.") + "</p></div>" : "") +
+        (p.method === "delivery" ? (a ? '<p class="co__addr">Delivering to <b>' + esc(a.streetNo + " " + a.street + (a.apt ? ", " + a.apt : "") + ", " + a.city + ", " + a.state + " " + a.zip) + '</b>. <a href="' + link("account/address") + '">Change address</a></p>'
+                                     : '<p class="co__addr">No delivery address on your account yet. <a href="' + link("account/address") + '">Add your address</a></p>') : "") +
+        '</section><aside class="om__sum"><form class="sum co__prefs form" novalidate><h2>Order <em>preferences</em></h2>' + prefsBox(c, p, errs) +
+        (msg ? '<p class="form__note" role="alert">' + msg + "</p>" : "") +
+        '<button class="btn btn--wide" type="submit">Place order · ' + money(subtotal + fee) + " " + svg.arrow + "</button>" +
+        "<p class=\"om__fine\">You can change your order until your zone's cut-off. If no one's home and there's no cooler with payment, 50% of the order is added to your next one. <a href=\"" + link("where-we-deliver") + '#delivery-day">Delivery details</a></p></form></aside></div></div>';
+    };
+    bindPrefs(om, p, function (k) { errs = {}; msg = ""; if (k !== "note") renderCo(); });
+    om.addEventListener("submit", function (e) {
+      e.preventDefault();
+      errs = checkPrefs(p);
+      var min = c.zone ? c.zone.minimumTotal : 0, short = Math.max(0, min - sum(items));
+      if (Object.keys(errs).length) { renderCo(); return; }
+      if (short > 0) { msg = "Minimum order price is " + money(min) + ". Add " + money(short) + " more to your cart to meet it."; renderCo(); return; }
+      var loc = c.pickupLocations.filter(function (l) { return l.id === p.pickupLocationId; })[0];
+      var r = UM.orders.create({ items: items, method: p.method, deliveryDay: p.method === "delivery" ? p.deliveryDay : "", pickupLocation: p.method === "pickup" ? loc : null,
+        recurring: p.recurring, note: p.note.trim(), deliveryFee: p.method === "pickup" ? 0 : c.deliveryFee });
+      if (r.error) { msg = esc(r.error); renderCo(); return; }
+      setCart([]); LS.del("um_editing");
+      location.href = link("order") + "?id=" + encodeURIComponent(r.order.id) + "&new=1";
+    });
+    renderCo();
+  }
+
+  /* one order */
   if (MODE === "order") {
-    var ov = $("[data-order-view]"), o = qs("id") ? findOrder(qs("id")) : allOrders()[0];
-    if (!o) { ov.innerHTML = '<div class="om__card">' + empty("No order to show.", "Once you check out, your order appears here.", shopBtn) + "</div>"; }
+    var o = qs("id") ? UM.orders.get(qs("id")) : UM.orders.list(1).orders[0];
+    if (!o) { om.innerHTML = '<div class="om">' + preview + '<div class="om__card">' + empty("No order to show.", "Once you check out, your order appears here.", shopBtn) + "</div></div>"; }
     else {
-      var fresh = qs("new") && o.status === "open", first = ((o.contact || {}).name || "").split(" ")[0];
-      ov.innerHTML =
-        '<header class="om__head' + (fresh ? " om__head--yay" : "") + '">' +
-        (fresh ? '<span class="om__yay">' + svg.check + "</span>" : "") +
-        '<span class="eyebrow">Order ' + esc(o.id) + (o.sample ? " · sample" : "") + "</span>" +
-        "<h1>" + (fresh ? "Thank you" + (first ? ", " + esc(first) : "") + "! <em>It's in.</em>" : "Order <em>" + esc(o.id) + ".</em>") + "</h1>" +
-        '<p class="muted">' + (fresh ? "We have your order. You'll get a confirmation email once it's confirmed for your delivery day. Until then you can still change it." : "Placed " + fmtDate(o.placed) + ".") + "</p></header>" +
+      var fresh = qs("new") && o.status === "open";
+      om.innerHTML = '<div class="om">' + preview + steps(2) +
+        '<header class="om__head' + (fresh ? " om__head--yay" : "") + '">' + (fresh ? '<span class="om__yay">' + svg.check + "</span>" : "") +
+        '<span class="eyebrow">Order #' + esc(o.id) + (o.sample ? " · sample" : "") + "</span>" +
+        "<h1>" + (fresh ? "Thank you" + (me.firstName ? ", " + esc(me.firstName) : "") + "! <em>It's in.</em>" : "Order <em>#" + esc(o.id) + ".</em>") + "</h1>" +
+        '<p class="muted">' + (fresh ? "We have your order" + (o.deliveryDay ? " for " + esc(o.deliveryDay) : "") + (o.recurring ? ", and it repeats every delivery day" : "") + ". You can still change it until your zone's cut-off." : "Placed " + fmtDate(o.placed) + ".") + "</p></header>" +
         tracker(o.status) +
-        '<div class="om__grid"><section class="om__card"><div class="om__cardhead"><h2>' + nItems(o.items) + " item" + (nItems(o.items) === 1 ? "" : "s") + "</h2>" + chip(o.status) + "</div>" + lines(o.items, false) + "</section>" +
-        '<aside class="om__sum">' + summary(o.items, details(o) +
-          (o.status === "open" ? '<a class="btn btn--wide" href="' + link("edit-order") + "?id=" + encodeURIComponent(o.id) + '">View &amp; edit order ' + svg.arrow + "</a>" : '<button class="btn btn--wide" type="button" data-reorder>Order these again ' + svg.arrow + "</button>") +
-          '<a class="om__keep" href="' + link("order-history") + '">All my orders</a>') + "</aside></div>";
-      var rb = $("[data-reorder]", ov);
+        '<div class="om__grid"><section class="om__card"><div class="om__cardhead"><h2>' + nItems(o.items) + " item" + (nItems(o.items) === 1 ? "" : "s") + '</h2><span class="om__chips">' + typeChip(o.recurring) + chip(o.status) + "</span></div>" + lines(o.items, false) + "</section>" +
+        '<aside class="om__sum">' + summary(o.items, o.deliveryFee, details(o) +
+          (o.editable ? '<a class="btn btn--wide" href="' + link("edit-order") + "?id=" + encodeURIComponent(o.id) + '">View &amp; edit order ' + svg.arrow + "</a>" : '<button class="btn btn--wide" type="button" data-reorder>Order these again ' + svg.arrow + "</button>") +
+          '<a class="om__keep" href="' + link("order-history") + '">All my orders</a>') + "</aside></div></div>";
+      var rb = $("[data-reorder]", om);
       if (rb) rb.addEventListener("click", function () { setCart(addItems(getCart(), o.items)); location.href = link("shop-cart"); });
     }
   }
 
-  /* history */
-  if (MODE === "history") {
-    var hb = $("[data-history]"), filter = "all";
-    var renderHist = function () {
-      var list = allOrders().filter(function (o) {
-        return filter === "all" || (filter === "open" ? ["open", "closed", "confirmed"].indexOf(o.status) > -1 : ["delivered", "canceled"].indexOf(o.status) > -1);
-      });
-      if (!list.length) { hb.innerHTML = '<div class="om__card">' + empty("No orders here yet.", "When you place an order, it shows up here.", shopBtn) + "</div>"; return; }
-      hb.innerHTML = list.map(function (o) {
-        var view = link("order") + "?id=" + encodeURIComponent(o.id), edit = link("edit-order") + "?id=" + encodeURIComponent(o.id);
-        return '<article class="ocard"><div class="ocard__top"><div><h2><a href="' + view + '">Order ' + esc(o.id) + "</a></h2>" +
-          '<p class="muted">Placed ' + fmtDate(o.placed) + " · " + (o.method === "pickup" ? "Pickup" : "Delivery") + (o.day ? " " + fmtDate(o.day) : "") + " · " + nItems(o.items) + " item" + (nItems(o.items) === 1 ? "" : "s") + (o.sample ? ' · <span class="ocard__sample">sample</span>' : "") + "</p></div>" + chip(o.status) + "</div>" +
-          '<div class="ocard__mid"><div class="ocard__thumbs">' + o.items.slice(0, 5).map(function (it) { return '<span title="' + esc(it.name) + '">' + imgFor(it) + "</span>"; }).join("") +
-          (o.items.length > 5 ? "<span class=\"ocard__more\">+" + (o.items.length - 5) + "</span>" : "") + "</div>" +
-          '<div class="ocard__tot"><small>Total</small><b>' + money(sum(o.items)) + "</b></div></div>" +
-          '<div class="ocard__act"><a class="btn btn--sm btn--ghost" href="' + view + '">View order</a>' +
-          (o.status === "open" ? '<a class="btn btn--sm" href="' + edit + '">Edit order</a>' : '<button class="btn btn--sm" type="button" data-reorder="' + esc(o.id) + '">Order again</button>') + "</div></article>";
-      }).join("");
-    };
-    $$("[data-filter]").forEach(function (b) {
-      b.addEventListener("click", function () {
-        filter = b.getAttribute("data-filter");
-        $$("[data-filter]").forEach(function (x) { x.classList.toggle("is-active", x === b); });
-        renderHist();
-      });
-    });
-    hb.addEventListener("click", function (e) {
-      var r = e.target.closest("[data-reorder]"); if (!r) return;
-      var o = findOrder(r.getAttribute("data-reorder"));
-      setCart(addItems(getCart(), o.items)); location.href = link("shop-cart");
-    });
-    renderHist();
-  }
-
   /* view & edit */
   if (MODE === "edit") {
-    var ev = $("[data-edit-view]"), oid = qs("id") || (getOrders().filter(function (x) { return x.status === "open"; })[0] || {}).id, ord = oid && findOrder(oid);
-    if (!ord) { ev.innerHTML = '<div class="om__card">' + empty("No open order to edit.", "Open orders show up here. Find one in your order history.", '<a class="btn" href="' + link("order-history") + '">Order history ' + svg.arrow + "</a>") + "</div>"; return; }
-    var draft = JSON.parse(JSON.stringify(ord)), editable = ord.status === "open" && !ord.sample, armed = false;
-    var renderEdit = function (msg) {
-      ev.innerHTML =
-        '<header class="om__head"><span class="eyebrow">Order ' + esc(draft.id) + (draft.sample ? " · sample" : "") + "</span>" +
-        "<h1>" + (editable ? "View &amp; <em>edit.</em>" : "Order <em>" + esc(draft.id) + ".</em>") + "</h1>" +
-        '<p class="muted">' + (editable ? "Change quantities, remove items, add more, or update your notes. Changes are possible until the order is closed." : "This order is " + (STATUS[draft.status] || [draft.status])[0].toLowerCase() + ", so it can't be changed online. To change it, call or text 973-413-9585 or email info@uddermilk.com.") + "</p></header>" +
-        tracker(draft.status) + (msg ? '<p class="om__msg" role="status">' + msg + "</p>" : "") +
-        '<div class="om__grid"><section class="om__card"><div class="om__cardhead"><h2>' + (draft.items.length ? nItems(draft.items) + " item" + (nItems(draft.items) === 1 ? "" : "s") : "No items") + "</h2>" + chip(draft.status) + "</div>" +
+    var id = qs("id") || (UM.orders.list(1).orders.filter(function (x) { return x.editable; })[0] || {}).id;
+    var saved = id && UM.orders.get(id);
+    var tabs = '<nav class="om__tabs" aria-label="Your account"><a href="' + link("account") + '">My account</a><a href="' + link("order-history") + '">Order history</a><a href="' + link("shop-cart") + '">Cart</a></nav>';
+    if (!saved) { om.innerHTML = '<div class="om">' + preview + tabs + '<div class="om__card">' + empty("No open order to edit.", "Open orders show up here. Find one in your order history.", '<a class="btn" href="' + link("order-history") + '">Order history ' + svg.arrow + "</a>") + "</div></div>"; return; }
+    var cond = UM.conditions(), armed = false, emsg = qs("added") ? "Added. The new items are in your order." : "", eerr = {};
+    var draft = JSON.parse(JSON.stringify(saved));
+    var ep = { recurring: !!saved.recurring, method: saved.method || "delivery", deliveryDay: saved.deliveryDay || "", pickupLocationId: saved.pickupLocation ? saved.pickupLocation.id : "", note: saved.note || "" };
+    var renderEdit = function () {
+      var editable = !!saved.editable, fee = ep.method === "pickup" ? 0 : saved.method === "pickup" ? cond.deliveryFee : saved.deliveryFee;
+      om.innerHTML = '<div class="om">' + preview + tabs +
+        '<header class="om__head"><span class="eyebrow">Order #' + esc(draft.id) + (draft.sample ? " · sample" : "") + "</span>" +
+        "<h1>" + (editable ? "View &amp; <em>edit.</em>" : "Order <em>#" + esc(draft.id) + ".</em>") + "</h1>" +
+        '<p class="muted">' + (editable ? "Change quantities, remove items, add more, or change your delivery settings. Changes are possible until your zone's cut-off." : "This order is " + (STATUS[saved.status] || [saved.status])[0].toLowerCase() + ", so it can't be changed online. To change it, call or text 973-413-9585 or email info@uddermilk.com.") + "</p></header>" +
+        tracker(saved.status) + (emsg ? '<p class="om__msg" role="status">' + emsg + "</p>" : "") +
+        '<div class="om__grid"><section class="om__card"><div class="om__cardhead"><h2>' + (draft.items.length ? nItems(draft.items) + " item" + (nItems(draft.items) === 1 ? "" : "s") : "No items") + '</h2><span class="om__chips">' + typeChip(saved.recurring) + chip(saved.status) + "</span></div>" +
         (draft.items.length ? lines(draft.items, editable) : '<p class="muted om__none">Every item is removed. Save to cancel this order, or add more items.</p>') +
-        (editable ? '<div class="om__addmore"><button class="btn btn--sm btn--ghost" type="button" data-addmore>+ Add more items</button></div>' +
-          '<div class="om__editfs form"><h3>Delivery</h3><div class="choice choice--sm">' +
-          '<label class="choice__opt"><input type="radio" name="em" value="delivery"' + (draft.method !== "pickup" ? " checked" : "") + "><span><b>Deliver to my door</b></span></label>" +
-          '<label class="choice__opt"><input type="radio" name="em" value="pickup"' + (draft.method === "pickup" ? " checked" : "") + "><span><b>I'll pick it up</b></span></label></div>" +
-          '<div class="field"><label for="ed-note">Notes for your driver <span class="opt">optional</span></label><textarea id="ed-note" rows="3" data-note placeholder="Where\'s your cooler? Anything we should know?">' + esc(draft.note || "") + "</textarea></div></div>" : "") +
-        "</section>" +
-        '<aside class="om__sum">' + summary(draft.items, details(draft) +
-          (editable ? '<button class="btn btn--wide" type="button" data-save>Save changes ' + svg.check + "</button>" +
-            '<button class="btn btn--wide btn--ghost om__cancel" type="button" data-cancel>' + (armed ? "Tap again to cancel the order" : "Cancel this order") + "</button>"
-            : '<button class="btn btn--wide" type="button" data-reorder>Order these again ' + svg.arrow + "</button>") +
-          '<a class="om__keep" href="' + link("order-history") + '">Back to my orders</a>') + "</aside></div>";
+        (editable ? '<div class="om__addmore"><button class="btn btn--sm btn--ghost" type="button" data-addmore>+ Add more items</button></div><div class="om__editfs form"><h3>Order settings</h3>' + prefsBox(cond, ep, eerr) + "</div>" : "") +
+        '</section><aside class="om__sum">' + summary(draft.items, fee, details(draft) +
+          (editable ? '<button class="btn btn--wide" type="button" data-save>Save changes ' + svg.check + '</button><button class="btn btn--wide btn--ghost om__cancel" type="button" data-cancel>' + (armed ? "Tap again to cancel the order" : "Cancel this order") + "</button>"
+                    : '<button class="btn btn--wide" type="button" data-reorder>Order these again ' + svg.arrow + "</button>") +
+          '<a class="om__keep" href="' + link("order-history") + '">Back to my orders</a>') + "</aside></div></div>";
     };
-    bindLines(ev, draft.items, function () { renderEdit(); });
-    ev.addEventListener("change", function (e) {
-      if (e.target.name === "em") draft.method = e.target.value;
-    });
-    ev.addEventListener("input", function (e) { if (e.target.matches("[data-note]")) draft.note = e.target.value; });
-    ev.addEventListener("click", function (e) {
+    bindLines(om, function () { return draft.items; }, function () { renderEdit(); });
+    bindPrefs(om, ep, function (k) { eerr = {}; if (k !== "note") renderEdit(); });
+    om.addEventListener("click", function (e) {
       if (e.target.closest("[data-save]")) {
-        if (!draft.items.length) { draft.status = "canceled"; editable = false; }
-        saveOrder(draft); ord = JSON.parse(JSON.stringify(draft));
-        renderEdit(draft.status === "canceled" ? "Every item was removed, so the order is canceled." : "Saved. Your order is updated.");
+        if (draft.items.length) { eerr = checkPrefs(ep); if (Object.keys(eerr).length) { renderEdit(); return; } }
+        var loc = cond.pickupLocations.filter(function (l) { return l.id === ep.pickupLocationId; })[0];
+        var r = UM.orders.update(draft.id, { items: draft.items, method: ep.method, deliveryDay: ep.method === "delivery" ? ep.deliveryDay : "", pickupLocation: ep.method === "pickup" ? loc : null,
+          recurring: ep.recurring, note: ep.note.trim(), deliveryFee: ep.method === "pickup" ? 0 : cond.deliveryFee });
+        if (r.error) emsg = esc(r.error);
+        else { saved = r.order; draft = JSON.parse(JSON.stringify(saved)); emsg = saved.status === "canceled" ? "Every item was removed, so the order is canceled." : "Saved. Your order is updated."; }
+        renderEdit();
       } else if (e.target.closest("[data-cancel]")) {
         if (!armed) { armed = true; renderEdit(); setTimeout(function () { if (armed) { armed = false; renderEdit(); } }, 5000); return; }
-        draft.status = "canceled"; editable = false; armed = false; saveOrder(draft); renderEdit("Your order is canceled.");
+        var rc = UM.orders.update(draft.id, { status: "canceled" });
+        armed = false; if (!rc.error) { saved = rc.order; draft = JSON.parse(JSON.stringify(saved)); emsg = "Your order is canceled."; } else emsg = esc(rc.error);
+        renderEdit();
       } else if (e.target.closest("[data-addmore]")) {
-        saveOrder(draft); LS.set("um_editing", draft.id); location.href = link("shop");
+        LS.set("um_editing", draft.id); location.href = link("shop");
       } else if (e.target.closest("[data-reorder]")) {
         setCart(addItems(getCart(), draft.items)); location.href = link("shop-cart");
       }
     });
-    renderEdit(qs("added") ? "Added. The new items are in your order." : "");
+    renderEdit();
   }
 })();
