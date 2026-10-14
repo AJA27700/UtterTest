@@ -1872,3 +1872,54 @@ p.about-quote--green { display: block; margin: 4px 0 12px; border-left: 0; text-
 
 /* static site: the "back in stock" list is hidden until its tab is picked */
 .wn__grid[hidden] { display: none; }
+
+/* ===== desktop + tablet: categories w/ 8+ products get 3-across tiles (like on phones). click one -> it pops up ===== */
+@media (min-width: 641px) {
+  .products--tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(12px, 1.6vw, 20px); align-items: start; }
+  .products--tiles .product:not(.is-open) { display: flex; flex-direction: column; gap: 12px; height: 100%; padding: 12px 12px 16px; border-radius: 24px; cursor: pointer; transition: transform .3s var(--spring), box-shadow .3s; }
+  .products--tiles .product:not(.is-open):hover { transform: translateY(-4px); box-shadow: inset 0 0 0 1px var(--line), 0 22px 40px -26px rgba(31, 46, 34, .5); }
+  .products--tiles .product:not(.is-open) .product__media { position: static; width: 100%; }
+  .products--tiles .product:not(.is-open) .ph { border-radius: 16px; }
+  .products--tiles .product:not(.is-open) .ph__zoom { pointer-events: none; }
+  .products--tiles .product:not(.is-open) .product__body h2 { font-size: clamp(17px, 1.45vw, 21px); line-height: 1.15; margin: 0; padding: 0 4px; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden; }
+  .products--tiles .product:not(.is-open) .product__from { display: block; margin: 6px 0 0; padding: 0 4px; font-weight: 750; font-size: 15px; color: var(--pasture); }
+  .products--tiles .product.is-allout:not(.is-open) .product__from { color: var(--ink-3); }
+  .products--tiles .product:not(.is-open) :is(.thumbs, .tags, .product__desc, .more-btn, .product__long, .variants, .product__foot, .sheet-x) { display: none !important; }
+
+  /* the opened product: centered pop-up with the normal product layout inside */
+  .products--tiles .product.is-open { position: fixed; z-index: 95; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(920px, calc(100vw - 48px)); max-height: calc(100vh - 64px); max-height: calc(100dvh - 64px); overflow-y: auto; overscroll-behavior: contain; padding: clamp(24px, 3vw, 36px); box-shadow: 0 40px 90px -20px rgba(31, 46, 34, .55); animation: tile-pop .28s var(--ease); }
+  .products--tiles .product.is-open .product__media { position: static; }
+  .products--tiles .product.is-open .product__from { display: block; margin: 2px 0 8px; font-weight: 750; font-size: 16px; color: var(--pasture); }
+  .products--tiles .product.is-open .sheet-x { display: grid; place-items: center; position: absolute; top: 12px; right: 14px; width: 42px; height: 42px; border-radius: 50%; background: var(--cream-2); font-size: 26px; line-height: 1; color: var(--ink); cursor: pointer; z-index: 2; }
+  .products--tiles .product.is-open .sheet-x:hover { background: var(--line); }
+  .products--tiles .product.is-open .product__body h2 { padding-right: 48px; }
+  .sheet-veil { display: block; position: fixed; inset: 0; z-index: 90; background: rgba(31, 46, 34, .45); animation: veil-in .25s ease; }
+  .sheet-veil[hidden] { display: none; }
+  body.sheet-open { overflow: hidden; }
+  @keyframes tile-pop { from { opacity: 0; transform: translate(-50%, -47%) scale(.97); } to { opacity: 1; transform: translate(-50%, -50%); } }
+  @keyframes veil-in { from { opacity: 0; } to { opacity: 1; } }
+}
+@media (min-width: 641px) and (max-width: 900px) {
+  .products--tiles .product.is-open { width: calc(100vw - 32px); }
+}
+/* "in stock only" has to win over the tile display rules (phones + desktop) */
+.instock-only .products--grid .product.is-allout, .instock-only .products--tiles .product.is-allout { display: none !important; }
+
+/* ===== hero: the logo next to the cow, a bit smaller (phones keep their size) ===== */
+@media (min-width: 641px) {
+  .hero--photo .lockup__logo { width: clamp(210px, 26vw, 450px); }
+}
+
+/* ===== where we deliver: delivery fee maps w/ tabs ===== */
+.maps { margin: 0 0 14px; }
+.maps__tabs { margin: 0 0 14px; }
+.maps__panel[hidden] { display: none; }
+.maps__panel > a { display: flex; justify-content: center; background: #EEF3F6; }
+.maps__panel > a img { width: auto; max-width: 100%; height: auto; max-height: 82vh; }
+.maps__panel--tall > a img { max-height: 90vh; }
+@media (max-width: 640px) {
+  .maps__tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin-inline: calc(var(--gutter) * -1); padding-inline: var(--gutter); }
+  .maps__tabs::-webkit-scrollbar { display: none; }
+  .maps__tabs .chip { flex: none; }
+  .maps__panel > a img { max-height: none; }
+}

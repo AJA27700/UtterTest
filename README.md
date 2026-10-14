@@ -5,7 +5,7 @@ Plain HTML, CSS and JavaScript. No Node, nothing to install. GitHub Pages publis
 ## Things you can change on GitHub
 
 - **Homepage announcements** (the box under the cow): edit `announcements.md` in this folder. Each announcement starts with `## Headline`, then the text. Optional lines right under the headline: `Date: Oct 13` and `Link: /shop | Shop now`. Delete every `##` section and the box goes away.
-- **Delivery map** (Where We Deliver page): upload the map as `assets/img/where-we-deliver.png`. Until then a "[map placeholder]" box shows.
+- **Delivery maps** (Where We Deliver page): the images are in `assets/img/maps/`. To update one, upload a new image with the same file name (for example `new-jersey.webp`).
 
 GitHub Pages updates the site a minute or two after you commit.
 

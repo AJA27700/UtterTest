@@ -111,7 +111,8 @@
     })();
   });
 
-  /* ---------- phones: product tiles open a bottom sheet ---------- */
+  /* ---------- product tiles open up when tapped: a bottom sheet on phones, a pop-up on bigger screens ----------
+     phones: lists with 7+ products (.products--grid). desktop/tablet: lists with 8+ (.products--tiles) */
   var phone = window.matchMedia("(max-width: 640px)");
   var veil = null, openTile = null;
   function closeSheet() {
@@ -127,15 +128,14 @@
     tile.scrollTop = 0;
     var x = $("[data-sheet-close]", tile); if (x) x.focus({ preventScroll: true });
   }
-  $$(".products--grid .product").forEach(function (p) { p.setAttribute("tabindex", "-1"); });
+  $$(".products--grid .product, .products--tiles .product").forEach(function (p) { p.setAttribute("tabindex", "-1"); });
   doc.addEventListener("click", function (e) {
     if (e.target.closest("[data-sheet-close]")) { e.preventDefault(); closeSheet(); return; }
-    if (!phone.matches) return;
-    var tile = e.target.closest(".products--grid .product");
+    var tile = e.target.closest(phone.matches ? ".products--grid .product" : ".products--tiles .product");
     if (tile && !tile.classList.contains("is-open")) { e.preventDefault(); e.stopPropagation(); openSheet(tile); }
   }, true);
   doc.addEventListener("keydown", function (e) { if (e.key === "Escape") closeSheet(); });
-  phone.addEventListener && phone.addEventListener("change", function () { if (!phone.matches) closeSheet(); });
+  phone.addEventListener && phone.addEventListener("change", closeSheet);   // switching phone <-> desktop layout: just close it
 
 
   /* ---------- shared bits for the account + order pages (members.js uses these too) ---------- */
@@ -327,7 +327,7 @@
         }).join("") + "</tbody><tfoot>" +
         '<tr><th scope="row" colspan="3">Items (' + nItems(items) + ')</th><td class="num">' + money(subtotal) + "</td></tr>" +
         '<tr><th scope="row" colspan="3">Delivery fee</th><td class="num">' + (p.method === "pickup" ? "Pickup" : fee ? money(fee) : "Free") + "</td></tr>" +
-        '<tr class="cotable__total"><th scope="row" colspan="3">Total, cash on delivery</th><td class="num">' + money(subtotal + fee) + "</td></tr></tfoot></table>" +
+        '<tr class="cotable__total"><th scope="row" colspan="3">Total, paid on delivery (cash, Zelle or Venmo)</th><td class="num">' + money(subtotal + fee) + "</td></tr></tfoot></table>" +
         (min > 0 ? '<div class="comin' + (short > 0 ? "" : " is-met") + '" role="status"><div class="comin__bar"><span style="width:' + Math.min(100, subtotal / min * 100) + '%"></span></div><p>' +
           (short > 0 ? "Your zone has a <b>" + money(min) + "</b> minimum. Add <b>" + money(short) + '</b> more to check out. <a href="' + link("shop") + '">Keep shopping</a>' : "You've reached your zone's " + money(min) + " minimum.") + "</p></div>" : "") +
         (p.method === "delivery" ? (a ? '<p class="co__addr">Delivering to <b>' + esc(a.streetNo + " " + a.street + (a.apt ? ", " + a.apt : "") + ", " + a.city + ", " + a.state + " " + a.zip) + '</b>. <a href="' + link("account/address") + '">Change address</a></p>'
