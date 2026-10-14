@@ -101,15 +101,17 @@
       var it = { key: f.getAttribute("data-id") + "|" + opt.value, name: f.getAttribute("data-name"), variant: opt.value,
                  price: parseFloat(opt.getAttribute("data-price")), qty: q, url: f.getAttribute("data-url"),
                  img: f.getAttribute("data-img"), icon: f.getAttribute("data-icon") };
-      setCart(addItems(getCart(), [it]));
       f.q.value = 1;
-      var btn = $("button[type=submit]", f);
-      btn.classList.add("is-added");
-      setTimeout(function () { btn.classList.remove("is-added"); }, 1200);
-      if (cartLink) { cartLink.classList.remove("is-bump"); void cartLink.offsetWidth; cartLink.classList.add("is-bump"); }
-      toast('<span class="toast__ok">' + svg.check + '</span><span><b>' + esc(it.name) + '</b> ' + esc(it.variant) + ' × ' + q + ' added</span><a href="' + link("shop-cart") + '">View cart</a>');
+      addToCart(it, $("button[type=submit]", f));
     })();
   });
+  // puts an item in the cart + the little "added" feedback (used by the forms and the quick-add buttons)
+  function addToCart(it, btn) {
+    setCart(addItems(getCart(), [it]));
+    if (btn) { btn.classList.add("is-added"); setTimeout(function () { btn.classList.remove("is-added"); }, 1200); }
+    if (cartLink) { cartLink.classList.remove("is-bump"); void cartLink.offsetWidth; cartLink.classList.add("is-bump"); }
+    toast('<span class="toast__ok">' + svg.check + '</span><span><b>' + esc(it.name) + '</b> ' + esc(it.variant) + ' × ' + it.qty + ' added</span><a href="' + link("shop-cart") + '">View cart</a>');
+  }
 
   /* ---------- product tiles open up when tapped: a bottom sheet on phones, a pop-up on bigger screens ----------
      phones: lists with 7+ products (.products--grid). desktop/tablet: lists with 8+ (.products--tiles) */
@@ -130,13 +132,74 @@
   }
   $$(".products--grid .product, .products--tiles .product").forEach(function (p) { p.setAttribute("tabindex", "-1"); });
   doc.addEventListener("click", function (e) {
+    if (openPick && !e.target.closest(".qpick")) { e.preventDefault(); e.stopPropagation(); closePick(); return; }   // tap outside the size list = just close it
+    if (e.target.closest(".qadd, .qpick")) return;   // quick add stuff is handled below, dont open the tile
     if (e.target.closest("[data-sheet-close]")) { e.preventDefault(); closeSheet(); return; }
     var tile = e.target.closest(phone.matches ? ".products--grid .product" : ".products--tiles .product");
     if (tile && !tile.classList.contains("is-open")) { e.preventDefault(); e.stopPropagation(); openSheet(tile); }
   }, true);
-  doc.addEventListener("keydown", function (e) { if (e.key === "Escape") closeSheet(); });
+  doc.addEventListener("keydown", function (e) { if (e.key === "Escape") { if (openPick) closePick(); else closeSheet(); } });
   phone.addEventListener && phone.addEventListener("change", closeSheet);   // switching phone <-> desktop layout: just close it
 
+  /* ---------- quick add: the + button on the 3-across tiles and on the homepage "what's new" cards ----------
+     one size -> straight into the cart. more than one -> a small size list pops up (over the tile on desktop,
+     from the bottom on phones), pick one and it's added. no need to open the product */
+  var openPick = null, pickFrom = null;
+  function itemFrom(f, opt) {
+    return { key: f.getAttribute("data-id") + "|" + opt.value, name: f.getAttribute("data-name"), variant: opt.value,
+             price: parseFloat(opt.getAttribute("data-price")), qty: 1, url: f.getAttribute("data-url"),
+             img: f.getAttribute("data-img"), icon: f.getAttribute("data-icon") };
+  }
+  function closePick() {
+    if (!openPick) return;
+    openPick.remove(); openPick = null; doc.body.classList.remove("qpick-open");
+    if (pickFrom) { pickFrom.setAttribute("aria-expanded", "false"); pickFrom.focus({ preventScroll: true }); pickFrom = null; }
+  }
+  function openPickFor(btn, f) {
+    closePick();
+    var opts = Array.prototype.slice.call(f.v.options);
+    var box = doc.createElement("div");
+    box.className = "qpick" + (phone.matches ? " qpick--sheet" : "");
+    box.setAttribute("role", "dialog"); box.setAttribute("aria-label", "Pick a size of " + f.getAttribute("data-name"));
+    box.innerHTML = '<div class="qpick__head"><span><small>Pick a size</small><b>' + esc(f.getAttribute("data-name")) + '</b></span><button class="qpick__x" type="button" aria-label="Close">×</button></div>' +
+      '<ul class="qpick__list">' + opts.map(function (o, i) {
+        return '<li><button type="button" data-qpick="' + i + '"><span>' + esc(o.value) + '</span><b>' + money(parseFloat(o.getAttribute("data-price"))) + "</b></button></li>";
+      }).join("") + "</ul>";
+    box.addEventListener("click", function (e) {
+      if (e.target.closest(".qpick__x")) { closePick(); return; }
+      var b = e.target.closest("[data-qpick]");
+      if (!b) return;
+      closePick();
+      addToCart(itemFrom(f, opts[+b.getAttribute("data-qpick")]), btn);
+    });
+    (phone.matches ? doc.body : btn.closest(".product")).appendChild(box);
+    if (phone.matches) doc.body.classList.add("qpick-open");
+    openPick = box; pickFrom = btn; btn.setAttribute("aria-expanded", "true");
+    var first = $("[data-qpick]", box); if (first) first.focus({ preventScroll: true });
+  }
+  // the + on each tile (added here so the category pages dont need changing)
+  $$(".products--tiles .product, .products--grid .product").forEach(function (p) {
+    var f = $("form[data-addcart]", p), media = $(".product__media", p);
+    if (!f || !media || !f.v || !f.v.options.length) return;
+    var many = f.v.options.length > 1, name = f.getAttribute("data-name");
+    var b = doc.createElement("button");
+    b.type = "button"; b.className = "qadd";
+    b.setAttribute("aria-label", many ? "Quick add " + name + ": pick a size" : "Add " + name + " to cart");
+    if (many) b.setAttribute("aria-haspopup", "dialog");
+    b.innerHTML = svg.plus;
+    media.appendChild(b);
+  });
+  doc.addEventListener("click", function (e) {
+    var b = e.target.closest(".qadd");
+    if (!b) return;
+    e.preventDefault();
+    var data = b.getAttribute("data-qadd-item");
+    if (data) { try { addToCart(JSON.parse(data), b); } catch (err) {} return; }   // what's new card: one size, baked into the page
+    var f = $("form[data-addcart]", b.closest(".product"));
+    if (!f) return;
+    if (f.v.options.length > 1) openPickFor(b, f); else addToCart(itemFrom(f, f.v.options[0]), b);
+  });
+  phone.addEventListener && phone.addEventListener("change", closePick);
 
   /* ---------- shared bits for the account + order pages (members.js uses these too) ---------- */
   var UM = window.UM;
