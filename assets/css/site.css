@@ -1969,3 +1969,13 @@ p.about-quote--green { display: block; margin: 4px 0 12px; border-left: 0; text-
 body.qpick-open { overflow: hidden; }
 body.qpick-open .cartbtn { display: none; }
 @keyframes qpick-up { from { transform: translateY(100%); } to { transform: none; } }
+
+/* "11 options" tag under the price on 3-across tiles (hidden everywhere else, the full list shows there) */
+.product__opts { display: none; }
+@media (min-width: 641px) {
+  .products--tiles .product:not(.is-open) .product__opts { display: inline-flex; align-items: center; gap: 5px; align-self: flex-start; margin: 6px 0 0 4px; padding: 3px 9px 3px 7px; border-radius: 999px; background: var(--cream-2); color: var(--ink-2); font: 700 12px/1.2 var(--font-body); }
+}
+@media (max-width: 640px) {
+  .products--grid .product:not(.is-open) .product__opts { display: inline-flex; align-items: center; gap: 4px; margin: 4px 0 0 2px; padding: 2px 7px 2px 5px; border-radius: 999px; background: var(--cream-2); color: var(--ink-2); font: 700 10.5px/1.2 var(--font-body); }
+}
+.product__opts::before { content: ""; width: 9px; height: 9px; flex: none; background: currentColor; opacity: .55; -webkit-mask: radial-gradient(circle, #000 1.6px, transparent 1.9px) 0 0 / 4.5px 4.5px; mask: radial-gradient(circle, #000 1.6px, transparent 1.9px) 0 0 / 4.5px 4.5px; }

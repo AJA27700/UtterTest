@@ -160,8 +160,8 @@
     var opts = Array.prototype.slice.call(f.v.options);
     var box = doc.createElement("div");
     box.className = "qpick" + (phone.matches ? " qpick--sheet" : "");
-    box.setAttribute("role", "dialog"); box.setAttribute("aria-label", "Pick a size of " + f.getAttribute("data-name"));
-    box.innerHTML = '<div class="qpick__head"><span><small>Pick a size</small><b>' + esc(f.getAttribute("data-name")) + '</b></span><button class="qpick__x" type="button" aria-label="Close">×</button></div>' +
+    box.setAttribute("role", "dialog"); box.setAttribute("aria-label", "Pick an option for " + f.getAttribute("data-name"));
+    box.innerHTML = '<div class="qpick__head"><span><small>Pick an option</small><b>' + esc(f.getAttribute("data-name")) + '</b></span><button class="qpick__x" type="button" aria-label="Close">×</button></div>' +
       '<ul class="qpick__list">' + opts.map(function (o, i) {
         return '<li><button type="button" data-qpick="' + i + '"><span>' + esc(o.value) + '</span><b>' + money(parseFloat(o.getAttribute("data-price"))) + "</b></button></li>";
       }).join("") + "</ul>";
@@ -182,9 +182,16 @@
     var f = $("form[data-addcart]", p), media = $(".product__media", p);
     if (!f || !media || !f.v || !f.v.options.length) return;
     var many = f.v.options.length > 1, name = f.getAttribute("data-name");
+    // small "11 options" tag under the price, so you can tell before tapping (only shows in the tile layout)
+    var from = $(".product__from", p);
+    if (many && from && !$(".product__opts", p)) {
+      var tag = doc.createElement("span");
+      tag.className = "product__opts"; tag.textContent = f.v.options.length + " options";
+      from.insertAdjacentElement("afterend", tag);
+    }
     var b = doc.createElement("button");
     b.type = "button"; b.className = "qadd";
-    b.setAttribute("aria-label", many ? "Quick add " + name + ": pick a size" : "Add " + name + " to cart");
+    b.setAttribute("aria-label", many ? "Quick add " + name + ": pick one of " + f.v.options.length + " options" : "Add " + name + " to cart");
     if (many) b.setAttribute("aria-haspopup", "dialog");
     b.innerHTML = svg.plus;
     media.appendChild(b);
