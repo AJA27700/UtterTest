@@ -177,6 +177,17 @@
     openPick = box; pickFrom = btn; btn.setAttribute("aria-expanded", "true");
     var first = $("[data-qpick]", box); if (first) first.focus({ preventScroll: true });
   }
+  // "Read more" at the bottom of every tile, so it's obvious you can open it. clicking it opens the tile like tapping anywhere else
+  $$(".products--tiles .product, .products--grid .product").forEach(function (p) {
+    var body = $(".product__body", p);
+    if (!body || $(".tile-more", p)) return;
+    var b = doc.createElement("button");
+    b.type = "button"; b.className = "tile-more";
+    var h = $("h2", body);
+    b.setAttribute("aria-label", "Read more about " + (h ? h.textContent.trim() : "this product"));
+    b.innerHTML = 'Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+    body.appendChild(b);
+  });
   // the + on each tile (added here so the category pages dont need changing)
   $$(".products--tiles .product, .products--grid .product").forEach(function (p) {
     var f = $("form[data-addcart]", p), media = $(".product__media", p);

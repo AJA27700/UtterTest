@@ -1979,3 +1979,22 @@ body.qpick-open .cartbtn { display: none; }
   .products--grid .product:not(.is-open) .product__opts { display: inline-flex; align-items: center; gap: 4px; margin: 4px 0 0 2px; padding: 2px 7px 2px 5px; border-radius: 999px; background: var(--cream-2); color: var(--ink-2); font: 700 10.5px/1.2 var(--font-body); }
 }
 .product__opts::before { content: ""; width: 9px; height: 9px; flex: none; background: currentColor; opacity: .55; -webkit-mask: radial-gradient(circle, #000 1.6px, transparent 1.9px) 0 0 / 4.5px 4.5px; mask: radial-gradient(circle, #000 1.6px, transparent 1.9px) 0 0 / 4.5px 4.5px; }
+
+/* "Read more" at the bottom of every 3-across tile (opens the product). bottom-aligned so a row of tiles lines up */
+.tile-more { display: none; }
+.tile-more svg { width: 14px; height: 14px; flex: none; transition: transform .25s var(--spring); }
+@media (min-width: 641px) {
+  .products--tiles .product:not(.is-open) .product__body { flex: 1; display: flex; flex-direction: column; align-items: flex-start; }
+  .products--tiles .product:not(.is-open) .product__body h2 { align-self: stretch; }
+  .products--tiles .product:not(.is-open) .tile-more { display: inline-flex; align-items: center; gap: 6px; margin: auto 0 0 4px; padding-top: 12px; border: 0; background: none; color: var(--pasture); font: 750 14px/1.2 var(--font-body); cursor: pointer; }
+  .products--tiles .product:not(.is-open) .tile-more { text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 4px; transition: text-decoration-color .2s; }
+  .products--tiles .product:not(.is-open):hover .tile-more { text-decoration-color: currentColor; }
+  .products--tiles .product:not(.is-open):hover .tile-more svg { transform: translateX(3px); }
+}
+@media (max-width: 640px) {
+  .products--grid .product:not(.is-open) .product__body { flex: 1; display: flex; flex-direction: column; align-items: flex-start; }
+  .products--grid .product:not(.is-open) .product__body h2 { align-self: stretch; }
+  .products--grid .product:not(.is-open) .tile-more { display: inline-flex; align-items: center; gap: 3px; margin: auto 0 0 2px; padding-top: 7px; border: 0; background: none; color: var(--pasture); font: 750 11.5px/1.2 var(--font-body); cursor: pointer; }
+  .products--grid .product:not(.is-open) .tile-more svg { width: 11px; height: 11px; }
+}
+.tile-more:focus-visible { outline: 3px solid var(--carton); outline-offset: 3px; border-radius: 6px; }
