@@ -1998,3 +1998,6 @@ body.qpick-open .cartbtn { display: none; }
   .products--grid .product:not(.is-open) .tile-more svg { width: 11px; height: 11px; }
 }
 .tile-more:focus-visible { outline: 3px solid var(--carton); outline-offset: 3px; border-radius: 6px; }
+
+/* the stand-in copy that holds an open tile's spot in the grid (see shop.js) */
+.product.is-ghost { pointer-events: none; }

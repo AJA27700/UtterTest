@@ -117,15 +117,30 @@
      phones: lists with 7+ products (.products--grid). desktop/tablet: lists with 8+ (.products--tiles) */
   var phone = window.matchMedia("(max-width: 640px)");
   var veil = null, openTile = null;
+  // while a tile is open it floats on top, so a look-alike copy ("ghost") holds its spot in the grid.
+  // otherwise the tile vanishes from the columns and everything after it shifts over
+  var ghost = null;
   function closeSheet() {
     if (!openTile) return;
     openTile.classList.remove("is-open"); doc.body.classList.remove("sheet-open");
     if (veil) veil.hidden = true;
+    if (ghost) { ghost.remove(); ghost = null; }
     var t = openTile; openTile = null; t.focus && t.focus({ preventScroll: true });
+  }
+  function makeGhost(tile) {
+    var g = tile.cloneNode(true);
+    g.classList.add("is-ghost"); g.removeAttribute("id"); g.removeAttribute("tabindex");
+    g.setAttribute("aria-hidden", "true"); g.inert = true;   // just for looks: no clicks, no focus, screen readers skip it
+    $$("[id]", g).forEach(function (e) { e.removeAttribute("id"); });
+    $$("[for]", g).forEach(function (e) { e.removeAttribute("for"); });
+    $$(".qpick", g).forEach(function (e) { e.remove(); });
+    $$("form", g).forEach(function (f) { f.removeAttribute("data-addcart"); });
+    return g;
   }
   function openSheet(tile) {
     if (!veil) { veil = doc.createElement("div"); veil.className = "sheet-veil"; veil.addEventListener("click", closeSheet); doc.body.appendChild(veil); }
     closeSheet();
+    ghost = makeGhost(tile); tile.parentNode.insertBefore(ghost, tile);
     openTile = tile; tile.classList.add("is-open"); doc.body.classList.add("sheet-open"); veil.hidden = false;
     tile.scrollTop = 0;
     var x = $("[data-sheet-close]", tile); if (x) x.focus({ preventScroll: true });
