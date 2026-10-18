@@ -2001,3 +2001,9 @@ body.qpick-open .cartbtn { display: none; }
 
 /* the stand-in copy that holds an open tile's spot in the grid (see shop.js) */
 .product.is-ghost { pointer-events: none; }
+
+/* phones: smaller hero logo, tucked higher, so the cow's head is fully visible with a gap underneath */
+@media (max-width: 640px) {
+  .hero__lockup { top: 8px; }
+  .hero--photo .lockup__logo { width: min(46vw, 180px); }
+}
